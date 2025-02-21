@@ -8,7 +8,7 @@ export { default as Container } from "./container";
 export { default as DatePicker } from "./datePicker";
 export { default as DateTimePicker } from "./dateTimePicker";
 export { default as Fab } from "./fab";
-export { default as Grid2 } from "./grid2";
+export { default as Grid } from "./grid";
 export { default as IconButton } from "./iconbutton";
 export { default as Snackbar } from "./snackbar";
 export { default as Switch } from "./switch";

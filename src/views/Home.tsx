@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Box, Typography, Grid, Card, CardMedia, CardContent, CardActions, Button } from '@mui/material';
+import { Container, Box, Typography,  Card, CardMedia, CardContent, CardActions, Button } from '@mui/material';
+import { Grid } from '../components';
 
 // Dados simulados de produtos
 const produtos = [
