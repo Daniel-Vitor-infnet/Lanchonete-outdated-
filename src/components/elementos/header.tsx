@@ -10,7 +10,6 @@ const HeaderPers: React.FC = () => {
   const containerStyles = {
     width: '100vw',
     height: '8vh',
-    border: '1px solid black',
     backgroundColor: 'mediumspringgreen',
     display: 'flex',
     justifyContent: 'space-between',
