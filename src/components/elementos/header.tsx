@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Avatar } from '../index';
+import { Grid } from '../index';
 import Paper from '@mui/material/Paper';
 
 import imgLogo from '../../assets/img/logo.png';
