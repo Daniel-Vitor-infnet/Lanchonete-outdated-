@@ -23,7 +23,15 @@
   "include": [
     "src",
     "custom.d.ts",
-    "src/theme.js"
+    // "src/theme.js",
+    // ,
+    // "Extras/datePicker""Extras/alert",
+    "Extras/avatar",
+    "Extras/fab",
+    "Extras/snackbar",
+    "Extras/switch",
+    "Extras/tab",
+    "Extras/dateTimePicker"
   ],
   "exclude": [
     "node_modules",
