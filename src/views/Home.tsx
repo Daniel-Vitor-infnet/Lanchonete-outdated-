@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container,  Typography, Card, CardMedia, CardContent, CardActions, Button } from '@mui/material';
+import { Container, Typography, Card, CardMedia, CardContent, CardActions, Button } from '@mui/material';
 import { Grid, Box } from '../components';
 import HeaderPers from '../components/elementos/header';
-import SlidePers from '../components/elementos/home/slide';
+import ImageCarousel from '../components/elementos/home/slide.tsx';
 import BoxLayout from '../components/styles/BoxLayout';
 
 
@@ -18,11 +18,10 @@ const Home: React.FC = () => {
 
       <Box sx={BoxLayout}>
         <Grid>
-           <p>Teste</p>
+          <ImageCarousel />
         </Grid>
       </Box>
 
-      {/* <SlidePers /> */}
     </>
   );
 };
