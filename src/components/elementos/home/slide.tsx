@@ -4,37 +4,37 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import logo from '../../../assets/img/logo.png';
-import logo2 from '../../../assets/img/teste.png';
 import { Grid } from '../../index';
 
-const ImageCarousel: React.FC = () => {
-  const images = [logo, logo2, logo];
 
+
+interface ImageCarouselProps {
+  images: string[];
+}
+
+const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
-    <Grid sx={{ width: '65vw', height: '45vh', backgroundColor: 'mediumspringgreen', overflow: 'hidden', position: 'relative' }}>
-      <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        loop
-        style={{ width: '100%', height: '100%', display: 'flex' }}
-      >
-        {images.map((img, index) => (
-          <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-            <img
-              src={img}
-              alt={`Slide ${index + 1}`}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover', // Ocupa todo o contêiner mantendo a proporção
-              }}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </Grid>
+    <Swiper
+      modules={[Navigation, Pagination]}
+      navigation
+      pagination={{ clickable: true }}
+      loop
+      style={{ width: '100%', height: '100%', display: 'flex' }}
+    >
+      {images.map((img, index) => (
+        <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+          <img
+            src={img}
+            alt={`Slide ${index + 1}`}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover', // Ocupa todo o contêiner mantendo a proporção
+            }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 
