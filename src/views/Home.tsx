@@ -11,13 +11,20 @@ import BoxLayout from '../components/styles/BoxLayout';
 const Home: React.FC = () => {
 
 
+  const containerStyles = {
+    width: '35vw',
+    height: '25vh',
+    backgroundColor: 'mediumspringgreen',
+
+  };
+
 
   return (
     <>
       <HeaderPers />
 
       <Box sx={BoxLayout}>
-        <Grid>
+        <Grid sx={containerStyles}>
           <ImageCarousel />
         </Grid>
       </Box>

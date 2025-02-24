@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
 import logo from '../../../assets/img/logo.png';
-import "slick-carousel/slick/slick.css"; 
+import logo2 from '../../../assets/img/teste.png';
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 const ImageCarousel: React.FC = () => {
   const settings = {
@@ -15,17 +15,17 @@ const ImageCarousel: React.FC = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <div>
-        <img src={logo} alt="Image 1" />
-      </div>
-      <div>
-        <img src={logo} alt="Image 2" />
-      </div>
-      <div>
-        <img src={logo} alt="Image 3" />
-      </div>
-    </Slider>
+        <Slider {...settings}>
+          <div >
+            <img src={logo2} alt="Image 1" style={{ width: '100%', height: '100%'}} />
+          </div>
+          <div >
+            <img src={logo2} alt="Image 2" style={{ width: '100%', height: '100%'}} />
+          </div>
+          <div >
+            <img src={logo2} alt="Image 3" style={{ width: '100%', height: '100%'}} />
+          </div>
+        </Slider>
   );
 };
 
