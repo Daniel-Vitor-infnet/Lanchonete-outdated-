@@ -12,20 +12,24 @@ const ImageCarousel: React.FC = () => {
   const images = [logo, logo2, logo];
 
   return (
-    <Grid sx={{ width: '45vw', height: '45vh', backgroundColor: 'mediumspringgreen', overflow: 'hidden' }}>
+    <Grid sx={{ width: '65vw', height: '45vh', backgroundColor: 'mediumspringgreen', overflow: 'hidden', position: 'relative' }}>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
         loop
-        style={{ width: '100%', height: '100%' }}
+        style={{ width: '100%', height: '100%', display: 'flex' }}
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover', // Ocupa todo o contêiner mantendo a proporção
+              }}
             />
           </SwiperSlide>
         ))}
