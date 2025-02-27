@@ -23,7 +23,7 @@ const Home: React.FC = () => {
     overflow: 'hidden',
   };
 
-  const gridAvatarStilos = {
+  const gridAvatarStyles = {
     width: '160px',
     height: '160px',
     position: 'relative',
@@ -34,13 +34,13 @@ const Home: React.FC = () => {
     outline: '4px solid skyblue',
   }
 
-  const avatarStilos = {
+  const avatarStyles = {
     width: '100%',
     height: '100%',
     outline: '4px solid darkorchid',
   }
 
-  const pStilos: React.CSSProperties = {
+  const statusStyles: React.CSSProperties = {
     position: 'absolute',
     fontSize: '0.8rem',
     padding: '1.8px',
@@ -68,9 +68,9 @@ const Home: React.FC = () => {
         <Grid sx={gridStylesCarrocel}>
           <ImageCarousel images={[slide, slide2]} />
         </Grid>
-        <Grid sx={gridAvatarStilos}>
-          <Avatar sx={avatarStilos} alt="Logo" src={logo1} />
-          <p style={pStilos}>FECHADO</p>
+        <Grid sx={gridAvatarStyles}>
+          <Avatar sx={avatarStyles} alt="Logo" src={logo1} />
+          <p style={statusStyles}>FECHADO</p>
         </Grid>
         <Grid sx={gridStylesCards}>
           <SimpleCard />
