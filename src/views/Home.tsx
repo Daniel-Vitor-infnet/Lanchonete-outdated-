@@ -8,6 +8,7 @@ import slide from '../assets/img/logo.png';
 import logo1 from '../assets/img/logo1.png';
 import slide2 from '../assets/img/teste.png';
 import slide3 from '../assets/img/teste3.jpg';
+import SimpleCard from '../components/elementos/home/cards.tsx';
 
 
 
@@ -15,22 +16,21 @@ import slide3 from '../assets/img/teste3.jpg';
 const Home: React.FC = () => {
 
 
-  const gridStyles = {
+  const gridStylesCarrocel = {
     height: '25vh',
     backgroundColor: 'mediumspringgreen',
     mx: 'auto', // Centraliza horizontalmente
     overflow: 'hidden',
-    position: 'relative',
   };
 
   const gridAvatarStilos = {
     width: '160px',
     height: '160px',
-    position: 'absolute',
+    position: 'relative',
     zIndex: '1',
     top: '50%',
     left: '50%',
-    transform: 'translate(-50%, -130%)',
+    transform: 'translate(-50%, -50%)',
     outline: '4px solid skyblue',
   }
 
@@ -52,6 +52,11 @@ const Home: React.FC = () => {
     color: 'white',
     backgroundColor: 'red',
   };
+
+
+  const gridStylesCards = {
+    backgroundColor: 'blue',
+  };
   
 
 
@@ -60,12 +65,15 @@ const Home: React.FC = () => {
       <HeaderPers />
 
       <BoxLayout>
-        <Grid sx={gridStyles}>
+        <Grid sx={gridStylesCarrocel}>
           <ImageCarousel images={[slide, slide2]} />
         </Grid>
         <Grid sx={gridAvatarStilos}>
           <Avatar sx={avatarStilos} alt="Logo" src={logo1} />
           <p style={pStilos}>FECHADO</p>
+        </Grid>
+        <Grid sx={gridStylesCards}>
+          <SimpleCard />
         </Grid>
 
       </BoxLayout>

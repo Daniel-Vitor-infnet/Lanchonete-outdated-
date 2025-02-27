@@ -15,6 +15,7 @@ const BoxLayout: React.FC<BoxLayoutProps> = ({ children }) => {
     mx: 'auto', // Centraliza horizontalmente
     borderRadius: 6,
     boxShadow: 2,
+    overflow: 'hidden',
   };
 
   return <Box sx={styles}>{children}</Box>;
