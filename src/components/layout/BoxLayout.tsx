@@ -13,7 +13,7 @@ const BoxLayout: React.FC<BoxLayoutProps> = ({ children }) => {
     marginTop: '2vh',
     backgroundColor: 'seagreen',
     mx: 'auto', // Centraliza horizontalmente
-    borderRadius: 2,
+    borderRadius: 6,
     boxShadow: 2,
   };
 

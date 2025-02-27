@@ -29,6 +29,7 @@ const Home: React.FC = () => {
     zIndex: '1',
     top: '30%',
     left: '45%',
+    outline: '4px solid white',
   }
 
 
@@ -40,7 +41,7 @@ const Home: React.FC = () => {
         <Grid sx={gridStyles}>
           <ImageCarousel images={[slide, slide2]} />
         </Grid>
-        <Avatar sx={avatarStilos} alt="Remy Sharp" src={slide3} />
+        <Avatar sx={avatarStilos} alt="Logo" src={slide3} />
       </BoxLayout>
     </>
   );
