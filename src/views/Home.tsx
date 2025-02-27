@@ -24,13 +24,19 @@ const Home: React.FC = () => {
     position: 'relative',
   };
 
-  const avatarStilos = {
+  const gridAvatarStilos = {
     width: '160px',
     height: '160px',
     position: 'absolute',
     zIndex: '1',
     top: '30%',
     left: '44%',
+    outline: '4px solid red',
+  }
+
+  const avatarStilos = {
+    width: '100%',
+    height: '100%',
     outline: '4px solid darkorchid',
   }
 
@@ -43,7 +49,10 @@ const Home: React.FC = () => {
         <Grid sx={gridStyles}>
           <ImageCarousel images={[slide, slide2]} />
         </Grid>
-        <Avatar sx={avatarStilos} alt="Logo" src={logo1} />
+        <Grid sx={gridAvatarStilos}>
+          <Avatar sx={avatarStilos} alt="Logo" src={logo1} />
+        </Grid>
+
       </BoxLayout>
     </>
   );
