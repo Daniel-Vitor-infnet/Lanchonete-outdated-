@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '../index';
+import { Grid2 } from '@mui/material';
 import Paper from '@mui/material/Paper';
 
 import imgLogo from '../../assets/img/logo.png';
@@ -26,19 +26,19 @@ const HeaderPers: React.FC = () => {
 
   return (
 
-    <Grid container sx={containerStyles}>
+    <Grid2 container sx={containerStyles}>
       <img src={imgLogo} alt="Logo" style={{ height: '6vh', marginLeft: '15px' }} />
-      <Grid display={'flex'} container spacing={2}>
+      <Grid2 display={'flex'} container spacing={2}>
         <Paper sx={itemStyles}>Centro</Paper>
         <Paper sx={itemStyles}>Centro</Paper>
         <Paper sx={itemStyles}>Centro</Paper>
-      </Grid>
-      <Grid display={'flex'} container spacing={2} marginRight={2}>
+      </Grid2>
+      <Grid2 display={'flex'} container spacing={2} marginRight={2}>
         <Paper sx={itemStyles}>Direita</Paper>
         <Paper sx={itemStyles}>Direita</Paper>
         <Paper sx={itemStyles}>Direita</Paper>
-      </Grid>
-    </Grid>
+      </Grid2>
+    </Grid2>
   );
 };
 

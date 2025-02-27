@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import { Grid } from '../../index';
+import { Grid2 } from '@mui/material';
 
 // Configuração para personalização de setas e bolinhas
 const swiperStyles = {
@@ -21,7 +21,7 @@ interface ImageCarouselProps {
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
-    <Grid sx={{ width: '100%', height: '100%', display: 'flex' }}>
+    <Grid2 sx={{ width: '100%', height: '100%', display: 'flex' }}>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -39,7 +39,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </Grid>
+    </Grid2>
   );
 };
 

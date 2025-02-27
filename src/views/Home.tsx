@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.scss';
-import { Grid, Box, Avatar } from '../components';
+import { Grid2, Box, Avatar } from '@mui/material';
 import HeaderPers from '../components/elementos/header';
 import ImageCarousel from '../components/elementos/home/slide.tsx';
 import BoxLayout from '../components/layout/BoxLayout.tsx';
@@ -12,22 +12,22 @@ import SimpleCard from '../components/elementos/home/cards.tsx';
 
 const Home: React.FC = () => {
   return (
-    <>
+    <Grid2 className={styles.home}> {/* Apenas para trazer o scss pai */}
       <HeaderPers />
 
       <BoxLayout>
-        <Grid className={styles.carousel}>
+        <Grid2 className={styles.carousel}>
           <ImageCarousel images={[slide, slide2]} />
-        </Grid>
-        <Grid className={styles['avatar-container']}>
+        </Grid2>
+        <Grid2 className={styles['avatar-container']}>
           <Avatar className={styles.avatar} alt="Logo" src={logo1} />
           <p className={styles.status}>FECHADO</p>
-        </Grid>
-        <Grid className={styles.cards}>
+        </Grid2>
+        <Grid2 className={styles.cards}>
           <SimpleCard />
-        </Grid>
+        </Grid2>
       </BoxLayout>
-    </>
+    </Grid2>
   );
 };
 

@@ -24,6 +24,12 @@
   "include": [
     "src",
     "custom.d.ts",
+    "Extras/typography",
+    "Extras/textfield",
+    "Extras/iconbutton",
+    "Extras/checkbox",
+    "Extras/card",
+    "Extras/button",
   ],
   "exclude": [
     "node_modules",

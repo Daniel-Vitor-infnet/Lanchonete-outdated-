@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '../index';
+import { Box } from '@mui/material'; 
 
 interface BoxLayoutProps {
   children: React.ReactNode;
