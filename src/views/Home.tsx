@@ -23,9 +23,7 @@ const Home: React.FC = () => {
           <Avatar className={styles.avatar} alt="Logo" src={logo1} />
           <p className={styles.status}>FECHADO</p>
         </Grid2>
-        <Grid2 className={styles.cards}>
-          <SimpleCard />
-        </Grid2>
+        <SimpleCard />
       </BoxLayout>
     </Grid2>
   );

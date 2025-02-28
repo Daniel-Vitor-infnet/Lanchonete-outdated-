@@ -1,11 +1,11 @@
 
-$primary-color: mediumspringgreen;
-$border-color: skyblue;
+$teste-color: mediumspringgreen;
+$teste-border-color: skyblue;
 
 .home {
   .carousel {
     height: 25vh;
-    background-color: $primary-color;
+    background-color: $teste-color;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -18,7 +18,7 @@ $border-color: skyblue;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    outline: 4px solid $border-color;
+    outline: 4px solid $teste-border-color;
   }
 
   .avatar {
@@ -40,7 +40,5 @@ $border-color: skyblue;
     background-color: red;
   }
 
-  .cards {
-    background-color: blue;
-  }
+  
 }

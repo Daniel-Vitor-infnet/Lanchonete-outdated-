@@ -1,38 +1,73 @@
 import * as React from "react";
-import { Card, CardContent, Typography, Button, Box } from "@mui/material";
+import { Card, CardContent, CardMedia, CardActionArea, Typography, Button, Box } from "@mui/material";
+import { Margin } from "@mui/icons-material";
 
 
 
-const boxStyles = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+const cards = [
+    {
+        id: 1,
+        title: 'Plants',
+        description: 'Plants are essential for all life.',
+    },
+    {
+        id: 2,
+        title: 'Animals',
+        description: 'Animals are a part of nature.',
+    },
+    {
+        id: 3,
+        title: 'Humans',
+        description: 'Humans depend on plants and animals for survival.',
+    },
+];
+
+const boxStyle = {
+    width: '100%',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))',
+    gap: 2,
+    backgroundColor: 'blueviolet',
 }
 
-const cardStyles = {
-    width: 300,
-    padding: 2,
-    textAlign: "center",
-    boxShadow: 3,
-    borderRadius: 2,
+const cardStyle = {
+    width: '100%',
+    height: '100%',
+    marginLeft: '19px',
 }
 
-
-const SimpleCard: React.FC = () => {
+function SimpleCard() {
+    const [selectedCard, setSelectedCard] = React.useState(0);
     return (
-        <Box sx={boxStyles}>
-            <Card sx={cardStyles}>
-                <CardContent>
-                    <Typography variant="h4" fontWeight="bold">
-                        Benevolente
-                    </Typography>
-                </CardContent>
-                <Button variant="contained" sx={{ mt: 2 }}>
-                    Saiba Mais
-                </Button>
-            </Card>
+        <Box sx={ boxStyle}>
+            {cards.map((card, index) => (
+                <Card sx={cardStyle}>
+                    <CardActionArea
+                        onClick={() => setSelectedCard(index)}
+                        data-active={selectedCard === index ? '' : undefined}
+                        sx={{
+                            height: '100%',
+                            '&[data-active]': {
+                                backgroundColor: 'action.selected',
+                                '&:hover': {
+                                    backgroundColor: 'action.selectedHover',
+                                },
+                            },
+                        }}
+                    >
+                        <CardContent sx={{ height: '100%' }}>
+                            <Typography variant="h5" component="div">
+                                {card.title}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                {card.description}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            ))}
         </Box>
     );
-};
+}
 
 export default SimpleCard;
