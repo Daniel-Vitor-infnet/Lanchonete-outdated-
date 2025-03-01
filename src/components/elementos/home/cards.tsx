@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Card, CardContent, CardMedia, CardActionArea, Typography, Button, Box } from "@mui/material";
-import { Margin } from "@mui/icons-material";
-
+import logo from "../../../assets/img/logo1.png";
 
 
 const cards = [
@@ -9,16 +8,19 @@ const cards = [
         id: 1,
         title: 'Plants',
         description: 'Plants are essential for all life.',
+        logo: logo,
     },
     {
         id: 2,
         title: 'Animals',
         description: 'Animals are a part of nature.',
+        logo: logo,
     },
     {
         id: 3,
         title: 'Humans',
         description: 'Humans depend on plants and animals for survival.',
+        logo: logo,
     },
 ];
 
@@ -36,10 +38,15 @@ const cardStyle = {
     marginLeft: '19px',
 }
 
+const cardStyle2 = {
+    height: "194px",
+
+}
+
 function SimpleCard() {
     const [selectedCard, setSelectedCard] = React.useState(0);
     return (
-        <Box sx={ boxStyle}>
+        <Box sx={boxStyle}>
             {cards.map((card, index) => (
                 <Card sx={cardStyle}>
                     <CardActionArea
@@ -62,6 +69,7 @@ function SimpleCard() {
                             <Typography variant="body2" color="text.secondary">
                                 {card.description}
                             </Typography>
+                            <CardMedia sx={cardStyle2} component="img" image={card.logo} alt="Paella dish"/>
                         </CardContent>
                     </CardActionArea>
                 </Card>
