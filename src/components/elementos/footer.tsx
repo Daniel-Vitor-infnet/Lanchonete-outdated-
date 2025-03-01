@@ -9,34 +9,34 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 // Estilos definidos como constantes
 const footerContainerStyle = {
-  width: '100%',
-  backgroundColor: '#111',
-  color: 'white',
-  padding: '40px 20px',
-  textAlign: 'center' as const,
-  marginTop: '16px',
-  borderTop: '4px solid #ffcc00',
+    width: '100%',
+    backgroundColor: '#111',
+    color: 'white',
+    padding: '40px 20px',
+    textAlign: 'center' as const,
+    marginTop: '16px',
+    borderTop: '8px solid #ffcc00',
 };
 
 const companyNameStyle = {
-  fontWeight: 'bold',
-  letterSpacing: '2px',
-  fontSize: '24px',
-  textTransform: 'uppercase',
+    fontWeight: 'bold',
+    letterSpacing: '2px',
+    fontSize: '24px',
+    textTransform: 'uppercase',
 };
 
 const contactContainerStyle = {
-  display: 'flex',
-  flexDirection: 'column' as const,
-  alignItems: 'center',
-  gap: '8px',
+    display: 'flex',
+    flexDirection: 'column' as const,
+    alignItems: 'center',
+    gap: '8px',
 };
 
 const iconTextStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '8px',
-  fontSize: '18px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    fontSize: '18px',
 };
 
 const emailIconStyle = { color: '#ffcc00' };
@@ -44,60 +44,56 @@ const phoneIconStyle = { color: '#4caf50' };
 const locationIconStyle = { color: '#ff5722' };
 
 const socialMediaContainerStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  gap: '16px',
-  marginTop: '24px',
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '16px',
+    marginTop: '24px',
 };
 
 const copyrightTextStyle = {
-  marginTop: '20px',
-  opacity: 0.8,
-  fontSize: '14px',
+    marginTop: '20px',
+    opacity: 0.8,
+    fontSize: '14px',
 };
 
 const Footer: React.FC = () => {
-  return (
-    <Box sx={footerContainerStyle}>
-      {/* Nome da empresa */}
-      <Typography variant="h6" gutterBottom sx={companyNameStyle}>
-        Tatu Lanches
-      </Typography>
+    return (
+        <Box sx={footerContainerStyle}>
+            {/* Nome da empresa */}
+            <Typography variant="h6" gutterBottom sx={companyNameStyle}>
+                Lanchonete
+            </Typography>
 
-      {/* Contatos e informações */}
-      <Grid2 container spacing={2} justifyContent="center">
-        <Grid2 sx={contactContainerStyle}>
-          <Typography sx={iconTextStyle}>
-            <EmailIcon sx={emailIconStyle} /> exemplo@gmail.com
-          </Typography>
-          <Typography sx={iconTextStyle}>
-            <PhoneIcon sx={phoneIconStyle} /> +55 11 99999-9999
-          </Typography>
-          <Typography sx={iconTextStyle}>
-            <LocationOnIcon sx={locationIconStyle} /> Rua Exemplo, 123 - Cidade
-          </Typography>
-        </Grid2>
-      </Grid2>
+            {/* Contatos e informações */}
+            <Grid2 container spacing={2} justifyContent="center">
+                <Grid2 sx={contactContainerStyle}>
+                    <Typography sx={iconTextStyle}>
+                        <PhoneIcon sx={phoneIconStyle} /> +55 11 99999-9999
+                        <LocationOnIcon sx={locationIconStyle} /> Rua Exemplo, 123 - Cidade
+                        <EmailIcon sx={emailIconStyle} /> exemplo@gmail.com
+                        </Typography>
+                </Grid2>
+            </Grid2>
 
-      {/* Redes Sociais */}
-      <Box sx={socialMediaContainerStyle}>
-        <IconButton sx={{ color: '#1877F2' }} href="https://facebook.com" target="_blank">
-          <FacebookIcon fontSize="large" />
-        </IconButton>
-        <IconButton sx={{ color: '#E4405F' }} href="https://instagram.com" target="_blank">
-          <InstagramIcon fontSize="large" />
-        </IconButton>
-        <IconButton sx={{ color: '#25D366' }} href="https://wa.me/5511999999999" target="_blank">
-          <WhatsAppIcon fontSize="large" />
-        </IconButton>
-      </Box>
+            {/* Redes Sociais */}
+            <Box sx={socialMediaContainerStyle}>
+                <IconButton sx={{ color: '#1877F2' }} href="https://facebook.com" target="_blank">
+                    <FacebookIcon fontSize="large" />
+                </IconButton>
+                <IconButton sx={{ color: '#E4405F' }} href="https://instagram.com" target="_blank">
+                    <InstagramIcon fontSize="large" />
+                </IconButton>
+                <IconButton sx={{ color: '#25D366' }} href="https://wa.me/5511999999999" target="_blank">
+                    <WhatsAppIcon fontSize="large" />
+                </IconButton>
+            </Box>
 
-      {/* Direitos autorais */}
-      <Typography variant="body2" sx={copyrightTextStyle}>
-        © 2025 Tatu Lanches. Todos os direitos reservados.
-      </Typography>
-    </Box>
-  );
+            {/* Direitos autorais */}
+            <Typography variant="body2" sx={copyrightTextStyle}>
+                © 2025 Lanchonete. Todos os direitos reservados.
+            </Typography>
+        </Box>
+    );
 };
 
 export default Footer;

@@ -12,21 +12,24 @@ import SimpleCard from '../components/elementos/cards.tsx';
 
 const Home: React.FC = () => {
   return (
-    <Grid2 className={styles.home}> {/* Apenas para trazer o scss pai */}
+    <>
       <HeaderPers />
+      <Grid2 className={styles.home}> {/* Apenas para trazer o scss pai */}
 
-      <BoxLayout>
-        <Grid2 className={styles.carousel}>
-          <ImageCarousel images={[slide, slide2]} />
-        </Grid2>
-        <Grid2 className={styles['avatar-container']}>
-          <Avatar className={styles.avatar} alt="Logo" src={logo} />
-          <p className={styles.status}>FECHADO</p>
-        </Grid2>
-        <SimpleCard />
-      </BoxLayout>
+        <BoxLayout>
+          <Grid2 className={styles.carousel}>
+            <ImageCarousel images={[slide, slide2]} />
+          </Grid2>
+          <Grid2 className={styles['avatar-container']}>
+            <Avatar className={styles.avatar} alt="Logo" src={logo} />
+            <p className={styles.status}>FECHADO</p>
+          </Grid2>
+          <SimpleCard />
+        </BoxLayout>
+      </Grid2>
       <FooterPers />
-    </Grid2>
+
+    </>
   );
 };
 
