@@ -27,10 +27,12 @@ const cards = [
 const boxStyle = {
     width: '100%',
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))',
-    gap: 2,
+    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', // Antes era 200px fixo
+    gap: '20px', // Antes era 2 (mui usa rem), agora um valor mais visualmente confortável
+    padding: '20px', // Adiciona espaçamento nos lados
     backgroundColor: 'blueviolet',
-}
+  };
+  
 
 const cardStyle = {
     width: '100%',
@@ -38,9 +40,20 @@ const cardStyle = {
     marginLeft: '19px',
 }
 
-const cardStyle2 = {
+const mediaStyle = {
     height: "194px",
+}
 
+const cardTitleStyle = {
+    color: 'red', 
+    fontFamily: 'PlaywriteITModerna, Arial, sans-serif',
+    fontSize: '17px',
+}
+
+const cardDrescripStyle = {
+    color: 'red', 
+    fontFamily: 'PlaywriteITModerna, Arial, sans-serif',
+    marginTop: '10px',
 }
 
 function SimpleCard() {
@@ -63,13 +76,14 @@ function SimpleCard() {
                         }}
                     >
                         <CardContent sx={{ height: '100%' }}>
-                            <Typography variant="h5" component="div">
+                        <CardMedia sx={mediaStyle} component="img" image={card.logo} alt="Paella dish"/>
+
+                            <Typography variant="h5" align="center" component="div" style={cardTitleStyle}>
                                 {card.title}
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2"  style={cardDrescripStyle}>
                                 {card.description}
                             </Typography>
-                            <CardMedia sx={cardStyle2} component="img" image={card.logo} alt="Paella dish"/>
                         </CardContent>
                     </CardActionArea>
                 </Card>
