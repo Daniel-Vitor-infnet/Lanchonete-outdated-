@@ -12,7 +12,7 @@ const footerContainerStyle = {
     width: '100%',
     backgroundColor: '#111',
     color: 'white',
-    padding: '40px 20px',
+    padding: '20px 20px',
     textAlign: 'center' as const,
     marginTop: '16px',
     borderTop: '8px solid #ffcc00',
