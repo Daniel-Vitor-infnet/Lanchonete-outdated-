@@ -18,6 +18,13 @@ export default defineConfig(() => {
       sourcemap: false,  // Não precisa gerar mapa de código para produção
       rollupOptions: {
         treeshake: true, // Garante que o tree-shaking está ativado
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor'; // Separa dependências externas em um chunk separado
+            }
+          }
+        }
       },
     },
     plugins: [react(), livereload('src/**/*.{js,jsx,ts,tsx}'), visualizer({ open: true })], // Agora o relatório será aberto automaticamente no navegador
