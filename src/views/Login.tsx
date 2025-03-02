@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '@/styles/Login.module.scss';
 import { Grid2, Box, TextField, Button, Typography, Tabs, Tab } from '@/libs/mui';
 import { MuiTelInput } from 'mui-tel-input';
 
@@ -17,41 +18,9 @@ const Login: React.FC = () => {
     setIdentifier(value);
   };
 
-  const gridStyles = {
-    height: '80vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '20px',
-    padding: '20px',
-  };
-
-  const boxStyle = {
-    width: '100%',
-    maxWidth: 400,
-    borderRadius: 2,
-    padding: 2,
-    boxShadow: 3,
-    backgroundColor: 'white',
-  };
-
-  const linkStyle = {
-    color: "blue",
-    textDecoration: "none",
-    cursor: "pointer",
-    "&:hover": {
-      textDecoration: "underline",
-    },
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '8px'
-  };
-
   return (
-    <Grid2 sx={gridStyles}>
-      <Box sx={boxStyle}>
+    <Grid2 className={styles.container}>
+      <Box className={styles.box}>
         {screen === 'login' && (
           <>
             <Typography variant="h5" gutterBottom align="center">
@@ -96,18 +65,17 @@ const Login: React.FC = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Typography onClick={() => setScreen('register')} sx={linkStyle}>
+            <Typography onClick={() => setScreen('register')} className={styles.link}>
               Criar conta
             </Typography>
-            <Typography onClick={() => setScreen('forgotPassword')} sx={linkStyle}>
+            <Typography onClick={() => setScreen('forgotPassword')} className={styles.link}>
               Esqueceu a senha?
             </Typography>
-            <Button variant="contained" color="primary" onClick={handleLogin} fullWidth sx={{ mt: 2 }}>
+            <Button variant="contained" color="primary" onClick={handleLogin} fullWidth className={styles.button}>
               Entrar
             </Button>
           </>
         )}
-
         {screen === 'register' && (
           <>
             <Typography variant="h5" gutterBottom align="center">
@@ -125,43 +93,41 @@ const Login: React.FC = () => {
             />
             <TextField required label="Email" variant="outlined" fullWidth margin="normal" />
             <TextField required label="Senha" type="password" variant="outlined" fullWidth margin="normal" />
-            <Button variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+            <Button variant="contained" color="primary" fullWidth className={styles.button}>
               Cadastrar
             </Button>
-            <Typography onClick={() => setScreen('login')} sx={linkStyle}>
+            <Typography onClick={() => setScreen('login')} className={styles.link}>
               Já tem uma conta? Faça login
             </Typography>
           </>
         )}
-
         {screen === 'forgotPassword' && (
           <>
             <Typography variant="h5" gutterBottom align="center">
               Recuperar Senha
             </Typography>
             <TextField required label="Email" variant="outlined" fullWidth margin="normal" />
-            <Typography onClick={() => setScreen('code')} sx={linkStyle}>
+            <Typography onClick={() => setScreen('code')} className={styles.link}>
               Confirmar Código de Recuperação
             </Typography>
-            <Typography onClick={() => setScreen('login')} sx={linkStyle}>
+            <Typography onClick={() => setScreen('login')} className={styles.link}>
               Voltar para o login
             </Typography>
-            <Button variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+            <Button variant="contained" color="primary" fullWidth className={styles.button}>
               Enviar Código de Recuperação
-            </Button>,
+            </Button>
           </>
         )}
-
         {screen === 'code' && (
           <>
             <Typography variant="h5" gutterBottom align="center">
               Código de recuperação
             </Typography>
             <TextField required label="Código" variant="outlined" fullWidth margin="normal" />
-            <Button variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+            <Button variant="contained" color="primary" fullWidth className={styles.button}>
               Enviar Código
             </Button>
-            <Typography onClick={() => setScreen('forgotPassword')} sx={linkStyle}>
+            <Typography onClick={() => setScreen('forgotPassword')} className={styles.link}>
               Voltar para Recuperar Senha
             </Typography>
           </>
