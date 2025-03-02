@@ -22,8 +22,11 @@ const Login: React.FC = () => {
   const gridStyles = {
     height: '80vh',
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    gap: '20px',
+    padding: '20px',
   };
 
   const boxStyle = {
