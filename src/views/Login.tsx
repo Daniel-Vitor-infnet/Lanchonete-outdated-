@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { Grid2, Box, TextField, Button, Typography, Tabs, Tab } from '@mui/material';
-import HeaderPers from '../components/elementos/header.tsx';
-import FooterPers from '../components/elementos/footer.tsx';
+import { Grid2, Box, TextField, Button, Typography, Tabs, Tab } from '@/libs/mui';
 import { MuiTelInput } from 'mui-tel-input';
 
 const Login: React.FC = () => {

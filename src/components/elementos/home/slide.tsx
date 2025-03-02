@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import { Grid2 } from '@mui/material';
+import { Grid2 } from '@/libs/mui';
 
 // Configuração para personalização de setas e bolinhas
 const swiperStyles = {

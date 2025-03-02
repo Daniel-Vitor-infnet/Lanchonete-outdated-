@@ -1,8 +1,7 @@
 import React from 'react';
-import { Grid2 } from '@mui/material';
-import Paper from '@mui/material/Paper';
+import { Grid2, Paper } from '@/libs/mui';
 
-import imgLogo from '../../assets/img/logo.png';
+import imgLogo from '@/assets/img/logo.png';
 
 
 

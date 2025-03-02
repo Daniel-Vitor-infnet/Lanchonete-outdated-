@@ -19,17 +19,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    
+    "baseUrl": "src", 
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "src",
-    "custom.d.ts",
-    "Extras/typography",
-    "Extras/textfield",
-    "Extras/iconbutton",
-    "Extras/checkbox",
-    "Extras/card",
-    "Extras/button",
+    "custom.d.ts"
   ],
   "exclude": [
     "node_modules",

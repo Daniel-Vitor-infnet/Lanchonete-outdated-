@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardContent, CardMedia, CardActionArea, Typography, Box } from "@mui/material";
+import { Card, CardContent, CardMedia, CardActionArea, Typography, Box } from "@/libs/mui";
 
 // Definir um tipo para os cards
 interface CardItem {
