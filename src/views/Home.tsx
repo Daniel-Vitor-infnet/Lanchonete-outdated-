@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from '@/styles/Home.module.scss';
 import { Grid2, Box, Avatar } from '@/libs/mui';
-import ImageCarousel from '@/components/elementos/home/slide.tsx';
 import BoxLayout from '@/components/layout/BoxLayout.tsx';
 import slide from '@/assets/img/logo.png';
 import logo from '@/assets/img/Logo.png';
 import slide2 from '@/assets/img/Sorvete.png';
-import SimpleCard from '@/components/elementos/cards.tsx';
+import {ImageCarousel, SimpleCard} from '@/components';
+
 
 const Home: React.FC = () => {
   return (

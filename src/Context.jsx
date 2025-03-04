@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
-import HeaderPers from "./components/elementos/header";
-import FooterPers from "./components/elementos/footer";
+import {FooterPers, HeaderPers} from '@/components';
+
 
 const AppContext = createContext();
 
