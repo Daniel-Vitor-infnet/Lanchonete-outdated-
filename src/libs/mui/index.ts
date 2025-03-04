@@ -12,6 +12,10 @@ export { default as CardContent } from '@mui/material/CardContent';
 export { default as CardMedia } from '@mui/material/CardMedia';
 export { default as CardActionArea } from '@mui/material/CardActionArea';
 export { default as Paper } from '@mui/material/Paper';
+export { default as Dialog } from '@mui/material/Dialog';
+export { default as DialogTitle } from '@mui/material/DialogTitle';
+export { default as DialogContent } from '@mui/material/DialogContent';
+export { default as DialogActions } from '@mui/material/DialogActions';
 
 
 //     @/libs/mui

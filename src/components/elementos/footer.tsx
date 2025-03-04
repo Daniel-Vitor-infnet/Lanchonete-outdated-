@@ -14,7 +14,6 @@ const footerContainerStyle = {
     color: 'white',
     padding: '20px 20px',
     textAlign: 'center' as const,
-    marginTop: '16px',
     borderTop: '8px solid #ffcc00',
 };
 
