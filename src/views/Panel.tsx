@@ -23,14 +23,14 @@ const label = { inputProps: { 'aria-label': 'Color switch demo' } };
 const Panel: React.FC = () => {
   return (
     <Grid2 className={styles.mainContainer}>
-      <AlertDiagPers message="As opções ainda não estão funcionando" />
+      {/* <AlertDiagPers message="As opções ainda não estão funcionando" /> */}
       <Box className={styles.box}>
         <Typography className={styles.title}>
           Painel de configurações
         </Typography>
         <Grid2 className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Estabelecimento</Typography>
-          <ButtonOnOff optLeft="Fechar" optRight="Abrir" />
+          <ButtonOnOff optLeft="Fechado" optRight="Aberto" />
         </Grid2>
         <Grid2 className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Teste 1</Typography>
