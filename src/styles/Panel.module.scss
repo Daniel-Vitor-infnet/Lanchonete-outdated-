@@ -1,0 +1,52 @@
+$primary-color: #1E90FF;
+$text-color: black;
+$background-white: white;
+$border-color: #000000;
+
+.mainContainer {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+
+
+  .box {
+    background-color: $background-white;
+    min-width: 40%;
+    border-radius: 10px;
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .subTitle {
+    display: flex;
+    align-items: center;
+  }
+
+  .optionContainer {
+    background-color: $background-white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-color;
+    padding: 20px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+  }
+
+  .button {
+    background-color: $primary-color;
+    color: white;
+    padding: 7px;
+  }
+}
