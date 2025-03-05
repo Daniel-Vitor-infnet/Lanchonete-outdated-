@@ -52,6 +52,9 @@ const Panel: React.FC = () => {
           <Button className={styles.button}>Aplicar</Button>
         </Grid2>
       </Box>
+      <Grid2 className={styles.buttonPedidosContainer}>
+        <Button className={styles.buttonPedidos}>Ver Pedidos</Button>
+      </Grid2>
     </Grid2>
   );
 };

@@ -48,5 +48,21 @@ $border-color: #000000;
     background-color: $primary-color;
     color: white;
     padding: 7px;
+    border-radius: 6px;
+  }
+
+
+  .buttonPedidosContainer {
+    background-color: $primary-color;
+    color: white;
+    padding: 7px;
+    border-radius: 6px;
+  }
+
+  .buttonPedidos {
+    background-color: $primary-color;
+    color: white;
+    padding: 7px;
+    border-radius: 6px;
   }
 }
