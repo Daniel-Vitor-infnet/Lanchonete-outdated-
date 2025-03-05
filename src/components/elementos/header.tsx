@@ -7,8 +7,7 @@ import imgLogo from '@/assets/img/logo.png';
 
 const HeaderPers: React.FC = () => {
   const containerStyles = {
-    width: '100vw',
-    height: '8vh',
+    width: '100%',
     backgroundColor: 'mediumspringgreen',
     display: 'flex',
     justifyContent: 'space-between',

@@ -1,6 +1,5 @@
 //Global
-export { default as HeaderPers } from '@/components/elementos/header.tsx';
-export { default as FooterPers } from '@/components/elementos/footer.tsx';
+export { default as PageLayout } from '@/components/layout/pageLayout.tsx';
 export { default as BoxLayout } from '@/components/layout/boxLayout.tsx';
 
 
