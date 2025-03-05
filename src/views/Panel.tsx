@@ -3,7 +3,7 @@ import { Grid2, Box, Typography} from '@/libs/mui';
 import { alpha, styled } from '@mui/material/styles';
 import { pink } from '@mui/material/colors';
 import Switch from '@mui/material/Switch';
-import {AlertDiagPers, ButtonOnOff} from '@/components';
+import {AlertDiagPers, ButtonOnOff, TimeSelectPerso} from '@/components';
 
 
 const PinkSwitch = styled(Switch)(({ theme }) => ({
@@ -80,7 +80,7 @@ const Panel: React.FC = () => {
         </Grid2>
         <Grid2 style={GridOptStyke}>
           <Typography> Teste 3 </Typography>
-          <PinkSwitch {...label} defaultChecked />
+          <TimeSelectPerso />
         </Grid2>
         <Grid2 style={GridOptStyke}>
           <Typography> Teste 4 </Typography>

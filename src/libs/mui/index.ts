@@ -17,6 +17,8 @@ export { default as DialogTitle } from '@mui/material/DialogTitle';
 export { default as DialogContent } from '@mui/material/DialogContent';
 export { default as DialogActions } from '@mui/material/DialogActions';
 export { default as Stack } from '@mui/material/Stack';
+export { default as Select } from '@mui/material/Select';
+export { default as MenuItem } from '@mui/material/MenuItem';
 
 
 //     @/libs/mui
