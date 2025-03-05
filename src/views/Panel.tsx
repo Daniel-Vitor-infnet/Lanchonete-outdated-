@@ -36,7 +36,7 @@ const Panel: React.FC = () => {
 
   const BoxStyle = {
     backgroundColor: "white",
-    width: "40%",
+    minWidth: "40%",
     borderRadius: "10px",
     padding: "60px",
 
@@ -50,6 +50,11 @@ const Panel: React.FC = () => {
     justifyContent: "center",
   }
 
+  const TypoSubTitleStyles = {
+    display: "flex",
+    alignItems: "center",
+  }
+
   const GridOptStyke = {
     backgroundColor: "white",
     display: "flex",
@@ -61,29 +66,29 @@ const Panel: React.FC = () => {
 
   return (
     <Grid2 style={GridStyke}>
-      <AlertDiagPers message='As opções ainda não estão funcionando' />
+      {/* <AlertDiagPers message='As opções ainda não estão funcionando' /> */}
       <Box style={BoxStyle}>
         <Typography style={TypoTitleStyles}>
           Painel de configurações
         </Typography>
         <Grid2 style={GridOptStyke}>
-          <Typography> Estabelecimento </Typography>
+          <Typography sx={TypoSubTitleStyles}> Estabelecimento </Typography>
           <ButtonOnOff optLeft='Fechar' optRight='Abrir' />
         </Grid2>
         <Grid2 style={GridOptStyke}>
-          <Typography> Teste 1 </Typography>
+          <Typography sx={TypoSubTitleStyles}> Teste 1 </Typography>
           <PinkSwitch {...label} defaultChecked />
         </Grid2>
         <Grid2 style={GridOptStyke}>
-          <Typography> Teste 2 </Typography>
+          <Typography sx={TypoSubTitleStyles}> Teste 2 </Typography>
           <PinkSwitch {...label} defaultChecked />
         </Grid2>
         <Grid2 style={GridOptStyke}>
-          <Typography> Teste 3 </Typography>
+          <Typography sx={TypoSubTitleStyles}> Teste 3 </Typography>
           <TimeSelectPerso />
         </Grid2>
         <Grid2 style={GridOptStyke}>
-          <Typography> Teste 4 </Typography>
+          <Typography sx={TypoSubTitleStyles}> Teste 4 </Typography>
           <ButtonOnOff  />
         </Grid2>
       </Box>
