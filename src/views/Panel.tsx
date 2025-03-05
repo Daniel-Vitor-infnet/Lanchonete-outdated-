@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { Grid2, Box, Typography} from '@/libs/mui';
+import { Grid2, Box, Typography, Button } from '@/libs/mui';
 import { alpha, styled } from '@mui/material/styles';
 import { pink } from '@mui/material/colors';
 import Switch from '@mui/material/Switch';
-import {AlertDiagPers, ButtonOnOff, TimeSelectPerso} from '@/components';
+import { AlertDiagPers, ButtonOnOff, TimeSelectPerso } from '@/components';
+import { jaJP } from '@mui/x-date-pickers/locales';
 
 
 const PinkSwitch = styled(Switch)(({ theme }) => ({
@@ -39,7 +40,6 @@ const Panel: React.FC = () => {
     minWidth: "40%",
     borderRadius: "10px",
     padding: "60px",
-
   }
 
   const TypoTitleStyles = {
@@ -61,6 +61,19 @@ const Panel: React.FC = () => {
     justifyContent: "space-between",
     borderBottom: "1px solid #000000",
     padding: "20px",
+  }
+
+
+  const GridButtonStyles = {
+    display: "flex",
+    justifyContent: "end",
+    marginTop: "40px",
+  }
+
+  const ButtonStyles = {
+    backgroundColor: "dodgerblue",
+    color: "white",
+    padding: "7px",
   }
 
 
@@ -89,7 +102,12 @@ const Panel: React.FC = () => {
         </Grid2>
         <Grid2 style={GridOptStyke}>
           <Typography sx={TypoSubTitleStyles}> Teste 4 </Typography>
-          <ButtonOnOff  />
+          <ButtonOnOff />
+        </Grid2>
+        <Grid2 sx={GridButtonStyles}>
+          <Button sx={ButtonStyles}>
+            Aplicar
+          </Button>
         </Grid2>
       </Box>
     </Grid2>

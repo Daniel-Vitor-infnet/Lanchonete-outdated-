@@ -6,8 +6,6 @@ const TimeSelectPerso: React.FC = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-
-
   const gridStyles = {
     display: 'flex',
     flexDirection: 'column',
@@ -15,22 +13,20 @@ const TimeSelectPerso: React.FC = () => {
     alignItems: 'center',
   };
 
-
-
   return (
     <Grid2 sx={gridStyles}>
         <Grid2 container spacing={2} justifyContent="center">
-          <Select value={hours} onChange={(e) => setHours(Number(e.target.value))}>
+          <Select value={hours} onChange={(e) => setHours(Number(e.target.value))} MenuProps={{ PaperProps: { style: { maxHeight: 224 } } }}>
             {[...Array(24).keys()].map((h) => (
               <MenuItem key={h} value={h}>{`${h}h`}</MenuItem>
             ))}
           </Select>
-          <Select value={minutes} onChange={(e) => setMinutes(Number(e.target.value))}>
+          <Select value={minutes} onChange={(e) => setMinutes(Number(e.target.value))} MenuProps={{ PaperProps: { style: { maxHeight: 224 } } }}>
             {[...Array(60).keys()].map((m) => (
               <MenuItem key={m} value={m}>{`${m}m`}</MenuItem>
             ))}
           </Select>
-          <Select value={seconds} onChange={(e) => setSeconds(Number(e.target.value))}>
+          <Select value={seconds} onChange={(e) => setSeconds(Number(e.target.value))} MenuProps={{ PaperProps: { style: { maxHeight: 224 } } }}>
             {[...Array(60).keys()].map((s) => (
               <MenuItem key={s} value={s}>{`${s}s`}</MenuItem>
             ))}
