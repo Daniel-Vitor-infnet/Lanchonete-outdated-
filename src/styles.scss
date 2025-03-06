@@ -1,4 +1,5 @@
-// 1. Declaração de fonte
+// Ajuste de SCSS para evitar rolagem horizontal em dispositivos móveis.
+
 @font-face {
   font-family: 'PlaywriteITModerna';
   src: url('@/assets/fonts/PlaywriteITModerna/PlaywriteITModerna-Regular.woff2') format('woff2');
@@ -7,7 +8,6 @@
   font-display: swap;
 }
 
-// 2. Reset Global
 *,
 *::before,
 *::after {
@@ -16,42 +16,23 @@
   box-sizing: border-box;
 }
 
-// 3. Estilos básicos para o html
 html {
-  width: 100%;
-  height: 100%;
-  overflow-wrap: break-word;  // Garante que o texto seja quebrado adequadamente
-  -webkit-text-size-adjust: 100%;  // Evita ajustes de tamanho de fonte indesejados em iOS
+  // Permite quebra de texto e evita zoom automático em iOS.
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
 }
 
-// 4. Estilos para o body
 body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;  // Evita rolagem horizontal indesejada
-  background-color: black;
+  // Remove dimensões fixas no body para evitar comportamentos estranhos.
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Evita rolagem horizontal.
   font-family: 'PlaywriteITModerna', Arial, sans-serif;
+  -webkit-overflow-scrolling: touch; // Garante rolagem suave em iOS.
   background-image: url('@/assets/img/Fundo1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;  // Definido inicialmente como fixed
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  background-size: cover; // Imagem ocupa toda a tela.
 }
 
-// 5. Ajuste específico para iOS (e dispositivos com WebKit)
-// Muitos dispositivos iOS apresentam problemas com background-attachment: fixed,
-// então essa regra os altera para 'scroll' para garantir uma renderização mais estável.
-@supports (-webkit-overflow-scrolling: touch) {
-  body {
-    background-attachment: scroll;
-  }
-}
-
-// 6. Estilo padrão para imagens
 img {
   max-width: 100%;
   height: auto;
