@@ -54,7 +54,7 @@ $border-color: #000000;
     }
   
     @include mobile {
-  
+    padding: 30px;
     }
 
 
@@ -110,7 +110,6 @@ $border-color: #000000;
   }
 
   .optionContainer {
-    background-color: $background-white;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $border-color;
