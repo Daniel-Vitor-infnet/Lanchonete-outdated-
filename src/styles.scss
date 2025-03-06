@@ -1,4 +1,4 @@
-// src/styles/styles.scss
+// 1. Declaração de fonte
 @font-face {
   font-family: 'PlaywriteITModerna';
   src: url('@/assets/fonts/PlaywriteITModerna/PlaywriteITModerna-Regular.woff2') format('woff2');
@@ -7,42 +7,53 @@
   font-display: swap;
 }
 
-
-* {
+// 2. Reset Global
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+// 3. Estilos básicos para o html
+html {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Remove a rolagem horizontal */
+  overflow-wrap: break-word;  // Garante que o texto seja quebrado adequadamente
+  -webkit-text-size-adjust: 100%;  // Evita ajustes de tamanho de fonte indesejados em iOS
+}
+
+// 4. Estilos para o body
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;  // Evita rolagem horizontal indesejada
   background-color: black;
-  font-family: 'PlaywriteITModerna', Arial, sans-serif; 
-  background-image: url('@/assets/img/Fundo1.png'); /* Substitua pelo caminho correto da imagem */
-  background-size: cover; /* Ajusta para cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetição */
-  background-attachment: fixed; /* Mantém o fundo fixo */
+  font-family: 'PlaywriteITModerna', Arial, sans-serif;
+  background-image: url('@/assets/img/Fundo1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  // Definido inicialmente como fixed
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
+// 5. Ajuste específico para iOS (e dispositivos com WebKit)
+// Muitos dispositivos iOS apresentam problemas com background-attachment: fixed,
+// então essa regra os altera para 'scroll' para garantir uma renderização mais estável.
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+// 6. Estilo padrão para imagens
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-*::before, *::after {
-  box-sizing: inherit;
-}
-
-html {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
