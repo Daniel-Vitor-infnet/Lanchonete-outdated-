@@ -1,37 +1,10 @@
+@use './mixins' as *;
+
+
 $primary-color: #1E90FF;
 $text-color: black;
 $background-white: white;
 $border-color: #000000;
-
-// Mixins para responsividade
-
-@mixin laptop {
-  @media (max-width: 1366px) { // Laptops padrão e menores
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: 1024px) { // Tablets médios e grandes
-    @content;
-  }
-}
-
-@mixin mobile-large {
-  @media (max-width: 768px) { // Smartphones grandes e tablets pequenos
-    @content;
-  }
-}
-
-
-@mixin mobile {
-  @media (max-width: 576px) { // Smartphones pequenos
-    @content;
-  }
-}
-
-
-
 
 
 
