@@ -14,9 +14,6 @@ const TimeSelectPerso: React.FC = () => {
     gap: "10px",
   };
 
-    const SelectStyles = {
-      maxHeight: "224px",
-  };
 
   return (
     <Grid2 sx={gridStyles}>
