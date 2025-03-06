@@ -11,8 +11,8 @@ const layoutStyles = {
   },
   content: {
     flex: 1,
-    paddingTop: "60px",  // Garante espaço para o Header
-    paddingBottom: "60px",  // Garante espaço para o Footer
+    marginTop: "60px",  // Garante espaço para o Header
+    marginBottom: "60px",  // Garante espaço para o Footer
   },
 };
 

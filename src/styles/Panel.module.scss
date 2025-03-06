@@ -6,6 +6,7 @@ $border-color: #000000;
 .mainContainer {
   height: 68vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -53,8 +54,10 @@ $border-color: #000000;
 
 
   .buttonPedidosContainer {
-    background-color: $primary-color;
+    height: 8vh;
+    background-color: red;
     color: white;
+    margin-top: 40px;
     padding: 7px;
     border-radius: 6px;
   }
