@@ -1,5 +1,4 @@
 import React, { createContext, useContext } from "react";
-import { PageLayout } from '@/components';
 import HeaderPers from "@/components/elementos/header";
 import FooterPers from "@/components/elementos/footer";
 
