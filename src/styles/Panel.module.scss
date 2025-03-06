@@ -3,6 +3,38 @@ $text-color: black;
 $background-white: white;
 $border-color: #000000;
 
+// Mixins para responsividade
+
+@mixin laptop {
+  @media (max-width: 1366px) { // Laptops padrão e menores
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) { // Tablets médios e grandes
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media (max-width: 768px) { // Smartphones grandes e tablets pequenos
+    @content;
+  }
+}
+
+
+@mixin mobile {
+  @media (max-width: 576px) { // Smartphones pequenos
+    @content;
+  }
+}
+
+
+
+
+
+
 .mainContainer {
   height: 68vh;
   display: flex;
@@ -10,12 +42,47 @@ $border-color: #000000;
   justify-content: center;
   align-items: center;
 
+  
+  @include laptop {
+
+  }
+
+  @include tablet {
+
+  }
+
+  @include mobile-large {
+
+  }
+
+  @include mobile {
+
+  }
 
   .box {
     background-color: $background-white;
     min-width: 40%;
     border-radius: 10px;
     padding: 60px;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
+
+
   }
 
   .title {
@@ -24,11 +91,47 @@ $border-color: #000000;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
+
+
   }
 
   .subTitle {
     display: flex;
     align-items: center;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
   }
 
   .optionContainer {
@@ -37,12 +140,46 @@ $border-color: #000000;
     justify-content: space-between;
     border-bottom: 1px solid $border-color;
     padding: 20px;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
   }
 
   .buttonContainer {
     display: flex;
     justify-content: end;
     margin-top: 40px;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
   }
 
   .button {
@@ -50,8 +187,24 @@ $border-color: #000000;
     color: white;
     padding: 7px;
     border-radius: 6px;
-  }
 
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
+  }
 
   .buttonPedidosContainer {
     height: 8vh;
@@ -60,6 +213,23 @@ $border-color: #000000;
     margin-top: 40px;
     padding: 7px;
     border-radius: 6px;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
   }
 
   .buttonPedidos {
@@ -67,5 +237,22 @@ $border-color: #000000;
     color: white;
     padding: 7px;
     border-radius: 6px;
+
+
+    @include laptop {
+
+    }
+  
+    @include tablet {
+  
+    }
+  
+    @include mobile-large {
+  
+    }
+  
+    @include mobile {
+  
+    }
   }
 }

@@ -1,5 +1,7 @@
 import React, { createContext, useContext } from "react";
 import { PageLayout } from '@/components';
+import HeaderPers from "@/components/elementos/header";
+import FooterPers from "@/components/elementos/footer";
 
 
 
@@ -8,9 +10,9 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   return (
     <AppContext.Provider value={{}}>
-      <PageLayout>
-        {children}
-      </PageLayout>
+      <HeaderPers />
+      {children}
+      <FooterPers />
     </AppContext.Provider>
   );
 };
