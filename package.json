@@ -1,6 +1,6 @@
 {
     "name": "lanchonete",
-    "version": "1.0.0",
+    "version": "5.0.0",
     "type": "module",
     "description": "React and TypeScript example starter project",
     "keywords": [
@@ -12,16 +12,16 @@
     "dependencies": {
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.0",
-        "@mui/icons-material": "^6.4.6",
-        "@mui/material": "^6.4.6",
-        "@mui/x-date-pickers": "^7.27.1",
+        "@mui/icons-material": "^6.4.7",
+        "@mui/material": "^6.4.7",
+        "@mui/x-date-pickers": "^7.27.3",
         "@supabase/supabase-js": "^2.49.1",
         "dayjs": "^1.11.13",
         "loader-utils": "3.3.1",
         "mui-tel-input": "^8.0.1",
         "react": "19.0.0",
         "react-dom": "19.0.0",
-        "react-router-dom": "^7.2.0",
+        "react-router-dom": "^7.3.0",
         "swiper": "^11.2.5"
     },
     "devDependencies": {
@@ -32,7 +32,7 @@
         "rollup-plugin-visualizer": "^5.14.0",
         "sass": "^1.85.1",
         "typescript": "^5.8.2",
-        "vite": "^6.2.0",
+        "vite": "^6.2.1",
         "vite-plugin-live-reload": "^3.0.4",
         "vite-plugin-svgr": "^4.3.0",
         "vite-tsconfig-paths": "^5.1.4"
