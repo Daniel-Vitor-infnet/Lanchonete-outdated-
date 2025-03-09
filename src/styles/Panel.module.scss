@@ -1,4 +1,4 @@
-@use './mixins' as *;
+@use '@/styles/mixins' as *;
 
 
 $primary-color: #1E90FF;
@@ -18,21 +18,13 @@ $border-color: #000000;
   margin-top: 60px;
 
 
-  @include laptop {
+  @include laptop {}
 
-  }
+  @include tablet {}
 
-  @include tablet {
+  @include mobile-large {}
 
-  }
-
-  @include mobile-large {
-
-  }
-
-  @include mobile {
-
-  }
+  @include mobile {}
 
   .box {
     background-color: rgb(255 255 255);
@@ -42,20 +34,18 @@ $border-color: #000000;
 
 
     @include laptop {
+      min-width: 56%;
 
     }
-  
-    @include tablet {
-  
-    }
-  
+
+    @include tablet {}
+
     @include mobile-large {
-  
+      max-width: 90%;
+      padding: 30px;
     }
-  
-    @include mobile {
-    padding: 30px;
-    }
+
+    @include mobile {}
 
 
   }
@@ -68,21 +58,13 @@ $border-color: #000000;
     justify-content: center;
 
 
-    @include laptop {
+    @include laptop {}
 
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
 
 
   }
@@ -92,21 +74,13 @@ $border-color: #000000;
     align-items: center;
 
 
-    @include laptop {
+    @include laptop {}
 
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 
   .optionContainer {
@@ -116,21 +90,13 @@ $border-color: #000000;
     padding: 20px;
 
 
-    @include laptop {
+    @include laptop {}
 
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 
   .buttonContainer {
@@ -139,21 +105,13 @@ $border-color: #000000;
     margin-top: 40px;
 
 
-    @include laptop {
+    @include laptop {}
 
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 
   .button {
@@ -163,69 +121,35 @@ $border-color: #000000;
     border-radius: 6px;
 
 
-    @include laptop {
+    @include laptop {}
 
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 
   .buttonPedidosContainer {
     display: flex;
     flex-direction: column;
-    background-color: red;
     color: white;
-    margin-top: 40px;
-    padding: 7px;
+    height: 140px;
+    margin-top: 50px;
     border-radius: 6px;
+    gap: 20px;
 
 
     @include laptop {
+      height: unset;
+    }
 
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 
-  .buttonPedidos {
-    background-color: $primary-color;
-    color: white;
 
-
-    @include laptop {
-
-    }
-  
-    @include tablet {
-  
-    }
-  
-    @include mobile-large {
-  
-    }
-  
-    @include mobile {
-  
-    }
-  }
 }
