@@ -13,7 +13,8 @@ const defaultStyles = {
   color: "white",
   fontSize: "18px",
   fontWeight: "bold",
-  textTransform: "uppercase",
+  textTransform: "none",
+  // textTransform: "uppercase", Para deixar todas letras em caixa alta
   letterSpacing: "1.2px",
   border: "none",
   borderRadius: "12px",
