@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { Grid2, Box, Typography, Button } from '@/libs/mui';
-import { alpha, styled } from '@mui/material/styles';
-import { pink } from '@mui/material/colors';
-import Switch from '@mui/material/Switch';
-import { AlertDiagPers, ButtonOnOff, TimeSelectPerso } from '@/components';
-import styles from '@/styles/Panel.module.scss'; // Importando CSS Module
+import styles from '@/styles/Panel.module.scss';
+import { Grid2, Box, Typography, Button, Switch, pink, alpha, styled } from '@/libs/mui';
+import { AlertDiagPers, ButtonOnOff, TimeSelectPerso, ButtonPerson } from '@/components';
+import { Status, StatusMobile } from '@/views/subElementos/panel/status';
+
+const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
 
 const PinkSwitch = styled(Switch)(({ theme }) => ({
   '& .MuiSwitch-switchBase.Mui-checked': {
@@ -20,6 +21,13 @@ const PinkSwitch = styled(Switch)(({ theme }) => ({
 
 const label = { inputProps: { 'aria-label': 'Color switch demo' } };
 
+const buttonStyles = ({
+  background: 'linear-gradient(45deg, #FF1044 30%, #FF8E53 90%)',
+  with: '100%',
+  height: '100%',
+});
+
+
 const Panel: React.FC = () => {
   return (
     <Grid2 className={styles.mainContainer}>
@@ -29,8 +37,8 @@ const Panel: React.FC = () => {
           Painel de configurações
         </Typography>
         <Grid2 className={styles.optionContainer}>
-          <Typography className={styles.subTitle}>Estabelecimento</Typography>
-          <ButtonOnOff optLeft="Fechado" optRight="Aberto" />
+          <Typography className={styles.subTitle}>Status</Typography>
+          {mediaQuery.matches ? <Status /> : <StatusMobile />}
         </Grid2>
         <Grid2 className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Teste 1</Typography>
@@ -53,8 +61,8 @@ const Panel: React.FC = () => {
         </Grid2>
       </Box>
       <Grid2 className={styles.buttonPedidosContainer}>
-        <Button className={styles.buttonPedidos}>Ver Pedidos</Button>
-        <Button className={styles.buttonPedidos}>Gerenciar Cards</Button>
+        <ButtonPerson text='Ver Pediodos' customStyles={buttonStyles}/>
+        <ButtonPerson text='Editar Itens' customStyles={buttonStyles}/>
       </Grid2>
     </Grid2>
   );

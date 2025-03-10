@@ -19,6 +19,17 @@ export { default as DialogActions } from '@mui/material/DialogActions';
 export { default as Stack } from '@mui/material/Stack';
 export { default as Select } from '@mui/material/Select';
 export { default as MenuItem } from '@mui/material/MenuItem';
+export { default as Switch } from '@mui/material/Switch';
 
 
-//     @/libs/mui
+
+// Exporta diversos componentes do Material-UI de uma só vez
+import { alpha as muiAlpha, styled as muiStyled } from '@mui/material/styles';
+import { pink as muiPink } from '@mui/material/colors';
+
+export const alpha = muiAlpha;
+export const styled = muiStyled;
+export const pink = muiPink;
+
+
+//     @/libs/mui 

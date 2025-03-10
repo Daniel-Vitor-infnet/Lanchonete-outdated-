@@ -23,15 +23,20 @@ html {
 }
 
 body {
-  // Remove dimensões fixas no body para evitar comportamentos estranhos.
   margin: 0;
   padding: 0;
   overflow-x: hidden; // Evita rolagem horizontal.
   font-family: 'PlaywriteITModerna', Arial, sans-serif;
   -webkit-overflow-scrolling: touch; // Garante rolagem suave em iOS.
   background-image: url('@/assets/img/Fundo1.png');
-  background-size: cover; // Imagem ocupa toda a tela.
+  background-size: 100% 100%; // Garante que a imagem cubra a tela.
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; // Garante que a altura cubra toda a tela.
+  min-height: 100dvh; // Garante que a altura cubra toda a tela.
+  -webkit-background-size: cover;
 }
+
 
 img {
   max-width: 100%;
