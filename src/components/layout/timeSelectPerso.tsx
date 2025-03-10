@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Grid2, Box, Select, MenuItem, Button, Typography } from '@/libs/mui';
-import mixins from '@/styles/mixins';
+import { mixins } from '@/components';
 
 const TimeSelectPerso: React.FC = () => {
   const [hours, setHours] = useState(0);
