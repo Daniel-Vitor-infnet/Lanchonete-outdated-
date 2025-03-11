@@ -51,7 +51,7 @@ const buttonAplicarStyles = ({
 const Panel: React.FC = () => {
   return (
     <Grid2 className={styles.mainContainer}>
-      {/* <AlertDiagPers message="As opções ainda não estão funcionando" /> */}
+      <AlertDiagPers message="Apenas os botões de 'Ver Pediodos' e 'Editar Itens' estão funcionais" />
       <Box className={styles.box}>
         <Typography className={styles.title}>
           Painel de configurações
