@@ -1,6 +1,9 @@
 //Global
 export { default as mixins } from '../styles/mixins.json';
 
+export { default as PageLayout } from '@/components/layout/pageLayout.tsx';
+
+
 export { default as BoxLayout } from '@/components/layout/boxLayout.tsx';
 
 

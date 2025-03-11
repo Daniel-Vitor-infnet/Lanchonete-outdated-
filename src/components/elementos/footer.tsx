@@ -10,7 +10,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 // Estilos definidos como constantes
 const footerContainerStyle = {
     width: '100%',
-    backgroundColor: '#111',
+    backgroundColor: '#030303',
     color: 'white',
     textAlign: 'center' as const,
     borderTop: '8px solid #ffcc00',
