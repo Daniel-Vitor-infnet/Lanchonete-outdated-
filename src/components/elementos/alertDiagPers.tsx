@@ -42,13 +42,19 @@ const buttonStyles = ({
 
   "&::before": {},
   "&:hover::before": {},
+
+  [mixins.laptop]: {
+    fontSize: "14px",
+    height: '43px',
+    width: '140px',
+  },
 });
 
 const AlertDiagPers: React.FC<AlertDiagPersProps> = ({ message }) => {
   const [open, setOpen] = React.useState(true);
 
   const handleClose = () => {
-    setOpen(false); 
+    setOpen(false);
   };
 
   return (
@@ -74,7 +80,7 @@ const AlertDiagPers: React.FC<AlertDiagPersProps> = ({ message }) => {
           </Typography>
         </DialogContent>
         <DialogActions>
-          <ButtonPerson text="Ok, entendido !" customStyles={buttonStyles}  onClick={handleClose} />
+          <ButtonPerson text="Ok, entendido !" customStyles={buttonStyles} onClick={handleClose} />
         </DialogActions>
       </BootstrapDialog>
     </React.Fragment>
