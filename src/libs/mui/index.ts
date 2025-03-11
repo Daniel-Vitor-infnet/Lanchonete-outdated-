@@ -20,16 +20,22 @@ export { default as Stack } from '@mui/material/Stack';
 export { default as Select } from '@mui/material/Select';
 export { default as MenuItem } from '@mui/material/MenuItem';
 export { default as Switch } from '@mui/material/Switch';
+export { default as InputAdornment } from '@mui/material/InputAdornment';
+export { default as OutlinedInput } from '@mui/material/OutlinedInput';
+export { default as InputLabel } from '@mui/material/InputLabel';
+export { default as FormControl } from '@mui/material/FormControl';
 
 
 
 // Exporta diversos componentes do Material-UI de uma só vez
 import { alpha as muiAlpha, styled as muiStyled } from '@mui/material/styles';
 import { pink as muiPink } from '@mui/material/colors';
+import { MuiTelInput as MuiTelInputPhone } from 'mui-tel-input';
 
 export const alpha = muiAlpha;
 export const styled = muiStyled;
 export const pink = muiPink;
+export const MuiTelInput = MuiTelInputPhone;
 
 
 //     @/libs/mui 

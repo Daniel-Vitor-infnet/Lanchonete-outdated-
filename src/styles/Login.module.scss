@@ -7,23 +7,53 @@ $button-color: darkorchid;
 $error-color: red;
 
 .mainContainer {
-  height: 65vh;
+  min-width: min(100vh, 100dvh);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+
+  @include laptop {}
+
+  @include tablet {}
+
+  @include mobile-large {}
+
+  @include mobile {}
 
 
   .box {
-    width: 100%;
-    max-width: 400px;
+    width: 22%;
+    height: 450px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+    overflow: hidden;
+
+    @include laptop {
+      width: 30%;
+      height: 400px;
+      margin-bottom: 60px;
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      width: 90%;
+
+    }
+
+    @include mobile {}
   }
+
+  .box>* {
+    height: 100%;
+  }
+
 
   .link {
     color: blue;
@@ -35,11 +65,27 @@ $error-color: red;
     &:hover {
       text-decoration: underline;
     }
+
+    @include laptop {}
+
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 
   .button {
     margin-top: 16px;
     background-color: $button-color !important;
     color: $text-color !important;
+
+    @include laptop {}
+
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
   }
 }
