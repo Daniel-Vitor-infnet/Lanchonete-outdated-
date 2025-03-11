@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "@mui/material/Button";
+import Button, { ButtonProps } from "@mui/material/Button";
 
-interface StyledButtonProps {
+interface StyledButtonProps extends ButtonProps {
   text: string;
   customStyles?: object;
 }
@@ -14,7 +14,6 @@ const defaultStyles = {
   fontSize: "18px",
   fontWeight: "bold",
   textTransform: "none",
-  // textTransform: "uppercase", Para deixar todas letras em caixa alta
   letterSpacing: "1.2px",
   border: "none",
   borderRadius: "12px",
@@ -25,9 +24,9 @@ const defaultStyles = {
   overflow: "hidden",
 
   "&:hover": {
-    background: "linear-gradient(135deg, #388E3C, #1B5E20)", // Gradiente mais escuro no hover
+    background: "linear-gradient(135deg, #388E3C, #1B5E20)",
     boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.35)",
-    transform: "translateY(-2px)", // Levanta levemente o botão
+    transform: "translateY(-2px)",
   },
 
   "&:active": {
@@ -47,12 +46,16 @@ const defaultStyles = {
   },
 
   "&:hover::before": {
-    left: "100%", // Efeito de brilho passando sobre o botão
+    left: "100%",
   },
 };
 
-const ButtonPerson: React.FC<StyledButtonProps> = ({ text, customStyles = {} }) => {
-  return <Button sx={{ ...defaultStyles, ...customStyles }}>{text}</Button>;
+const ButtonPerson: React.FC<StyledButtonProps> = ({ text, customStyles = {}, ...props }) => {
+  return (
+    <Button sx={{ ...defaultStyles, ...customStyles }} {...props}>
+      {text}
+    </Button>
+  );
 };
 
 export default ButtonPerson;
