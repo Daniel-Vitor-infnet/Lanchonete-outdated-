@@ -1,0 +1,13 @@
+@use '@/styles/mixins' as *;
+
+
+$primary-color: #1E90FF;
+$text-color: black;
+$background-white: white;
+$border-color: #000000;
+
+
+
+.mainContainer {
+  margin-top: unset;
+}

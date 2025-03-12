@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
-import Home from '../views/Home';
-import Login from '../views/Login'; // Importa a nova página de Login
-import Panel from '../views/Panel'; // Importa a nova página de Login
+import Home from '@/views/Home';
+import Login from '@/views/Login'; 
+import Panel from '@/views/Panel'; 
+import Cardapio from '@/views/Cardapio'; 
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/Panel',
     element: <Panel />,
+  },
+  {
+    path: '/Cardapio',
+    element: <Cardapio />,
   },
 ]);
 
