@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "@/styles/Cards.module.scss";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
-import cardsDataJson from "../../../public/cardsCategoriaTemp.json";
+import cardsDataJson from "@/utils/cardsCategoriaTemp.json";
 
 interface CardItem {
   id: number;
+  id2: string;
   title: string;
   description: string;
   image: string;
 }
 
-const cardsData: CardItem[] = cardsDataJson.cards;
+const cardsData: CardItem[] = cardsDataJson;
 
 const CardsList: React.FC = () => {
   return (

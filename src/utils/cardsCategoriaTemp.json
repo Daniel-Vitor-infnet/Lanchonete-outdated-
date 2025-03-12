@@ -1,0 +1,65 @@
+[
+    {
+        "id": 49,
+        "id2": "49",
+        "title": "Lanches",
+        "description": "Lanches smash burgers, opções premium e os clássicos.",
+        "image": "src/assets/img/Lanche1.png"
+    },
+    {
+        "id": 12,
+        "id2": "12",
+        "title": "Bebibas",
+        "description": "Refrigerantes, sucos naturais e destilados",
+        "image": "src/assets/img/Bebidas.png"
+    },
+    {
+        "id": 11,
+        "id2": "11",
+        "title": "Porções",
+        "description": "Bata frita, onion rings, frango a passarinho e muito mais",
+        "image": "src/assets/img/Logo.png"
+    },
+    {
+        "id": 92,
+        "id2": "92",
+        "title": "Sorvetes",
+        "description": "Cremosos, refrescantes e irresistíveis.",
+        "image": "src/assets/img/Sorvete.png"
+    },
+    {
+        "id": 39,
+        "id2": "39",
+        "title": "Churrasco",
+        "description": "Sabor de brasa, feito no ponto certo.",
+        "image": "src/assets/img/Logo.png"
+    },
+    {
+        "id": 51,
+        "id2": "51",
+        "title": "Marmita",
+        "description": "Refeições caseiras, completas e saborosas.",
+        "image": "src/assets/img/Logo.png"
+    },
+    {
+        "id": 53,
+        "id2": "53",
+        "title": "Espetinho",
+        "description": "Assados na brasa, suculentos e bem temperados.",
+        "image": "src/assets/img/Logo.png"
+    },
+    {
+        "id": 99,
+        "id2": "99",
+        "title": "Sobremesa",
+        "description": "Doces perfeitos para fechar sua refeição.",
+        "image": "src/assets/img/Logo.png"
+    },
+    {
+        "id": 92,
+        "id2": "92",
+        "title": "Pizza",
+        "description": "Massa crocante, muito recheio e sabor incrível.",
+        "image": "src/assets/img/Logo.png"
+    }
+]
