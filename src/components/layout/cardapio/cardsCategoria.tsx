@@ -1,30 +1,35 @@
 import React from "react";
-import styles from "@/styles/cardapio/Categoria.module.scss";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
-import cardsDataJson from "@/utils/cardsCategoriaTemp.json";
 
 interface CardItem {
   id: number;
   id2: string;
   title: string;
-  description: string;
+  description?: string;
   image: string;
+  valor: number;
 }
 
-const cardsData: CardItem[] = cardsDataJson;
+interface CardsListProps {
+  cardsItens: any;
+  stylesPerso: any;
+}
 
-const CardsList: React.FC = () => {
+
+const CardsList: React.FC<CardsListProps> = ({ cardsItens, stylesPerso }) => {
+  const cardsData: CardItem[] = cardsItens;
+
   return (
-    <Grid2 className={styles.cardsContainer}>
+    <Grid2 className={stylesPerso.cardsContainer}>
       {cardsData.map((card: CardItem, index: number) => (
         <Grid2 key={index} >
-          <Card className={styles.card}>
-            <img src={card.image} alt={card.title} className={styles.cardImage} />
-            <CardContent className={styles.cardContent}>
-              <Typography  className={styles.cardTitle}>
+          <Card className={stylesPerso.card}>
+            <img src={card.image} alt={card.title} className={stylesPerso.cardImage} />
+            <CardContent className={stylesPerso.cardContent}>
+              <Typography className={stylesPerso.cardTitle}>
                 {card.title}
               </Typography>
-              <Typography className={styles.cardDescription}>
+              <Typography className={stylesPerso.cardDescription}>
                 {card.description}
               </Typography>
             </CardContent>
