@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "@/styles/Cards.module.scss"; 
-import { Card, CardContent, Typography } from "@mui/material";
+import styles from "@/styles/Cards.module.scss";
+import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
 import cardsDataJson from "../../../public/cardsCategoriaTemp.json";
 
 interface CardItem {
@@ -14,23 +14,23 @@ const cardsData: CardItem[] = cardsDataJson.cards;
 
 const CardsList: React.FC = () => {
   return (
-    <div className={styles.cardsContainer}>
+    <Grid2 className={styles.cardsContainer}>
       {cardsData.map((card: CardItem, index: number) => (
-        <Card key={index} className={styles.card}>
-          <div className={styles.cardHeader}>
+        <Grid2 key={index} >
+          <Card className={styles.card}>
             <img src={card.image} alt={card.title} className={styles.cardImage} />
-          </div>
-          <CardContent className={styles.cardContent}>
-            <Typography variant="h6" className={styles.cardTitle}>
-              {card.title}
-            </Typography>
-            <Typography variant="body2" className={styles.cardDescription}>
-              {card.description}
-            </Typography>
-          </CardContent>
-        </Card>
+            <CardContent className={styles.cardContent}>
+              <Typography  className={styles.cardTitle}>
+                {card.title}
+              </Typography>
+              <Typography className={styles.cardDescription}>
+                {card.description}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid2>
       ))}
-    </div>
+    </Grid2>
   );
 };
 
