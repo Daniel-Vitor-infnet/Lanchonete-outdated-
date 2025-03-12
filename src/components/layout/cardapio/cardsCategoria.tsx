@@ -1,14 +1,7 @@
 import React from "react";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
 
-interface CardItem {
-  id: number;
-  id2: string;
-  title: string;
-  description?: string;
-  image: string;
-  valor: number;
-}
+
 
 interface CardsListProps {
   cardsItens: any;
@@ -16,12 +9,12 @@ interface CardsListProps {
 }
 
 
-const CardsList: React.FC<CardsListProps> = ({ cardsItens, stylesPerso }) => {
-  const cardsData: CardItem[] = cardsItens;
+const CardsList: React.FC<CardsListProps> = ({ cardsItens, stylesPerso}) => {
+
 
   return (
     <Grid2 className={stylesPerso.cardsContainer}>
-      {cardsData.map((card: CardItem, index: number) => (
+      {cardsItens.map((card: any, index: number) => (
         <Grid2 key={index} >
           <Card className={stylesPerso.card}>
             <img src={card.image} alt={card.title} className={stylesPerso.cardImage} />
