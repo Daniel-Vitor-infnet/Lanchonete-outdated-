@@ -25,3 +25,4 @@ function gerarID(tipo?:string) {
     
 }
 
+export default gerarID;
