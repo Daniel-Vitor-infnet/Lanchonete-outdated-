@@ -1,7 +1,9 @@
 import * as React from 'react';
 import cardsCategoriaDataJson from "@/utils/cardsCategoriaTemp.json";
-import cardsItensDataJson from "@/utils/cardsCategoriaTemp.json";
+import stylesCardCategoria from "@/styles/cardapio/Categoria.module.scss";
+import cardsItensDataJson from "@/utils/cardsItemTemp.json";
 import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
+import { mixins, CardCategoria } from '@/components';
 
 
 interface TabPanelProps {
@@ -10,22 +12,7 @@ interface TabPanelProps {
   value: number;
 }
 
-interface CardItem {
-  id: number;
-  id2: string;
-  title: string;
-}
 
-interface CardItem2 {
-  id: number;
-  id2: string;
-  title: string;
-  description: string;
-  image: string;
-}
-
-const cardsCategoriaData: CardItem[] = cardsCategoriaDataJson;
-const cardsCategoriaData: CardItem2[] = cardsCategoriaDataJson;
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
@@ -74,31 +61,22 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        {cardsCategoriaData.map((card: CardItem, index: number) => (
+        {cardsCategoriaDataJson.map((card: any, index: number) => (
           <Tab label={card.title} {...a11yProps(index)} />
         ))}
       </Tabs>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
-      </TabPanel>
+
+      {cardsCategoriaDataJson.map((item: any, index: number) => {
+        const itensDaCategoria = cardsItensDataJson.find(card => card.category === item.title)?.items || [];
+
+        return (
+          <TabPanel value={value} index={index} key={index}>
+            <CardCategoria cardsItens={itensDaCategoria} stylesPerso={stylesCardCategoria} />
+          </TabPanel>
+        );
+      })}
+
+
     </Box>
   );
 }

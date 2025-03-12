@@ -1,8 +1,10 @@
 import * as React from 'react';
 import styles from '@/styles/Panel.module.scss';
 import { Grid2 } from '@/libs/mui';
-import {  mixins } from '@/components';
-// import CardapioVertical from "./teste";
+import {  mixins, CardCategoria } from '@/components';
+import CardapioVertical from "@/views/subElementos/Cardapio/cardapioVertical.tsx";
+
+
 
 
 
@@ -36,7 +38,7 @@ const buttonAplicarStyles = ({
 const Cardapio: React.FC = () => {
   return (
     <Grid2 className={styles.mainContainer}>
-      {/* {CardapioVertical()} */}
+      {CardapioVertical()}
     </Grid2>
   );
   3
