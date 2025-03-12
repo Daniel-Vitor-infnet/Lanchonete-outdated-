@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styles from '@/styles/Panel.module.scss';
-import { Grid2, Box, Typography, Button, Switch, pink, alpha, styled } from '@/libs/mui';
-import { AlertDiagPers, ButtonOnOff, TimeSelectPerso, ButtonPerson, mixins } from '@/components';
+import { Grid2 } from '@/libs/mui';
+import {  mixins } from '@/components';
+// import CardapioVertical from "./teste";
 
-const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
 
 const buttonPedidosCardsStyles = ({
@@ -36,7 +36,7 @@ const buttonAplicarStyles = ({
 const Cardapio: React.FC = () => {
   return (
     <Grid2 className={styles.mainContainer}>
-      
+      {/* {CardapioVertical()} */}
     </Grid2>
   );
   3
