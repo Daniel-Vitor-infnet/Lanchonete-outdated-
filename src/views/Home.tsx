@@ -4,7 +4,7 @@ import { Grid2, Box, Avatar } from '@/libs/mui';
 import slide from '@/assets/img/logo.png';
 import logo from '@/assets/img/Logo.png';
 import slide2 from '@/assets/img/Sorvete.png';
-import {ImageCarousel, SimpleCard, BoxLayout} from '@/components';
+import { ImageCarousel, CardCategoria, BoxLayout } from '@/components';
 
 
 const Home: React.FC = () => {
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           <Avatar className={styles.avatar} alt="Logo" src={logo} />
           <p className={styles.status}>FECHADO</p>
         </Grid2>
-        <SimpleCard />
+        <CardCategoria />
       </BoxLayout>
     </Grid2>
   );
