@@ -5,7 +5,7 @@
             {
                 "id": 24,
                 "id2": "24",
-                "name": "Picanha",
+                "title": "Picanha",
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -17,58 +17,114 @@
             {
                 "id": 1,
                 "id2": "1",
-                "name": "X-Burguer",
+                "title": "X-Burguer",
                 "description": "Delicioso x-burguer preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 2,
                 "id2": "2",
-                "name": "X-Salada",
+                "title": "X-Salada",
                 "description": "Delicioso x-salada preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 3,
                 "id2": "3",
-                "name": "X-Bacon",
+                "title": "X-Bacon",
                 "description": "Delicioso x-bacon preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 4,
                 "id2": "4",
-                "name": "X-Tudo",
+                "title": "X-Tudo",
                 "description": "Delicioso x-tudo preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 5,
                 "id2": "5",
-                "name": "Cheddar Duplo",
+                "title": "Cheddar Duplo",
                 "description": "Delicioso cheddar duplo preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 6,
                 "id2": "6",
-                "name": "Frango Crispy",
+                "title": "Frango Crispy",
                 "description": "Delicioso frango crispy preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 7,
                 "id2": "7",
-                "name": "Vegano",
+                "title": "Vegano",
                 "description": "Delicioso vegano preparado com ingredientes selecionados.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 8,
                 "id2": "8",
-                "name": "X-Egg",
+                "title": "X-Egg",
                 "description": "Clássico X-Egg com queijo derretido e ovo.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 1,
+                "id2": "1",
+                "title": "X-Burguer",
+                "description": "Delicioso x-burguer preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 2,
+                "id2": "2",
+                "title": "X-Salada",
+                "description": "Delicioso x-salada preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 3,
+                "id2": "3",
+                "title": "X-Bacon",
+                "description": "Delicioso x-bacon preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 4,
+                "id2": "4",
+                "title": "X-Tudo",
+                "description": "Delicioso x-tudo preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 5,
+                "id2": "5",
+                "title": "Cheddar Duplo",
+                "description": "Delicioso cheddar duplo preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 6,
+                "id2": "6",
+                "title": "Frango Crispy",
+                "description": "Delicioso frango crispy preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 7,
+                "id2": "7",
+                "title": "Vegano",
+                "description": "Delicioso vegano preparado com ingredientes selecionados.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 8,
+                "id2": "8",
+                "title": "X-Egg",
+                "description": "Clássico X-Egg com queijo derretido e ovo.",
+                "image": "src/assets/img/Bebidas.png"
             }
         ]
     },
@@ -78,37 +134,37 @@
             {
                 "id": 9,
                 "id2": "9",
-                "name": "Coca-Cola",
+                "title": "Coca-Cola",
                 "description": "Delicioso refrigerante Coca-Cola bem gelado.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Bebidas.png"
             },
             {
                 "id": 10,
                 "id2": "10",
-                "name": "Guaraná",
+                "title": "Guaraná",
                 "description": "Refrigerante de guaraná, refrescante e saboroso.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Bebidas.png"
             },
             {
                 "id": 11,
                 "id2": "11",
-                "name": "Suco de Laranja",
+                "title": "Suco de Laranja",
                 "description": "Suco natural de laranja, feito na hora.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Bebidas.png"
             },
             {
                 "id": 12,
                 "id2": "12",
-                "name": "Suco de Uva",
+                "title": "Suco de Uva",
                 "description": "Suco natural de uva, fresco e saboroso.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Bebidas.png"
             },
             {
                 "id": 13,
                 "id2": "13",
-                "name": "Chá Gelado",
+                "title": "Chá Gelado",
                 "description": "Chá gelado sabor limão ou pêssego.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Bebidas.png"
             }
         ]
     },
@@ -118,35 +174,35 @@
             {
                 "id": 14,
                 "id2": "14",
-                "name": "Batata Frita",
+                "title": "Batata Frita",
                 "description": "Porção de batatas fritas crocantes e saborosas.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 15,
                 "id2": "15",
-                "name": "Onion Rings",
+                "title": "Onion Rings",
                 "description": "Anéis de cebola empanados e crocantes.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 16,
                 "id2": "16",
-                "name": "Frango à Passarinho",
+                "title": "Frango à Passarinho",
                 "description": "Deliciosos pedaços de frango temperados e fritos.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 17,
                 "id2": "17",
-                "name": "Polenta Frita",
+                "title": "Polenta Frita",
                 "description": "Polenta frita crocante e saborosa.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 18,
                 "id2": "18",
-                "name": "Torresmo",
+                "title": "Torresmo",
                 "description": "Torresmo crocante e temperado na medida certa.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -158,35 +214,35 @@
             {
                 "id": 19,
                 "id2": "19",
-                "name": "Chocolate",
+                "title": "Chocolate",
                 "description": "Sorvete cremoso de chocolate.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 20,
                 "id2": "20",
-                "name": "Morango",
+                "title": "Morango",
                 "description": "Sorvete cremoso de morango.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 21,
                 "id2": "21",
-                "name": "Napolitano",
+                "title": "Napolitano",
                 "description": "Sorvete napolitano com três sabores clássicos.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 22,
                 "id2": "22",
-                "name": "Flocos",
+                "title": "Flocos",
                 "description": "Sorvete de baunilha com pedacinhos de chocolate.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 23,
                 "id2": "23",
-                "name": "Pistache",
+                "title": "Pistache",
                 "description": "Sorvete de pistache, sabor único e sofisticado.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -198,35 +254,35 @@
             {
                 "id": 24,
                 "id2": "24",
-                "name": "Picanha",
+                "title": "Picanha",
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 25,
                 "id2": "25",
-                "name": "Maminha",
+                "title": "Maminha",
                 "description": "Maminha assada lentamente para um sabor intenso.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 26,
                 "id2": "26",
-                "name": "Costela",
+                "title": "Costela",
                 "description": "Costela bovina assada por horas para um sabor irresistível.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 27,
                 "id2": "27",
-                "name": "Linguiça",
+                "title": "Linguiça",
                 "description": "Linguiça suculenta assada na brasa.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 28,
                 "id2": "28",
-                "name": "Coração de Frango",
+                "title": "Coração de Frango",
                 "description": "Espetinho de coração de frango grelhado.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -238,35 +294,35 @@
             {
                 "id": 29,
                 "id2": "29",
-                "name": "Pudim",
+                "title": "Pudim",
                 "description": "Pudim de leite condensado macio e saboroso.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 30,
                 "id2": "30",
-                "name": "Brigadeiro",
+                "title": "Brigadeiro",
                 "description": "Brigadeiro tradicional de chocolate.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 31,
                 "id2": "31",
-                "name": "Beijinho",
+                "title": "Beijinho",
                 "description": "Doce de coco macio e delicioso.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 32,
                 "id2": "32",
-                "name": "Torta de Limão",
+                "title": "Torta de Limão",
                 "description": "Torta crocante recheada com creme de limão e merengue.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 33,
                 "id2": "33",
-                "name": "Mousse de Maracujá",
+                "title": "Mousse de Maracujá",
                 "description": "Mousse aerado e refrescante de maracujá.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -278,35 +334,35 @@
             {
                 "id": 34,
                 "id2": "34",
-                "name": "Marmita de Frango",
+                "title": "Marmita de Frango",
                 "description": "Arroz, feijão, frango grelhado e salada.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 35,
                 "id2": "35",
-                "name": "Marmita de Carne",
+                "title": "Marmita de Carne",
                 "description": "Arroz, feijão, carne bovina e legumes cozidos.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 36,
                 "id2": "36",
-                "name": "Marmita de Peixe",
+                "title": "Marmita de Peixe",
                 "description": "Arroz, feijão, peixe grelhado e purê de batata.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 37,
                 "id2": "37",
-                "name": "Marmita Vegetariana",
+                "title": "Marmita Vegetariana",
                 "description": "Arroz integral, feijão, legumes grelhados e salada.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 38,
                 "id2": "38",
-                "name": "Marmita Fitness",
+                "title": "Marmita Fitness",
                 "description": "Arroz integral, frango grelhado e batata doce.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -318,35 +374,35 @@
             {
                 "id": 39,
                 "id2": "39",
-                "name": "Espetinho de Carne",
+                "title": "Espetinho de Carne",
                 "description": "Espetinho de carne bovina grelhada na brasa.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 40,
                 "id2": "40",
-                "name": "Espetinho de Frango",
+                "title": "Espetinho de Frango",
                 "description": "Espetinho de frango temperado e grelhado.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 41,
                 "id2": "41",
-                "name": "Espetinho de Linguiça",
+                "title": "Espetinho de Linguiça",
                 "description": "Espetinho de linguiça suculenta e bem temperada.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 42,
                 "id2": "42",
-                "name": "Espetinho de Coração",
+                "title": "Espetinho de Coração",
                 "description": "Espetinho de coração de frango bem assado.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 43,
                 "id2": "43",
-                "name": "Espetinho de Queijo Coalho",
+                "title": "Espetinho de Queijo Coalho",
                 "description": "Espetinho de queijo coalho derretido na brasa.",
                 "image": "src/assets/img/Logo.png"
             }
@@ -358,56 +414,56 @@
             {
                 "id": 1,
                 "id2": "1",
-                "name": "Mussarela",
+                "title": "Mussarela",
                 "description": "Clássica pizza de mussarela com molho de tomate e orégano.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 2,
                 "id2": "2",
-                "name": "Calabresa",
+                "title": "Calabresa",
                 "description": "Pizza de calabresa com fatias generosas e cebola.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 3,
                 "id2": "3",
-                "name": "Portuguesa",
+                "title": "Portuguesa",
                 "description": "Pizza portuguesa com presunto, ovos, cebola e azeitonas.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 4,
                 "id2": "4",
-                "name": "Frango com Catupiry",
+                "title": "Frango com Catupiry",
                 "description": "Pizza de frango desfiado com o legítimo catupiry.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 5,
                 "id2": "5",
-                "name": "Quatro Queijos",
+                "title": "Quatro Queijos",
                 "description": "Mistura irresistível de quatro queijos derretidos.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 6,
                 "id2": "6",
-                "name": "Pepperoni",
+                "title": "Pepperoni",
                 "description": "Pizza de pepperoni com muito queijo derretido.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 7,
                 "id2": "7",
-                "name": "Vegana",
+                "title": "Vegana",
                 "description": "Pizza vegana com vegetais frescos e queijo vegano.",
                 "image": "src/assets/img/Logo.png"
             },
             {
                 "id": 8,
                 "id2": "8",
-                "name": "Chocolate com Morango",
+                "title": "Chocolate com Morango",
                 "description": "Pizza doce com chocolate cremoso e morangos frescos.",
                 "image": "src/assets/img/Logo.png"
             }
