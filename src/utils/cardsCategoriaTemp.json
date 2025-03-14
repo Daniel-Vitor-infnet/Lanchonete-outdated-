@@ -1,5 +1,12 @@
 [
     {
+        "id": 223,
+        "id2": "223",
+        "title": "Teste",
+        "description": "Lanches smash burgers, opções premium e os clássicos.",
+        "image": "src/assets/img/Lanche1.png"
+    },
+    {
         "id": 49,
         "id2": "49",
         "title": "Lanches",

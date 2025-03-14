@@ -1,5 +1,17 @@
 [
     {
+        "category": "Teste",
+        "items": [
+            {
+                "id": 24,
+                "id2": "24",
+                "name": "Picanha",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "image": "src/assets/img/Logo.png"
+            }
+        ]
+    },
+    {
         "category": "Lanches",
         "items": [
             {
