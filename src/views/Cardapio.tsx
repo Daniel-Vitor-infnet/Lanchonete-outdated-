@@ -1,47 +1,71 @@
 import * as React from 'react';
-import styles from '@/styles/Panel.module.scss';
-import { Grid2 } from '@/libs/mui';
-import {  mixins, CardCategoria } from '@/components';
-import CardapioVertical from "@/views/subElementos/Cardapio/cardapioVertical.tsx";
+import stylesCardCategoria from "@/styles/cardapio/Categoria.module.scss";
+import cardsCategoriaDataJson from "@/utils/cardsCategoriaTemp.json";
+import cardsItensDataJson from "@/utils/cardsItemTemp.json";
+import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
+import { mixins, CardCategoria } from '@/components';
 
-
-
-
-
-const buttonPedidosCardsStyles = ({
-  background: 'linear-gradient(45deg, #FF1044 30%, #FF8E53 90%)',
-  with: '100%',
-  height: '100%',
-  textTransform: "uppercase",
-});
-
-const buttonAplicarStyles = ({
-  background: 'blue',
-  height: '35px',
-  width: '160px',
-  "&:hover": {
-    background: "linear-gradient(135deg, oklch(0.59 0.22 261.41), oklch(0.59 0.22 261.37))", // Gradiente mais escuro no hover
-    boxShadow: "unset",
-    transform: "unset", // Levanta levemente o botão
-  },
-  "&:active": {},
-
-  "&::before": {},
-  "&:hover::before": {},
-  [mixins.laptop]: {
-    height: '43px',
-    width: '140px',
-  },
-});
-
-
-const Cardapio: React.FC = () => {
-  return (
-    <Grid2 className={styles.mainContainer}>
-    <CardapioVertical />
-    </Grid2>
-  );
-  3
+const a11yProps = (index: number) => {
+  return {
+    id: `vertical-tab-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
+  };
 };
 
-export default Cardapio;
+const mainContainer = {
+  backgroundColor: "red",
+};
+
+
+const boxPrincipal = {
+  width: "min(100vh, 100dvh)",
+  height: "30vw",
+  flexGrow: 1,
+  bgcolor: 'background.paper',
+  display: 'flex',
+}
+
+const VerticalTabs: React.FC = () => {
+  const [value, setValue] = React.useState<number>(0);
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Grid2 sx={mainContainer} role="tabpanel">
+      <Box sx={boxPrincipal}>
+        <Tabs
+          orientation="vertical"
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          sx={{ borderRight: 1, borderColor: 'divider' }}
+        >
+          {cardsCategoriaDataJson.map((card: any, index: number) => (
+            <Tab key={index} label={card.title} {...a11yProps(index)} />
+          ))}
+        </Tabs>
+
+        <Grid2 sx={{ p: 3 }}>
+          {cardsCategoriaDataJson.map((item: any, index: number) => {
+            if (value === index) {
+              const itensDaCategoria = cardsItensDataJson.find(card => card.category === item.title)?.items || null;
+              if (itensDaCategoria) {
+                return <CardCategoria key={index} cardsItens={itensDaCategoria} stylesPerso={stylesCardCategoria} />;
+              } else {
+                return (
+                  <Typography>Nenhum item desse categoria</Typography>
+                );
+              }
+            }
+            return null;
+          })}
+        </Grid2>
+      </Box>
+    </Grid2>
+  );
+};
+
+export default VerticalTabs;
