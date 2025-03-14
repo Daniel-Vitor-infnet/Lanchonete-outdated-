@@ -39,7 +39,7 @@ const VerticalTabs: React.FC = () => {
           {cardsCategoriaDataJson.map((item: any, index: number) => {
             if (value === index) {
               const itensDaCategoria = cardsItensDataJson.find(card => card.category === item.title)?.items || null;
-              if (true) {
+              if (itensDaCategoria) {
                 return <CardCategoria key={index} cardsItens={itensDaCategoria} stylesPerso={stylesCardCategoria} />;
               } else {
                 return (
