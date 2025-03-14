@@ -38,7 +38,7 @@ const buttonAplicarStyles = ({
 const Cardapio: React.FC = () => {
   return (
     <Grid2 className={styles.mainContainer}>
-      {CardapioVertical()}
+    <CardapioVertical />
     </Grid2>
   );
   3
