@@ -48,7 +48,8 @@ const cardContainer = {
   width: '97%',
   maxWidth: '97%',
   maxHeight: "96.7%",
-  margin: 3,
+  marginLeft: 4,
+  padding: 3,
   overflowX: 'auto',
 }
 
