@@ -5,6 +5,9 @@ import cardsItensDataJson from "@/utils/cardsItemTemp.json";
 import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
 import { mixins, CardCategoria } from '@/components';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import IconMdi from '@mdi/react';
+import icones from '@/libs/mdi/index.ts';
+
 
 const a11yProps = (index: number) => {
   return {
@@ -77,7 +80,7 @@ const VerticalTabs: React.FC = () => {
               key={index}
               label={(
                 <Box sx={barraLateral}>
-                  <WhatsAppIcon fontSize="small" />
+                  <IconMdi path={icones.mdiPizza} size={1} />
                   {card.title}
                 </Box>
               )}
