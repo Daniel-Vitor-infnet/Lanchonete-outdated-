@@ -45,10 +45,9 @@ const barraLateral = {
 }
 
 const cardContainer = {
-  backgroundColor: 'purple',
   width: '97%',
   maxWidth: '97%',
-  maxHeight: "94%",
+  maxHeight: "96.7%",
   margin: 3,
   overflowX: 'auto',
 }
