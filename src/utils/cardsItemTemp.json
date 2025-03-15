@@ -18,113 +18,141 @@
                 "id": 1,
                 "id2": "1",
                 "title": "X-Burguer",
-                "description": "Delicioso x-burguer preparado com ingredientes selecionados.",
+                "description": "Hambúrguer grelhado, queijo derretido, alface crocante e um toque especial de molho da casa.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 2,
                 "id2": "2",
                 "title": "X-Salada",
-                "description": "Delicioso x-salada preparado com ingredientes selecionados.",
+                "description": "Hambúrguer grelhado, queijo derretido, alface, tomate fresco e maionese caseira.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 3,
                 "id2": "3",
                 "title": "X-Bacon",
-                "description": "Delicioso x-bacon preparado com ingredientes selecionados.",
+                "description": "Hambúrguer suculento com queijo, bacon crocante e um toque especial de molho barbecue.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 4,
                 "id2": "4",
                 "title": "X-Tudo",
-                "description": "Delicioso x-tudo preparado com ingredientes selecionados.",
+                "description": "Hambúrguer completo com queijo, presunto, bacon, ovo, alface, tomate e molho especial da casa.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 5,
                 "id2": "5",
                 "title": "Cheddar Duplo",
-                "description": "Delicioso cheddar duplo preparado com ingredientes selecionados.",
+                "description": "Dois hambúrgueres suculentos com muito queijo cheddar derretido e cebola caramelizada.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 6,
                 "id2": "6",
                 "title": "Frango Crispy",
-                "description": "Delicioso frango crispy preparado com ingredientes selecionados.",
+                "description": "Filé de frango empanado e crocante, queijo, alface, tomate e maionese temperada.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 7,
                 "id2": "7",
                 "title": "Vegano",
-                "description": "Delicioso vegano preparado com ingredientes selecionados.",
+                "description": "Hambúrguer 100% vegetal com alface, tomate, cebola roxa e maionese vegana.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
                 "id": 8,
                 "id2": "8",
                 "title": "X-Egg",
-                "description": "Clássico X-Egg com queijo derretido e ovo.",
+                "description": "Clássico hambúrguer grelhado com queijo derretido, ovo frito e maionese especial.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 1,
-                "id2": "1",
-                "title": "X-Burguer",
-                "description": "Delicioso x-burguer preparado com ingredientes selecionados.",
+                "id": 9,
+                "id2": "9",
+                "title": "X-Calabresa",
+                "description": "teste",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 2,
-                "id2": "2",
-                "title": "X-Salada",
-                "description": "Delicioso x-salada preparado com ingredientes selecionados.",
+                "id": 10,
+                "id2": "10",
+                "title": "X-Frango Catupiry",
+                "description": "Filé de frango grelhado, catupiry cremoso, queijo, alface e tomate fresco.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 3,
-                "id2": "3",
-                "title": "X-Bacon",
-                "description": "Delicioso x-bacon preparado com ingredientes selecionados.",
+                "id": 11,
+                "id2": "11",
+                "title": "X-Picanha",
+                "description": "Hambúrguer de picanha grelhado com queijo prato, cebola caramelizada e molho especial.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 4,
-                "id2": "4",
-                "title": "X-Tudo",
-                "description": "Delicioso x-tudo preparado com ingredientes selecionados.",
+                "id": 12,
+                "id2": "12",
+                "title": "X-Costela",
+                "description": "Hambúrguer de costela desfiada, queijo provolone e molho barbecue.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 5,
-                "id2": "5",
-                "title": "Cheddar Duplo",
-                "description": "Delicioso cheddar duplo preparado com ingredientes selecionados.",
+                "id": 13,
+                "id2": "13",
+                "title": "X-Carne Seca",
+                "description": "Carne seca desfiada com queijo coalho derretido e maionese temperada.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 6,
-                "id2": "6",
-                "title": "Frango Crispy",
-                "description": "Delicioso frango crispy preparado com ingredientes selecionados.",
+                "id": 14,
+                "id2": "14",
+                "title": "X-Pepperoni",
+                "description": "Hambúrguer grelhado com queijo muçarela, pepperoni crocante e molho de tomate caseiro.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 7,
-                "id2": "7",
-                "title": "Vegano",
-                "description": "Delicioso vegano preparado com ingredientes selecionados.",
+                "id": 15,
+                "id2": "15",
+                "title": "X-Parmegiana",
+                "description": "Filé de frango empanado ao molho de tomate e queijo gratinado, servido no pão artesanal.",
                 "image": "src/assets/img/Lanche1.png"
             },
             {
-                "id": 8,
-                "id2": "8",
-                "title": "X-Egg",
-                "description": "Clássico X-Egg com queijo derretido e ovo.",
-                "image": "src/assets/img/Bebidas.png"
+                "id": 16,
+                "id2": "16",
+                "title": "X-BBQ Ribs",
+                "description": "Costela suína desfiada ao molho barbecue, queijo cheddar e cebola crispy.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 17,
+                "id2": "17",
+                "title": "X-Jalapeño",
+                "description": "Hambúrguer grelhado com queijo cheddar, jalapeños picantes e molho especial.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 18,
+                "id2": "18",
+                "title": "X-Shimeji",
+                "description": "Hambúrguer vegetariano com shimeji salteado na manteiga e queijo suíço.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 19,
+                "id2": "19",
+                "title": "X-Cordeiro",
+                "description": "Hambúrguer de cordeiro grelhado, queijo feta e maionese de hortelã.",
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "id": 20,
+                "id2": "20",
+                "title": "X-Churrasco",
+                "description": "Hambúrguer com fatias de carne grelhada na brasa, queijo prato e molho chimichurri.",
+                "image": "src/assets/img/Lanche1.png"
             }
         ]
     },

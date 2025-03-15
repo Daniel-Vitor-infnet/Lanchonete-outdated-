@@ -2,14 +2,30 @@ import React from "react";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
 
 
+interface itensData {
+  valor?: number;
+}
+
 
 interface CardsListProps {
   cardsItens: any;
   stylesPerso: any;
 }
+let textExtra = "";
+
+function truncarTexto(texto: string, limite = 52) {
+  if (texto.length >= limite) {
+    textExtra = " ...mais";
+    return texto.slice(0, limite);
+  } else {
+    textExtra = "";
+    return texto;
+  }
+}
 
 
-const CardsList: React.FC<CardsListProps> = ({ cardsItens, stylesPerso}) => {
+
+const CardsList: React.FC<CardsListProps & itensData> = ({ cardsItens, stylesPerso }) => {
 
 
   return (
@@ -23,7 +39,7 @@ const CardsList: React.FC<CardsListProps> = ({ cardsItens, stylesPerso}) => {
                 {card.title}
               </Typography>
               <Typography className={stylesPerso.cardDescription}>
-                {card.description}
+                {truncarTexto(card.description)} <span>{textExtra}</span>
               </Typography>
             </CardContent>
           </Card>

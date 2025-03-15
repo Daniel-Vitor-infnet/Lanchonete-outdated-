@@ -1,6 +1,3 @@
-import IconMdi from '@mdi/react';
-
-
 import { mdiBaguette } from '@mdi/js';
 import { mdiBeer } from '@mdi/js';
 import { mdiBottleSodaClassic } from '@mdi/js';
@@ -21,24 +18,24 @@ import { mdiSilverwareVariant } from '@mdi/js';
 import { mdiWater } from '@mdi/js';
 
 const icones = {
-    mdiPao: mdiBaguette,
-    mdiCopoCheio: mdiBeer,
-    mdiGarrafa: mdiBottleSodaClassic,
-    mdiBolo: mdiCakeVariant,
-    mdiCafe: mdiCoffee,
-    mdiFastFood: mdiFood,
-    mdiFrango: mdiFoodDrumstick,
-    mdiHotDog: mdiFoodHotDog,
-    mdiCarne: mdiFoodSteak,
-    mdiBatataFrita: mdiFrenchFries,
-    mdiCerveja: mdiGlassMugVariant,
-    mdiHamburguer: mdiHamburger,
-    mdiPicole: mdiIcePop,
-    mdiPizza: mdiPizza,
-    mdiTalheres: mdiSilverware,
-    mdiTalheres2: mdiSilverwareForkKnife,
-    mdiTalheres3: mdiSilverwareVariant,
-    mdiGotaDeAgua: mdiWater
+    pao: mdiBaguette,
+    copoCheio: mdiBeer,
+    garrafa: mdiBottleSodaClassic,
+    bolo: mdiCakeVariant,
+    cafe: mdiCoffee,
+    fastFood: mdiFood,
+    frango: mdiFoodDrumstick,
+    hotDog: mdiFoodHotDog,
+    carne: mdiFoodSteak,
+    batataFrita: mdiFrenchFries,
+    cerveja: mdiGlassMugVariant,
+    hamburguer: mdiHamburger,
+    picole: mdiIcePop,
+    pizza: mdiPizza,
+    talheres: mdiSilverware,
+    talheres2: mdiSilverwareForkKnife,
+    talheres3: mdiSilverwareVariant,
+    gotaDeAgua: mdiWater
 };
 
 export default icones;

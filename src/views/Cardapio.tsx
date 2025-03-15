@@ -6,7 +6,7 @@ import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui
 import { mixins, CardCategoria } from '@/components';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import IconMdi from '@mdi/react';
-import icones from '@/libs/mdi/index.ts';
+import iconesMdi from '@/libs/mdi/index.ts';
 
 
 const a11yProps = (index: number) => {
@@ -50,7 +50,7 @@ const barraLateral = {
 const cardContainer = {
   width: '97%',
   maxWidth: '97%',
-  maxHeight: "96.7%",
+  maxHeight: "99.9%",
   marginLeft: 4,
   padding: 3,
   overflowX: 'auto',
@@ -75,18 +75,23 @@ const VerticalTabs: React.FC = () => {
           aria-label="Vertical tabs example"
           sx={barraLateralContainer}
         >
-          {cardsCategoriaDataJson.map((card: any, index: number) => (
-            <Tab
-              key={index}
-              label={(
-                <Box sx={barraLateral}>
-                  <IconMdi path={icones.mdiPizza} size={1} />
-                  {card.title}
-                </Box>
-              )}
-              {...a11yProps(index)}
-            />
-          ))}
+          {cardsCategoriaDataJson.map((card: any, index: number) => {
+            const iconeSelect: string = iconesMdi.pizza; 
+
+            return (
+              <Tab
+                key={index}
+                label={
+                  <Box sx={barraLateral}>
+                    <IconMdi path={iconeSelect} size={1} />
+                    {card.title}
+                  </Box>
+                }
+                {...a11yProps(index)}
+              />
+            );
+          })}
+
         </Tabs>
 
         <Grid2 >
