@@ -15,7 +15,6 @@ const CardsList: React.FC<CardsListProps & ItensData> = ({ cardsItens, stylesPer
   return (
     <Grid2 className={stylesPerso.cardsContainer}>
       {cardsItens.map((card: any, index: number) => {
-        // Correção: Atribuições devem estar dentro do escopo da função .map()
         const { texto: titulo, sufixo: sufixoTitulo } = redimencionarTexto(card.title, 15);
         const { texto: descricao, sufixo: sufixoDescricao } = redimencionarTexto(card.description, 53, "pontos+");
 
