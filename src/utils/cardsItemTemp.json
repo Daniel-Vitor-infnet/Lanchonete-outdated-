@@ -19,159 +19,90 @@
                 "id2": "1",
                 "title": "X-Burguer",
                 "description": "Hambúrguer grelhado, queijo derretido, alface crocante e um toque especial de molho da casa.",
-                "image": "src/assets/img/Sorvete.png",
-                "price": 10.00
+                "image": "src/assets/img/Logo.png",
+                "price": 10.00,
+                "icon": ""
             },
             {
                 "id": 2,
                 "id2": "2",
                 "title": "X-Salada",
                 "description": "Hambúrguer grelhado, queijo derretido, alface, tomate fresco e maionese caseira.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 10.00
+                "image": "src/assets/img/Logo.png",
+                "price": 10.00,
+                "icon": ""
             },
             {
                 "id": 3,
                 "id2": "3",
                 "title": "X-Bacon",
                 "description": "Hambúrguer suculento com queijo, bacon crocante e um toque especial de molho barbecue.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 7.00
+                "image": "src/assets/img/Logo.png",
+                "price": 7.00,
+                "icon": ""
             },
             {
                 "id": 4,
                 "id2": "4",
                 "title": "X-Tudo",
                 "description": "Hambúrguer completo com queijo, presunto, bacon, ovo, alface, tomate e molho especial da casa.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 13.50
+                "image": "src/assets/img/Logo.png",
+                "price": 13.50,
+                "icon": ""
             },
             {
                 "id": 5,
                 "id2": "5",
                 "title": "Cheddar Duplo",
                 "description": "Dois hambúrgueres suculentos com muito queijo cheddar derretido e cebola caramelizada.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 130.00
+                "image": "src/assets/img/Logo.png",
+                "price": 13.00,
+                "icon": ""
             },
             {
                 "id": 6,
                 "id2": "6",
                 "title": "Frango Crispy",
                 "description": "Filé de frango empanado e crocante, queijo, alface, tomate e maionese temperada.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
+                "image": "src/assets/img/Logo.png",
+                "price": 9.70,
+                "icon": ""
             },
             {
                 "id": 7,
                 "id2": "7",
                 "title": "Vegano",
                 "description": "Hambúrguer 100% vegetal com alface, tomate, cebola roxa e maionese vegana.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 13.55
+                "image": "src/assets/img/Logo.png",
+                "price": 13.55,
+                "icon": ""
             },
             {
                 "id": 8,
                 "id2": "8",
                 "title": "X-Egg",
                 "description": "Clássico hambúrguer grelhado com queijo derretido, ovo frito e maionese especial.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
+                "image": "src/assets/img/Logo.png",
+                "price": 9.70,
+                "icon": ""
             },
             {
                 "id": 9,
                 "id2": "9",
                 "title": "X-Calabresa",
-                "description": "teste",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 11.50
+                "description": "Hambúrguer com queijo derretido e calabresa fatiada crocante.",
+                "image": "src/assets/img/Logo.png",
+                "price": 11.50,
+                "icon": ""
             },
             {
                 "id": 10,
                 "id2": "10",
                 "title": "X-Frango Catupiry",
                 "description": "Filé de frango grelhado, catupiry cremoso, queijo, alface e tomate fresco.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 11,
-                "id2": "11",
-                "title": "X-Picanha",
-                "description": "Hambúrguer de picanha grelhado com queijo prato, cebola caramelizada e molho especial.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 12,
-                "id2": "12",
-                "title": "X-Costela",
-                "description": "Hambúrguer de costela desfiada, queijo provolone e molho barbecue.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 13,
-                "id2": "13",
-                "title": "X-Carne Seca",
-                "description": "Carne seca desfiada com queijo coalho derretido e maionese temperada.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 6.50
-            },
-            {
-                "id": 14,
-                "id2": "14",
-                "title": "X-Pepperoni",
-                "description": "Hambúrguer grelhado com queijo muçarela, pepperoni crocante e molho de tomate caseiro.",
-                "image": "src/assets/img/Lanche1.png"
-            },
-            {
-                "id": 15,
-                "id2": "15",
-                "title": "X-Parmegiana",
-                "description": "Filé de frango empanado ao molho de tomate e queijo gratinado, servido no pão artesanal.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 16,
-                "id2": "16",
-                "title": "X-BBQ Ribs",
-                "description": "Costela suína desfiada ao molho barbecue, queijo cheddar e cebola crispy.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 17,
-                "id2": "17",
-                "title": "X-Jalapeño",
-                "description": "Hambúrguer grelhado com queijo cheddar, jalapeños picantes e molho especial.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 18,
-                "id2": "18",
-                "title": "X-Shimeji",
-                "description": "Hambúrguer vegetariano com shimeji salteado na manteiga e queijo suíço.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 19,
-                "id2": "19",
-                "title": "X-Cordeiro",
-                "description": "Hambúrguer de cordeiro grelhado, queijo feta e maionese de hortelã.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
-            },
-            {
-                "id": 20,
-                "id2": "20",
-                "title": "X-Churrasco",
-                "description": "Hambúrguer com fatias de carne grelhada na brasa, queijo prato e molho chimichurri.",
-                "image": "src/assets/img/Lanche1.png",
-                "price": 19.70
+                "image": "src/assets/img/Logo.png",
+                "price": 19.70,
+                "icon": ""
             }
         ]
     },
@@ -179,39 +110,49 @@
         "category": "Bebidas",
         "items": [
             {
-                "id": 9,
-                "id2": "9",
+                "id": 1,
+                "id2": "1",
                 "title": "Coca-Cola",
-                "description": "Delicioso refrigerante Coca-Cola bem gelado.",
-                "image": "src/assets/img/Bebidas.png"
+                "description": "Refrigerante Coca-Cola bem gelado.",
+                "image": "src/assets/img/Logo.png",
+                "price": 5.00,
+                "icon": ""
             },
             {
-                "id": 10,
-                "id2": "10",
+                "id": 2,
+                "id2": "2",
                 "title": "Guaraná",
-                "description": "Refrigerante de guaraná, refrescante e saboroso.",
-                "image": "src/assets/img/Bebidas.png"
+                "description": "Refrigerante de guaraná refrescante.",
+                "image": "src/assets/img/Logo.png",
+                "price": 4.50,
+                "icon": ""
             },
             {
-                "id": 11,
-                "id2": "11",
+                "id": 3,
+                "id2": "3",
                 "title": "Suco de Laranja",
-                "description": "Suco natural de laranja, feito na hora.",
-                "image": "src/assets/img/Bebidas.png"
+                "description": "Suco natural de laranja feito na hora.",
+                "image": "src/assets/img/Logo.png",
+                "price": 6.00,
+                "icon": ""
             },
             {
-                "id": 12,
-                "id2": "12",
+                "id": 4,
+                "id2": "4",
                 "title": "Suco de Uva",
-                "description": "Suco natural de uva, fresco e saboroso.",
-                "image": "src/assets/img/Bebidas.png"
+                "description": "Suco de uva integral fresco.",
+                "image": "src/assets/img/Logo.png",
+                "price": 6.00,
+                "icon": ""
             },
             {
-                "id": 13,
-                "id2": "13",
+                "id": 5,
+                "id2": "5",
                 "title": "Chá Gelado",
-                "description": "Chá gelado sabor limão ou pêssego.",
-                "image": "src/assets/img/Bebidas.png"
+                "description": "Chá gelado de limão ou pêssego.",
+                "image": "src/assets/img/Logo.png",
+                "price": 4.00,
+                "icon": ""
             }
         ]
     },
@@ -219,39 +160,49 @@
         "category": "Porções",
         "items": [
             {
-                "id": 14,
-                "id2": "14",
+                "id": 1,
+                "id2": "1",
                 "title": "Batata Frita",
-                "description": "Porção de batatas fritas crocantes e saborosas.",
-                "image": "src/assets/img/Logo.png"
+                "description": "Porção de batatas fritas crocantes.",
+                "image": "src/assets/img/Logo.png",
+                "price": 8.00,
+                "icon": ""
             },
             {
-                "id": 15,
-                "id2": "15",
+                "id": 2,
+                "id2": "2",
                 "title": "Onion Rings",
                 "description": "Anéis de cebola empanados e crocantes.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 9.00,
+                "icon": ""
             },
             {
-                "id": 16,
-                "id2": "16",
+                "id": 3,
+                "id2": "3",
                 "title": "Frango à Passarinho",
-                "description": "Deliciosos pedaços de frango temperados e fritos.",
-                "image": "src/assets/img/Logo.png"
+                "description": "Porção de pedaços de frango temperados e fritos.",
+                "image": "src/assets/img/Logo.png",
+                "price": 12.00,
+                "icon": ""
             },
             {
-                "id": 17,
-                "id2": "17",
+                "id": 4,
+                "id2": "4",
                 "title": "Polenta Frita",
-                "description": "Polenta frita crocante e saborosa.",
-                "image": "src/assets/img/Logo.png"
+                "description": "Polenta frita dourada e crocante.",
+                "image": "src/assets/img/Logo.png",
+                "price": 7.50,
+                "icon": ""
             },
             {
-                "id": 18,
-                "id2": "18",
+                "id": 5,
+                "id2": "5",
                 "title": "Torresmo",
-                "description": "Torresmo crocante e temperado na medida certa.",
-                "image": "src/assets/img/Logo.png"
+                "description": "Torresmo crocante com tempero especial.",
+                "image": "src/assets/img/Logo.png",
+                "price": 9.50,
+                "icon": ""
             }
         ]
     },
@@ -259,39 +210,49 @@
         "category": "Sorvetes",
         "items": [
             {
-                "id": 19,
-                "id2": "19",
+                "id": 1,
+                "id2": "1",
                 "title": "Chocolate",
                 "description": "Sorvete cremoso de chocolate.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 6.00,
+                "icon": ""
             },
             {
-                "id": 20,
-                "id2": "20",
+                "id": 2,
+                "id2": "2",
                 "title": "Morango",
                 "description": "Sorvete cremoso de morango.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 6.00,
+                "icon": ""
             },
             {
-                "id": 21,
-                "id2": "21",
+                "id": 3,
+                "id2": "3",
                 "title": "Napolitano",
                 "description": "Sorvete napolitano com três sabores clássicos.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 7.00,
+                "icon": ""
             },
             {
-                "id": 22,
-                "id2": "22",
+                "id": 4,
+                "id2": "4",
                 "title": "Flocos",
                 "description": "Sorvete de baunilha com pedacinhos de chocolate.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 6.50,
+                "icon": ""
             },
             {
-                "id": 23,
-                "id2": "23",
+                "id": 5,
+                "id2": "5",
                 "title": "Pistache",
                 "description": "Sorvete de pistache, sabor único e sofisticado.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 7.50,
+                "icon": ""
             }
         ]
     },
@@ -299,39 +260,49 @@
         "category": "Churrasco",
         "items": [
             {
-                "id": 24,
-                "id2": "24",
+                "id": 1,
+                "id2": "1",
                 "title": "Picanha",
                 "description": "Suculenta picanha grelhada no ponto certo.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 49.90,
+                "icon": ""
             },
             {
-                "id": 25,
-                "id2": "25",
+                "id": 2,
+                "id2": "2",
                 "title": "Maminha",
                 "description": "Maminha assada lentamente para um sabor intenso.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 39.90,
+                "icon": ""
             },
             {
-                "id": 26,
-                "id2": "26",
+                "id": 3,
+                "id2": "3",
                 "title": "Costela",
                 "description": "Costela bovina assada por horas para um sabor irresistível.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 59.90,
+                "icon": ""
             },
             {
-                "id": 27,
-                "id2": "27",
+                "id": 4,
+                "id2": "4",
                 "title": "Linguiça",
                 "description": "Linguiça suculenta assada na brasa.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 19.90,
+                "icon": ""
             },
             {
-                "id": 28,
-                "id2": "28",
+                "id": 5,
+                "id2": "5",
                 "title": "Coração de Frango",
                 "description": "Espetinho de coração de frango grelhado.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 15.90,
+                "icon": ""
             }
         ]
     },
@@ -339,39 +310,49 @@
         "category": "Sobremesa",
         "items": [
             {
-                "id": 29,
-                "id2": "29",
+                "id": 1,
+                "id2": "1",
                 "title": "Pudim",
                 "description": "Pudim de leite condensado macio e saboroso.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 7.00,
+                "icon": ""
             },
             {
-                "id": 30,
-                "id2": "30",
+                "id": 2,
+                "id2": "2",
                 "title": "Brigadeiro",
                 "description": "Brigadeiro tradicional de chocolate.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 3.50,
+                "icon": ""
             },
             {
-                "id": 31,
-                "id2": "31",
+                "id": 3,
+                "id2": "3",
                 "title": "Beijinho",
                 "description": "Doce de coco macio e delicioso.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 3.50,
+                "icon": ""
             },
             {
-                "id": 32,
-                "id2": "32",
+                "id": 4,
+                "id2": "4",
                 "title": "Torta de Limão",
                 "description": "Torta crocante recheada com creme de limão e merengue.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 12.00,
+                "icon": ""
             },
             {
-                "id": 33,
-                "id2": "33",
+                "id": 5,
+                "id2": "5",
                 "title": "Mousse de Maracujá",
                 "description": "Mousse aerado e refrescante de maracujá.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 10.00,
+                "icon": ""
             }
         ]
     },
@@ -379,39 +360,49 @@
         "category": "Marmita",
         "items": [
             {
-                "id": 34,
-                "id2": "34",
+                "id": 1,
+                "id2": "1",
                 "title": "Marmita de Frango",
                 "description": "Arroz, feijão, frango grelhado e salada.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 18.00,
+                "icon": ""
             },
             {
-                "id": 35,
-                "id2": "35",
+                "id": 2,
+                "id2": "2",
                 "title": "Marmita de Carne",
                 "description": "Arroz, feijão, carne bovina e legumes cozidos.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 20.00,
+                "icon": ""
             },
             {
-                "id": 36,
-                "id2": "36",
+                "id": 3,
+                "id2": "3",
                 "title": "Marmita de Peixe",
                 "description": "Arroz, feijão, peixe grelhado e purê de batata.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 22.00,
+                "icon": ""
             },
             {
-                "id": 37,
-                "id2": "37",
+                "id": 4,
+                "id2": "4",
                 "title": "Marmita Vegetariana",
                 "description": "Arroz integral, feijão, legumes grelhados e salada.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 15.00,
+                "icon": ""
             },
             {
-                "id": 38,
-                "id2": "38",
+                "id": 5,
+                "id2": "5",
                 "title": "Marmita Fitness",
                 "description": "Arroz integral, frango grelhado e batata doce.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 17.00,
+                "icon": ""
             }
         ]
     },
@@ -419,39 +410,49 @@
         "category": "Espetinho",
         "items": [
             {
-                "id": 39,
-                "id2": "39",
+                "id": 1,
+                "id2": "1",
                 "title": "Espetinho de Carne",
                 "description": "Espetinho de carne bovina grelhada na brasa.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 9.00,
+                "icon": ""
             },
             {
-                "id": 40,
-                "id2": "40",
+                "id": 2,
+                "id2": "2",
                 "title": "Espetinho de Frango",
                 "description": "Espetinho de frango temperado e grelhado.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 7.50,
+                "icon": ""
             },
             {
-                "id": 41,
-                "id2": "41",
+                "id": 3,
+                "id2": "3",
                 "title": "Espetinho de Linguiça",
                 "description": "Espetinho de linguiça suculenta e bem temperada.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 8.00,
+                "icon": ""
             },
             {
-                "id": 42,
-                "id2": "42",
+                "id": 4,
+                "id2": "4",
                 "title": "Espetinho de Coração",
                 "description": "Espetinho de coração de frango bem assado.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 6.50,
+                "icon": ""
             },
             {
-                "id": 43,
-                "id2": "43",
+                "id": 5,
+                "id2": "5",
                 "title": "Espetinho de Queijo Coalho",
                 "description": "Espetinho de queijo coalho derretido na brasa.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 7.00,
+                "icon": ""
             }
         ]
     },
@@ -463,56 +464,72 @@
                 "id2": "1",
                 "title": "Mussarela",
                 "description": "Clássica pizza de mussarela com molho de tomate e orégano.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 25.00,
+                "icon": ""
             },
             {
                 "id": 2,
                 "id2": "2",
                 "title": "Calabresa",
                 "description": "Pizza de calabresa com fatias generosas e cebola.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 28.00,
+                "icon": ""
             },
             {
                 "id": 3,
                 "id2": "3",
                 "title": "Portuguesa",
                 "description": "Pizza portuguesa com presunto, ovos, cebola e azeitonas.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 30.00,
+                "icon": ""
             },
             {
                 "id": 4,
                 "id2": "4",
                 "title": "Frango com Catupiry",
                 "description": "Pizza de frango desfiado com o legítimo catupiry.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 29.00,
+                "icon": ""
             },
             {
                 "id": 5,
                 "id2": "5",
                 "title": "Quatro Queijos",
                 "description": "Mistura irresistível de quatro queijos derretidos.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 32.00,
+                "icon": ""
             },
             {
                 "id": 6,
                 "id2": "6",
                 "title": "Pepperoni",
                 "description": "Pizza de pepperoni com muito queijo derretido.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 30.00,
+                "icon": ""
             },
             {
                 "id": 7,
                 "id2": "7",
                 "title": "Vegana",
                 "description": "Pizza vegana com vegetais frescos e queijo vegano.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 33.00,
+                "icon": ""
             },
             {
                 "id": 8,
                 "id2": "8",
                 "title": "Chocolate com Morango",
                 "description": "Pizza doce com chocolate cremoso e morangos frescos.",
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Logo.png",
+                "price": 22.00,
+                "icon": ""
             }
         ]
     }
