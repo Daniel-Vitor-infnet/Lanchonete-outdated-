@@ -1,5 +1,5 @@
 import * as React from 'react';
-import stylesCardCategoria from "@/styles/cardapio/Categoria.module.scss";
+import stylesCardCategoria from "@/styles/cardapio/Itens.module.scss";
 import cardsCategoriaDataJson from "@/utils/cardsCategoriaTemp.json";
 import cardsItensDataJson from "@/utils/cardsItemTemp.json";
 import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
