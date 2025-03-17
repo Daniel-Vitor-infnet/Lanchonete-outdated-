@@ -31,7 +31,7 @@
                 "id2": "414ldbCe885",
                 "description": "Hambúrguer de picanha grelhado, queijo especial, cebola roxa e molho de ervas.",
                 "price": 13.17,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Costela",
@@ -39,7 +39,7 @@
                 "id2": "917KZXxj780",
                 "description": "Hambúrguer de costela desfiada, queijo derretido e molho barbecue.",
                 "price": 21.21,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Gorgonzola",
@@ -47,7 +47,7 @@
                 "id2": "538XOvrN719",
                 "description": "Hambúrguer premium com queijo gorgonzola derretido e cebolas caramelizadas.",
                 "price": 9.25,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Barbecue",
@@ -55,7 +55,7 @@
                 "id2": "975KmmwI995",
                 "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
                 "price": 16.26,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Parmegiana",
@@ -63,7 +63,7 @@
                 "id2": "459mhViq933",
                 "description": "Filé de frango à parmegiana no pão, com molho de tomate e queijo derretido.",
                 "price": 15.16,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Brie",
@@ -71,7 +71,7 @@
                 "id2": "723JbNhA619",
                 "description": "Hambúrguer artesanal com queijo brie derretido, rúcula e geleia de pimenta.",
                 "price": 10.99,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Jalapeño",
@@ -79,7 +79,7 @@
                 "id2": "812XwNmY547",
                 "description": "Hambúrguer apimentado com queijo cheddar, bacon e jalapeños crocantes.",
                 "price": 18.45,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Trufado",
@@ -87,7 +87,7 @@
                 "id2": "394VqkOm621",
                 "description": "Blend de carnes nobres com molho trufado e queijo suíço.",
                 "price": 20.75,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Pepperoni",
@@ -95,7 +95,7 @@
                 "id2": "676FbMqA233",
                 "description": "Hambúrguer com pepperoni fatiado, queijo cheddar e maionese especial.",
                 "price": 14.30,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Carne de Sol",
@@ -103,7 +103,7 @@
                 "id2": "589wQzXv112",
                 "description": "Hambúrguer de carne de sol desfiada, queijo coalho e maionese de alho.",
                 "price": 11.99,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Blue Cheese",
@@ -111,7 +111,7 @@
                 "id2": "478VmmNY291",
                 "description": "Hambúrguer suculento com molho blue cheese e cebola crispy.",
                 "price": 17.50,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Ribs",
@@ -119,7 +119,7 @@
                 "id2": "829AJbkX347",
                 "description": "Costelinha desfiada, queijo prato e molho especial no pão brioche.",
                 "price": 19.80,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Cream Cheese",
@@ -127,7 +127,7 @@
                 "id2": "634NmJbX512",
                 "description": "Hambúrguer com cream cheese, bacon crocante e molho de alho poró.",
                 "price": 12.60,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-Caipira",
@@ -135,7 +135,7 @@
                 "id2": "902KXzAm315",
                 "description": "Hambúrguer de frango caipira, queijo coalho e maionese de pequi.",
                 "price": 9.99,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             },
             {
                 "title": "X-BBQ Onion",
@@ -143,9 +143,11 @@
                 "id2": "723XwVAq481",
                 "description": "Hambúrguer com cebolas crispy, queijo prato e molho barbecue.",
                 "price": 14.75,
-                "image": "src/assets/img/Logo.png"
+                "image": "src/assets/img/Lanche1.png"
             }
         ]
+        
+        
     },
     {
         "title": "Porções",
