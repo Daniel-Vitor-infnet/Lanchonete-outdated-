@@ -8,3 +8,42 @@ $border-color: #000000;
 
 
 
+.mainContainer {
+    width: 100vw !important;
+    height: min(87vh, 87dvh) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .boxPrincipal {
+        width: 90vw;
+        max-width: 90vw;
+        height: min(80vh, 80dvh);
+        max-height: min(80vh, 80dvh);
+        background-color: white;
+        display: flex;
+    }
+
+    .barraLateralContainer {
+        border-right: 5px solid var(--mui-divider-color);
+        background-color: orange;
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .barraLateral {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .cardContainer {
+        background-color: red;
+        max-width: 82vw;
+        max-height: 99.9%;
+        margin-left: 5px;
+        padding: 1rem;
+        overflow-x: auto;
+    }
+}
