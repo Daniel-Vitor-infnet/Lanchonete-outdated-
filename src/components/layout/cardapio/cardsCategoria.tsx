@@ -10,21 +10,22 @@ interface CardsListProps {
 
 const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => {
   return (
-    <Grid2 className={stylesPerso.cardsContainer}>
-      {cardsCardapio.map((card: any, index: number) => {
+    <Grid2 className={stylesPerso.mainContainer}>
+      {cardsCardapio.map((card: any) => {
         const { texto: titulo, sufixo: sufixoTitulo } = redimencionarTexto(card.title, 15);
         const { texto: descricao, sufixo: sufixoDescricao } = redimencionarTexto(card.description, 50, "pontos+");
 
         return (
-          <Grid2 key={index}>
+          <Grid2 key={card.id}>
             <Card className={stylesPerso.card}>
               <img src={card.image} alt={card.title} className={stylesPerso.cardImage} />
-              <CardContent className={stylesPerso.cardContent}>
-                <Typography className={stylesPerso.cardTitle}>
-                  {titulo} <span>{sufixoTitulo}</span>
+              <CardContent sx={{p: 0}} className={stylesPerso.cardInfo} >
+                <Typography className={stylesPerso.cardTitle} >
+                  {card.title}
                 </Typography>
                 <Typography className={stylesPerso.cardDescription}>
-                  {descricao} <span>{sufixoDescricao}</span>
+                  {card.description}
+                  teste
                 </Typography>
                 {card.price && (
                   <Typography className={stylesPerso.cardPrice}>
