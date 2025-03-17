@@ -2,8 +2,8 @@ import * as React from 'react';
 import styles from '@/styles/Cardapio.module.scss';
 import stylesCardCategoria from "@/styles/cardapio/Itens.module.scss";
 import cardsCategoriaDataJson from "@/utils/cardsCardapioTemp.json";
-import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
-import { mixins, CardCategoria } from '@/components';
+import { Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
+import {CardCategoria } from '@/components';
 import iconSelect from "@/utils/function/iconsSelect.tsx";
 
 const a11yProps = (index: number) => {
