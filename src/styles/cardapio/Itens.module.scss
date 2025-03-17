@@ -134,7 +134,7 @@
     font-weight: bold;
     overflow: hidden;             /* Oculta o conteúdo extra */
     
-    color: #FF0000;
+    color: oklch(0.59 0.18 142.19);
 
 
     @include laptop {}
