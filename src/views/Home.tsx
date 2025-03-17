@@ -20,7 +20,7 @@ const Home: React.FC = () => {
           <Avatar className={styles.avatar} alt="Logo" src={logo} />
           <p className={styles.status}>FECHADO</p>
         </Grid2>
-        <CardCategoria cardsItens={cardsCategoriaDataJson} stylesPerso={stylesCardCategoria} />
+        <CardCategoria cardsCardapio={cardsCategoriaDataJson} stylesPerso={stylesCardCategoria} />
       </BoxLayout>
     </Grid2>
   );
