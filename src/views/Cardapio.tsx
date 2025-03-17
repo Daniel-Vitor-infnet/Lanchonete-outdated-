@@ -4,10 +4,8 @@ import cardsCategoriaDataJson from "@/utils/cardsCategoriaTemp.json";
 import cardsItensDataJson from "@/utils/cardsItemTemp.json";
 import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
 import { mixins, CardCategoria } from '@/components';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import IconMdi from '@mdi/react';
-import iconesMdi from '@/libs/mdi/index.ts';
-
+import iconSelect from "@/utils/function/iconsSelect.tsx";
+ 
 
 const a11yProps = (index: number) => {
   return {
@@ -76,14 +74,13 @@ const VerticalTabs: React.FC = () => {
           sx={barraLateralContainer}
         >
           {cardsCategoriaDataJson.map((card: any, index: number) => {
-            const iconeSelect: string = iconesMdi.pizza; 
 
             return (
               <Tab
                 key={index}
                 label={
                   <Box sx={barraLateral}>
-                    <IconMdi path={iconeSelect} size={1} />
+                    {iconSelect("mdi-comida-pizza", "pequeno")}
                     {card.title}
                   </Box>
                 }

@@ -17,25 +17,30 @@ import { mdiSilverwareForkKnife } from '@mdi/js';
 import { mdiSilverwareVariant } from '@mdi/js';
 import { mdiWater } from '@mdi/js';
 
-const icones = {
-    pao: mdiBaguette,
-    copoCheio: mdiBeer,
-    garrafa: mdiBottleSodaClassic,
-    bolo: mdiCakeVariant,
-    cafe: mdiCoffee,
-    fastFood: mdiFood,
-    frango: mdiFoodDrumstick,
-    hotDog: mdiFoodHotDog,
-    carne: mdiFoodSteak,
-    batataFrita: mdiFrenchFries,
-    cerveja: mdiGlassMugVariant,
-    hamburguer: mdiHamburger,
-    picole: mdiIcePop,
-    pizza: mdiPizza,
-    talheres: mdiSilverware,
-    talheres2: mdiSilverwareForkKnife,
-    talheres3: mdiSilverwareVariant,
-    gotaDeAgua: mdiWater
+// const tamanhoMap: Record<string, [number, string]> = {
+
+const icones: Record<string, Record<string, string>> = {
+    comida: {
+        pao: mdiBaguette,
+        copoCheio: mdiBeer,
+        garrafa: mdiBottleSodaClassic,
+        bolo: mdiCakeVariant,
+        cafe: mdiCoffee,
+        fastFood: mdiFood,
+        frango: mdiFoodDrumstick,
+        hotDog: mdiFoodHotDog,
+        carne: mdiFoodSteak,
+        batataFrita: mdiFrenchFries,
+        cerveja: mdiGlassMugVariant,
+        hamburguer: mdiHamburger,
+        picole: mdiIcePop,
+        pizza: mdiPizza,
+        talheres: mdiSilverware,
+        talheres2: mdiSilverwareForkKnife,
+        talheres3: mdiSilverwareVariant,
+        gotaDeAgua: mdiWater
+    }
+
 };
 
 export default icones;
