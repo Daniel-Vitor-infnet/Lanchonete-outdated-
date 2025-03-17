@@ -16,6 +16,9 @@ const a11yProps = (index: number) => {
 const VerticalTabs: React.FC = () => {
   const [value, setValue] = React.useState<number>(0);
 
+  const batata = true;
+  const tipoMenu = batata ? "vertical" : "horizontal";
+
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -24,7 +27,7 @@ const VerticalTabs: React.FC = () => {
     <Grid2 className={styles.mainContainer} role="tabpanel">
       <Box className={styles.boxPrincipal}>
         <Tabs
-          orientation="vertical"
+          orientation={tipoMenu}
           variant="scrollable"
           value={value}
           onChange={handleChange}

@@ -25,7 +25,6 @@ const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => 
                 </Typography>
                 <Typography className={stylesPerso.cardDescription}>
                   {card.description}
-                  teste
                 </Typography>
                 {card.price && (
                   <Typography className={stylesPerso.cardPrice}>
