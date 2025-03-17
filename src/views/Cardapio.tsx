@@ -1,10 +1,10 @@
 import * as React from 'react';
 import stylesCardCategoria from "@/styles/cardapio/Itens.module.scss";
-import cardsCategoriaDataJson from "@/utils/cardsCategoriaTemp.json";
+import cardsCategoriaDataJson from "@/utils/cardsCardapioTemp.json";
 import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
 import { mixins, CardCategoria } from '@/components';
 import iconSelect from "@/utils/function/iconsSelect.tsx";
- 
+
 
 const a11yProps = (index: number) => {
   return {
