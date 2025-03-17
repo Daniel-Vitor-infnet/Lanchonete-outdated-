@@ -4,14 +4,14 @@ import { redimencionarTexto } from "@/utils/function/cardapio";
 
 
 interface CardsListProps {
-  cardsItens: any;
+  cardsCardapio: any;
   stylesPerso: any;
 }
 
-const CardsList: React.FC<CardsListProps> = ({ cardsItens, stylesPerso }) => {
+const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => {
   return (
     <Grid2 className={stylesPerso.cardsContainer}>
-      {cardsItens.map((card: any, index: number) => {
+      {cardsCardapio.map((card: any, index: number) => {
         const { texto: titulo, sufixo: sufixoTitulo } = redimencionarTexto(card.title, 15);
         const { texto: descricao, sufixo: sufixoDescricao } = redimencionarTexto(card.description, 50, "pontos+");
 

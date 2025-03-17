@@ -1,7 +1,6 @@
 import * as React from 'react';
 import stylesCardCategoria from "@/styles/cardapio/Itens.module.scss";
 import cardsCategoriaDataJson from "@/utils/cardsCategoriaTemp.json";
-import cardsItensDataJson from "@/utils/cardsItemTemp.json";
 import { Card, CardContent, Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
 import { mixins, CardCategoria } from '@/components';
 import iconSelect from "@/utils/function/iconsSelect.tsx";
@@ -80,7 +79,7 @@ const VerticalTabs: React.FC = () => {
                 key={index}
                 label={
                   <Box sx={barraLateral}>
-                    {iconSelect("mdi-comida-pizza", "pequeno")}
+                    {iconSelect(card.icon, "pequeno")}
                     {card.title}
                   </Box>
                 }
@@ -92,13 +91,13 @@ const VerticalTabs: React.FC = () => {
         </Tabs>
 
         <Grid2 >
-          {cardsCategoriaDataJson.map((item: any, index: number) => {
+          {cardsCategoriaDataJson.map((card: any, index: number) => {
             if (value === index) {
-              const itensDaCategoria = cardsItensDataJson.find(card => card.category === item.title)?.items || null;
-              if (itensDaCategoria) {
+              const itensDaCategoria = card.items || null;
+              if (itensDaCategoria.length > 0) {
                 return (
                   <Grid2 sx={cardContainer}>
-                    <CardCategoria key={index} cardsItens={itensDaCategoria} stylesPerso={stylesCardCategoria} />
+                    <CardCategoria key={index} cardsCardapio={itensDaCategoria} stylesPerso={stylesCardCategoria} />
                   </Grid2>
                 )
               } else {
