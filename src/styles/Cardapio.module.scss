@@ -1,5 +1,5 @@
 @use '@stylesFunction/mixins' as *;
-@use "@stylesFunction/index" as functions;
+@use "@stylesFunction/index" as *;
 
 
 $testesAtivos: true;
@@ -8,7 +8,7 @@ $testesAtivos: true;
 
 .main-container {
     width: 100vw !important;
-    height: min(87vh, 87dvh) !important;
+    height: alturaResponsivaViewport(87) !important;
     display: flex;
     justify-content: center;
     align-items: center;
