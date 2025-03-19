@@ -1,7 +1,28 @@
 @use '@/styles/mixins' as *;
 
+$teste1: blue;
+$teste2: purple;
+$teste3: lime;
+$teste4: yellow;
+$teste5: pink;
+$teste6: red;
+$teste7: mediumspringgreen;
+$teste8: mediumspringgreen;
+
+
+// $teste1: unset;
+// $teste2: unset;
+// $teste3: unset;
+// $teste4: unset;
+// $teste5: unset;
+// $teste6: unset;
+// $teste7: unset;
+// $teste8: unset;
+
+
 
 .mainContainer {
+  background-color: $teste1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -19,12 +40,12 @@
   @include mobile {}
 
   .item {
+    background-color: #ffebcc;
     width: 220px;
     height: 320px;
     display: grid;
     grid-template-rows: 0.7fr 1fr;
     border-radius: 16px;
-    background: #ffebcc;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     border: 5px solid #d35400;
@@ -64,6 +85,7 @@
   }
 
   .itemInfo {
+    background-color: $teste2;
     min-height: 0;
     max-height: 100%;
     display: grid;
@@ -85,6 +107,7 @@
   }
 
   .itemTitle {
+    background-color: $teste3;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -106,23 +129,15 @@
   }
 
   .itemDescription {
+    background-color: $teste4;
     display: -webkit-box;
-    /* Compatível com WebKit (Chrome, Safari) */
     display: box;
-    /* Versão sem prefixo */
     -webkit-box-orient: vertical;
-    /* Compatível com WebKit */
     box-orient: vertical;
-    /* Versão sem prefixo */
     -webkit-line-clamp: 3;
-    /* Compatível com WebKit */
     line-clamp: 3;
-    /* Versão sem prefixo */
     overflow: hidden;
-    /* Oculta o conteúdo extra */
     text-align: center;
-    /* Centraliza o texto */
-    /* Centraliza o texto */
     font-size: 1rem;
     color: #6d4c41;
 
@@ -137,6 +152,7 @@
 
 
   .itemPrice {
+    background-color: $teste5;
     max-height: 100%;
     display: flex;
     justify-content: center;
