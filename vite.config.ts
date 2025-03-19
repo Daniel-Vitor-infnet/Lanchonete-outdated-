@@ -15,6 +15,7 @@ export default defineConfig(() => {
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"), // Define "@" como base do projeto
+        "@stylesFunction": path.resolve(__dirname, "src/utils/function/stylesFunction"),
       },
     },
     build: {
@@ -35,4 +36,3 @@ export default defineConfig(() => {
     plugins: [react(), livereload("src/**/*.{js,jsx,ts,tsx}"), visualizer({ open: true })], // Agora o relatório será aberto automaticamente no navegador
   };
 });
-
