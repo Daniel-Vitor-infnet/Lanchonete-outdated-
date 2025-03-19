@@ -3,7 +3,7 @@ import styles from '@/styles/Cardapio.module.scss';
 import stylesCardCategoria from "@/styles/cardapio/Itens.module.scss";
 import cardsCategoriaDataJson from "@/utils/cardsCardapioTemp.json";
 import { Typography, Grid2, Tab, Box, Tabs } from "@/libs/mui";
-import {CardCategoria } from '@/components';
+import {CardsList } from '@/components';
 import iconSelect from "@/utils/function/iconsSelect.tsx";
 
 const a11yProps = (index: number) => {
@@ -54,7 +54,7 @@ const VerticalTabs: React.FC = () => {
               const itensDaCategoria = card.items || null;
               return itensDaCategoria.length > 0 ? (
                 <Grid2 className={styles.cardContainer}>
-                  <CardCategoria key={index} cardsCardapio={itensDaCategoria} stylesPerso={stylesCardCategoria} />
+                  <CardsList key={index} cardsCardapio={itensDaCategoria} stylesPerso={stylesCardCategoria} />
                 </Grid2>
               ) : (
                 <Typography>Nenhum item dessa categoria</Typography>
