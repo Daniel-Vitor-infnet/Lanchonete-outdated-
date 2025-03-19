@@ -1,0 +1,8 @@
+@function px-para-rem($px) {
+    @return $px / 16px * 1rem;
+}
+
+@function alturaResponsivaViewport($valor) {
+    @return min(#{$valor}vh, #{$valor}dvh);
+}
+

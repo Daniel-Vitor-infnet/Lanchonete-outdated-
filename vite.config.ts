@@ -1,4 +1,3 @@
-// No vite.config.ts, defina apenas um alias principal ("@"):
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import livereload from "vite-plugin-live-reload";
@@ -38,7 +37,7 @@ export default defineConfig(() => {
       react(), 
       livereload("src/**/*.{js,jsx,ts,tsx}"), 
       visualizer({ open: true }),
-      stylelintPlugin({ include: ["src/**/*.scss"] }) // Adiciona Stylelint ao Vite
-    ], // Agora o relatório será aberto automaticamente no navegador
+      //stylelintPlugin({ include: ["src/**/*.scss"] }) // Adiciona Stylelint ao Vite
+    ], 
   };
 });
