@@ -7,7 +7,7 @@ $text-color: white;
 $button-color: darkorchid;
 $error-color: red;
 
-.mainContainer {
+.main-container {
   min-width: min(100vh, 100dvh);
   display: flex;
   justify-content: center;
@@ -20,7 +20,6 @@ $error-color: red;
   @include mobile-large {}
 
   @include mobile {}
-
 
   .box {
     width: 22%;
@@ -45,16 +44,14 @@ $error-color: red;
 
     @include mobile-large {
       width: 90%;
-
     }
 
     @include mobile {}
   }
 
-  .box>* {
+  .box > * {
     height: 100%;
   }
-
 
   .link {
     color: blue;

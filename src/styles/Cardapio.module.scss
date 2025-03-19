@@ -16,13 +16,12 @@ $teste8: mediumspringgreen;
 // $teste3: unset;
 // $teste4: unset;
 // $teste5: unset;
- $teste6: unset;
+$teste6: unset;
 // $teste7: unset;
 // $teste8: unset;
 
 
-
-.mainContainer {
+.main-container {
     width: 100vw !important;
     height: min(87vh, 87dvh) !important;
     display: flex;
@@ -37,8 +36,7 @@ $teste8: mediumspringgreen;
 
     @include mobile {}
 
-
-    .boxPrincipal {
+    .box-principal {
         background-color: var($teste6, var(white));
         width: 90vw;
         max-width: 90vw;
@@ -55,7 +53,7 @@ $teste8: mediumspringgreen;
         @include mobile {}
     }
 
-    .barraLateralContainer {
+    .barra-lateral-container {
         border-right: 5px solid var(--mui-divider-color);
         background-color: orange;
         display: flex;
@@ -70,7 +68,7 @@ $teste8: mediumspringgreen;
         @include mobile {}
     }
 
-    .barraLateral {
+    .barra-lateral {
         display: flex;
         font-size: 0.8rem;
         gap: 0.7rem;
@@ -87,7 +85,7 @@ $teste8: mediumspringgreen;
         @include mobile {}
     }
 
-    .cardContainer {
+    .card-container {
         max-width: 82vw;
         max-height: 99.9%;
         margin-left: 5px;

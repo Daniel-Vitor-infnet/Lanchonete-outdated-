@@ -19,7 +19,6 @@ const VerticalTabs: React.FC = () => {
   const batata = true;
   const tipoMenu = batata ? "vertical" : "horizontal";
 
-
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     const selectedCategory = cardsCardapioDataJson[newValue];
     setSelectedId(selectedCategory.id);
@@ -28,25 +27,25 @@ const VerticalTabs: React.FC = () => {
   const selectedCategory = cardsCardapioDataJson.find((card) => card.id === selectedId);
 
   return (
-    <Grid2 className={styles.mainContainer} role="tabpanel">
-      <Box className={styles.boxPrincipal}>
+    <Grid2 className={styles['main-container']} role="tabpanel">
+      <Box className={styles['box-principal']}>
         <Tabs
           orientation={tipoMenu}
           variant="scrollable"
           value={cardsCardapioDataJson.findIndex((card) => card.id === selectedId)}
           onChange={handleChange}
-          className={styles.barraLateralContainer}
+          className={styles['barra-lateral-container']}
         >
           {cardsCardapioDataJson.map((categorias: any) => (
             <Tab key={categorias.id} label={
-              <Box className={styles.barraLateral}>
+              <Box className={styles['barra-lateral']}>
                 {iconSelect(categorias.icon, "pequeno")}
                 {categorias.title}
               </Box>
             } {...a11yProps(categorias.id)} />
           ))}
         </Tabs>
-        <Grid2 className={styles.cardContainer}>
+        <Grid2 className={styles['card-container']}>
           {selectedCategory && (
             <CardsCardapio
               key={selectedCategory.id}
@@ -55,7 +54,6 @@ const VerticalTabs: React.FC = () => {
             />
           )}
         </Grid2>
-
       </Box>
     </Grid2>
   );

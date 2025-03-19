@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '@/styles/Login.module.scss';
 import { Grid2, Box, TextField, Button, Typography, Tabs, Tab, InputAdornment, IconButton, OutlinedInput, InputLabel, FormControl, MuiTelInput } from '@/libs/mui';
-import { AlertDiagPers} from '@/components';
+import { AlertDiagPers } from '@/components';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
@@ -19,9 +19,9 @@ const Login: React.FC = () => {
   };
 
   return (
-    <Grid2 className={styles.mainContainer}>
+    <Grid2 className={styles['main-container']}>
       <AlertDiagPers message={"Ainda não foi adicionado sistema de criação de contas"} />
-      <Box className={styles.box}>
+      <Box className={styles['box']}>
         {state.screen === 'login' && (
           <>
             <Typography variant="h5" gutterBottom align="center">
@@ -78,13 +78,13 @@ const Login: React.FC = () => {
                 label="Senha"
               />
             </FormControl>
-            <Typography onClick={() => handleChange('screen', 'register')} className={styles.link}>
+            <Typography onClick={() => handleChange('screen', 'register')} className={styles['link']}>
               Criar conta
             </Typography>
-            <Typography onClick={() => handleChange('screen', 'forgotPassword')} className={styles.link}>
+            <Typography onClick={() => handleChange('screen', 'forgotPassword')} className={styles['link']}>
               Esqueceu a senha?
             </Typography>
-            <Button variant="contained" color="primary" fullWidth className={styles.button}>
+            <Button variant="contained" color="primary" fullWidth className={styles['button']}>
               Entrar
             </Button>
           </>
@@ -117,8 +117,8 @@ const Login: React.FC = () => {
                 label="Senha"
               />
             </FormControl>
-            <Button variant="contained" color="primary" fullWidth className={styles.button}>Cadastrar</Button>
-            <Typography onClick={() => handleChange('screen', 'login')} className={styles.link}>Já tem uma conta? Faça login</Typography>
+            <Button variant="contained" color="primary" fullWidth className={styles['button']}>Cadastrar</Button>
+            <Typography onClick={() => handleChange('screen', 'login')} className={styles['link']}>Já tem uma conta? Faça login</Typography>
           </>
         )}
         {state.screen === 'code' && (
@@ -127,13 +127,13 @@ const Login: React.FC = () => {
               Código de recuperação
             </Typography>
             <TextField required label="Código" variant="outlined" fullWidth margin="normal" />
-            <Button variant="contained" color="primary" fullWidth className={styles.button}>
+            <Button variant="contained" color="primary" fullWidth className={styles['button']}>
               Enviar Código
             </Button>
-            <Typography onClick={() => handleChange('screen', 'forgotPassword')} className={styles.link}>
+            <Typography onClick={() => handleChange('screen', 'forgotPassword')} className={styles['link']}>
               Voltar para Recuperar Senha
             </Typography>
-            <Typography onClick={() => handleChange('screen', 'login')} className={styles.link}>
+            <Typography onClick={() => handleChange('screen', 'login')} className={styles['link']}>
               Voltar para o login
             </Typography>
           </>
@@ -144,13 +144,13 @@ const Login: React.FC = () => {
               Recuperar Senha
             </Typography>
             <TextField required label="Email" variant="outlined" fullWidth margin="normal" />
-            <Button variant="contained" color="primary" fullWidth className={styles.button}>
+            <Button variant="contained" color="primary" fullWidth className={styles['button']}>
               Enviar Código de Recuperação
             </Button>
-            <Typography onClick={() => handleChange('screen', 'login')} className={styles.link}>
+            <Typography onClick={() => handleChange('screen', 'login')} className={styles['link']}>
               Voltar para o login
             </Typography>
-            <Typography onClick={() => handleChange('screen', 'code')} className={styles.link}>
+            <Typography onClick={() => handleChange('screen', 'code')} className={styles['link']}>
               Confirmar Código de Recuperação
             </Typography>
           </>
