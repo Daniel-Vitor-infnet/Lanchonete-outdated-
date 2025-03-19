@@ -1,27 +1,10 @@
 @use '@stylesFunction/mixins' as *;
 
-$teste1: blue;
-$teste2: purple;
-$teste3: lime;
-$teste4: yellow;
-$teste5: pink;
-$teste6: red;
-$teste7: mediumspringgreen;
-$teste8: mediumspringgreen;
-
-
-// $teste1: unset;
-// $teste2: unset;
-// $teste3: unset;
-// $teste4: unset;
-// $teste5: unset;
-// $teste6: unset;
-// $teste7: unset;
-// $teste8: unset;
+$testesAtivos: true;
 
 
 .main-container {
-  background-color: $teste1;
+  background-color: if($testesAtivos, blue, unset);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -82,7 +65,7 @@ $teste8: mediumspringgreen;
   }
 
   .item-info {
-    background-color: $teste2;
+    background-color: if($testesAtivos, purple, unset);
     min-height: 0;
     max-height: 100%;
     display: grid;
@@ -102,7 +85,7 @@ $teste8: mediumspringgreen;
   }
 
   .item-title {
-    background-color: $teste3;
+    background-color: if($testesAtivos, lime, unset);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -123,7 +106,7 @@ $teste8: mediumspringgreen;
   }
 
   .item-description {
-    background-color: $teste4;
+    background-color: if($testesAtivos, yellow, unset);
     display: -webkit-box;
     display: box;
     -webkit-box-orient: vertical;
@@ -145,7 +128,7 @@ $teste8: mediumspringgreen;
   }
 
   .item-price {
-    background-color: $teste5;
+    background-color: if($testesAtivos, pink, unset);
     max-height: 100%;
     display: flex;
     justify-content: center;
