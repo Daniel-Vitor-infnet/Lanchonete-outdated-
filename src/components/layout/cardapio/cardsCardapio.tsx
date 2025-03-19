@@ -11,24 +11,21 @@ interface CardsListProps {
 const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => {
   return (
     <Grid2 className={stylesPerso.mainContainer}>
-      {cardsCardapio.map((card: any) => {
-        const { texto: titulo, sufixo: sufixoTitulo } = redimencionarTexto(card.title, 15);
-        const { texto: descricao, sufixo: sufixoDescricao } = redimencionarTexto(card.description, 50, "pontos+");
-
+      {cardsCardapio.map((item: any) => {
         return (
-          <Grid2 key={card.id}>
-            <Card className={stylesPerso.card}>
-              <img src={card.image} alt={card.title} className={stylesPerso.cardImage} />
-              <CardContent sx={{p: 0}} className={stylesPerso.cardInfo} >
-                <Typography className={stylesPerso.cardTitle} >
-                  {card.title}
+          <Grid2 key={item.id}>
+            <Card className={stylesPerso.item} key={item.id}>
+              <img src={item.image} alt={item.title} className={stylesPerso.itemImage} />
+              <CardContent sx={{p: 0}} className={stylesPerso.itemInfo} >
+                <Typography className={stylesPerso.itemTitle} >
+                  {item.title}
                 </Typography>
-                <Typography className={stylesPerso.cardDescription}>
-                  {card.description}
+                <Typography className={stylesPerso.itemDescription}>
+                  {item.description}
                 </Typography>
-                {card.price && (
-                  <Typography className={stylesPerso.cardPrice}>
-                    R$ {String(card.price.toFixed(2)).replace(".", ",")}
+                {item.price && (
+                  <Typography className={stylesPerso.itemPrice}>
+                    R$ {String(item.price.toFixed(2)).replace(".", ",")}
                   </Typography>
                 )}
               </CardContent>
