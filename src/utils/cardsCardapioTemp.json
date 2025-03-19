@@ -4,7 +4,7 @@
         "id": 391962,
         "id2": "391tSVeT962",
         "description": "Lanches smash burgers, opções premium e os clássicos.",
-        "image": "src/assets/img/Lanche1.png",
+        "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
         "items": [
             {
@@ -146,8 +146,7 @@
                 "image": "src/assets/img/Lanche1.png"
             }
         ]
-    }
-    ,
+    },
     {
         "title": "Porções",
         "id": 783076,
@@ -197,14 +196,13 @@
                 "price": 20.00
             }
         ]
-    }
-    ,
+    },
     {
         "title": "Sorvetes",
         "id": 191320,
         "id2": "191tUvYE320",
         "description": "Cremosos, refrescantes e irresistíveis.",
-        "image": "src/assets/img/Sorvete.png",
+        "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
         "items": [
             {
@@ -212,7 +210,7 @@
                 "id": 334502,
                 "id2": "334MkMo502",
                 "description": "Uma explosão de sabor com morangos frescos batidos com sorvete cremoso e finalizado com chantilly.",
-                "image": "src/assets/img/MilkshakeMorango.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 18.00
             },
             {
@@ -220,7 +218,7 @@
                 "id": 882313,
                 "id2": "882AcLn313",
                 "description": "Açaí batido na textura perfeita, coberto com leite ninho e um toque generoso de leite condensado.",
-                "image": "src/assets/img/AcaiNinho.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 20.00
             },
             {
@@ -228,7 +226,7 @@
                 "id": 671210,
                 "id2": "671SwCh210",
                 "description": "Chocolate intenso e cremoso, com pedaços generosos de brownie para uma experiência única.",
-                "image": "src/assets/img/SorveteChocolate.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 12.00
             },
             {
@@ -236,7 +234,7 @@
                 "id": 555743,
                 "id2": "555SnCa743",
                 "description": "Sorvete de baunilha aveludado, coberto com calda quente de caramelo e crocante de amendoim.",
-                "image": "src/assets/img/SundaeCaramelo.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 15.00
             },
             {
@@ -244,7 +242,7 @@
                 "id": 927602,
                 "id2": "927PcFr602",
                 "description": "Feito com frutas vermelhas naturais, refrescante e perfeito para qualquer momento do dia.",
-                "image": "src/assets/img/PicoleFrutas.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 10.00
             },
             {
@@ -252,7 +250,7 @@
                 "id": 729601,
                 "id2": "729PsTc601",
                 "description": "Cremosidade incomparável e o sabor sofisticado do pistache em cada colherada.",
-                "image": "src/assets/img/SorvetePistache.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 14.00
             },
             {
@@ -260,7 +258,7 @@
                 "id": 814502,
                 "id2": "814MkOv502",
                 "description": "Uma combinação irresistível de sorvete cremoso com crocantes flocos de Ovomaltine e cobertura de chocolate.",
-                "image": "src/assets/img/MilkshakeOvomaltine.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 19.00
             }
         ]
@@ -278,7 +276,7 @@
                 "id": 896494,
                 "id2": "896HdesD494",
                 "description": "Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial.",
-                "image": "src/assets/img/Picanha.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 55.90
             },
             {
@@ -286,7 +284,7 @@
                 "id": 775691,
                 "id2": "775ZCeJs691",
                 "description": "Costela bovina assada lentamente por mais de 6 horas, garantindo um sabor defumado irresistível.",
-                "image": "src/assets/img/Costela.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 59.90
             },
             {
@@ -294,7 +292,7 @@
                 "id": 475781,
                 "id2": "475nfylk781",
                 "description": "Maminha macia e saborosa, temperada na medida certa e assada na brasa.",
-                "image": "src/assets/img/Maminha.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 42.90
             },
             {
@@ -302,7 +300,7 @@
                 "id": 417387,
                 "id2": "417bQdiI387",
                 "description": "Espetinhos de coração de frango grelhados com tempero especial da casa.",
-                "image": "src/assets/img/Coracao.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 39.90
             },
             {
@@ -310,7 +308,7 @@
                 "id": 874800,
                 "id2": "874oFAhI800",
                 "description": "Linguiça toscana artesanal assada na brasa, crocante por fora e suculenta por dentro.",
-                "image": "src/assets/img/Linguica.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 40.90
             }
         ]
@@ -328,7 +326,7 @@
                 "id": 657729,
                 "id2": "657jMkMI729",
                 "description": "Frango grelhado suculento acompanhado de arroz soltinho, feijão temperado e uma porção de salada fresca.",
-                "image": "src/assets/img/MarmitaFrango.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 22.90
             },
             {
@@ -336,7 +334,7 @@
                 "id": 855616,
                 "id2": "855yaWcT616",
                 "description": "Carne bovina macia e bem temperada servida com arroz branco, feijão cremoso e legumes cozidos no vapor.",
-                "image": "src/assets/img/MarmitaCarne.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 27.50
             },
             {
@@ -344,7 +342,7 @@
                 "id": 995142,
                 "id2": "995ZhHPh142",
                 "description": "Filé de peixe grelhado temperado com ervas finas, servido com arroz branco, feijão caseiro e purê de batata.",
-                "image": "src/assets/img/MarmitaPeixe.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 30.90
             },
             {
@@ -352,7 +350,7 @@
                 "id": 378424,
                 "id2": "378mWzjM424",
                 "description": "Arroz integral acompanhado de feijão temperado, legumes grelhados e uma porção de salada variada.",
-                "image": "src/assets/img/MarmitaVegetariana.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 24.00
             },
             {
@@ -360,7 +358,7 @@
                 "id": 753664,
                 "id2": "753wCznU664",
                 "description": "Frango grelhado suculento, arroz integral e batata-doce assada, uma refeição leve e nutritiva.",
-                "image": "src/assets/img/MarmitaFitness.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 26.50
             }
         ]
@@ -378,7 +376,7 @@
                 "id": 304160,
                 "id2": "304fuEKv160",
                 "description": "Carne bovina macia e temperada na brasa, garantindo um sabor irresistível e suculento.",
-                "image": "src/assets/img/EspetinhoCarne.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 15.90
             },
             {
@@ -386,7 +384,7 @@
                 "id": 270228,
                 "id2": "270mgTni228",
                 "description": "Peito de frango marinado com especiarias e grelhado lentamente até ficar dourado.",
-                "image": "src/assets/img/EspetinhoFrango.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 14.50
             },
             {
@@ -394,7 +392,7 @@
                 "id": 168917,
                 "id2": "168rBdfl917",
                 "description": "Linguiça especial assada na brasa, crocante por fora e suculenta por dentro.",
-                "image": "src/assets/img/EspetinhoLinguica.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 13.90
             },
             {
@@ -402,7 +400,7 @@
                 "id": 305405,
                 "id2": "305QkvYE405",
                 "description": "Corações de frango grelhados e temperados com ervas e alho, macios e saborosos.",
-                "image": "src/assets/img/EspetinhoCoracao.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 11.90
             },
             {
@@ -410,7 +408,7 @@
                 "id": 499185,
                 "id2": "499HylSX185",
                 "description": "Queijo coalho assado na brasa com uma generosa camada de mel, combinação perfeita entre doce e salgado.",
-                "image": "src/assets/img/EspetinhoQueijo.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 17.90
             }
         ]
@@ -428,7 +426,7 @@
                 "id": 490334,
                 "id2": "490MvEzw334",
                 "description": "Clássico pudim de leite condensado com calda caramelizada e textura irresistível.",
-                "image": "src/assets/img/Pudim.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 9.90
             },
             {
@@ -436,7 +434,7 @@
                 "id": 477635,
                 "id2": "477JJAol635",
                 "description": "Brigadeiro de chocolate belga, enrolado no granulado belga para um sabor mais intenso.",
-                "image": "src/assets/img/Brigadeiro.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 4.50
             },
             {
@@ -444,7 +442,7 @@
                 "id": 200883,
                 "id2": "200xyiZA883",
                 "description": "Massa crocante recheada com um creme azedinho de limão, finalizada com merengue gratinado.",
-                "image": "src/assets/img/TortaLimao.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 12.90
             },
             {
@@ -452,7 +450,7 @@
                 "id": 361796,
                 "id2": "361wWdTE796",
                 "description": "Mousse leve e aerado de maracujá, com calda natural da fruta e crocante de chocolate branco.",
-                "image": "src/assets/img/MousseMaracuja.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 11.50
             },
             {
@@ -460,7 +458,7 @@
                 "id": 789432,
                 "id2": "789BChoc432",
                 "description": "Bolo de chocolate úmido, recheado e coberto com ganache de chocolate meio amargo.",
-                "image": "src/assets/img/BoloChocolate.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 13.00
             }
         ]
@@ -478,7 +476,7 @@
                 "id": 866325,
                 "id2": "866nGptB325",
                 "description": "Massa leve e crocante, coberta com molho de tomate artesanal e queijo mussarela derretido.",
-                "image": "src/assets/img/PizzaMussarela.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 55.00
             },
             {
@@ -486,7 +484,7 @@
                 "id": 703873,
                 "id2": "703pzLOB873",
                 "description": "Fatias generosas de calabresa defumada, cebolas caramelizadas e orégano sobre queijo derretido.",
-                "image": "src/assets/img/PizzaCalabresa.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 58.90
             },
             {
@@ -494,7 +492,7 @@
                 "id": 753679,
                 "id2": "753LsBDt679",
                 "description": "Presunto, ovos, cebola, ervilha, queijo e azeitonas sobre um molho de tomate caseiro.",
-                "image": "src/assets/img/PizzaPortuguesa.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 60.00
             },
             {
@@ -502,7 +500,7 @@
                 "id": 452953,
                 "id2": "452ZkAFZ953",
                 "description": "Frango desfiado temperado e o legítimo Catupiry, sobre uma base de molho especial.",
-                "image": "src/assets/img/PizzaFrangoCatupiry.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 62.50
             },
             {
@@ -510,7 +508,7 @@
                 "id": 155578,
                 "id2": "155FhttM578",
                 "description": "Mistura perfeita de mussarela, provolone, gorgonzola e parmesão derretidos.",
-                "image": "src/assets/img/PizzaQuatroQueijos.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 65.00
             },
             {
@@ -518,7 +516,7 @@
                 "id": 262164,
                 "id2": "262YKTtm164",
                 "description": "Pepperoni picante sobre queijo derretido e molho de tomate caseiro.",
-                "image": "src/assets/img/PizzaPepperoni.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 67.90
             },
             {
@@ -526,7 +524,7 @@
                 "id": 830419,
                 "id2": "830dGSEm419",
                 "description": "Massa especial com cobertura de vegetais frescos e queijo vegano derretido.",
-                "image": "src/assets/img/PizzaVegana.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 63.90
             },
             {
@@ -534,7 +532,7 @@
                 "id": 352031,
                 "id2": "352QAAqv031",
                 "description": "Chocolate cremoso, morangos frescos e raspas de chocolate branco sobre massa crocante.",
-                "image": "src/assets/img/PizzaChocolateMorango.png",
+                "image": "src/assets/img/Logo.png",
                 "price": 59.90
             }
         ]
