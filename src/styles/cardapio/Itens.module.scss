@@ -18,7 +18,11 @@ $testesAtivos: true;
 
   @include tablet {}
 
-  @include mobile-large {}
+  @include mobile-large {
+    min-width: 100vw;
+    min-height: 100%;
+    gap: unset;
+  }
 
   @include mobile {}
 

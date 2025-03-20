@@ -36,7 +36,8 @@ $testesAtivos: true;
 
         @include mobile-large {
             width: 100vw;
-            height: alturaResponsivaViewport(100);
+            min-height: alturaResponsivaViewport(80);
+            flex-direction: column;
         }
 
         @include mobile {}
@@ -98,9 +99,11 @@ $testesAtivos: true;
 
         @include mobile-large {
             min-width: 100%;
-            height: 100%;
-            overflow: unset;
             margin-left: unset;
+            padding: unset;
+            min-height: alturaResponsivaViewport(40); 
+            height: auto;
+
         }
 
         @include mobile {}
