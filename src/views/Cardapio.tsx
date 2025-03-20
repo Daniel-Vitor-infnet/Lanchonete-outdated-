@@ -34,7 +34,7 @@ const VerticalTabs: React.FC = () => {
           orientation={obterTamanhoTela("vertical", null, "horizontal")}
           variant="scrollable"
           value={cardsCardapioDataJson.findIndex((card) => card.id === selectedId)}
-          scrollButtons
+          scrollButtons="auto"
           allowScrollButtonsMobile
           onChange={handleChange}
           className={styles['barra-lateral-container']}
@@ -42,7 +42,7 @@ const VerticalTabs: React.FC = () => {
           {cardsCardapioDataJson.map((categorias: any) => (
             <Tab key={categorias.id} label={
               <Box className={styles['barra-lateral']}>
-                {iconsSelect(categorias.icon, obterTamanhoTela("pequeno", "muitoPequeno"))}
+                {iconsSelect(categorias.icon, obterTamanhoTela("pequeno", 0.8, 1.3))}
                 {categorias.title}
               </Box>
             } {...a11yProps(categorias.id)} />
