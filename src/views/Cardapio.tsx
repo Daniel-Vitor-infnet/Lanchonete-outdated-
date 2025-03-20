@@ -4,7 +4,8 @@ import stylesCardCardapio from "@/styles/cardapio/Itens.module.scss";
 import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
 import { Grid2, Tab, Box, Tabs } from "@/libs/mui";
 import { CardsCardapio } from '@/components';
-import iconSelect from "@/utils/function/iconsSelect.tsx";
+import { obterTamanhoTela, iconsSelect } from "@/utils/function";
+
 
 const a11yProps = (cardID: number) => {
   return {
@@ -39,7 +40,7 @@ const VerticalTabs: React.FC = () => {
           {cardsCardapioDataJson.map((categorias: any) => (
             <Tab key={categorias.id} label={
               <Box className={styles['barra-lateral']}>
-                {iconSelect(categorias.icon, "pequeno")}
+                {iconsSelect(categorias.icon, obterTamanhoTela("pequeno", "muitoPequeno"))}
                 {categorias.title}
               </Box>
             } {...a11yProps(categorias.id)} />

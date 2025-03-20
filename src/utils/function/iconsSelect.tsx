@@ -4,11 +4,11 @@ import iconesMdi from '@/libs/mdi';
 
 
 
-export default function iconSelect(icon: string, tamanho: string) {
+export default function iconSelect(icon: any, tamanho: any) {
 
     const tamanhoMap: Record<string, [number, string]> = {
-        muitoPequeno: [1, "P"],
-        pequeno: [0.8, "P"],
+        muitoPequeno: [0.8, "P"],
+        pequeno: [1, "P"],
         medio: [2, "M"],
         grande: [3, "G"],
       };
