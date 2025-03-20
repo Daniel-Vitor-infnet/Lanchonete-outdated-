@@ -33,7 +33,10 @@ $testesAtivos: true;
 
         @include tablet {}
 
-        @include mobile-large {}
+        @include mobile-large {
+            display: grid;
+            grid-template-rows: 0.1fr 0.9fr;
+        }
 
         @include mobile {}
     }
@@ -60,8 +63,8 @@ $testesAtivos: true;
         width: 100%;
 
         @include laptop {
-        font-size: px-para-rem(11.6px);
-    }
+            font-size: px-para-rem(11.6px);
+        }
 
         @include tablet {}
 
@@ -82,7 +85,11 @@ $testesAtivos: true;
 
         @include tablet {}
 
-        @include mobile-large {}
+        @include mobile-large {
+            max-width: 82vw;
+            max-height: unset;
+            overflow: auto;
+        }
 
         @include mobile {}
     }

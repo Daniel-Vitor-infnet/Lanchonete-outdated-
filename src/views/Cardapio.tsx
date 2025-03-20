@@ -17,7 +17,7 @@ const a11yProps = (cardID: number) => {
 const VerticalTabs: React.FC = () => {
   const [selectedId, setSelectedId] = React.useState<number>(cardsCardapioDataJson[0].id);
 
-  const batata = true;
+  const batata = false;
   const tipoMenu = batata ? "vertical" : "horizontal";
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
