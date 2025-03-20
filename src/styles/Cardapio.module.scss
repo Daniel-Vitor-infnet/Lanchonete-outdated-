@@ -55,13 +55,13 @@ $testesAtivos: true;
 
     .barra-lateral {
         display: flex;
-        font-size: 0.8rem;
-        gap: 0.7rem;
+        font-size: px-para-rem(12.8px);
+        gap: px-para-rem(11.2px);
         width: 100%;
 
         @include laptop {
-            font-size: 0.72rem;
-        }
+        font-size: px-para-rem(11.6px);
+    }
 
         @include tablet {}
 
