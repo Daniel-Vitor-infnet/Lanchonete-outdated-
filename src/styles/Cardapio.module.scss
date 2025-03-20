@@ -2,7 +2,7 @@
 @use "@stylesFunction/index" as *;
 
 
-$testesAtivos: true;
+$testesAtivos: false;
 
 
 
@@ -57,6 +57,7 @@ $testesAtivos: true;
             flex-shrink: unset;
             justify-content: center;
             align-items: center;
+            min-height: 20%;
             max-height: 20%;
         }
 
