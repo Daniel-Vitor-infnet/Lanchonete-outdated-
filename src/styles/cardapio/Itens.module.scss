@@ -21,7 +21,7 @@ $testesAtivos: false;
   @include mobile-large {
     min-width: 100vw;
     min-height: 100%;
-    gap: px-para-rem(3px);
+    gap: px-para-rem(5px);
     margin-top: px-para-rem(15px);
   }
 
@@ -55,9 +55,9 @@ $testesAtivos: false;
     @include tablet {}
 
     @include mobile-large {
-      
-      width: px-para-rem(360px);
-      height: px-para-rem(150px);
+
+      width: px-para-rem(370px);
+      height: px-para-rem(156px);
       border: unset;
       box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
       grid-template-rows: unset;
@@ -137,9 +137,10 @@ $testesAtivos: false;
 
     @include mobile-large {
       display: grid;
-      justify-content: unset;
+      justify-content: center;
       align-items: unset;
       grid-row: 1;
+      font-size: px-para-rem(20px);
     }
 
     @include mobile {}
@@ -163,7 +164,12 @@ $testesAtivos: false;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+      display: grid;
+      justify-content: unset;
+      align-items: unset;
+      grid-row: 1;
+    }
 
     @include mobile {}
   }
@@ -189,10 +195,13 @@ $testesAtivos: false;
     @include tablet {}
 
     @include mobile-large {
+      width: 90%;
+      margin-left: 11px;
       display: grid;
       justify-content: unset;
       align-items: unset;
       grid-row: 2;
+      text-align: unset;
     }
 
     @include mobile {}
@@ -221,6 +230,8 @@ $testesAtivos: false;
       justify-content: end;
       align-items: center;
       grid-row: 3;
+      font-size: px-para-rem(18px);
+      margin-right: px-para-rem(8px);
 
     }
 
