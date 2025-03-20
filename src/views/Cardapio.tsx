@@ -34,6 +34,8 @@ const VerticalTabs: React.FC = () => {
           orientation={obterTamanhoTela("vertical", null, "horizontal")}
           variant="scrollable"
           value={cardsCardapioDataJson.findIndex((card) => card.id === selectedId)}
+          scrollButtons
+          allowScrollButtonsMobile
           onChange={handleChange}
           className={styles['barra-lateral-container']}
         >
@@ -46,7 +48,7 @@ const VerticalTabs: React.FC = () => {
             } {...a11yProps(categorias.id)} />
           ))}
         </Tabs>
-        <Grid2 className={styles['card-container']}>
+        {/* <Grid2 className={styles['card-container']}>
           {selectedCategory && (
             <CardsCardapio
               key={selectedCategory.id}
@@ -54,7 +56,7 @@ const VerticalTabs: React.FC = () => {
               stylesPerso={stylesCardCardapio}
             />
           )}
-        </Grid2>
+        </Grid2> */}
       </Box>
     </Grid2>
   );
