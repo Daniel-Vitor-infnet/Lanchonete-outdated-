@@ -17,13 +17,13 @@ const a11yProps = (cardID: number) => {
 const VerticalTabs: React.FC = () => {
   const [selectedId, setSelectedId] = React.useState<number>(cardsCardapioDataJson[0].id);
 
-  const batata = false;
-  const tipoMenu = batata ? "vertical" : "horizontal";
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     const selectedCategory = cardsCardapioDataJson[newValue];
     setSelectedId(selectedCategory.id);
   };
+
+
 
   const selectedCategory = cardsCardapioDataJson.find((card) => card.id === selectedId);
 
@@ -31,7 +31,7 @@ const VerticalTabs: React.FC = () => {
     <Grid2 className={styles['main-container']} role="tabpanel">
       <Box className={styles['box-principal']}>
         <Tabs
-          orientation={tipoMenu}
+          orientation={obterTamanhoTela("vertical", null, "horizontal")}
           variant="scrollable"
           value={cardsCardapioDataJson.findIndex((card) => card.id === selectedId)}
           onChange={handleChange}

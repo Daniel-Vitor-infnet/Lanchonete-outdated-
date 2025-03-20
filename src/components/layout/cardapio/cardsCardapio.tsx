@@ -9,6 +9,7 @@ interface CardsListProps {
 
 
 const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => {
+  
   return (
     <Grid2 className={stylesPerso['main-container']}>
       {cardsCardapio.map((item: any) => {
