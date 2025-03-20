@@ -38,6 +38,14 @@ const VerticalTabs: React.FC = () => {
           allowScrollButtonsMobile
           onChange={handleChange}
           className={styles['barra-lateral-container']}
+          sx={{
+            ".MuiTabs-scrollButtons": {
+              width: "auto", // Ajusta o tamanho dos botões para evitar espaço extra
+            },
+            ".MuiTabs-scrollButtons.Mui-disabled": {
+              display: "none", // Esconde os botões quando não necessários
+            },
+          }}
         >
           {cardsCardapioDataJson.map((categorias: any) => (
             <Tab key={categorias.id} label={
