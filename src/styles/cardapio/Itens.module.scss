@@ -1,7 +1,7 @@
 @use '@stylesFunction/mixins' as *;
 @use "@stylesFunction/index" as *;
 
-$testesAtivos: false;
+$testesAtivos: true;
 
 
 .main-container {
@@ -77,10 +77,10 @@ $testesAtivos: false;
     justify-items: center;
     align-items: center;
     gap: px-para-rem(9.6px);
-    padding: 0.8rem;
+    padding: px-para-rem(12.8px);
 
     @include laptop {
-      gap: 0.8rem;
+      gap: px-para-rem(12.8px);
     }
 
     @include tablet {}
@@ -110,13 +110,13 @@ $testesAtivos: false;
   }
 
   .item-title-grande {
-    width: 80%;
+    width: 100%;
     background-color: if($testesAtivos, lab(87.82 -79.28 80.98 / 0.66), unset);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 1.2rem;
+    font-size: pxpx-para-rem(19.2px);
     font-weight: bold;
     color: #d84315;
 
