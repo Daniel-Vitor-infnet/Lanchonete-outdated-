@@ -1,7 +1,7 @@
 @use '@stylesFunction/mixins' as *;
 @use "@stylesFunction/index" as *;
 
-$testesAtivos: true;
+$testesAtivos: false;
 
 
 .main-container {
@@ -96,7 +96,7 @@ $testesAtivos: true;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-size: 1.2rem;
+    font-size: pxpx-para-rem(19.2px);
     font-weight: bold;
     color: #d84315;
 
