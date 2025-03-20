@@ -11,7 +11,9 @@ $testesAtivos: false;
   justify-content: center;
   gap: px-para-rem(12.8px);
 
-  @include laptop {}
+  @include laptop {
+    gap: px-para-rem(9px);
+  }
 
   @include tablet {}
 
@@ -35,7 +37,14 @@ $testesAtivos: false;
       transform: scale(1.05);
     }
 
-    @include laptop {}
+    @include laptop {
+      width: px-para-rem(200px);
+      height: px-para-rem(300px);
+
+      &:hover {
+        transform: scale(1.025);
+      }
+    }
 
     @include tablet {}
 
@@ -70,7 +79,9 @@ $testesAtivos: false;
     gap: px-para-rem(9.6px);
     padding: 0.8rem;
 
-    @include laptop {}
+    @include laptop {
+      gap: 0.8rem;
+    }
 
     @include tablet {}
 
@@ -150,7 +161,6 @@ $testesAtivos: false;
     font-size: 1.1rem;
     font-weight: bold;
     overflow: hidden;
-    /* Oculta o conteúdo extra */
 
     color: oklch(0.59 0.18 142.19);
 
