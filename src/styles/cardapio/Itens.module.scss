@@ -1,6 +1,7 @@
 @use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
 
-$testesAtivos: true;
+$testesAtivos: false;
 
 
 .main-container {
@@ -8,11 +9,9 @@ $testesAtivos: true;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.8rem;
+  gap: px-para-rem(12.8px);
 
-  @include laptop {
-    gap: 0.8rem;
-  }
+  @include laptop {}
 
   @include tablet {}
 
@@ -22,24 +21,21 @@ $testesAtivos: true;
 
   .item {
     background-color: #ffebcc;
-    width: 220px;
-    height: 320px;
+    width: px-para-rem(220px);
+    height: px-para-rem(320px);
     display: grid;
     grid-template-rows: 0.7fr 1fr;
-    border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: px-para-rem(16px);
+    box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    border: 5px solid #d35400;
+    border: px-para-rem(5px) solid #d35400;
     color: #8b4513;
 
     &:hover {
       transform: scale(1.05);
     }
 
-    @include laptop {
-      width: 209px;
-      height: 304px;
-    }
+    @include laptop {}
 
     @include tablet {}
 
@@ -48,7 +44,6 @@ $testesAtivos: true;
     @include mobile {}
   }
 
-  // Usar grid
   .item-image {
     width: 100%;
     height: 100%;
@@ -69,13 +64,13 @@ $testesAtivos: true;
     min-height: 0;
     max-height: 100%;
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
-    gap: 0.6rem;
+    grid-template-rows: 1.4fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: px-para-rem(9.6px);
     padding: 0.8rem;
 
-    @include laptop {
-      gap: 0.8rem;
-    }
+    @include laptop {}
 
     @include tablet {}
 
@@ -84,8 +79,28 @@ $testesAtivos: true;
     @include mobile {}
   }
 
-  .item-title {
+  .item-title-pequeno {
     background-color: if($testesAtivos, lime, unset);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d84315;
+
+    @include laptop {}
+
+    @include tablet {}
+
+    @include mobile-large {}
+
+    @include mobile {}
+  }
+
+  .item-title-grande {
+    width: 80%;
+    background-color: if($testesAtivos, lab(87.82 -79.28 80.98 / 0.66), unset);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -94,9 +109,7 @@ $testesAtivos: true;
     font-weight: bold;
     color: #d84315;
 
-    @include laptop {
-      font-size: 1.1rem;
-    }
+    @include laptop {}
 
     @include tablet {}
 
@@ -104,6 +117,7 @@ $testesAtivos: true;
 
     @include mobile {}
   }
+
 
   .item-description {
     background-color: if($testesAtivos, yellow, unset);
