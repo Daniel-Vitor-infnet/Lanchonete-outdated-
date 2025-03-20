@@ -80,7 +80,7 @@ $testesAtivos: false;
     padding: px-para-rem(12.8px);
 
     @include laptop {
-      gap: px-para-rem(12.8px);
+      gap: px-para-rem(12px);
     }
 
     @include tablet {}
@@ -110,17 +110,20 @@ $testesAtivos: false;
   }
 
   .item-title-grande {
-    width: 100%;
+    width: 88%;
     background-color: if($testesAtivos, lab(87.82 -79.28 80.98 / 0.66), unset);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: px-para-rem(19.2px);
+    font-size: px-para-rem(17px);
     font-weight: bold;
     color: #d84315;
 
-    @include laptop {}
+    @include laptop {
+    width: 93%;
+    font-size: px-para-rem(17px);
+    }
 
     @include tablet {}
 
@@ -140,10 +143,12 @@ $testesAtivos: false;
     line-clamp: 3;
     overflow: hidden;
     text-align: center;
-    font-size: 1rem;
+    font-size: px-para-rem(16px);
     color: #6d4c41;
 
-    @include laptop {}
+    @include laptop {
+    font-size: px-para-rem(14px);
+    }
 
     @include tablet {}
 
@@ -158,7 +163,7 @@ $testesAtivos: false;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: px-para-rem(14.7px);
     font-weight: bold;
     overflow: hidden;
 
