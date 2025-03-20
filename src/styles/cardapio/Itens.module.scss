@@ -59,6 +59,15 @@ $testesAtivos: true;
       height: px-para-rem(100px);
       border: unset;
       box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
+      display: grid;
+      grid-template-rows: unset;
+      grid-template-columns: 0.7fr 1fr;
+
+
+      transition: unset;
+      &:hover {
+        transform: none;
+      }
     }
 
     @include mobile {}
@@ -96,7 +105,10 @@ $testesAtivos: true;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+      min-height: 100%;
+      min-width: 100%;
+    }
 
     @include mobile {}
   }

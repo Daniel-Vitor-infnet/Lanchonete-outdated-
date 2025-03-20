@@ -17,7 +17,7 @@ const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => 
         return (
           <Grid2 key={item.id}>
             <Card className={stylesPerso['item']} key={item.id}>
-              {/* <img src={item.image} alt={item.title} className={stylesPerso['item-image']} />
+              <img src={item.image} alt={item.title} className={stylesPerso['item-image']} />
               <CardContent sx={{ p: 0 }} className={stylesPerso['item-info']}>
                 <Typography className={stylesPerso[titleTamanho]}>
                   {item.title}
@@ -30,7 +30,7 @@ const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => 
                     R$ {String(item.price.toFixed(2)).replace(".", ",")}
                   </Typography>
                 )}
-              </CardContent> */}
+              </CardContent>
             </Card>
           </Grid2>
         );
