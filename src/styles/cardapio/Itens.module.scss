@@ -21,8 +21,11 @@ $testesAtivos: false;
   @include mobile-large {
     min-width: 100vw;
     min-height: 100%;
-    gap: px-para-rem(5px);
+    flex-wrap: unset;
+    flex-direction: column;
+    align-items: center;
     margin-top: px-para-rem(15px);
+    gap: px-para-rem(5px);
   }
 
   @include mobile {}
@@ -55,9 +58,9 @@ $testesAtivos: false;
     @include tablet {}
 
     @include mobile-large {
-
-      width: px-para-rem(370px);
+      width: 90%;
       height: px-para-rem(156px);
+      margin: 0 auto;
       border: unset;
       box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
       grid-template-rows: unset;
