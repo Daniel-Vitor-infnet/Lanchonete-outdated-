@@ -31,10 +31,10 @@ $testesAtivos: true;
     background-color: #ffebcc;
     width: px-para-rem(240px);
     height: px-para-rem(320px);
-    color: #8b4513;
-    border: px-para-rem(5px) solid #d35400;
     display: grid;
     grid-template-rows: 0.7fr 1fr;
+    color: #8b4513;
+    border: px-para-rem(5px) solid #d35400;
     border-radius: px-para-rem(16px);
     box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
@@ -55,16 +55,17 @@ $testesAtivos: true;
     @include tablet {}
 
     @include mobile-large {
-      width: px-para-rem(230px);
-      height: px-para-rem(100px);
+      
+      width: px-para-rem(360px);
+      height: px-para-rem(150px);
       border: unset;
       box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
-      display: grid;
       grid-template-rows: unset;
       grid-template-columns: 0.7fr 1fr;
 
 
       transition: unset;
+
       &:hover {
         transform: none;
       }
@@ -106,8 +107,13 @@ $testesAtivos: true;
     @include tablet {}
 
     @include mobile-large {
-      min-height: 100%;
-      min-width: 100%;
+      display: grid;
+      grid-template-rows: 1fr 2fr 1fr;
+      justify-items: unset;
+      align-items: unset;
+      padding: unset;
+      padding-bottom: unset !important;
+
     }
 
     @include mobile {}
@@ -129,7 +135,12 @@ $testesAtivos: true;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+      display: grid;
+      justify-content: unset;
+      align-items: unset;
+      grid-row: 1;
+    }
 
     @include mobile {}
   }
@@ -177,7 +188,12 @@ $testesAtivos: true;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+      display: grid;
+      justify-content: unset;
+      align-items: unset;
+      grid-row: 2;
+    }
 
     @include mobile {}
   }
@@ -200,7 +216,13 @@ $testesAtivos: true;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+      display: grid;
+      justify-content: end;
+      align-items: center;
+      grid-row: 3;
+
+    }
 
     @include mobile {}
   }
