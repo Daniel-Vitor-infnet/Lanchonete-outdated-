@@ -9,7 +9,7 @@ $testesAtivos: false;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: px-para-rem(12.8px);
+  gap: px-para-rem(7px);
 
   @include laptop {
     gap: px-para-rem(9px);
@@ -23,7 +23,7 @@ $testesAtivos: false;
 
   .item {
     background-color: #ffebcc;
-    width: px-para-rem(220px);
+    width: px-para-rem(240px);
     height: px-para-rem(320px);
     display: grid;
     grid-template-rows: 0.7fr 1fr;
@@ -34,11 +34,11 @@ $testesAtivos: false;
     color: #8b4513;
 
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
     @include laptop {
-      width: px-para-rem(200px);
+      width: px-para-rem(230px);
       height: px-para-rem(300px);
 
       &:hover {
@@ -96,11 +96,13 @@ $testesAtivos: false;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-size: px-para-rem(19.2px);
+    font-size: px-para-rem(17.5px);
     font-weight: bold;
     color: #d84315;
 
-    @include laptop {}
+    @include laptop {
+      font-size: px-para-rem(17px);
+    }
 
     @include tablet {}
 
@@ -110,19 +112,19 @@ $testesAtivos: false;
   }
 
   .item-title-grande {
-    width: 88%;
+    width: 100%;
     background-color: if($testesAtivos, lab(87.82 -79.28 80.98 / 0.66), unset);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: px-para-rem(17px);
+    font-size: px-para-rem(16px);
     font-weight: bold;
     color: #d84315;
 
     @include laptop {
-    width: 93%;
-    font-size: px-para-rem(17px);
+      width: 100%;
+      font-size: px-para-rem(15px);
     }
 
     @include tablet {}
@@ -147,7 +149,7 @@ $testesAtivos: false;
     color: #6d4c41;
 
     @include laptop {
-    font-size: px-para-rem(14px);
+      font-size: px-para-rem(14px);
     }
 
     @include tablet {}
@@ -159,17 +161,19 @@ $testesAtivos: false;
 
   .item-price {
     background-color: if($testesAtivos, pink, unset);
+    color: oklch(0.59 0.18 142.19);
     max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: px-para-rem(14.7px);
+    font-size: px-para-rem(17px);
     font-weight: bold;
     overflow: hidden;
 
-    color: oklch(0.59 0.18 142.19);
 
-    @include laptop {}
+    @include laptop {
+    font-size: px-para-rem(15.5px);
+    }
 
     @include tablet {}
 
