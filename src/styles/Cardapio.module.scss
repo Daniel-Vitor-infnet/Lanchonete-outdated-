@@ -64,6 +64,7 @@ $testesAtivos: true;
 
     .barra-lateral {
         display: flex;
+        align-items: center;
         font-size: px-para-rem(12.8px);
         gap: px-para-rem(11.2px);
         width: 100%;
