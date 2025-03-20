@@ -22,6 +22,7 @@ $testesAtivos: true;
     min-width: 100vw;
     min-height: 100%;
     gap: unset;
+    margin-top: px-para-rem(15px);
   }
 
   @include mobile {}
@@ -30,13 +31,13 @@ $testesAtivos: true;
     background-color: #ffebcc;
     width: px-para-rem(240px);
     height: px-para-rem(320px);
+    color: #8b4513;
+    border: px-para-rem(5px) solid #d35400;
     display: grid;
     grid-template-rows: 0.7fr 1fr;
     border-radius: px-para-rem(16px);
     box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    border: px-para-rem(5px) solid #d35400;
-    color: #8b4513;
 
     &:hover {
       transform: scale(1.03);
@@ -54,8 +55,10 @@ $testesAtivos: true;
     @include tablet {}
 
     @include mobile-large {
-      width: px-para-rem(130px);
-      height: px-para-rem(200px);
+      width: px-para-rem(230px);
+      height: px-para-rem(100px);
+      border: unset;
+      box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
     }
 
     @include mobile {}
@@ -180,7 +183,7 @@ $testesAtivos: true;
 
 
     @include laptop {
-    font-size: px-para-rem(15.5px);
+      font-size: px-para-rem(15.5px);
     }
 
     @include tablet {}
