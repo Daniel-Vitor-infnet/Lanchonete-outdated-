@@ -17,7 +17,10 @@ $testesAtivos: true;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+        width: 100%;
+        height: unset;
+    }
 
     @include mobile {}
 
@@ -35,9 +38,9 @@ $testesAtivos: true;
 
         @include mobile-large {
             width: 100vw;
-            height: alturaResponsivaViewport(100);
-            max-height: alturaResponsivaViewport(100);
             max-width: 100vw;
+            height: unset;
+            max-height: unset;
             display: grid;
             grid-template-rows: 0.1fr 0.9fr;
         }
@@ -90,9 +93,9 @@ $testesAtivos: true;
         @include tablet {}
 
         @include mobile-large {
-            max-width: 82vw;
-            max-height: unset;
-            overflow: auto;
+            min-width: 100%;
+            overflow: unset;
+            margin-left: unset;
         }
 
         @include mobile {}
