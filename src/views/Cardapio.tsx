@@ -4,7 +4,7 @@ import stylesCardCardapio from "@/styles/cardapio/Itens.module.scss";
 import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
 import { Grid2, Tab, Box, Tabs } from "@/libs/mui";
 import { CardsCardapio } from '@/components';
-import { obterTamanhoTela, iconsSelect } from "@/utils/function";
+import { obterTamanhoTela, iconsSelect, footerVisibility } from "@/utils/function";
 
 
 const a11yProps = (cardID: number) => {
@@ -26,6 +26,8 @@ const VerticalTabs: React.FC = () => {
 
 
   const selectedCategory = cardsCardapioDataJson.find((card) => card.id === selectedId);
+
+  footerVisibility(obterTamanhoTela(true, null, false, false));
 
   return (
     <Grid2 className={styles['main-container']} role="tabpanel">

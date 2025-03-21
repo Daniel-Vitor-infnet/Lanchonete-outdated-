@@ -3,23 +3,32 @@ import Home from '@/views/Home';
 import Login from '@/views/Login'; 
 import Panel from '@/views/Panel'; 
 import Cardapio from '@/views/Cardapio'; 
+import PageLayout from '@/components/layout/pageLayout';
+
+const withLayout = (Component) => (
+  <PageLayout>
+    <Component />
+  </PageLayout>
+);
+
+
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: withLayout(Home),
   },
   {
     path: '/login',
-    element: <Login />,
+    element: withLayout(Login),
   },
   {
     path: '/Panel',
-    element: <Panel />,
+    element: withLayout(Panel),
   },
   {
     path: '/Cardapio',
-    element: <Cardapio />,
+    element: withLayout(Cardapio),
   },
 ]);
 

@@ -17,11 +17,11 @@ $border-color: #000000;
 
   @include laptop {}
 
-  @include tablet {}
 
-  @include mobile-large {}
 
   @include mobile {}
+
+
 
   .box {
     background-color: rgb(255 255 255);
@@ -33,14 +33,14 @@ $border-color: #000000;
       min-width: 56%;
     }
 
-    @include tablet {}
 
-    @include mobile-large {
+
+    @include mobile {
       max-width: 90%;
       padding: 30px;
     }
 
-    @include mobile {}
+
   }
 
   .title {
@@ -52,11 +52,11 @@ $border-color: #000000;
 
     @include laptop {}
 
-    @include tablet {}
 
-    @include mobile-large {}
 
     @include mobile {}
+
+
   }
 
   .sub-title {
@@ -65,11 +65,11 @@ $border-color: #000000;
 
     @include laptop {}
 
-    @include tablet {}
 
-    @include mobile-large {}
 
     @include mobile {}
+
+
   }
 
   .option-container {
@@ -80,11 +80,11 @@ $border-color: #000000;
 
     @include laptop {}
 
-    @include tablet {}
 
-    @include mobile-large {}
 
     @include mobile {}
+
+
   }
 
   .button-aplicar-container {
@@ -94,11 +94,11 @@ $border-color: #000000;
 
     @include laptop {}
 
-    @include tablet {}
 
-    @include mobile-large {}
 
     @include mobile {}
+
+
   }
 
   .button-pedidos-cards-container {
@@ -114,11 +114,11 @@ $border-color: #000000;
       height: unset;
     }
 
-    @include tablet {}
 
-    @include mobile-large {}
 
     @include mobile {}
+
+
   }
 
 }

@@ -16,14 +16,14 @@ $testesAtivos: false;
 
     @include laptop {}
 
-    @include tablet {}
 
-    @include mobile-large {
+
+    @include mobile {
         background-color: black;
         height: unset;
     }
 
-    @include mobile {}
+
 
     .box-principal {
         background-color: white;
@@ -34,15 +34,15 @@ $testesAtivos: false;
 
         @include laptop {}
 
-        @include tablet {}
 
-        @include mobile-large {
+
+        @include mobile {
             width: 100vw;
             min-height: alturaResponsivaViewport(80);
             flex-direction: column;
         }
 
-        @include mobile {}
+
     }
 
     .barra-lateral-container {
@@ -53,9 +53,9 @@ $testesAtivos: false;
 
         @include laptop {}
 
-        @include tablet {}
 
-        @include mobile-large {
+
+        @include mobile {
             flex-shrink: unset;
             justify-content: center;
             align-items: center;
@@ -63,7 +63,7 @@ $testesAtivos: false;
             max-height: 20%;
         }
 
-        @include mobile {}
+
     }
 
     .barra-lateral {
@@ -77,15 +77,15 @@ $testesAtivos: false;
             font-size: px-para-rem(11.6px);
         }
 
-        @include tablet {}
 
-        @include mobile-large {
+
+        @include mobile {
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        @include mobile {}
+
     }
 
     .card-container {
@@ -98,9 +98,9 @@ $testesAtivos: false;
 
         @include laptop {}
 
-        @include tablet {}
 
-        @include mobile-large {
+
+        @include mobile {
             min-width: 100%;
             margin-left: unset;
             padding: unset;
@@ -109,6 +109,6 @@ $testesAtivos: false;
 
         }
 
-        @include mobile {}
+
     }
 }

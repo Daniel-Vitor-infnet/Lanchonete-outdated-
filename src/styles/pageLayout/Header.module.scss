@@ -1,0 +1,53 @@
+@use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
+
+$testesAtivos: true;
+
+
+.main-container {
+  background-color: #d35400;
+  width: 100%;
+  max-width: 100%;
+  height: alturaResponsivaViewport(6);
+  max-height: alturaResponsivaViewport(6);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+  .logo {
+    background-color: if($testesAtivos, blue, unset);
+  }
+
+  .status {
+    background-color: if($testesAtivos, red, unset);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar {
+    width: auto;
+    height: auto;
+  }
+
+  .menu {
+    background-color: if($testesAtivos, green, unset);
+    width: 97%;
+    display: flex;
+    align-items: center;
+  }
+
+  .botaoNav {
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    &.ativo {
+      background-color: #ff9800 !important;
+      color: white !important;
+    }
+  }
+  
+
+
+}
