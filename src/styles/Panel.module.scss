@@ -1,14 +1,12 @@
-@use '@/styles/mixins' as *;
+@use '@stylesFunction/mixins' as *;
 
 
-$primary-color: #1E90FF;
+$primary-color: #1e90ff;
 $text-color: black;
 $background-white: white;
 $border-color: #000000;
 
-
-
-.mainContainer {
+.main-container {
 
   display: flex;
   flex-direction: column;
@@ -16,7 +14,6 @@ $border-color: #000000;
   align-items: center;
   margin-bottom: 60px;
   margin-top: 60px;
-
 
   @include laptop {}
 
@@ -32,10 +29,8 @@ $border-color: #000000;
     border-radius: 10px;
     padding: 60px;
 
-
     @include laptop {
       min-width: 56%;
-
     }
 
     @include tablet {}
@@ -46,8 +41,6 @@ $border-color: #000000;
     }
 
     @include mobile {}
-
-
   }
 
   .title {
@@ -57,7 +50,6 @@ $border-color: #000000;
     display: flex;
     justify-content: center;
 
-
     @include laptop {}
 
     @include tablet {}
@@ -65,15 +57,12 @@ $border-color: #000000;
     @include mobile-large {}
 
     @include mobile {}
-
-
   }
 
-  .subTitle {
+  .sub-title {
     display: flex;
     align-items: center;
 
-
     @include laptop {}
 
     @include tablet {}
@@ -83,13 +72,12 @@ $border-color: #000000;
     @include mobile {}
   }
 
-  .optionContainer {
+  .option-container {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $border-color;
     padding: 20px;
 
-
     @include laptop {}
 
     @include tablet {}
@@ -99,12 +87,11 @@ $border-color: #000000;
     @include mobile {}
   }
 
-  .buttonAplicarContainer {
+  .button-aplicar-container {
     display: flex;
     justify-content: end;
     margin-top: 40px;
 
-
     @include laptop {}
 
     @include tablet {}
@@ -114,8 +101,7 @@ $border-color: #000000;
     @include mobile {}
   }
 
-
-  .buttonPedidosCardsContainer {
+  .button-pedidos-cards-container {
     display: flex;
     flex-direction: column;
     color: white;
@@ -123,7 +109,6 @@ $border-color: #000000;
     margin-top: 50px;
     border-radius: 6px;
     gap: 20px;
-
 
     @include laptop {
       height: unset;
@@ -135,6 +120,5 @@ $border-color: #000000;
 
     @include mobile {}
   }
-
 
 }

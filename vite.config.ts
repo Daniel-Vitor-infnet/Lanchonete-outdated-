@@ -1,9 +1,9 @@
-// No vite.config.ts, defina apenas um alias principal ("@"):
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import livereload from "vite-plugin-live-reload";
 import { visualizer } from "rollup-plugin-visualizer";
 import path from "path";
+import stylelintPlugin from "vite-plugin-stylelint"; // Importa o plugin do Stylelint
 
 export default defineConfig(() => {
   return {
@@ -15,6 +15,7 @@ export default defineConfig(() => {
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"), // Define "@" como base do projeto
+        "@stylesFunction": path.resolve(__dirname, "src/utils/function/stylesFunction"),
       },
     },
     build: {
@@ -32,7 +33,11 @@ export default defineConfig(() => {
         },
       },
     },
-    plugins: [react(), livereload("src/**/*.{js,jsx,ts,tsx}"), visualizer({ open: true })], // Agora o relatório será aberto automaticamente no navegador
+    plugins: [
+      react(), 
+      livereload("src/**/*.{js,jsx,ts,tsx}"), 
+      visualizer({ open: true }),
+      //stylelintPlugin({ include: ["src/**/*.scss"] }) // Adiciona Stylelint ao Vite
+    ], 
   };
 });
-

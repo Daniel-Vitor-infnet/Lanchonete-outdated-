@@ -1,0 +1,15 @@
+@use "sass:math";
+
+
+@function px-para-rem($px) {
+    @if math.is-unitless($px) {
+        $px: $px * 1px; 
+    }
+    @return math.div($px, 16px) * 1rem;
+}
+
+
+@function alturaResponsivaViewport($valor) {
+    @return min(#{$valor}vh, #{$valor}dvh);
+}
+

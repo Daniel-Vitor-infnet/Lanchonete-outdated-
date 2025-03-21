@@ -1,0 +1,246 @@
+@use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
+
+$testesAtivos: true;
+
+
+.main-container {
+  background-color: if($testesAtivos, blue, unset);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: px-para-rem(7px);
+
+  @include laptop {
+    gap: px-para-rem(9px);
+  }
+
+  @include tablet {}
+
+  @include mobile-large {
+    min-width: 100vw;
+    min-height: 100%;
+    flex-wrap: unset;
+    flex-direction: column;
+    align-items: center;
+    margin-top: px-para-rem(15px);
+    gap: px-para-rem(5px);
+  }
+
+  @include mobile {}
+
+  .item {
+    background-color: #ffebcc;
+    width: px-para-rem(240px);
+    height: px-para-rem(320px);
+    display: grid;
+    grid-template-rows: 0.7fr 1fr;
+    color: #8b4513;
+    border: px-para-rem(5px) solid #d35400;
+    border-radius: px-para-rem(16px);
+    box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    @include laptop {
+      width: px-para-rem(230px);
+      height: px-para-rem(300px);
+
+      &:hover {
+        transform: scale(1.025);
+      }
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      width: 90%;
+      height: alturaResponsivaViewport(18);
+      margin: 0 auto;
+      border: unset;
+      box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
+      grid-template-rows: unset;
+      grid-template-columns: 0.7fr 1fr;
+
+
+      transition: unset;
+
+      &:hover {
+        transform: none;
+      }
+    }
+
+    @include mobile {}
+  }
+
+  .item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+
+    @include laptop {}
+
+    @include tablet {}
+
+    @include mobile-large {
+      object-fit: cover;
+
+    }
+
+    @include mobile {}
+  }
+
+  .item-info {
+    background-color: if($testesAtivos, purple, unset);
+    min-height: 0;
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: 1.4fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: px-para-rem(9.6px);
+    padding: px-para-rem(12.8px);
+
+    @include laptop {
+      gap: px-para-rem(12px);
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      display: grid;
+      grid-template-rows: 1fr 2fr 1fr;
+      justify-items: unset;
+      align-items: unset;
+      padding: unset;
+      padding-bottom: unset !important;
+
+    }
+
+    @include mobile {}
+  }
+
+  .item-title-pequeno {
+    background-color: if($testesAtivos, lime, unset);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: px-para-rem(17.5px);
+    font-weight: bold;
+    color: #d84315;
+
+    @include laptop {
+      font-size: px-para-rem(17px);
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      display: grid;
+      justify-content: center;
+      align-items: unset;
+      grid-row: 1;
+      font-size: px-para-rem(20px);
+    }
+
+    @include mobile {}
+  }
+
+  .item-title-grande {
+    width: 100%;
+    background-color: if($testesAtivos, lab(87.82 -79.28 80.98 / 0.66), unset);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: px-para-rem(16px);
+    font-weight: bold;
+    color: #d84315;
+
+    @include laptop {
+      width: 100%;
+      font-size: px-para-rem(15px);
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      display: grid;
+      justify-content: unset;
+      align-items: unset;
+      grid-row: 1;
+    }
+
+    @include mobile {}
+  }
+
+
+  .item-description {
+    background-color: if($testesAtivos, yellow, unset);
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    text-align: center;
+    font-size: px-para-rem(16px);
+    color: #6d4c41;
+
+    @include laptop {
+      font-size: px-para-rem(14px);
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      width: 90%;
+      margin-left: 11px;
+      display: grid;
+      justify-content: unset;
+      align-items: unset;
+      grid-row: 2;
+      text-align: unset;
+    }
+
+    @include mobile {}
+  }
+
+  .item-price {
+    background-color: if($testesAtivos, pink, unset);
+    color: oklch(0.59 0.18 142.19);
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: px-para-rem(17px);
+    font-weight: bold;
+    overflow: hidden;
+
+
+    @include laptop {
+      font-size: px-para-rem(15.5px);
+    }
+
+    @include tablet {}
+
+    @include mobile-large {
+      display: grid;
+      justify-content: end;
+      align-items: center;
+      grid-row: 3;
+      font-size: px-para-rem(18px);
+      margin-right: px-para-rem(8px);
+
+    }
+
+    @include mobile {}
+  }
+}

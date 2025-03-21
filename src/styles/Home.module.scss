@@ -1,4 +1,4 @@
-@use './mixins' as *;
+@use "@stylesFunction/mixins" as *;
 
 $teste-color: mediumspringgreen;
 $teste-border-color: skyblue;
@@ -41,5 +41,5 @@ $teste-border-color: skyblue;
     background-color: red;
   }
 
-  
+
 }

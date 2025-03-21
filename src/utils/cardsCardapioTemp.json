@@ -1,0 +1,540 @@
+[
+    {
+        "title": "Teste",
+        "id": 391962,
+        "id2": "391tSVeT962",
+        "description": "Lanches smash burgers, opções premium e os clássicos.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Picanha",
+                "id": 180889,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "image": "src/assets/img/Logo.png",
+                "price": 3.50
+            }
+        ]
+    },
+    {
+        "title": "Lanches",
+        "id": 301901,
+        "id2": "301FAhty901",
+        "description": "Lanches smash burgers, opções premium e os clássicos.",
+        "image": "src/assets/img/Lanche1.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "X-Picanha afafaa afafafaffafaafa fafafa afafaaf afafafaaf",
+                "id": 414885,
+                "id2": "414ldbCe885",
+                "description": "Hambúrguer de picanha grelhado, queijo especial, cebola roxa e molho de ervas.",
+                "price": 34.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Costela afa aff af fa afa asf a afa afa a",
+                "id": 917780,
+                "id2": "917KZXxj780",
+                "description": "Hambúrguer de costela desfiada, queijo derretido e molho barbecue.",
+                "price": 36.90,
+                "image": "src/assets/img/Lanche2.png"
+            },
+            {
+                "title": "X-Gorgonzola  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "id": 538719,
+                "id2": "538XOvrN719",
+                "description": "Hambúrguer premium com queijo gorgonzola derretido e cebolas caramelizadas.",
+                "price": 35.90,
+                "image": "src/assets/img/Logo.png"
+            },
+            {
+                "title": "X-Barbecue",
+                "id": 975995,
+                "id2": "975KmmwI995",
+                "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
+                "price": 33.90,
+                "image": "src/assets/img/Sorvete.png"
+            },
+            {
+                "title": "X-Parmegiana",
+                "id": 459933,
+                "id2": "459mhViq933",
+                "description": "Filé de frango à parmegiana no pão, com molho de tomate e queijo derretido.",
+                "price": 32.90,
+                "image": "src/assets/img/Bebidas.png"
+            },
+            {
+                "title": "X-Brie batata arroz",
+                "id": 723619,
+                "id2": "723JbNhA619",
+                "description": "Hambúrguer artesanal com queijo brie derretido, rúcula e geleia de pimenta.",
+                "price": 34.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Jalapeño",
+                "id": 812547,
+                "id2": "812XwNmY547",
+                "description": "Hambúrguer apimentado com queijo cheddar, bacon e jalapeños crocantes.",
+                "price": 33.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Trufado",
+                "id": 394621,
+                "id2": "394VqkOm621",
+                "description": "Blend de carnes nobres com molho trufado e queijo suíço.",
+                "price": 39.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Pepperoni",
+                "id": 676233,
+                "id2": "676FbMqA233",
+                "description": "Hambúrguer com pepperoni fatiado, queijo cheddar e maionese especial.",
+                "price": 30.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Carne de Sol",
+                "id": 589112,
+                "id2": "589wQzXv112",
+                "description": "Hambúrguer de carne de sol desfiada, queijo coalho e maionese de alho.",
+                "price": 34.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Blue Cheese",
+                "id": 478291,
+                "id2": "478VmmNY291",
+                "description": "Hambúrguer suculento com molho blue cheese e cebola crispy.",
+                "price": 35.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Ribs",
+                "id": 829347,
+                "id2": "829AJbkX347",
+                "description": "Costelinha desfiada, queijo prato e molho especial no pão brioche.",
+                "price": 38.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Cream Cheese",
+                "id": 634512,
+                "id2": "634NmJbX512",
+                "description": "Hambúrguer com cream cheese, bacon crocante e molho de alho poró.",
+                "price": 31.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-Caipira",
+                "id": 902315,
+                "id2": "902KXzAm315",
+                "description": "Hambúrguer de frango caipira, queijo coalho e maionese de pequi.",
+                "price": 30.90,
+                "image": "src/assets/img/Lanche1.png"
+            },
+            {
+                "title": "X-BBQ Onion",
+                "id": 723481,
+                "id2": "723XwVAq481",
+                "description": "Hambúrguer com cebolas crispy, queijo prato e molho barbecue.",
+                "price": 32.90,
+                "image": "src/assets/img/Lanche1.png"
+            }
+        ]
+    },
+    {
+        "title": "Porções",
+        "id": 783076,
+        "id2": "783QbUig076",
+        "description": "Batata frita, onion rings, frango a passarinho e muito mais",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Batata Frita",
+                "id": 453903,
+                "id2": "453qzkGA903",
+                "description": "Porção de batatas fritas crocantes.",
+                "image": "src/assets/img/Logo.png",
+                "price": 15.00
+            },
+            {
+                "title": "Onion Rings",
+                "id": 224896,
+                "id2": "224bpedb896",
+                "description": "Anéis de cebola empanados e crocantes.",
+                "image": "src/assets/img/Logo.png",
+                "price": 18.00
+            },
+            {
+                "title": "Frango à Passarinho",
+                "id": 216373,
+                "id2": "216qpJgg373",
+                "description": "Porção de pedaços de frango temperados e fritos.",
+                "image": "src/assets/img/Logo.png",
+                "price": 25.00
+            },
+            {
+                "title": "Polenta Frita",
+                "id": 321520,
+                "id2": "321ROCMy520",
+                "description": "Polenta frita dourada e crocante.",
+                "image": "src/assets/img/Logo.png",
+                "price": 14.00
+            },
+            {
+                "title": "Torresmo",
+                "id": 867544,
+                "id2": "867jKhdJ544",
+                "description": "Torresmo crocante com tempero especial.",
+                "image": "src/assets/img/Logo.png",
+                "price": 20.00
+            }
+        ]
+    },
+    {
+        "title": "Sorvetes",
+        "id": 191320,
+        "id2": "191tUvYE320",
+        "description": "Cremosos, refrescantes e irresistíveis.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Milkshake de Morango",
+                "id": 334502,
+                "id2": "334MkMo502",
+                "description": "Uma explosão de sabor com morangos frescos batidos com sorvete cremoso e finalizado com chantilly.",
+                "image": "src/assets/img/Logo.png",
+                "price": 18.00
+            },
+            {
+                "title": "Açaí",
+                "id": 882313,
+                "id2": "882AcLn313",
+                "description": "Açaí batido na textura perfeita, coberto com leite ninho e um toque generoso de leite condensado.",
+                "image": "src/assets/img/Logo.png",
+                "price": 20.00
+            },
+            {
+                "title": "Sorvete de Chocolate",
+                "id": 671210,
+                "id2": "671SwCh210",
+                "description": "Chocolate intenso e cremoso, com pedaços generosos de brownie para uma experiência única.",
+                "image": "src/assets/img/Logo.png",
+                "price": 12.00
+            },
+            {
+                "title": "Sundae de Caramelo",
+                "id": 555743,
+                "id2": "555SnCa743",
+                "description": "Sorvete de baunilha aveludado, coberto com calda quente de caramelo e crocante de amendoim.",
+                "image": "src/assets/img/Logo.png",
+                "price": 15.00
+            },
+            {
+                "title": "Picolé Artesanal",
+                "id": 927602,
+                "id2": "927PcFr602",
+                "description": "Feito com frutas vermelhas naturais, refrescante e perfeito para qualquer momento do dia.",
+                "image": "src/assets/img/Logo.png",
+                "price": 10.00
+            },
+            {
+                "title": "Sorvete de Pistache",
+                "id": 729601,
+                "id2": "729PsTc601",
+                "description": "Cremosidade incomparável e o sabor sofisticado do pistache em cada colherada.",
+                "image": "src/assets/img/Logo.png",
+                "price": 14.00
+            },
+            {
+                "title": "Milkshake de Ovomaltine",
+                "id": 814502,
+                "id2": "814MkOv502",
+                "description": "Uma combinação irresistível de sorvete cremoso com crocantes flocos de Ovomaltine e cobertura de chocolate.",
+                "image": "src/assets/img/Logo.png",
+                "price": 19.00
+            }
+        ]
+    },
+    {
+        "title": "Churrasco",
+        "id": 492709,
+        "id2": "492wLhMq709",
+        "description": "Sabor de brasa, feito no ponto certo.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Picanha na Brasa",
+                "id": 896494,
+                "id2": "896HdesD494",
+                "description": "Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial.",
+                "image": "src/assets/img/Logo.png",
+                "price": 55.90
+            },
+            {
+                "title": "Costela Fogo de Chão",
+                "id": 775691,
+                "id2": "775ZCeJs691",
+                "description": "Costela bovina assada lentamente por mais de 6 horas, garantindo um sabor defumado irresistível.",
+                "image": "src/assets/img/Logo.png",
+                "price": 59.90
+            },
+            {
+                "title": "Maminha Suculenta",
+                "id": 475781,
+                "id2": "475nfylk781",
+                "description": "Maminha macia e saborosa, temperada na medida certa e assada na brasa.",
+                "image": "src/assets/img/Logo.png",
+                "price": 42.90
+            },
+            {
+                "title": "Espetinho de Coração",
+                "id": 417387,
+                "id2": "417bQdiI387",
+                "description": "Espetinhos de coração de frango grelhados com tempero especial da casa.",
+                "image": "src/assets/img/Logo.png",
+                "price": 39.90
+            },
+            {
+                "title": "Linguiça Artesanal",
+                "id": 874800,
+                "id2": "874oFAhI800",
+                "description": "Linguiça toscana artesanal assada na brasa, crocante por fora e suculenta por dentro.",
+                "image": "src/assets/img/Logo.png",
+                "price": 40.90
+            }
+        ]
+    },
+    {
+        "title": "Marmitas",
+        "id": 950932,
+        "id2": "950Cpqnk932",
+        "description": "Refeições caseiras, completas e saborosas.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Marmita de Frango Grelhado",
+                "id": 657729,
+                "id2": "657jMkMI729",
+                "description": "Frango grelhado suculento acompanhado de arroz soltinho, feijão temperado e uma porção de salada fresca.",
+                "image": "src/assets/img/Logo.png",
+                "price": 22.90
+            },
+            {
+                "title": "Marmita de Carne Bovina",
+                "id": 855616,
+                "id2": "855yaWcT616",
+                "description": "Carne bovina macia e bem temperada servida com arroz branco, feijão cremoso e legumes cozidos no vapor.",
+                "image": "src/assets/img/Logo.png",
+                "price": 27.50
+            },
+            {
+                "title": "Marmita de Peixe Grelhado",
+                "id": 995142,
+                "id2": "995ZhHPh142",
+                "description": "Filé de peixe grelhado temperado com ervas finas, servido com arroz branco, feijão caseiro e purê de batata.",
+                "image": "src/assets/img/Logo.png",
+                "price": 30.90
+            },
+            {
+                "title": "Marmita Vegetariana",
+                "id": 378424,
+                "id2": "378mWzjM424",
+                "description": "Arroz integral acompanhado de feijão temperado, legumes grelhados e uma porção de salada variada.",
+                "image": "src/assets/img/Logo.png",
+                "price": 24.00
+            },
+            {
+                "title": "Marmita Fitness",
+                "id": 753664,
+                "id2": "753wCznU664",
+                "description": "Frango grelhado suculento, arroz integral e batata-doce assada, uma refeição leve e nutritiva.",
+                "image": "src/assets/img/Logo.png",
+                "price": 26.50
+            }
+        ]
+    },
+    {
+        "title": "Espetinhos",
+        "id": 925293,
+        "id2": "925FqJkp293",
+        "description": "Assados na brasa, suculentos e bem temperados.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Espetinho de Carne Bovina",
+                "id": 304160,
+                "id2": "304fuEKv160",
+                "description": "Carne bovina macia e temperada na brasa, garantindo um sabor irresistível e suculento.",
+                "image": "src/assets/img/Logo.png",
+                "price": 15.90
+            },
+            {
+                "title": "Espetinho de Frango Grelhado",
+                "id": 270228,
+                "id2": "270mgTni228",
+                "description": "Peito de frango marinado com especiarias e grelhado lentamente até ficar dourado.",
+                "image": "src/assets/img/Logo.png",
+                "price": 14.50
+            },
+            {
+                "title": "Espetinho de Linguiça Artesanal",
+                "id": 168917,
+                "id2": "168rBdfl917",
+                "description": "Linguiça especial assada na brasa, crocante por fora e suculenta por dentro.",
+                "image": "src/assets/img/Logo.png",
+                "price": 13.90
+            },
+            {
+                "title": "Espetinho de Coração de Frango",
+                "id": 305405,
+                "id2": "305QkvYE405",
+                "description": "Corações de frango grelhados e temperados com ervas e alho, macios e saborosos.",
+                "image": "src/assets/img/Logo.png",
+                "price": 11.90
+            },
+            {
+                "title": "Espetinho de Queijo Coalho com Mel",
+                "id": 499185,
+                "id2": "499HylSX185",
+                "description": "Queijo coalho assado na brasa com uma generosa camada de mel, combinação perfeita entre doce e salgado.",
+                "image": "src/assets/img/Logo.png",
+                "price": 17.90
+            }
+        ]
+    },
+    {
+        "title": "Sobremesas",
+        "id": 969568,
+        "id2": "969keaex568",
+        "description": "Doces perfeitos para fechar sua refeição.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Pudim de Leite Condensado",
+                "id": 490334,
+                "id2": "490MvEzw334",
+                "description": "Clássico pudim de leite condensado com calda caramelizada e textura irresistível.",
+                "image": "src/assets/img/Logo.png",
+                "price": 9.90
+            },
+            {
+                "title": "Brigadeiro Gourmet",
+                "id": 477635,
+                "id2": "477JJAol635",
+                "description": "Brigadeiro de chocolate belga, enrolado no granulado belga para um sabor mais intenso.",
+                "image": "src/assets/img/Logo.png",
+                "price": 4.50
+            },
+            {
+                "title": "Torta de Limão",
+                "id": 200883,
+                "id2": "200xyiZA883",
+                "description": "Massa crocante recheada com um creme azedinho de limão, finalizada com merengue gratinado.",
+                "image": "src/assets/img/Logo.png",
+                "price": 12.90
+            },
+            {
+                "title": "Mousse de Maracujá",
+                "id": 361796,
+                "id2": "361wWdTE796",
+                "description": "Mousse leve e aerado de maracujá, com calda natural da fruta e crocante de chocolate branco.",
+                "image": "src/assets/img/Logo.png",
+                "price": 11.50
+            },
+            {
+                "title": "Bolo de Chocolate",
+                "id": 789432,
+                "id2": "789BChoc432",
+                "description": "Bolo de chocolate úmido, recheado e coberto com ganache de chocolate meio amargo.",
+                "image": "src/assets/img/Logo.png",
+                "price": 13.00
+            }
+        ]
+    },
+    {
+        "title": "Pizzas",
+        "id": 880662,
+        "id2": "880esCIv662",
+        "description": "Massa crocante, muito recheio e sabor incrível.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "items": [
+            {
+                "title": "Pizza de Mussarela",
+                "id": 866325,
+                "id2": "866nGptB325",
+                "description": "Massa leve e crocante, coberta com molho de tomate artesanal e queijo mussarela derretido.",
+                "image": "src/assets/img/Logo.png",
+                "price": 55.00
+            },
+            {
+                "title": "Pizza de Calabresa",
+                "id": 703873,
+                "id2": "703pzLOB873",
+                "description": "Fatias generosas de calabresa defumada, cebolas caramelizadas e orégano sobre queijo derretido.",
+                "image": "src/assets/img/Logo.png",
+                "price": 58.90
+            },
+            {
+                "title": "Pizza Portuguesa",
+                "id": 753679,
+                "id2": "753LsBDt679",
+                "description": "Presunto, ovos, cebola, ervilha, queijo e azeitonas sobre um molho de tomate caseiro.",
+                "image": "src/assets/img/Logo.png",
+                "price": 60.00
+            },
+            {
+                "title": "Pizza de Frango com Catupiry",
+                "id": 452953,
+                "id2": "452ZkAFZ953",
+                "description": "Frango desfiado temperado e o legítimo Catupiry, sobre uma base de molho especial.",
+                "image": "src/assets/img/Logo.png",
+                "price": 62.50
+            },
+            {
+                "title": "Pizza Quatro Queijos",
+                "id": 155578,
+                "id2": "155FhttM578",
+                "description": "Mistura perfeita de mussarela, provolone, gorgonzola e parmesão derretidos.",
+                "image": "src/assets/img/Logo.png",
+                "price": 65.00
+            },
+            {
+                "title": "Pizza de Pepperoni",
+                "id": 262164,
+                "id2": "262YKTtm164",
+                "description": "Pepperoni picante sobre queijo derretido e molho de tomate caseiro.",
+                "image": "src/assets/img/Logo.png",
+                "price": 67.90
+            },
+            {
+                "title": "Pizza Vegana",
+                "id": 830419,
+                "id2": "830dGSEm419",
+                "description": "Massa especial com cobertura de vegetais frescos e queijo vegano derretido.",
+                "image": "src/assets/img/Logo.png",
+                "price": 63.90
+            },
+            {
+                "title": "Pizza de Chocolate com Morango",
+                "id": 352031,
+                "id2": "352QAAqv031",
+                "description": "Chocolate cremoso, morangos frescos e raspas de chocolate branco sobre massa crocante.",
+                "image": "src/assets/img/Logo.png",
+                "price": 59.90
+            }
+        ]
+    }
+]

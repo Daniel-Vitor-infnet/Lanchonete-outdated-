@@ -1,0 +1,114 @@
+@use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
+
+
+$testesAtivos: false;
+
+
+
+.main-container {
+    width: 100vw;
+    max-width: 100vw;
+    height: alturaResponsivaViewport(87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include laptop {}
+
+    @include tablet {}
+
+    @include mobile-large {
+        background-color: black;
+        height: unset;
+    }
+
+    @include mobile {}
+
+    .box-principal {
+        background-color: white;
+        width: 90vw;
+        max-width: 100vw;
+        height: alturaResponsivaViewport(80);
+        display: flex;
+
+        @include laptop {}
+
+        @include tablet {}
+
+        @include mobile-large {
+            width: 100vw;
+            min-height: alturaResponsivaViewport(80);
+            flex-direction: column;
+        }
+
+        @include mobile {}
+    }
+
+    .barra-lateral-container {
+        border-right: px-para-rem(5px) solid var(--mui-divider-color);
+        background-color: orange;
+        display: flex;
+        flex-shrink: 0;
+
+        @include laptop {}
+
+        @include tablet {}
+
+        @include mobile-large {
+            flex-shrink: unset;
+            justify-content: center;
+            align-items: center;
+            min-height: 20%;
+            max-height: 20%;
+        }
+
+        @include mobile {}
+    }
+
+    .barra-lateral {
+        display: flex;
+        align-items: center;
+        font-size: px-para-rem(12.8px);
+        gap: px-para-rem(11.2px);
+        width: 100%;
+
+        @include laptop {
+            font-size: px-para-rem(11.6px);
+        }
+
+        @include tablet {}
+
+        @include mobile-large {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mobile {}
+    }
+
+    .card-container {
+        background-color: if($testesAtivos, red, white);
+        max-width: 82vw;
+        max-height: 99.9%;
+        margin-left: 5px;
+        padding: 1rem;
+        overflow-x: auto;
+
+        @include laptop {}
+
+        @include tablet {}
+
+        @include mobile-large {
+            min-width: 100%;
+            margin-left: unset;
+            padding: unset;
+            min-height: alturaResponsivaViewport(40);
+            height: auto;
+
+        }
+
+        @include mobile {}
+    }
+}
