@@ -39,7 +39,7 @@
                 "id2": "917KZXxj780",
                 "description": "Hambúrguer de costela desfiada, queijo derretido e molho barbecue.",
                 "price": 36.90,
-                "image": "src/assets/img/Lanche1.png"
+                "image": "src/assets/img/Lanche2.png"
             },
             {
                 "title": "X-Gorgonzola  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -47,7 +47,7 @@
                 "id2": "538XOvrN719",
                 "description": "Hambúrguer premium com queijo gorgonzola derretido e cebolas caramelizadas.",
                 "price": 35.90,
-                "image": "src/assets/img/Lanche1.png"
+                "image": "src/assets/img/Logo.png"
             },
             {
                 "title": "X-Barbecue",
@@ -55,7 +55,7 @@
                 "id2": "975KmmwI995",
                 "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
                 "price": 33.90,
-                "image": "src/assets/img/Lanche1.png"
+                "image": "src/assets/img/Sorvete.png"
             },
             {
                 "title": "X-Parmegiana",
@@ -63,7 +63,7 @@
                 "id2": "459mhViq933",
                 "description": "Filé de frango à parmegiana no pão, com molho de tomate e queijo derretido.",
                 "price": 32.90,
-                "image": "src/assets/img/Lanche1.png"
+                "image": "src/assets/img/Bebidas.png"
             },
             {
                 "title": "X-Brie batata arroz",
