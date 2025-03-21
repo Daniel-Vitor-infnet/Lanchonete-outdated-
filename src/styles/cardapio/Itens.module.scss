@@ -59,7 +59,7 @@ $testesAtivos: true;
 
     @include mobile-large {
       width: 90%;
-      height: px-para-rem(156px);
+      height: alturaResponsivaViewport(18);
       margin: 0 auto;
       border: unset;
       box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
@@ -87,7 +87,10 @@ $testesAtivos: true;
 
     @include tablet {}
 
-    @include mobile-large {}
+    @include mobile-large {
+      object-fit: cover;
+
+    }
 
     @include mobile {}
   }
