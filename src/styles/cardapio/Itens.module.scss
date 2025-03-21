@@ -16,8 +16,6 @@ $testesAtivos: true;
     gap: px-para-rem(9px);
   }
 
-  @include tablet {}
-
   @include mobile-large {
     min-width: 100vw;
     min-height: 100%;
@@ -28,7 +26,6 @@ $testesAtivos: true;
     gap: px-para-rem(5px);
   }
 
-  @include mobile {}
 
   .item {
     background-color: #ffebcc;
@@ -55,8 +52,6 @@ $testesAtivos: true;
       }
     }
 
-    @include tablet {}
-
     @include mobile-large {
       width: 90%;
       height: alturaResponsivaViewport(18);
@@ -73,8 +68,6 @@ $testesAtivos: true;
         transform: none;
       }
     }
-
-    @include mobile {}
   }
 
   .item-image {
@@ -85,14 +78,10 @@ $testesAtivos: true;
 
     @include laptop {}
 
-    @include tablet {}
-
     @include mobile-large {
       object-fit: cover;
 
     }
-
-    @include mobile {}
   }
 
   .item-info {
@@ -110,8 +99,6 @@ $testesAtivos: true;
       gap: px-para-rem(12px);
     }
 
-    @include tablet {}
-
     @include mobile-large {
       display: grid;
       grid-template-rows: 1fr 2fr 1fr;
@@ -119,10 +106,7 @@ $testesAtivos: true;
       align-items: unset;
       padding: unset;
       padding-bottom: unset !important;
-
     }
-
-    @include mobile {}
   }
 
   .item-title-pequeno {
@@ -139,8 +123,6 @@ $testesAtivos: true;
       font-size: px-para-rem(17px);
     }
 
-    @include tablet {}
-
     @include mobile-large {
       display: grid;
       justify-content: center;
@@ -148,8 +130,6 @@ $testesAtivos: true;
       grid-row: 1;
       font-size: px-para-rem(20px);
     }
-
-    @include mobile {}
   }
 
   .item-title-grande {
@@ -168,16 +148,12 @@ $testesAtivos: true;
       font-size: px-para-rem(15px);
     }
 
-    @include tablet {}
-
     @include mobile-large {
       display: grid;
       justify-content: unset;
       align-items: unset;
       grid-row: 1;
     }
-
-    @include mobile {}
   }
 
 
@@ -198,8 +174,6 @@ $testesAtivos: true;
       font-size: px-para-rem(14px);
     }
 
-    @include tablet {}
-
     @include mobile-large {
       width: 90%;
       margin-left: 11px;
@@ -209,8 +183,6 @@ $testesAtivos: true;
       grid-row: 2;
       text-align: unset;
     }
-
-    @include mobile {}
   }
 
   .item-price {
@@ -229,8 +201,6 @@ $testesAtivos: true;
       font-size: px-para-rem(15.5px);
     }
 
-    @include tablet {}
-
     @include mobile-large {
       display: grid;
       justify-content: end;
@@ -240,7 +210,5 @@ $testesAtivos: true;
       margin-right: px-para-rem(8px);
 
     }
-
-    @include mobile {}
   }
 }

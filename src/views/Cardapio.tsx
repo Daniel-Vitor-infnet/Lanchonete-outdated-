@@ -50,7 +50,7 @@ const VerticalTabs: React.FC = () => {
           {cardsCardapioDataJson.map((categorias: any) => (
             <Tab key={categorias.id} label={
               <Box className={styles['barra-lateral']}>
-                {iconsSelect(categorias.icon, obterTamanhoTela("pequeno", 0.8, 1.3))}
+                {iconsSelect(categorias.icon, obterTamanhoTela(1.0, 0.8, null, null, 1.3))}
                 {categorias.title}
               </Box>
             } {...a11yProps(categorias.id)} />
