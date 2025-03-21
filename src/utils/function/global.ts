@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-export function obterTamanhoTela(valor1?: any, valor2?: any, valor3?: any, valor4?: any): any {
+export function obterTamanhoTela(valor1?: any, valor2?: any, valor3?: any, valor4?: any, valor5?: any): any {
     // Converte parâmetros não passados (undefined) em null
-    let valores: any[] = [valor1, valor2, valor3, valor4].map(x => x === undefined ? null : x);
+    let valores: any[] = [valor1, valor2, valor3, valor4, valor5].map(x => x === undefined ? null : x);
   
     // Se só passar um parâmetro, os outros assumem o mesmo valor
     if (arguments.length === 1) {
-      valores = [valores[0], valores[0], valores[0], valores[0]];
+      valores = [valores[0], valores[0], valores[0], valores[0], valores[0]];
     }
   
     // Se o primeiro for null, procura o primeiro valor não nulo nos próximos
@@ -31,7 +31,8 @@ export function obterTamanhoTela(valor1?: any, valor2?: any, valor3?: any, valor
     if (resuction >= 1366) return valores[0];
     if (resuction >= 1024) return valores[1];
     if (resuction >= 768)  return valores[2];
-    if (resuction >= 576 || resuction < 576)  return valores[3];
+    if (resuction >= 576)  return valores[3];
+    if (resuction >= 400 || resuction < 400)  return valores[4];
   }
   
 
