@@ -5,7 +5,7 @@ import iconesMUI from '@/libs/mui/icons';
 
 
 
-export default function iconSelect(icon: string, tamanho?: number, cor?: string) {
+export default function iconSelect(icon: string, tamanho?: any, cor?: string) {
 
 
 
