@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid2 } from "@/libs/mui";
-import HeaderPers from "@/components/elementos/Header1";
+import HeaderPers from "@/components/elementos/Header";
 import FooterPers from "@/components/elementos/footer";
 import { useAppContext } from "@/Context";
 
