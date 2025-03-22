@@ -24,6 +24,7 @@ export { default as InputAdornment } from '@mui/material/InputAdornment';
 export { default as OutlinedInput } from '@mui/material/OutlinedInput';
 export { default as InputLabel } from '@mui/material/InputLabel';
 export { default as FormControl } from '@mui/material/FormControl';
+export { default as Menu } from '@mui/material/Menu';
 
 
 
