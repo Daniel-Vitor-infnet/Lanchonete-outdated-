@@ -4,7 +4,7 @@ import stylesPerso from "@/styles/pageLayout/Header.module.scss";
 import { obterTamanhoTela, iconsSelect } from "@/utils/function";
 import { Button } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import MobileMenu from "@/components/elementos/button/MobileMenu";
 
 const pages = [
   { to: "/", label: "Home" },
@@ -12,11 +12,15 @@ const pages = [
   { to: "/Pedidos", label: "Pedidos" },
   { to: "/Sobre", label: "Sobre" },
   { to: "/Login", label: "Login" },
+  { to: "/Perfil", label: "Meu Perfil" },
 ]
 
-const logado = false;
 
 const HeaderPers: React.FC = () => {
+
+  const logado = false;
+  const mobile = obterTamanhoTela(false, false, false, true, true);
+
 
   return (
     <Grid2 className={stylesPerso['main-container']}>
@@ -32,26 +36,34 @@ const HeaderPers: React.FC = () => {
         </Grid2>
       </Grid2>
       <Grid2 className={stylesPerso['menu']}>
-        {pages.map((page) => {
-          if (logado && page.to === "/Login") {
-            return (
-              <Avatar className={stylesPerso['avatar']}>
-                {iconsSelect("mui-geral-AccountCircle", null, "#666666")}
-              </Avatar>
-            )
-          } else {
-            return (
-              <NavegacaoButton
-                key={page.to}
-                to={page.to}
-                label={page.label}
-                className={`${stylesPerso['botaoNav']} ${location.pathname === page.to ? stylesPerso['ativo'] : ''}`}
-              />
-            );
-          }
-        })}
-
-
+        {/* Lógica do menu para desktop ou mobile */}
+        {mobile ? (
+          <MobileMenu pages={pages} logado={logado} />
+        ) : (
+          pages
+          .filter((page) => {
+            if (page.to === "/Perfil") return false;
+            return true;
+          })
+          .map((page) => {
+            if (logado && page.to === "/Login") {
+              return (
+                <Avatar className={stylesPerso['conta']}>
+                  {iconsSelect("mui-geral-AccountCircle", null, "#666666")}
+                </Avatar>
+              )
+            } else {
+              return (
+                <NavegacaoButton
+                  key={page.to}
+                  to={page.to}
+                  label={page.label}
+                  className={`${stylesPerso['botaoNav']} ${location.pathname === page.to ? stylesPerso['ativo'] : ''}`}
+                />
+              );
+            }
+          })
+        )}
       </Grid2>
     </Grid2>
   );
@@ -86,3 +98,5 @@ function NavegacaoButton({ to, label, className }: Props) {
     </Button>
   );
 }
+
+
