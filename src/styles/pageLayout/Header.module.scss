@@ -114,6 +114,25 @@ $testesAtivos: false;
     display: flex;
     margin-right: px-para-rem(20px);
   }
+}
+
+.conteudo-principal {
+  background-color: blue !important;
+  width: 100%;
+  max-width: 100%;
+  min-height: alturaResponsivaViewport(83);
+
+  @include laptop {
+    min-height: alturaResponsivaViewport(78);
+  }
+
+  @include mobile {
+    min-height: alturaResponsivaViewport(81.3);
+  }
+
+  @include mobile {
+    min-height: alturaResponsivaViewport(81);
+  }
 
 
 }

@@ -3,7 +3,7 @@ import { Grid2 } from "@/libs/mui";
 import HeaderPers from "@/components/elementos/Header";
 import FooterPers from "@/components/elementos/Footer";
 import { useAppContext } from "@/Context";
-
+import stylesPerso from "@/styles/pageLayout/Header.module.scss";
 
 
 const PageLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -12,7 +12,7 @@ const PageLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <Grid2 >
       <HeaderPers />
-      <Grid2 >
+      <Grid2 className={stylesPerso['conteudo-principal']}>
         {children}
       </Grid2>
       {!hideFooter && <FooterPers />}
