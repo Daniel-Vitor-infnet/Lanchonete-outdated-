@@ -1,7 +1,7 @@
 @use '@stylesFunction/mixins' as *;
 @use "@stylesFunction/index" as *;
 
-$testesAtivos: true;
+$testesAtivos: false;
 
 
 .main-container {
@@ -13,10 +13,19 @@ $testesAtivos: true;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
+  @include laptop {
+    height: alturaResponsivaViewport(10);
+    max-height: alturaResponsivaViewport(10);
+  }
+
 
   .logo {
     background-color: if($testesAtivos, blue, unset);
     max-height: alturaResponsivaViewport(8);
+
+    @include laptop {
+      max-height: alturaResponsivaViewport(10);
+    }
   }
 
   .logo img {
@@ -26,6 +35,7 @@ $testesAtivos: true;
     background-color: if($testesAtivos, lime, unset);
   }
 
+  // Conteúdo do meio
   .extras {
     background-color: if($testesAtivos, red, unset);
     display: flex;
@@ -50,6 +60,7 @@ $testesAtivos: true;
    100% {color: lch(71.85 94.03 134.67);}
   }
 
+  // Status Esrita
   .status p {
     font-size: px-para-rem(19px);
     font-variant: small-caps;
@@ -57,6 +68,10 @@ $testesAtivos: true;
     font-weight: bold;
     animation: corStatus 3s infinite;
     transition: color 0.3s ease;
+
+    @include laptop {
+      font-size: px-para-rem(17px);
+    }
   }
 
   .status-icon {
@@ -66,12 +81,6 @@ $testesAtivos: true;
 
 
 
-  .avatar {
-    width: auto;
-    height: auto;
-    display: flex;
-    margin-right: px-para-rem(20px);
-  }
 
   .menu {
     background-color: if($testesAtivos, green, unset);
@@ -98,5 +107,13 @@ $testesAtivos: true;
       border-bottom: px-para-rem(5px) solid white;
     }
   }
+
+  .conta {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-right: px-para-rem(20px);
+  }
+
 
 }
