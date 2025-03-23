@@ -5,7 +5,7 @@ import iconesMUI from '@/libs/mui/icons';
 
 
 
-export default function iconSelect(icon: string, tamanho?: any, cor?: string) {
+export default function iconSelect(icon: string, tamanho?: any, cor?: any, stylesPerson?: any) {
 
 
 
@@ -16,10 +16,10 @@ export default function iconSelect(icon: string, tamanho?: any, cor?: string) {
     switch (libs) {
         case "mdi":
             IconeEscolhido = iconesMdi[categoria][item];
-            return <IconMdi path={IconeEscolhido} size={tamanho} />
+            return <IconMdi path={IconeEscolhido} size={tamanho || 1.0} color={cor || "#000000"} />
         case 'mui':
             IconeEscolhido = iconesMUI[categoria][item];
-            return <IconeEscolhido sx={{ fontSize: String(tamanho) || "1.0", color: cor || "#666666" }}/>
+            return <IconeEscolhido className={stylesPerson} sx={{ fontSize: `${String(tamanho)}rem` || "1.0rem", color: cor || "#000000" }}/>
         default:
             return null;
     }

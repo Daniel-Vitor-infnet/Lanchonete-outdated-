@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAppContext } from "@/Context";
+import debounce from 'lodash.debounce';
+
 
 export function obterTamanhoTela(valor1?: any, valor2?: any, valor3?: any, valor4?: any, valor5?: any): any {
   // Converte parâmetros não passados (undefined) em null
@@ -48,27 +50,22 @@ export const footerVisibility = (isVisible: boolean) => {
 
 
 
+
 export function useWindowWidth(): number {
-  // Define o estado inicial com a largura atual da tela
-  const [width, setWidth] = useState(() => window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // Função que atualiza o estado somente quando a largura mudar
-    const handleResize = () => {
+    const handleResize = debounce(() => {
       setWidth(window.innerWidth);
-    };
+    }, 200);
 
-    // Adiciona o listener para eventos de resize
     window.addEventListener("resize", handleResize);
-
-    // Cleanup: remove o listener ao desmontar o componente
-    return () => window.removeEventListener("resize", handleResize);
-  }, []); // Executa apenas uma vez ao montar o componente
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      handleResize.cancel();
+    };
+  }, []);
 
   return width;
 }
 
-
-export function arroz() {
-  return 'arroz'
-}
