@@ -55,7 +55,7 @@
                 "id2": "975KmmwI995",
                 "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
                 "price": 33.90,
-                "image": "src/assets/img/Sorvete.png"
+                "image": "src/assets/img/Sorvete.webp"
             },
             {
                 "title": "X-Parmegiana",
@@ -202,7 +202,7 @@
         "id": 191320,
         "id2": "191tUvYE320",
         "description": "Cremosos, refrescantes e irresistíveis.",
-        "image": "src/assets/img/Logo.png",
+        "image": "src/assets/img/Sorvete.webp",
         "icon": "mdi-comida-fastFood",
         "items": [
             {
@@ -210,7 +210,7 @@
                 "id": 334502,
                 "id2": "334MkMo502",
                 "description": "Uma explosão de sabor com morangos frescos batidos com sorvete cremoso e finalizado com chantilly.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 18.00
             },
             {
@@ -218,7 +218,7 @@
                 "id": 882313,
                 "id2": "882AcLn313",
                 "description": "Açaí batido na textura perfeita, coberto com leite ninho e um toque generoso de leite condensado.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 20.00
             },
             {
@@ -226,7 +226,7 @@
                 "id": 671210,
                 "id2": "671SwCh210",
                 "description": "Chocolate intenso e cremoso, com pedaços generosos de brownie para uma experiência única.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 12.00
             },
             {
@@ -234,7 +234,7 @@
                 "id": 555743,
                 "id2": "555SnCa743",
                 "description": "Sorvete de baunilha aveludado, coberto com calda quente de caramelo e crocante de amendoim.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 15.00
             },
             {
@@ -242,7 +242,7 @@
                 "id": 927602,
                 "id2": "927PcFr602",
                 "description": "Feito com frutas vermelhas naturais, refrescante e perfeito para qualquer momento do dia.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 10.00
             },
             {
@@ -250,7 +250,7 @@
                 "id": 729601,
                 "id2": "729PsTc601",
                 "description": "Cremosidade incomparável e o sabor sofisticado do pistache em cada colherada.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 14.00
             },
             {
@@ -258,7 +258,7 @@
                 "id": 814502,
                 "id2": "814MkOv502",
                 "description": "Uma combinação irresistível de sorvete cremoso com crocantes flocos de Ovomaltine e cobertura de chocolate.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sorvete.webp",
                 "price": 19.00
             }
         ]
@@ -418,7 +418,7 @@
         "id": 969568,
         "id2": "969keaex568",
         "description": "Doces perfeitos para fechar sua refeição.",
-        "image": "src/assets/img/Logo.png",
+        "image": "src/assets/img/Sobremesa.webp",
         "icon": "mdi-comida-fastFood",
         "items": [
             {
@@ -426,7 +426,7 @@
                 "id": 490334,
                 "id2": "490MvEzw334",
                 "description": "Clássico pudim de leite condensado com calda caramelizada e textura irresistível.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sobremesa.webp",
                 "price": 9.90
             },
             {
@@ -434,7 +434,7 @@
                 "id": 477635,
                 "id2": "477JJAol635",
                 "description": "Brigadeiro de chocolate belga, enrolado no granulado belga para um sabor mais intenso.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sobremesa.webp",
                 "price": 4.50
             },
             {
@@ -442,7 +442,7 @@
                 "id": 200883,
                 "id2": "200xyiZA883",
                 "description": "Massa crocante recheada com um creme azedinho de limão, finalizada com merengue gratinado.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sobremesa.webp",
                 "price": 12.90
             },
             {
@@ -450,7 +450,7 @@
                 "id": 361796,
                 "id2": "361wWdTE796",
                 "description": "Mousse leve e aerado de maracujá, com calda natural da fruta e crocante de chocolate branco.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sobremesa.webp",
                 "price": 11.50
             },
             {
@@ -458,7 +458,7 @@
                 "id": 789432,
                 "id2": "789BChoc432",
                 "description": "Bolo de chocolate úmido, recheado e coberto com ganache de chocolate meio amargo.",
-                "image": "src/assets/img/Logo.png",
+                "image": "src/assets/img/Sobremesa.webp",
                 "price": 13.00
             }
         ]

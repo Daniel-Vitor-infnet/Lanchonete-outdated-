@@ -1,7 +1,7 @@
 @use '@stylesFunction/mixins' as *;
 @use "@stylesFunction/index" as *;
 
-$testesAtivos: true;
+$testesAtivos: false;
 
 
 .main-container {
@@ -16,9 +16,7 @@ $testesAtivos: true;
     gap: px-para-rem(9px);
   }
 
-  @include tablet {}
-
-  @include mobile-large {
+  @include mobile {
     min-width: 100vw;
     min-height: 100%;
     flex-wrap: unset;
@@ -28,12 +26,11 @@ $testesAtivos: true;
     gap: px-para-rem(5px);
   }
 
-  @include mobile {}
 
   .item {
     background-color: #ffebcc;
-    width: px-para-rem(240px);
-    height: px-para-rem(320px);
+    width: px-para-rem(190px);
+    height: px-para-rem(310px);
     display: grid;
     grid-template-rows: 0.7fr 1fr;
     color: #8b4513;
@@ -47,19 +44,17 @@ $testesAtivos: true;
     }
 
     @include laptop {
-      width: px-para-rem(230px);
-      height: px-para-rem(300px);
+      width: px-para-rem(180px);
+      height: px-para-rem(280px);
 
       &:hover {
         transform: scale(1.025);
       }
     }
 
-    @include tablet {}
-
-    @include mobile-large {
+    @include mobile {
       width: 90%;
-      height: alturaResponsivaViewport(18);
+      height: auto;
       margin: 0 auto;
       border: unset;
       box-shadow: 0 px-para-rem(6px) px-para-rem(12px) rgba(0 0 0 / 0.88);
@@ -73,8 +68,6 @@ $testesAtivos: true;
         transform: none;
       }
     }
-
-    @include mobile {}
   }
 
   .item-image {
@@ -85,14 +78,10 @@ $testesAtivos: true;
 
     @include laptop {}
 
-    @include tablet {}
-
-    @include mobile-large {
+    @include mobile {
       object-fit: cover;
 
     }
-
-    @include mobile {}
   }
 
   .item-info {
@@ -110,19 +99,14 @@ $testesAtivos: true;
       gap: px-para-rem(12px);
     }
 
-    @include tablet {}
-
-    @include mobile-large {
+    @include mobile {
       display: grid;
-      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr auto 1fr;
       justify-items: unset;
       align-items: unset;
       padding: unset;
       padding-bottom: unset !important;
-
     }
-
-    @include mobile {}
   }
 
   .item-title-pequeno {
@@ -131,17 +115,15 @@ $testesAtivos: true;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-size: px-para-rem(17.5px);
+    font-size: px-para-rem(15.5px);
     font-weight: bold;
     color: #d84315;
 
     @include laptop {
-      font-size: px-para-rem(17px);
+      font-size: px-para-rem(15px);
     }
 
-    @include tablet {}
-
-    @include mobile-large {
+    @include mobile {
       display: grid;
       justify-content: center;
       align-items: unset;
@@ -149,35 +131,35 @@ $testesAtivos: true;
       font-size: px-para-rem(20px);
     }
 
-    @include mobile {}
+    @include mobile-small {
+      font-size: px-para-rem(17px);
+    }
   }
 
   .item-title-grande {
     width: 100%;
-    background-color: if($testesAtivos, lab(87.82 -79.28 80.98 / 0.66), unset);
+    background-color: if($testesAtivos, lab(46.45 -46.08 48.4 / 0.66), unset);
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: px-para-rem(16px);
+    white-space: unset;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    font-size: px-para-rem(14px);
     font-weight: bold;
     color: #d84315;
+    overflow: hidden;
 
     @include laptop {
       width: 100%;
+    }
+
+    @include mobile {
+
       font-size: px-para-rem(15px);
     }
-
-    @include tablet {}
-
-    @include mobile-large {
-      display: grid;
-      justify-content: unset;
-      align-items: unset;
-      grid-row: 1;
-    }
-
-    @include mobile {}
   }
 
 
@@ -191,26 +173,26 @@ $testesAtivos: true;
     line-clamp: 3;
     overflow: hidden;
     text-align: center;
-    font-size: px-para-rem(16px);
+    font-size: px-para-rem(13px);
     color: #6d4c41;
 
     @include laptop {
-      font-size: px-para-rem(14px);
+      font-size: px-para-rem(12px);
     }
 
-    @include tablet {}
-
-    @include mobile-large {
+    @include mobile {
       width: 90%;
       margin-left: 11px;
-      display: grid;
       justify-content: unset;
       align-items: unset;
       grid-row: 2;
       text-align: unset;
+      font-size: px-para-rem(17px);
     }
 
-    @include mobile {}
+    @include mobile-small {
+      font-size: px-para-rem(14px);
+    }
   }
 
   .item-price {
@@ -220,27 +202,26 @@ $testesAtivos: true;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: px-para-rem(17px);
+    font-size: px-para-rem(14px);
     font-weight: bold;
     overflow: hidden;
 
 
     @include laptop {
-      font-size: px-para-rem(15.5px);
+      font-size: px-para-rem(14.5px);
     }
 
-    @include tablet {}
-
-    @include mobile-large {
+    @include mobile {
       display: grid;
       justify-content: end;
       align-items: center;
       grid-row: 3;
-      font-size: px-para-rem(18px);
       margin-right: px-para-rem(8px);
-
+      font-size: px-para-rem(18px);
     }
 
-    @include mobile {}
+    @include mobile-small {
+      font-size: px-para-rem(15.5px);
+    }
   }
 }

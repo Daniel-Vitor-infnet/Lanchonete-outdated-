@@ -1,20 +1,13 @@
-import React, { createContext, useContext } from "react";
-import HeaderPers from "@/components/elementos/header";
-import FooterPers from "@/components/elementos/footer";
-import { PageLayout } from '@/components';
-
-
-
-
+import React, { createContext, useContext, useState } from "react";
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
+  const [hideFooter, setHideFooter] = useState(false);
+
   return (
-    <AppContext.Provider value={{}}>
-      <PageLayout>
-        {children}
-      </PageLayout>
+    <AppContext.Provider value={{ hideFooter, setHideFooter }}>
+      {children}
     </AppContext.Provider>
   );
 };

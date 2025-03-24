@@ -1,36 +1,23 @@
 import React from "react";
-import { Box, Grid2 } from '@/libs/mui';
-import HeaderPers from "@/components/elementos/header";
-import FooterPers from "@/components/elementos/footer";
-
-const layoutStyles = {
-    display: "flex",
-    flexDirection: "column",
-    minHeight: "min(100dvh, 100vh)", // Garante que o layout ocupe toda a altura da tela
-    overflowX: "hidden", // Esconde a barra de rolagem horizontal
-  };
-
-const contPrincipalStyles = {
-  flex: 1, // Faz o conteúdo ocupar o espaço disponível
-};
+import { Grid2 } from "@/libs/mui";
+import HeaderPers from "@/components/elementos/Header";
+import FooterPers from "@/components/elementos/Footer";
+import { useAppContext } from "@/Context";
+import stylesPerso from "@/styles/pageLayout/Header.module.scss";
 
 
 const PageLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-
+  const { hideFooter } = useAppContext();
 
   return (
-    <Grid2 sx={layoutStyles}>
+    <Grid2 >
       <HeaderPers />
-      <Grid2 sx={contPrincipalStyles}>
+      <Grid2 className={stylesPerso['conteudo-principal']}>
         {children}
       </Grid2>
-      <FooterPers />
+      {!hideFooter && <FooterPers />}
     </Grid2>
-
   );
 };
-
-
-
 
 export default PageLayout;
