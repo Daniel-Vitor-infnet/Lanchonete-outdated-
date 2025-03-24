@@ -13,7 +13,7 @@ const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso }) => 
   return (
     <Grid2 className={stylesPerso['main-container']}>
       {cardsCardapio.map((item: any) => {
-        const titleTamanho = item.title.length > obterTamanhoTela(11) ? 'item-title-grande' : 'item-title-pequeno';
+        const titleTamanho = item.title.length > obterTamanhoTela(18, null, null, 11) ? 'item-title-grande' : 'item-title-pequeno';
         return (
           <Grid2 key={item.id}>
             <Card className={stylesPerso['item']} key={item.id}>

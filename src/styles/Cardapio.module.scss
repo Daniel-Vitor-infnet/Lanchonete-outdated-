@@ -1,114 +1,140 @@
 @use '@stylesFunction/mixins' as *;
 @use "@stylesFunction/index" as *;
-
+@use 'sass:color';
 
 $testesAtivos: false;
 
-
-
 .main-container {
-    width: 100vw;
-    max-width: 100vw;
-    height: alturaResponsivaViewport(87);
+    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    @include laptop {}
-
-
-
-    @include mobile {
-        background-color: black;
-        height: unset;
-    }
-
-
 
     .box-principal {
-        background-color: white;
-        width: 90vw;
-        max-width: 100vw;
-        height: alturaResponsivaViewport(80);
+        $cor-base: if($testesAtivos, aquamarine, white);
+        background-color: $cor-base;
+        width: 90%;
+        max-width: 90%;
+        height: calc(alturaResponsivaViewport(83) - px-para-rem(30px));
+        margin-top: px-para-rem(15px);
+        margin-bottom: px-para-rem(15px);
         display: flex;
 
-        @include laptop {}
 
-
-
-        @include mobile {
-            width: 100vw;
-            min-height: alturaResponsivaViewport(80);
-            flex-direction: column;
+        @include laptop {
+            width: 83%;
+            max-width: 83%;
+            height: calc(alturaResponsivaViewport(89));
+            margin-top: unset;
+            margin-bottom: unset;
         }
 
-
+        @include mobile {
+            $cor-base: if($testesAtivos, white, unset);
+            background-color: $cor-base;
+            min-width: 100%;
+            width: 100%;
+            flex-direction: column;
+            height: auto;
+        }
     }
 
     .barra-lateral-container {
-        border-right: px-para-rem(5px) solid var(--mui-divider-color);
-        background-color: orange;
-        display: flex;
-        flex-shrink: 0;
+        $cor-base: if($testesAtivos, orangered, orange);
+        background-color: $cor-base;
+        border-right: px-para-rem(8px) solid color.adjust($cor-base, $lightness: -10%);
+        width: 18%;
 
-        @include laptop {}
+        @include laptop {
+            width: 21%;
+        }
+
+        @include mobile {
+            width: 100%;
+            border-right: unset;
+            border-bottom: px-para-rem(8px) solid color.adjust($cor-base, $lightness: -10%);
+        }
+    }
+
+    .barra-lateral-subcontainer {
+        $cor-base: if($testesAtivos, purple, unset);
+        background-color: $cor-base;
+        width: 100%;
+        display: grid;
+        justify-content: start;
+
 
 
 
         @include mobile {
-            flex-shrink: unset;
-            justify-content: center;
-            align-items: center;
-            min-height: 20%;
-            max-height: 20%;
+            flex: 0 0 auto;
+            width: auto;
+            min-width: 70px;
+            max-width: 120px;
+            text-align: center;
+            padding: unset;
+            padding: 9px 17px;
         }
 
+        @include mobile-small {
+            padding: unset;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
 
     }
 
-    .barra-lateral {
+    .barra-lateral-conteudo {
+        $cor-base: if($testesAtivos, greenyellow, unset);
+        background-color: $cor-base;
         display: flex;
-        align-items: center;
-        font-size: px-para-rem(12.8px);
         gap: px-para-rem(11.2px);
-        width: 100%;
-
-        @include laptop {
-            font-size: px-para-rem(11.6px);
-        }
-
-
+        align-items: center;
 
         @include mobile {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+        }
+    }
+
+    .barra-lateral-categoria {
+        white-space: nowrap;
+        $cor-base: if($testesAtivos, red, unset);
+        background-color: $cor-base;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: px-para-rem(12.8px);
+        font-weight: bold;
+
+        @include laptop {
+            font-size: px-para-rem(9.5px);
         }
 
+        @include mobile {
+            max-width: 100%;
+            font-size: px-para-rem(12.8px);
+        }
 
+        @include mobile-small {
+            font-size: px-para-rem(11.5px);
+        }
     }
 
     .card-container {
-        background-color: if($testesAtivos, red, white);
-        max-width: 82vw;
+        $cor-base: if($testesAtivos, fuchsia, unset);
+        background-color: $cor-base;
+        max-width: calc(100% - 18%);
         max-height: 99.9%;
-        margin-left: 5px;
-        padding: 1rem;
-        overflow-x: auto;
-
-        @include laptop {}
-
+        padding: px-para-rem(16px);
+        overflow-x: hidden;
 
 
         @include mobile {
-            min-width: 100%;
-            margin-left: unset;
-            padding: unset;
-            min-height: alturaResponsivaViewport(40);
-            height: auto;
+            max-width: 100%;
+            overflow-x: unset;
 
         }
 
-
     }
+
+
 }

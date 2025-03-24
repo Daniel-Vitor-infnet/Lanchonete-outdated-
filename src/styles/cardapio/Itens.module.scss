@@ -29,8 +29,8 @@ $testesAtivos: false;
 
   .item {
     background-color: #ffebcc;
-    width: px-para-rem(240px);
-    height: px-para-rem(320px);
+    width: px-para-rem(190px);
+    height: px-para-rem(310px);
     display: grid;
     grid-template-rows: 0.7fr 1fr;
     color: #8b4513;
@@ -44,8 +44,8 @@ $testesAtivos: false;
     }
 
     @include laptop {
-      width: px-para-rem(230px);
-      height: px-para-rem(300px);
+      width: px-para-rem(180px);
+      height: px-para-rem(280px);
 
       &:hover {
         transform: scale(1.025);
@@ -115,12 +115,12 @@ $testesAtivos: false;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    font-size: px-para-rem(17.5px);
+    font-size: px-para-rem(15.5px);
     font-weight: bold;
     color: #d84315;
 
     @include laptop {
-      font-size: px-para-rem(17px);
+      font-size: px-para-rem(15px);
     }
 
     @include mobile {
@@ -140,26 +140,24 @@ $testesAtivos: false;
     width: 100%;
     background-color: if($testesAtivos, lab(46.45 -46.08 48.4 / 0.66), unset);
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: px-para-rem(16px);
+    white-space: unset;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    font-size: px-para-rem(14px);
     font-weight: bold;
     color: #d84315;
+    overflow: hidden;
 
     @include laptop {
       width: 100%;
-      font-size: px-para-rem(15px);
     }
 
     @include mobile {
-      white-space: unset;
-      display: -webkit-box;
-      display: box;
-      -webkit-box-orient: vertical;
-      box-orient: vertical;
-      -webkit-line-clamp: 2;
-      line-clamp: 2;
+
       font-size: px-para-rem(15px);
     }
   }
@@ -175,11 +173,11 @@ $testesAtivos: false;
     line-clamp: 3;
     overflow: hidden;
     text-align: center;
-    font-size: px-para-rem(16px);
+    font-size: px-para-rem(13px);
     color: #6d4c41;
 
     @include laptop {
-      font-size: px-para-rem(14px);
+      font-size: px-para-rem(12px);
     }
 
     @include mobile {
@@ -204,13 +202,13 @@ $testesAtivos: false;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: px-para-rem(17px);
+    font-size: px-para-rem(14px);
     font-weight: bold;
     overflow: hidden;
 
 
     @include laptop {
-      font-size: px-para-rem(15.5px);
+      font-size: px-para-rem(14.5px);
     }
 
     @include mobile {

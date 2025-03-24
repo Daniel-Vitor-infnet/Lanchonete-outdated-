@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from '@/styles/Cardapio.module.scss';
 import stylesCardCardapio from "@/styles/cardapio/Itens.module.scss";
 import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
-import { Grid2, Tab, Box, Tabs } from "@/libs/mui";
+import { Grid2, Tab, Box, Tabs, Typography } from "@/libs/mui";
 import { CardsCardapio } from '@/components';
 import { obterTamanhoTela, iconsSelect, footerVisibility } from "@/utils/function";
 
@@ -27,13 +27,12 @@ const VerticalTabs: React.FC = () => {
 
   const selectedCategory = cardsCardapioDataJson.find((card) => card.id === selectedId);
 
-  footerVisibility(obterTamanhoTela(true, null, false, false));
 
   return (
     <Grid2 className={styles['main-container']} role="tabpanel">
-      <Box className={styles['box-principal']}>
+      <Grid2 className={styles['box-principal']}>
         <Tabs
-          orientation={obterTamanhoTela("vertical", null, "horizontal")}
+          orientation={obterTamanhoTela("vertical", null, null, "horizontal")}
           variant="scrollable"
           value={cardsCardapioDataJson.findIndex((card) => card.id === selectedId)}
           scrollButtons="auto"
@@ -50,11 +49,15 @@ const VerticalTabs: React.FC = () => {
           }}
         >
           {cardsCardapioDataJson.map((categorias: any) => (
-            <Tab key={categorias.id} label={
-              <Box className={styles['barra-lateral']}>
-                {iconsSelect(categorias.icon, obterTamanhoTela(1.0, 0.8, null, null, 1.3))}
-                {categorias.title}
-              </Box>
+            <Tab key={categorias.id} className={styles['barra-lateral-subcontainer']} label={
+              <Grid2 className={styles['barra-lateral-conteudo']}>
+                <Grid2>
+                  {iconsSelect(categorias.icon, obterTamanhoTela(0.8, 0.8, null, null, 1.3))}
+                </Grid2>
+                <Typography className={styles['barra-lateral-categoria']}>
+                  {categorias.title}
+                </Typography>
+              </Grid2>
             } {...a11yProps(categorias.id)} />
           ))}
         </Tabs>
@@ -67,7 +70,7 @@ const VerticalTabs: React.FC = () => {
             />
           )}
         </Grid2>
-      </Box>
+      </Grid2>
     </Grid2>
   );
 };
