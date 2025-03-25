@@ -3,7 +3,7 @@ import styles from '@/styles/Home.module.scss';
 import { Grid2, Box, Avatar } from '@/libs/mui';
 import slide from '@/assets/img/logo.png';
 import logo from '@/assets/img/Logo.png';
-import slide2 from '@/assets/img/Sorvete.png';
+import slide2 from "@/assets/img/Sorvete.webp";
 import cardsCategoriaDataJson from "@/utils/cardsCardapioTemp.json";
 import stylesCardCategoria from "@/styles/cardapio/Categoria.module.scss";
 import { ImageCarousel, CardsCardapio, BoxLayout } from '@/components';
