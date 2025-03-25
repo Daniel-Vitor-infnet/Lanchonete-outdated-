@@ -1,0 +1,20 @@
+@use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
+
+$testesAtivos: true;
+
+
+.main-container {
+  background-color: if($testesAtivos, blue, unset);
+  position: 'absolute';
+  top: '50px';
+  left: '0';
+  min-width: '250px';
+  min-height: '150px';
+  background: '#fff';
+  border: '1px solid #ccc';
+  box-shadow: '0px 4px 10px rgba(0;0;0;0.2)';
+  padding: '10px';
+  z-index: 10;
+
+}
