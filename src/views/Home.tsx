@@ -20,7 +20,9 @@ const Home: React.FC = () => {
           <Avatar className={styles.avatar} alt="Logo" src={logo} />
           <p className={styles.status}>FECHADO</p>
         </Grid2>
-        <CardsCardapio cardsCardapio={cardsCategoriaDataJson} stylesPerso={stylesCardCategoria} />
+        <CardsCardapio cardsCardapio={cardsCategoriaDataJson} stylesPerso={stylesCardCategoria} onClick={function (valor: string): void {
+          throw new Error('Function not implemented.');
+        } } />
       </BoxLayout>
     </Grid2>
   );

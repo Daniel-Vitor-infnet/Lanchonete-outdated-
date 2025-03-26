@@ -5,6 +5,7 @@ import { obterTamanhoTela, iconsSelect } from "@/utils/function";
 import { Button } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import MobileMenu from "@/components/elementos/button/MobileMenu";
+import { Grid } from 'swiper/modules';
 
 const pages = [
   { to: "/", label: "Home" },
@@ -29,7 +30,9 @@ const HeaderPers: React.FC = () => {
       </Grid2>
       <Grid2 className={stylesPerso['extras']}>
         <Grid2 className={stylesPerso['status']}>
-          {iconsSelect("mui-geral-Circle", 0.7, "lch(71.85 94.03 134.67)", stylesPerso['status-icon'])}
+          <Grid2>
+            {iconsSelect("mui-geral-Circle", 0.8, "lch(71.85 94.03 134.67)", stylesPerso['status-icon'])}
+          </Grid2>
           <Typography>
             aberto
           </Typography>
@@ -41,28 +44,28 @@ const HeaderPers: React.FC = () => {
           <MobileMenu pages={pages} logado={logado} />
         ) : (
           pages
-          .filter((page) => {
-            if (page.to === "/Perfil") return false;
-            return true;
-          })
-          .map((page) => {
-            if (logado && page.to === "/Login") {
-              return (
-                <Avatar className={stylesPerso['conta']}>
-                  {iconsSelect("mui-geral-AccountCircle", null, "#666666")}
-                </Avatar>
-              )
-            } else {
-              return (
-                <NavegacaoButton
-                  key={page.to}
-                  to={page.to}
-                  label={page.label}
-                  className={`${stylesPerso['botaoNav']} ${location.pathname === page.to ? stylesPerso['ativo'] : ''}`}
-                />
-              );
-            }
-          })
+            .filter((page) => {
+              if (page.to === "/Perfil") return false;
+              return true;
+            })
+            .map((page) => {
+              if (logado && page.to === "/Login") {
+                return (
+                  <Avatar className={stylesPerso['conta']}>
+                    {iconsSelect("mui-geral-AccountCircle", null, "#666666")}
+                  </Avatar>
+                )
+              } else {
+                return (
+                  <NavegacaoButton
+                    key={page.to}
+                    to={page.to}
+                    label={page.label}
+                    className={`${stylesPerso['botaoNav']} ${location.pathname === page.to ? stylesPerso['ativo'] : ''}`}
+                  />
+                );
+              }
+            })
         )}
       </Grid2>
     </Grid2>

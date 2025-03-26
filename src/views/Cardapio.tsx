@@ -52,7 +52,7 @@ const VerticalTabs: React.FC = () => {
             <Tab key={categorias.id} className={styles['barra-lateral-subcontainer']} label={
               <Grid2 className={styles['barra-lateral-conteudo']}>
                 <Grid2>
-                  {iconsSelect(categorias.icon, obterTamanhoTela(0.8, 0.8, null, null, 1.3))}
+                  {iconsSelect(categorias.icon, obterTamanhoTela(0.9, 0.8, null, null, 1.3))}
                 </Grid2>
                 <Typography className={styles['barra-lateral-categoria']}>
                   {categorias.title}

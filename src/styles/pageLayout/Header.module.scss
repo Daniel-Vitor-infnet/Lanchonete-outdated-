@@ -53,16 +53,30 @@ $testesAtivos: false;
   }
 
   @keyframes corStatus {
-     0% {color: lch(71.85 94.03 134.67);}
-    25% {color: lch(80 90 150);}
-    50% {color: lch(75 95 180);}
-    75% {color: lch(70 85 200);}
-   100% {color: lch(71.85 94.03 134.67);}
+    0% {
+      color: lch(71.85 94.03 134.67);
+    }
+
+    25% {
+      color: lch(80 90 150);
+    }
+
+    50% {
+      color: lch(75 95 180);
+    }
+
+    75% {
+      color: lch(70 85 200);
+    }
+
+    100% {
+      color: lch(71.85 94.03 134.67);
+    }
   }
 
   // Status Esrita
   .status p {
-    font-size: px-para-rem(19px);
+    font-size: px-para-rem(23.5px);
     font-variant: small-caps;
     font-family: monospace;
     font-weight: bold;
@@ -70,9 +84,10 @@ $testesAtivos: false;
     transition: color 0.3s ease;
 
     @include laptop {
-      font-size: px-para-rem(17px);
+      font-size: px-para-rem(20px);
     }
   }
+
 
   .status-icon {
     animation: corStatus 3s infinite;
@@ -96,7 +111,7 @@ $testesAtivos: false;
     width: 100%;
     height: 100%;
     background-color: unset;
-    font-size: px-para-rem(11px);
+    font-size: px-para-rem(15px);
     font-weight: bold;
     padding: px-para-rem(5px) px-para-rem(18px);
     border: unset;
@@ -105,6 +120,10 @@ $testesAtivos: false;
 
     &.ativo {
       border-bottom: px-para-rem(5px) solid white;
+    }
+
+    @include laptop {
+      font-size: px-para-rem(11px);
     }
   }
 
@@ -120,7 +139,7 @@ $testesAtivos: false;
   background-color: blue !important;
   width: 100%;
   max-width: 100%;
-  min-height: alturaResponsivaViewport(83);
+  min-height: alturaResponsivaViewport(85);
 
   @include laptop {
     min-height: alturaResponsivaViewport(78);
