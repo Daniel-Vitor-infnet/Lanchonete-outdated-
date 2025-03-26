@@ -53,25 +53,11 @@ $testesAtivos: false;
   }
 
   @keyframes corStatus {
-    0% {
-      color: lch(71.85 94.03 134.67);
-    }
-
-    25% {
-      color: lch(80 90 150);
-    }
-
-    50% {
-      color: lch(75 95 180);
-    }
-
-    75% {
-      color: lch(70 85 200);
-    }
-
-    100% {
-      color: lch(71.85 94.03 134.67);
-    }
+    0% {color: lch(71.85 94.03 134.67);}
+    25% {color: lch(80 90 150); }
+    50% {color: lch(75 95 180);}
+    75% {color: lch(70 85 200);}
+    100% {color: lch(71.85 94.03 134.67);}
   }
 
   // Status Esrita
@@ -85,6 +71,14 @@ $testesAtivos: false;
 
     @include laptop {
       font-size: px-para-rem(20px);
+    }
+
+    @include mobile {
+      font-size: px-para-rem(23px);
+    }
+
+    @include mobile-small {
+      font-size: px-para-rem(18px);
     }
   }
 
