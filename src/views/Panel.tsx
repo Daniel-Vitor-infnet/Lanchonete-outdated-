@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from '@/styles/Panel.module.scss';
 import { Grid2, Box, Typography, Button, Switch, pink, alpha, styled } from '@/libs/mui';
 import { AlertDiagPers, ButtonOnOff, TimeSelectPerso, ButtonPerson, mixins } from '@/components';
-import { Status, StatusMobile } from '@/views/subElementos/panel/status';
+import { Status, StatusMobile } from '@/components/panel/status';
 
 const mediaQuery = window.matchMedia("(min-width: 1024px)");
 

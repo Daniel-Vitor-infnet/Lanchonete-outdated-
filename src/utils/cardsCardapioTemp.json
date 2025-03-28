@@ -1,12 +1,12 @@
 [
     {
-        "title": "Teste",
+        "title": "Teste2",
         "id": 391962,
         "id2": "391tSVeT962",
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Picanha",
@@ -15,7 +15,46 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 657729,
+                        "id2": "657jMkMI729",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 872464,
+                        "id2": "872haVpz464",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 62.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 147913,
+                        "id2": "147dWPES913",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 92.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 188929,
+                        "id2": "188QKauh929",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 122.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -26,7 +65,7 @@
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/lanches/Lanche4.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "X-Picanha afafaa afafafaffafaafa fafafa afafaaf afafafaaf",
@@ -35,7 +74,46 @@
                 "description": "Hambúrguer de picanha grelhado, queijo especial, cebola roxa e molho de ervas.",
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 791050,
+                        "id2": "791FHAUc050",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 198925,
+                        "id2": "198Msyld925",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 431162,
+                        "id2": "431ZiXmD162",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 932487,
+                        "id2": "932wKtND487",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Costela afa aff af fa afa asf a afa afa a",
@@ -44,7 +122,46 @@
                 "description": "Hambúrguer de costela desfiada, queijo derretido e molho barbecue.",
                 "price": 36.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
-                "status": 0 
+                "status": 0,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 826409,
+                        "id2": "826OLPnB409",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 243887,
+                        "id2": "243xvZeh887",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 337061,
+                        "id2": "337Vjynq061",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 346790,
+                        "id2": "346iewCz790",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Gorgonzola  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -53,7 +170,46 @@
                 "description": "Hambúrguer premium com queijo gorgonzola derretido e cebolas caramelizadas.",
                 "price": 35.90,
                 "image": "src/assets/img/lanches/Lanche4.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 771655,
+                        "id2": "771hdkjW655",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 702470,
+                        "id2": "702cvURl470",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 568664,
+                        "id2": "568ennPw664",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 727994,
+                        "id2": "727veKmN994",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Barbecue",
@@ -62,7 +218,46 @@
                 "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
                 "price": 33.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
-                "status": 0 
+                "status": 0,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 590357,
+                        "id2": "590coUWW357",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 398939,
+                        "id2": "398RbwCf939",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 824321,
+                        "id2": "824vSYNZ321",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 793064,
+                        "id2": "793ltlAP064",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Parmegiana",
@@ -71,7 +266,46 @@
                 "description": "Filé de frango à parmegiana no pão, com molho de tomate e queijo derretido.",
                 "price": 32.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 474708,
+                        "id2": "474oyHIy708",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 509386,
+                        "id2": "509EelGg386",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 187531,
+                        "id2": "187cPgWW531",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 148254,
+                        "id2": "148VoOGr254",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Brie batata arroz",
@@ -80,7 +314,46 @@
                 "description": "Hambúrguer artesanal com queijo brie derretido, rúcula e geleia de pimenta.",
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 662893,
+                        "id2": "662yMtUP893",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 733303,
+                        "id2": "733dXKRo303",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 789839,
+                        "id2": "789HqOor839",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 523160,
+                        "id2": "523QVpPM160",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Jalapeño",
@@ -89,7 +362,46 @@
                 "description": "Hambúrguer apimentado com queijo cheddar, bacon e jalapeños crocantes.",
                 "price": 33.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 895644,
+                        "id2": "895yhOyu644",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 740894,
+                        "id2": "740taYmY894",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 201733,
+                        "id2": "201RWrsr733",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 452163,
+                        "id2": "452cwoYu163",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Trufado",
@@ -98,7 +410,46 @@
                 "description": "Blend de carnes nobres com molho trufado e queijo suíço.",
                 "price": 39.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 863908,
+                        "id2": "863YeQyq908",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 658385,
+                        "id2": "658jEpth385",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 221370,
+                        "id2": "221dHSiV370",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 768496,
+                        "id2": "768DbOAz496",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Pepperoni",
@@ -107,7 +458,46 @@
                 "description": "Hambúrguer com pepperoni fatiado, queijo cheddar e maionese especial.",
                 "price": 30.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 826714,
+                        "id2": "826UGuEt714",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 388184,
+                        "id2": "388jBVvH184",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 586705,
+                        "id2": "586RUAze705",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 905484,
+                        "id2": "905fJcIJ484",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Carne de Sol",
@@ -116,7 +506,46 @@
                 "description": "Hambúrguer de carne de sol desfiada, queijo coalho e maionese de alho.",
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche4.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 472924,
+                        "id2": "472Gwdlt924",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 460563,
+                        "id2": "460IEbqQ563",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 305022,
+                        "id2": "305ocwMd022",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 791013,
+                        "id2": "791mUPoP013",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Blue Cheese",
@@ -125,7 +554,46 @@
                 "description": "Hambúrguer suculento com molho blue cheese e cebola crispy.",
                 "price": 35.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 717401,
+                        "id2": "717HOxQt401",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 414211,
+                        "id2": "414tVRbT211",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 558761,
+                        "id2": "558whAPw761",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 811126,
+                        "id2": "811TWUGx126",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Ribs",
@@ -134,7 +602,46 @@
                 "description": "Costelinha desfiada, queijo prato e molho especial no pão brioche.",
                 "price": 38.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 552006,
+                        "id2": "552LhSDp006",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 263462,
+                        "id2": "263dHNXJ462",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 182982,
+                        "id2": "182NmBGe982",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 886587,
+                        "id2": "886xCsVZ587",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Cream Cheese",
@@ -143,7 +650,46 @@
                 "description": "Hambúrguer com cream cheese, bacon crocante e molho de alho poró.",
                 "price": 31.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 337660,
+                        "id2": "337KzcSu660",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 491293,
+                        "id2": "491jmrAD293",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 113011,
+                        "id2": "113LEIbx011",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 239783,
+                        "id2": "239zZgQL783",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-Caipira",
@@ -152,7 +698,46 @@
                 "description": "Hambúrguer de frango caipira, queijo coalho e maionese de pequi.",
                 "price": 30.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 201891,
+                        "id2": "201AIXVu891",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 474506,
+                        "id2": "474ptyGe506",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 920253,
+                        "id2": "920kDmDY253",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 805106,
+                        "id2": "805KVlTJ106",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "X-BBQ Onion",
@@ -161,7 +746,46 @@
                 "description": "Hambúrguer com cebolas crispy, queijo prato e molho barbecue.",
                 "price": 32.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 997100,
+                        "id2": "997lEgTl100",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 415258,
+                        "id2": "415Surhn258",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 985901,
+                        "id2": "985fvVBa901",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 237361,
+                        "id2": "237qEYto361",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -172,16 +796,55 @@
         "description": "Refeições caseiras, completas e saborosas.",
         "image": "src/assets/img/Marmita.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Marmita de Frango Grelhado",
-                "id": 657729,
-                "id2": "657jMkMI729",
+                "id": 207648,
+                "id2": "207eGSfN648",
                 "description": "Frango grelhado suculento acompanhado de arroz soltinho, feijão temperado e uma porção de salada fresca.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 22.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 258030,
+                        "id2": "258dgJad030",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 169830,
+                        "id2": "169henWv830",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 672902,
+                        "id2": "672Ovoiy902",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 131999,
+                        "id2": "131ffnJn999",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Marmita de Carne Bovina",
@@ -190,7 +853,46 @@
                 "description": "Carne bovina macia e bem temperada servida com arroz branco, feijão cremoso e legumes cozidos no vapor.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 27.50,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 874223,
+                        "id2": "874AJAFI223",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 141841,
+                        "id2": "141Dkjzb841",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 842555,
+                        "id2": "842fDvNO555",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 957261,
+                        "id2": "957gYIjo261",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Marmita de Peixe Grelhado",
@@ -199,7 +901,46 @@
                 "description": "Filé de peixe grelhado temperado com ervas finas, servido com arroz branco, feijão caseiro e purê de batata.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 30.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 612025,
+                        "id2": "612llpFc025",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 804462,
+                        "id2": "804oYNpf462",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 751888,
+                        "id2": "751vRZKZ888",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 401565,
+                        "id2": "401hnJNa565",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Marmita Vegetariana",
@@ -208,7 +949,46 @@
                 "description": "Arroz integral acompanhado de feijão temperado, legumes grelhados e uma porção de salada variada.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 24.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 695970,
+                        "id2": "695vkMwB970",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 635877,
+                        "id2": "635hUbDl877",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 312438,
+                        "id2": "312KlFzx438",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 320017,
+                        "id2": "320IoQoV017",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Marmita Fitness",
@@ -217,7 +997,46 @@
                 "description": "Frango grelhado suculento, arroz integral e batata-doce assada, uma refeição leve e nutritiva.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 26.50,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 851211,
+                        "id2": "851QrXJW211",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 273900,
+                        "id2": "273Ajjrc900",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 984053,
+                        "id2": "984OQXcR053",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 233592,
+                        "id2": "233xnace592",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -228,7 +1047,7 @@
         "description": "Batata frita, onion rings, frango a passarinho e muito mais",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Batata Frita",
@@ -237,7 +1056,46 @@
                 "description": "Porção de batatas fritas crocantes.",
                 "image": "src/assets/img/porcoes/BatataFrita.webp",
                 "price": 15.00,
-                "status": 0 
+                "status": 0,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 425213,
+                        "id2": "425Inmsz213",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 578017,
+                        "id2": "578hSVYl017",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 882294,
+                        "id2": "882jlgcK294",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 763323,
+                        "id2": "763SpeKV323",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Onion Rings",
@@ -246,7 +1104,46 @@
                 "description": "Anéis de cebola empanados e crocantes.",
                 "image": "src/assets/img/porcoes/OnionRings.webp",
                 "price": 18.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 170129,
+                        "id2": "170aPjfW129",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 461578,
+                        "id2": "461bZlaz578",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 872239,
+                        "id2": "872tMBYq239",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 568570,
+                        "id2": "568jSvXI570",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Frango à Passarinho",
@@ -255,7 +1152,46 @@
                 "description": "Porção de pedaços de frango temperados e fritos.",
                 "image": "src/assets/img/porcoes/FrangoFrito.webp",
                 "price": 25.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 105029,
+                        "id2": "105QbdsM029",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 390756,
+                        "id2": "390zTJfZ756",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 359278,
+                        "id2": "359ZoqIa278",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 918996,
+                        "id2": "918FLEQA996",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Mariscos",
@@ -264,7 +1200,46 @@
                 "description": "Mariscos frito dourado e crocante.",
                 "image": "src/assets/img/porcoes/Mariscos.webp",
                 "price": 44.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 476791,
+                        "id2": "476MEkyM791",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 255794,
+                        "id2": "255HqyaZ794",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 990958,
+                        "id2": "990hlzWF958",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 356260,
+                        "id2": "356uLAEu260",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Torresmo",
@@ -273,7 +1248,46 @@
                 "description": "Torresmo crocante com tempero especial.",
                 "image": "src/assets/img/porcoes/Torremos.webp",
                 "price": 20.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 881190,
+                        "id2": "881syYIl190",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 481945,
+                        "id2": "481PbMBh945",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 246067,
+                        "id2": "246eaIxB067",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 158574,
+                        "id2": "158OpQoX574",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -284,7 +1298,7 @@
         "description": "Cremosos, refrescantes e irresistíveis.",
         "image": "src/assets/img/Sorvete.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Milkshake de Morango",
@@ -293,7 +1307,46 @@
                 "description": "Uma explosão de sabor com morangos frescos batidos com sorvete cremoso e finalizado com chantilly.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 18.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 112920,
+                        "id2": "112YNydT920",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 883132,
+                        "id2": "883NNYMa132",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 993114,
+                        "id2": "993uWLsa114",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 919348,
+                        "id2": "919WgxmN348",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Açaí",
@@ -302,7 +1355,46 @@
                 "description": "Açaí batido na textura perfeita, coberto com leite ninho e um toque generoso de leite condensado.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 20.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 291992,
+                        "id2": "291DMYsz992",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 731878,
+                        "id2": "731HnHPy878",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 709740,
+                        "id2": "709ovzHt740",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 399618,
+                        "id2": "399FQfnk618",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Sorvete de Chocolate",
@@ -311,7 +1403,46 @@
                 "description": "Chocolate intenso e cremoso, com pedaços generosos de brownie para uma experiência única.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 12.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 738559,
+                        "id2": "738frZrh559",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 593870,
+                        "id2": "593rvjVS870",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 293404,
+                        "id2": "293BthOs404",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 171846,
+                        "id2": "171ILykF846",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Sundae de Caramelo",
@@ -320,7 +1451,46 @@
                 "description": "Sorvete de baunilha aveludado, coberto com calda quente de caramelo e crocante de amendoim.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 15.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 764246,
+                        "id2": "764DDVsb246",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 859120,
+                        "id2": "859VsTym120",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 162821,
+                        "id2": "162HLuTo821",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 397067,
+                        "id2": "397ZbUWp067",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Picolé Artesanal",
@@ -329,7 +1499,46 @@
                 "description": "Feito com frutas vermelhas naturais, refrescante e perfeito para qualquer momento do dia.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 10.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 698338,
+                        "id2": "698cyelY338",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 859322,
+                        "id2": "859LiMZv322",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 192349,
+                        "id2": "192bSBvl349",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 550130,
+                        "id2": "550LjPQl130",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Sorvete de Pistache",
@@ -338,7 +1547,46 @@
                 "description": "Cremosidade incomparável e o sabor sofisticado do pistache em cada colherada.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 14.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 454120,
+                        "id2": "454clFrS120",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 793787,
+                        "id2": "793cVlLR787",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 948133,
+                        "id2": "948KgYLs133",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 138359,
+                        "id2": "138gFRba359",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Milkshake de Ovomaltine",
@@ -347,7 +1595,46 @@
                 "description": "Uma combinação irresistível de sorvete cremoso com crocantes flocos de Ovomaltine e cobertura de chocolate.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 19.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 920205,
+                        "id2": "920GmpmZ205",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 341688,
+                        "id2": "341GGUKF688",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 267957,
+                        "id2": "267lCqKm957",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 529841,
+                        "id2": "529cHsch841",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -358,16 +1645,55 @@
         "description": "Sabor de brasa, feito no ponto certo.",
         "image": "src/assets/img/Churrasco.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Picanha na Brasa",
                 "id": 896494,
                 "id2": "896HdesD494",
-                "description": "Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial.",
+                "description": "Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial. Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 55.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 740695,
+                        "id2": "740MlFcq695",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 247470,
+                        "id2": "247slQcz470",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 408545,
+                        "id2": "408RFjsx545",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 786359,
+                        "id2": "786BeykQ359",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Costela Fogo de Chão",
@@ -376,7 +1702,46 @@
                 "description": "Costela bovina assada lentamente por mais de 6 horas, garantindo um sabor defumado irresistível.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 59.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 792289,
+                        "id2": "792qjmLL289",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 152286,
+                        "id2": "152zcFQh286",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 344891,
+                        "id2": "344GZDeW891",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 372448,
+                        "id2": "372iAjFk448",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Maminha Suculenta",
@@ -385,7 +1750,46 @@
                 "description": "Maminha macia e saborosa, temperada na medida certa e assada na brasa.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 42.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 302924,
+                        "id2": "302osRXp924",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 797056,
+                        "id2": "797Bmwpa056",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 492850,
+                        "id2": "492dFQjX850",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 489848,
+                        "id2": "489mTUxb848",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Espetinho de Coração",
@@ -394,7 +1798,46 @@
                 "description": "Espetinhos de coração de frango grelhados com tempero especial da casa.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 39.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 952637,
+                        "id2": "952RITtU637",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 574822,
+                        "id2": "574BLGVT822",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 890336,
+                        "id2": "890TWLmN336",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 622441,
+                        "id2": "622UXjTU441",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Linguiça Artesanal",
@@ -403,57 +1846,46 @@
                 "description": "Linguiça toscana artesanal assada na brasa, crocante por fora e suculenta por dentro.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 40.90,
-                "status": 1 
-            }
-        ]
-    },
-    {
-        "title": "Marmitas",
-        "id": 950932,
-        "id2": "950Cpqnk932",
-        "description": "Refeições caseiras, completas e saborosas.",
-        "image": "src/assets/img/Logo.png",
-        "icon": "mdi-comida-fastFood",
-        "items": [
-            {
-                "title": "Marmita de Frango Grelhado",
-                "id": 657729,
-                "id2": "657jMkMI729",
-                "description": "Frango grelhado suculento acompanhado de arroz soltinho, feijão temperado e uma porção de salada fresca.",
-                "image": "src/assets/img/Logo.png",
-                "price": 22.90
-            },
-            {
-                "title": "Marmita de Carne Bovina",
-                "id": 855616,
-                "id2": "855yaWcT616",
-                "description": "Carne bovina macia e bem temperada servida com arroz branco, feijão cremoso e legumes cozidos no vapor.",
-                "image": "src/assets/img/Logo.png",
-                "price": 27.50
-            },
-            {
-                "title": "Marmita de Peixe Grelhado",
-                "id": 995142,
-                "id2": "995ZhHPh142",
-                "description": "Filé de peixe grelhado temperado com ervas finas, servido com arroz branco, feijão caseiro e purê de batata.",
-                "image": "src/assets/img/Logo.png",
-                "price": 30.90
-            },
-            {
-                "title": "Marmita Vegetariana",
-                "id": 378424,
-                "id2": "378mWzjM424",
-                "description": "Arroz integral acompanhado de feijão temperado, legumes grelhados e uma porção de salada variada.",
-                "image": "src/assets/img/Logo.png",
-                "price": 24.00
-            },
-            {
-                "title": "Marmita Fitness",
-                "id": 753664,
-                "id2": "753wCznU664",
-                "description": "Frango grelhado suculento, arroz integral e batata-doce assada, uma refeição leve e nutritiva.",
-                "image": "src/assets/img/Logo.png",
-                "price": 26.50
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 215362,
+                        "id2": "215coytL362",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 517714,
+                        "id2": "517pahGz714",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 415483,
+                        "id2": "415FpyaY483",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 538576,
+                        "id2": "538CKUTj576",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -464,7 +1896,7 @@
         "description": "Assados na brasa, suculentos e bem temperados.",
         "image": "src/assets/img/Espetinhos.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Espetinho de Carne Bovina",
@@ -473,7 +1905,46 @@
                 "description": "Carne bovina macia e temperada na brasa, garantindo um sabor irresistível e suculento.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 15.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 110625,
+                        "id2": "110iZqoy625",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 185848,
+                        "id2": "185rEQTQ848",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 208160,
+                        "id2": "208irdvj160",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 589959,
+                        "id2": "589furUe959",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Espetinho de Frango Grelhado",
@@ -482,7 +1953,46 @@
                 "description": "Peito de frango marinado com especiarias e grelhado lentamente até ficar dourado.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 14.50,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 795169,
+                        "id2": "795LtFWT169",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 546613,
+                        "id2": "546BMJIf613",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 154607,
+                        "id2": "154LVWtX607",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 439113,
+                        "id2": "439cYVlA113",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Espetinho de Linguiça Artesanal",
@@ -491,7 +2001,46 @@
                 "description": "Linguiça especial assada na brasa, crocante por fora e suculenta por dentro.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 13.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 137804,
+                        "id2": "137rZoIN804",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 434798,
+                        "id2": "434CPElH798",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 240441,
+                        "id2": "240gETwO441",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 756104,
+                        "id2": "756iDIpf104",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Espetinho de Coração de Frango",
@@ -500,7 +2049,46 @@
                 "description": "Corações de frango grelhados e temperados com ervas e alho, macios e saborosos.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 11.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 585435,
+                        "id2": "585FPceT435",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 335463,
+                        "id2": "335edoci463",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 760912,
+                        "id2": "760Uxhfb912",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 989275,
+                        "id2": "989hYaFw275",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Espetinho de Queijo Coalho com Mel",
@@ -509,7 +2097,46 @@
                 "description": "Queijo coalho assado na brasa com uma generosa camada de mel, combinação perfeita entre doce e salgado.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 17.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 462410,
+                        "id2": "462oXpSH410",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 876227,
+                        "id2": "876iCTWZ227",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 714770,
+                        "id2": "714mkVHT770",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 473664,
+                        "id2": "473BvQPD664",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -520,7 +2147,7 @@
         "description": "Doces perfeitos para fechar sua refeição.",
         "image": "src/assets/img/Sobremesa.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Pudim de Leite Condensado",
@@ -529,7 +2156,46 @@
                 "description": "Clássico pudim de leite condensado com calda caramelizada e textura irresistível.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 9.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 976809,
+                        "id2": "976rwuvt809",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 176469,
+                        "id2": "176fQViv469",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 167289,
+                        "id2": "167rmWHZ289",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 254737,
+                        "id2": "254ILwxF737",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Brigadeiro Gourmet",
@@ -538,7 +2204,46 @@
                 "description": "Brigadeiro de chocolate belga, enrolado no granulado belga para um sabor mais intenso.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 4.50,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 751580,
+                        "id2": "751PJYyu580",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 561778,
+                        "id2": "561KRehF778",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 719032,
+                        "id2": "719MaxQx032",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 536825,
+                        "id2": "536jlGlI825",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Torta de Limão",
@@ -547,7 +2252,46 @@
                 "description": "Massa crocante recheada com um creme azedinho de limão, finalizada com merengue gratinado.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 12.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 992661,
+                        "id2": "992epsHO661",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 629039,
+                        "id2": "629OxJlP039",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 356719,
+                        "id2": "356QwpIj719",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 881521,
+                        "id2": "881JiqSS521",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Mousse de Maracujá",
@@ -556,7 +2300,46 @@
                 "description": "Mousse leve e aerado de maracujá, com calda natural da fruta e crocante de chocolate branco.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 11.50,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 770492,
+                        "id2": "770NVYNy492",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 591397,
+                        "id2": "591nyAJy397",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 679260,
+                        "id2": "679fLKDT260",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 252828,
+                        "id2": "252uqnJG828",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Bolo de Chocolate",
@@ -565,7 +2348,46 @@
                 "description": "Bolo de chocolate úmido, recheado e coberto com ganache de chocolate meio amargo.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 13.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 642053,
+                        "id2": "642TUqtY053",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 417977,
+                        "id2": "417OAePq977",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 912565,
+                        "id2": "912jGNyV565",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 377123,
+                        "id2": "377uTWmt123",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     },
@@ -576,7 +2398,7 @@
         "description": "Massa crocante, muito recheio e sabor incrível.",
         "image": "src/assets/img/Pizza.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1 ,
+        "status": 1,
         "items": [
             {
                 "title": "Pizza de Mussarela",
@@ -585,7 +2407,46 @@
                 "description": "Massa leve e crocante, coberta com molho de tomate artesanal e queijo mussarela derretido.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 55.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 806538,
+                        "id2": "806wXfYu538",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 678112,
+                        "id2": "678lAinr112",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 938287,
+                        "id2": "938xLwLu287",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 329782,
+                        "id2": "329wvEgZ782",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza de Calabresa",
@@ -594,7 +2455,46 @@
                 "description": "Fatias generosas de calabresa defumada, cebolas caramelizadas e orégano sobre queijo derretido.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 58.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 713846,
+                        "id2": "713smCRW846",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 470907,
+                        "id2": "470CLxRT907",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 954398,
+                        "id2": "954Ozyjp398",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 762814,
+                        "id2": "762xeuLD814",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza Portuguesa",
@@ -603,7 +2503,46 @@
                 "description": "Presunto, ovos, cebola, ervilha, queijo e azeitonas sobre um molho de tomate caseiro.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 60.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 642319,
+                        "id2": "642HvGhk319",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 726838,
+                        "id2": "726OrgRj838",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 832250,
+                        "id2": "832BrDLH250",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 162561,
+                        "id2": "162ymElz561",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza de Frango com Catupiry",
@@ -612,7 +2551,46 @@
                 "description": "Frango desfiado temperado e o legítimo Catupiry, sobre uma base de molho especial.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 62.50,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 610943,
+                        "id2": "610PIEWg943",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 634086,
+                        "id2": "634apiSZ086",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 893117,
+                        "id2": "893XuYpY117",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 415298,
+                        "id2": "415NaCtD298",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza Quatro Queijos",
@@ -621,7 +2599,46 @@
                 "description": "Mistura perfeita de mussarela, provolone, gorgonzola e parmesão derretidos.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 65.00,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 153162,
+                        "id2": "153LHvcS162",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 959330,
+                        "id2": "959qcBfs330",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 594449,
+                        "id2": "594gRolF449",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 584450,
+                        "id2": "584WeAzL450",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza de Pepperoni",
@@ -630,7 +2647,46 @@
                 "description": "Pepperoni picante sobre queijo derretido e molho de tomate caseiro.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 67.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 373305,
+                        "id2": "373iekCc305",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 296261,
+                        "id2": "296ScBRq261",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 813838,
+                        "id2": "813TlHOL838",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 512675,
+                        "id2": "512GoHoB675",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza Vegana",
@@ -639,7 +2695,46 @@
                 "description": "Massa especial com cobertura de vegetais frescos e queijo vegano derretido.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 63.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 883103,
+                        "id2": "883FkjWT103",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 926640,
+                        "id2": "926sdlqx640",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 578994,
+                        "id2": "578TwSyB994",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 107022,
+                        "id2": "107EVcFn022",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             },
             {
                 "title": "Pizza de Chocolate com Morango",
@@ -648,7 +2743,46 @@
                 "description": "Chocolate cremoso, morangos frescos e raspas de chocolate branco sobre massa crocante.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 59.90,
-                "status": 1 
+                "status": 1,
+                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "version": [
+                    {
+                        "title": "Versão1",
+                        "id": 668159,
+                        "id2": "668jBMXZ159",
+                        "description": "Versão1",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão2",
+                        "id": 522695,
+                        "id2": "522nCBgh695",
+                        "description": "Versão2",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão3",
+                        "id": 764044,
+                        "id2": "764LmjaQ044",
+                        "description": "Versão3",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    },
+                    {
+                        "title": "Versão4",
+                        "id": 893219,
+                        "id2": "893QNnzR219",
+                        "description": "Versão4",
+                        "image": "src/assets/img/Complementos.webp",
+                        "price": 22.90,
+                        "status": 1
+                    }
+                ]
             }
         ]
     }

@@ -1,10 +1,11 @@
-import * as React from 'react';
+import { useState } from "react";
 import styles from '@/styles/Cardapio.module.scss';
 import stylesCardCardapio from "@/styles/cardapio/Itens.module.scss";
 import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
 import { Grid2, Tab, Box, Tabs, Typography } from "@/libs/mui";
 import { CardsCardapio } from '@/components';
 import { obterTamanhoTela, iconsSelect, footerVisibility } from "@/utils/function";
+import MenuCardapio from "@/components/layout/cardapio/menuCardapio";
 
 
 const a11yProps = (cardID: number) => {
@@ -15,8 +16,17 @@ const a11yProps = (cardID: number) => {
 };
 
 const VerticalTabs: React.FC = () => {
-  const [selectedId, setSelectedId] = React.useState<number>(cardsCardapioDataJson[0].id);
+  const [selectedId, setSelectedId] = useState<number>(cardsCardapioDataJson[0].id);
+  const [itemEscolhido, setItemEscolhido] = useState('');
 
+
+
+  if (itemEscolhido) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+  
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     const selectedCategory = cardsCardapioDataJson[newValue];
@@ -29,7 +39,7 @@ const VerticalTabs: React.FC = () => {
 
 
   return (
-    <Grid2 className={styles['main-container']} role="tabpanel">
+    <Grid2 className={styles['main-container']} >
       <Grid2 className={styles['box-principal']}>
         <Tabs
           orientation={obterTamanhoTela("vertical", null, null, "horizontal")}
@@ -67,10 +77,14 @@ const VerticalTabs: React.FC = () => {
               key={selectedCategory.id}
               cardsCardapio={selectedCategory.items}
               stylesPerso={stylesCardCardapio}
+              onClick={setItemEscolhido}
             />
           )}
         </Grid2>
       </Grid2>
+      {itemEscolhido && (
+        <MenuCardapio itemEscolhido={itemEscolhido} onClose={() => setItemEscolhido('')} />
+      )}
     </Grid2>
   );
 };

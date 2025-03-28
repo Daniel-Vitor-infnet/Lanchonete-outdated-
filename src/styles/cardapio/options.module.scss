@@ -1,0 +1,39 @@
+@use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
+
+$testesAtivos: true;
+
+
+
+.main-container {
+  background-color: if($testesAtivos, hsl(342.12 100% 50%), unset);
+  width: 100%;
+  height: 13%;
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr 0.2fr;
+
+
+  .img-complemento-container {
+    background-color: if($testesAtivos, hsl(135.06 100% 50%), unset);
+    height: 100%;
+  }
+
+  .img-complemento- {
+    height: 100%;
+  }
+
+  .item {
+    background-color: if($testesAtivos, hsl(184 100% 50%), unset);
+  }
+
+  .select-container {
+    background-color: if($testesAtivos, hsl(68.94 100% 50%), unset);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .select {
+    background-color: if($testesAtivos, unset, unset);
+  }
+}
