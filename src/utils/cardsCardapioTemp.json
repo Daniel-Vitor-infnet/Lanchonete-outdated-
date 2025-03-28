@@ -6,14 +6,16 @@
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Picanha",
                 "id": 180889,
                 "id2": "180amqId889",
                 "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "price": 3.50
+                "status": 1 
             }
         ]
     },
@@ -24,6 +26,7 @@
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/lanches/Lanche4.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "X-Picanha afafaa afafafaffafaafa fafafa afafaaf afafafaaf",
@@ -31,7 +34,8 @@
                 "id2": "414ldbCe885",
                 "description": "Hambúrguer de picanha grelhado, queijo especial, cebola roxa e molho de ervas.",
                 "price": 34.90,
-                "image": "src/assets/img/lanches/Lanche3.webp"
+                "image": "src/assets/img/lanches/Lanche3.webp",
+                "status": 1 
             },
             {
                 "title": "X-Costela afa aff af fa afa asf a afa afa a",
@@ -39,7 +43,8 @@
                 "id2": "917KZXxj780",
                 "description": "Hambúrguer de costela desfiada, queijo derretido e molho barbecue.",
                 "price": 36.90,
-                "image": "src/assets/img/lanches/Lanche1.webp"
+                "image": "src/assets/img/lanches/Lanche1.webp",
+                "status": 0 
             },
             {
                 "title": "X-Gorgonzola  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -47,7 +52,8 @@
                 "id2": "538XOvrN719",
                 "description": "Hambúrguer premium com queijo gorgonzola derretido e cebolas caramelizadas.",
                 "price": 35.90,
-                "image": "src/assets/img/lanches/Lanche4.webp"
+                "image": "src/assets/img/lanches/Lanche4.webp",
+                "status": 1 
             },
             {
                 "title": "X-Barbecue",
@@ -55,7 +61,8 @@
                 "id2": "975KmmwI995",
                 "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
                 "price": 33.90,
-                "image": "src/assets/img/lanches/Lanche2.webp"
+                "image": "src/assets/img/lanches/Lanche2.webp",
+                "status": 0 
             },
             {
                 "title": "X-Parmegiana",
@@ -63,7 +70,8 @@
                 "id2": "459mhViq933",
                 "description": "Filé de frango à parmegiana no pão, com molho de tomate e queijo derretido.",
                 "price": 32.90,
-                "image": "src/assets/img/lanches/Lanche5.webp"
+                "image": "src/assets/img/lanches/Lanche5.webp",
+                "status": 1 
             },
             {
                 "title": "X-Brie batata arroz",
@@ -71,7 +79,8 @@
                 "id2": "723JbNhA619",
                 "description": "Hambúrguer artesanal com queijo brie derretido, rúcula e geleia de pimenta.",
                 "price": 34.90,
-                "image": "src/assets/img/lanches/Lanche2.webp"
+                "image": "src/assets/img/lanches/Lanche2.webp",
+                "status": 1 
             },
             {
                 "title": "X-Jalapeño",
@@ -79,7 +88,8 @@
                 "id2": "812XwNmY547",
                 "description": "Hambúrguer apimentado com queijo cheddar, bacon e jalapeños crocantes.",
                 "price": 33.90,
-                "image": "src/assets/img/lanches/Lanche3.webp"
+                "image": "src/assets/img/lanches/Lanche3.webp",
+                "status": 1 
             },
             {
                 "title": "X-Trufado",
@@ -87,7 +97,8 @@
                 "id2": "394VqkOm621",
                 "description": "Blend de carnes nobres com molho trufado e queijo suíço.",
                 "price": 39.90,
-                "image": "src/assets/img/lanches/Lanche5.webp"
+                "image": "src/assets/img/lanches/Lanche5.webp",
+                "status": 1 
             },
             {
                 "title": "X-Pepperoni",
@@ -95,7 +106,8 @@
                 "id2": "676FbMqA233",
                 "description": "Hambúrguer com pepperoni fatiado, queijo cheddar e maionese especial.",
                 "price": 30.90,
-                "image": "src/assets/img/lanches/Lanche1.webp"
+                "image": "src/assets/img/lanches/Lanche1.webp",
+                "status": 1 
             },
             {
                 "title": "X-Carne de Sol",
@@ -103,7 +115,8 @@
                 "id2": "589wQzXv112",
                 "description": "Hambúrguer de carne de sol desfiada, queijo coalho e maionese de alho.",
                 "price": 34.90,
-                "image": "src/assets/img/lanches/Lanche4.webp"
+                "image": "src/assets/img/lanches/Lanche4.webp",
+                "status": 1 
             },
             {
                 "title": "X-Blue Cheese",
@@ -111,7 +124,8 @@
                 "id2": "478VmmNY291",
                 "description": "Hambúrguer suculento com molho blue cheese e cebola crispy.",
                 "price": 35.90,
-                "image": "src/assets/img/lanches/Lanche2.webp"
+                "image": "src/assets/img/lanches/Lanche2.webp",
+                "status": 1 
             },
             {
                 "title": "X-Ribs",
@@ -119,7 +133,8 @@
                 "id2": "829AJbkX347",
                 "description": "Costelinha desfiada, queijo prato e molho especial no pão brioche.",
                 "price": 38.90,
-                "image": "src/assets/img/lanches/Lanche5.webp"
+                "image": "src/assets/img/lanches/Lanche5.webp",
+                "status": 1 
             },
             {
                 "title": "X-Cream Cheese",
@@ -127,7 +142,8 @@
                 "id2": "634NmJbX512",
                 "description": "Hambúrguer com cream cheese, bacon crocante e molho de alho poró.",
                 "price": 31.90,
-                "image": "src/assets/img/lanches/Lanche3.webp"
+                "image": "src/assets/img/lanches/Lanche3.webp",
+                "status": 1 
             },
             {
                 "title": "X-Caipira",
@@ -135,7 +151,8 @@
                 "id2": "902KXzAm315",
                 "description": "Hambúrguer de frango caipira, queijo coalho e maionese de pequi.",
                 "price": 30.90,
-                "image": "src/assets/img/lanches/Lanche1.webp"
+                "image": "src/assets/img/lanches/Lanche1.webp",
+                "status": 1 
             },
             {
                 "title": "X-BBQ Onion",
@@ -143,7 +160,8 @@
                 "id2": "723XwVAq481",
                 "description": "Hambúrguer com cebolas crispy, queijo prato e molho barbecue.",
                 "price": 32.90,
-                "image": "src/assets/img/lanches/Lanche5.webp"
+                "image": "src/assets/img/lanches/Lanche5.webp",
+                "status": 1 
             }
         ]
     },
@@ -154,6 +172,7 @@
         "description": "Refeições caseiras, completas e saborosas.",
         "image": "src/assets/img/Marmita.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Marmita de Frango Grelhado",
@@ -161,7 +180,8 @@
                 "id2": "657jMkMI729",
                 "description": "Frango grelhado suculento acompanhado de arroz soltinho, feijão temperado e uma porção de salada fresca.",
                 "image": "src/assets/img/Marmita.webp",
-                "price": 22.90
+                "price": 22.90,
+                "status": 1 
             },
             {
                 "title": "Marmita de Carne Bovina",
@@ -169,7 +189,8 @@
                 "id2": "855yaWcT616",
                 "description": "Carne bovina macia e bem temperada servida com arroz branco, feijão cremoso e legumes cozidos no vapor.",
                 "image": "src/assets/img/Marmita.webp",
-                "price": 27.50
+                "price": 27.50,
+                "status": 1 
             },
             {
                 "title": "Marmita de Peixe Grelhado",
@@ -177,7 +198,8 @@
                 "id2": "995ZhHPh142",
                 "description": "Filé de peixe grelhado temperado com ervas finas, servido com arroz branco, feijão caseiro e purê de batata.",
                 "image": "src/assets/img/Marmita.webp",
-                "price": 30.90
+                "price": 30.90,
+                "status": 1 
             },
             {
                 "title": "Marmita Vegetariana",
@@ -185,7 +207,8 @@
                 "id2": "378mWzjM424",
                 "description": "Arroz integral acompanhado de feijão temperado, legumes grelhados e uma porção de salada variada.",
                 "image": "src/assets/img/Marmita.webp",
-                "price": 24.00
+                "price": 24.00,
+                "status": 1 
             },
             {
                 "title": "Marmita Fitness",
@@ -193,7 +216,8 @@
                 "id2": "753wCznU664",
                 "description": "Frango grelhado suculento, arroz integral e batata-doce assada, uma refeição leve e nutritiva.",
                 "image": "src/assets/img/Marmita.webp",
-                "price": 26.50
+                "price": 26.50,
+                "status": 1 
             }
         ]
     },
@@ -204,6 +228,7 @@
         "description": "Batata frita, onion rings, frango a passarinho e muito mais",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Batata Frita",
@@ -211,7 +236,8 @@
                 "id2": "453qzkGA903",
                 "description": "Porção de batatas fritas crocantes.",
                 "image": "src/assets/img/porcoes/BatataFrita.webp",
-                "price": 15.00
+                "price": 15.00,
+                "status": 0 
             },
             {
                 "title": "Onion Rings",
@@ -219,7 +245,8 @@
                 "id2": "224bpedb896",
                 "description": "Anéis de cebola empanados e crocantes.",
                 "image": "src/assets/img/porcoes/OnionRings.webp",
-                "price": 18.00
+                "price": 18.00,
+                "status": 1 
             },
             {
                 "title": "Frango à Passarinho",
@@ -227,7 +254,8 @@
                 "id2": "216qpJgg373",
                 "description": "Porção de pedaços de frango temperados e fritos.",
                 "image": "src/assets/img/porcoes/FrangoFrito.webp",
-                "price": 25.00
+                "price": 25.00,
+                "status": 1 
             },
             {
                 "title": "Mariscos",
@@ -235,7 +263,8 @@
                 "id2": "321ROCMy520",
                 "description": "Mariscos frito dourado e crocante.",
                 "image": "src/assets/img/porcoes/Mariscos.webp",
-                "price": 44.00
+                "price": 44.00,
+                "status": 1 
             },
             {
                 "title": "Torresmo",
@@ -243,7 +272,8 @@
                 "id2": "867jKhdJ544",
                 "description": "Torresmo crocante com tempero especial.",
                 "image": "src/assets/img/porcoes/Torremos.webp",
-                "price": 20.00
+                "price": 20.00,
+                "status": 1 
             }
         ]
     },
@@ -254,6 +284,7 @@
         "description": "Cremosos, refrescantes e irresistíveis.",
         "image": "src/assets/img/Sorvete.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Milkshake de Morango",
@@ -261,7 +292,8 @@
                 "id2": "334MkMo502",
                 "description": "Uma explosão de sabor com morangos frescos batidos com sorvete cremoso e finalizado com chantilly.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 18.00
+                "price": 18.00,
+                "status": 1 
             },
             {
                 "title": "Açaí",
@@ -269,7 +301,8 @@
                 "id2": "882AcLn313",
                 "description": "Açaí batido na textura perfeita, coberto com leite ninho e um toque generoso de leite condensado.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 20.00
+                "price": 20.00,
+                "status": 1 
             },
             {
                 "title": "Sorvete de Chocolate",
@@ -277,7 +310,8 @@
                 "id2": "671SwCh210",
                 "description": "Chocolate intenso e cremoso, com pedaços generosos de brownie para uma experiência única.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 12.00
+                "price": 12.00,
+                "status": 1 
             },
             {
                 "title": "Sundae de Caramelo",
@@ -285,7 +319,8 @@
                 "id2": "555SnCa743",
                 "description": "Sorvete de baunilha aveludado, coberto com calda quente de caramelo e crocante de amendoim.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 15.00
+                "price": 15.00,
+                "status": 1 
             },
             {
                 "title": "Picolé Artesanal",
@@ -293,7 +328,8 @@
                 "id2": "927PcFr602",
                 "description": "Feito com frutas vermelhas naturais, refrescante e perfeito para qualquer momento do dia.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 10.00
+                "price": 10.00,
+                "status": 1 
             },
             {
                 "title": "Sorvete de Pistache",
@@ -301,7 +337,8 @@
                 "id2": "729PsTc601",
                 "description": "Cremosidade incomparável e o sabor sofisticado do pistache em cada colherada.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 14.00
+                "price": 14.00,
+                "status": 1 
             },
             {
                 "title": "Milkshake de Ovomaltine",
@@ -309,7 +346,8 @@
                 "id2": "814MkOv502",
                 "description": "Uma combinação irresistível de sorvete cremoso com crocantes flocos de Ovomaltine e cobertura de chocolate.",
                 "image": "src/assets/img/Sorvete.webp",
-                "price": 19.00
+                "price": 19.00,
+                "status": 1 
             }
         ]
     },
@@ -320,6 +358,7 @@
         "description": "Sabor de brasa, feito no ponto certo.",
         "image": "src/assets/img/Churrasco.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Picanha na Brasa",
@@ -327,7 +366,8 @@
                 "id2": "896HdesD494",
                 "description": "Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial.",
                 "image": "src/assets/img/Churrasco.webp",
-                "price": 55.90
+                "price": 55.90,
+                "status": 1 
             },
             {
                 "title": "Costela Fogo de Chão",
@@ -335,7 +375,8 @@
                 "id2": "775ZCeJs691",
                 "description": "Costela bovina assada lentamente por mais de 6 horas, garantindo um sabor defumado irresistível.",
                 "image": "src/assets/img/Churrasco.webp",
-                "price": 59.90
+                "price": 59.90,
+                "status": 1 
             },
             {
                 "title": "Maminha Suculenta",
@@ -343,7 +384,8 @@
                 "id2": "475nfylk781",
                 "description": "Maminha macia e saborosa, temperada na medida certa e assada na brasa.",
                 "image": "src/assets/img/Churrasco.webp",
-                "price": 42.90
+                "price": 42.90,
+                "status": 1 
             },
             {
                 "title": "Espetinho de Coração",
@@ -351,7 +393,8 @@
                 "id2": "417bQdiI387",
                 "description": "Espetinhos de coração de frango grelhados com tempero especial da casa.",
                 "image": "src/assets/img/Churrasco.webp",
-                "price": 39.90
+                "price": 39.90,
+                "status": 1 
             },
             {
                 "title": "Linguiça Artesanal",
@@ -359,7 +402,8 @@
                 "id2": "874oFAhI800",
                 "description": "Linguiça toscana artesanal assada na brasa, crocante por fora e suculenta por dentro.",
                 "image": "src/assets/img/Churrasco.webp",
-                "price": 40.90
+                "price": 40.90,
+                "status": 1 
             }
         ]
     },
@@ -420,6 +464,7 @@
         "description": "Assados na brasa, suculentos e bem temperados.",
         "image": "src/assets/img/Espetinhos.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Espetinho de Carne Bovina",
@@ -427,7 +472,8 @@
                 "id2": "304fuEKv160",
                 "description": "Carne bovina macia e temperada na brasa, garantindo um sabor irresistível e suculento.",
                 "image": "src/assets/img/Espetinhos.webp",
-                "price": 15.90
+                "price": 15.90,
+                "status": 1 
             },
             {
                 "title": "Espetinho de Frango Grelhado",
@@ -435,7 +481,8 @@
                 "id2": "270mgTni228",
                 "description": "Peito de frango marinado com especiarias e grelhado lentamente até ficar dourado.",
                 "image": "src/assets/img/Espetinhos.webp",
-                "price": 14.50
+                "price": 14.50,
+                "status": 1 
             },
             {
                 "title": "Espetinho de Linguiça Artesanal",
@@ -443,7 +490,8 @@
                 "id2": "168rBdfl917",
                 "description": "Linguiça especial assada na brasa, crocante por fora e suculenta por dentro.",
                 "image": "src/assets/img/Espetinhos.webp",
-                "price": 13.90
+                "price": 13.90,
+                "status": 1 
             },
             {
                 "title": "Espetinho de Coração de Frango",
@@ -451,7 +499,8 @@
                 "id2": "305QkvYE405",
                 "description": "Corações de frango grelhados e temperados com ervas e alho, macios e saborosos.",
                 "image": "src/assets/img/Espetinhos.webp",
-                "price": 11.90
+                "price": 11.90,
+                "status": 1 
             },
             {
                 "title": "Espetinho de Queijo Coalho com Mel",
@@ -459,7 +508,8 @@
                 "id2": "499HylSX185",
                 "description": "Queijo coalho assado na brasa com uma generosa camada de mel, combinação perfeita entre doce e salgado.",
                 "image": "src/assets/img/Espetinhos.webp",
-                "price": 17.90
+                "price": 17.90,
+                "status": 1 
             }
         ]
     },
@@ -470,6 +520,7 @@
         "description": "Doces perfeitos para fechar sua refeição.",
         "image": "src/assets/img/Sobremesa.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Pudim de Leite Condensado",
@@ -477,7 +528,8 @@
                 "id2": "490MvEzw334",
                 "description": "Clássico pudim de leite condensado com calda caramelizada e textura irresistível.",
                 "image": "src/assets/img/Sobremesa.webp",
-                "price": 9.90
+                "price": 9.90,
+                "status": 1 
             },
             {
                 "title": "Brigadeiro Gourmet",
@@ -485,7 +537,8 @@
                 "id2": "477JJAol635",
                 "description": "Brigadeiro de chocolate belga, enrolado no granulado belga para um sabor mais intenso.",
                 "image": "src/assets/img/Sobremesa.webp",
-                "price": 4.50
+                "price": 4.50,
+                "status": 1 
             },
             {
                 "title": "Torta de Limão",
@@ -493,7 +546,8 @@
                 "id2": "200xyiZA883",
                 "description": "Massa crocante recheada com um creme azedinho de limão, finalizada com merengue gratinado.",
                 "image": "src/assets/img/Sobremesa.webp",
-                "price": 12.90
+                "price": 12.90,
+                "status": 1 
             },
             {
                 "title": "Mousse de Maracujá",
@@ -501,7 +555,8 @@
                 "id2": "361wWdTE796",
                 "description": "Mousse leve e aerado de maracujá, com calda natural da fruta e crocante de chocolate branco.",
                 "image": "src/assets/img/Sobremesa.webp",
-                "price": 11.50
+                "price": 11.50,
+                "status": 1 
             },
             {
                 "title": "Bolo de Chocolate",
@@ -509,7 +564,8 @@
                 "id2": "789BChoc432",
                 "description": "Bolo de chocolate úmido, recheado e coberto com ganache de chocolate meio amargo.",
                 "image": "src/assets/img/Sobremesa.webp",
-                "price": 13.00
+                "price": 13.00,
+                "status": 1 
             }
         ]
     },
@@ -520,6 +576,7 @@
         "description": "Massa crocante, muito recheio e sabor incrível.",
         "image": "src/assets/img/Pizza.webp",
         "icon": "mdi-comida-fastFood",
+        "status": 1 ,
         "items": [
             {
                 "title": "Pizza de Mussarela",
@@ -527,7 +584,8 @@
                 "id2": "866nGptB325",
                 "description": "Massa leve e crocante, coberta com molho de tomate artesanal e queijo mussarela derretido.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 55.00
+                "price": 55.00,
+                "status": 1 
             },
             {
                 "title": "Pizza de Calabresa",
@@ -535,7 +593,8 @@
                 "id2": "703pzLOB873",
                 "description": "Fatias generosas de calabresa defumada, cebolas caramelizadas e orégano sobre queijo derretido.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 58.90
+                "price": 58.90,
+                "status": 1 
             },
             {
                 "title": "Pizza Portuguesa",
@@ -543,7 +602,8 @@
                 "id2": "753LsBDt679",
                 "description": "Presunto, ovos, cebola, ervilha, queijo e azeitonas sobre um molho de tomate caseiro.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 60.00
+                "price": 60.00,
+                "status": 1 
             },
             {
                 "title": "Pizza de Frango com Catupiry",
@@ -551,7 +611,8 @@
                 "id2": "452ZkAFZ953",
                 "description": "Frango desfiado temperado e o legítimo Catupiry, sobre uma base de molho especial.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 62.50
+                "price": 62.50,
+                "status": 1 
             },
             {
                 "title": "Pizza Quatro Queijos",
@@ -559,7 +620,8 @@
                 "id2": "155FhttM578",
                 "description": "Mistura perfeita de mussarela, provolone, gorgonzola e parmesão derretidos.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 65.00
+                "price": 65.00,
+                "status": 1 
             },
             {
                 "title": "Pizza de Pepperoni",
@@ -567,7 +629,8 @@
                 "id2": "262YKTtm164",
                 "description": "Pepperoni picante sobre queijo derretido e molho de tomate caseiro.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 67.90
+                "price": 67.90,
+                "status": 1 
             },
             {
                 "title": "Pizza Vegana",
@@ -575,7 +638,8 @@
                 "id2": "830dGSEm419",
                 "description": "Massa especial com cobertura de vegetais frescos e queijo vegano derretido.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 63.90
+                "price": 63.90,
+                "status": 1 
             },
             {
                 "title": "Pizza de Chocolate com Morango",
@@ -583,7 +647,8 @@
                 "id2": "352QAAqv031",
                 "description": "Chocolate cremoso, morangos frescos e raspas de chocolate branco sobre massa crocante.",
                 "image": "src/assets/img/Pizza.webp",
-                "price": 59.90
+                "price": 59.90,
+                "status": 1 
             }
         ]
     }
