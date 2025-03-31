@@ -6,7 +6,7 @@
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -16,9 +16,15 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -54,7 +60,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -64,7 +70,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 62.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -74,7 +80,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 92.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -84,7 +90,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 122.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -98,7 +104,7 @@
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -108,7 +114,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             },
             {
@@ -118,7 +124,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             },
             {
@@ -128,7 +134,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             },
             {
@@ -138,7 +144,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             },
             {
@@ -148,7 +154,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             },
             {
@@ -158,7 +164,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             },
             {
@@ -168,7 +174,7 @@
                 "description": "Suculenta picanha grelhada no ponto certo.",
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
-                "status": 1,
+                "stock": 1,
                 "sale": 1
             }
         ]
@@ -180,7 +186,7 @@
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/lanches/Lanche4.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -190,9 +196,15 @@
                 "description": "Hambúrguer de picanha grelhado, queijo especial, cebola roxa e molho de ervas.",
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -228,7 +240,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -238,7 +250,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -248,7 +260,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -258,7 +270,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -270,8 +282,14 @@
                 "description": "Hambúrguer de costela desfiada, queijo derretido e molho barbecue.",
                 "price": 36.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
-                "status": 0,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "stock": 0,
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -307,7 +325,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -317,7 +335,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -327,7 +345,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -337,7 +355,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -349,9 +367,15 @@
                 "description": "Hambúrguer premium com queijo gorgonzola derretido e cebolas caramelizadas.",
                 "price": 35.90,
                 "image": "src/assets/img/lanches/Lanche4.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -387,7 +411,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -397,7 +421,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -407,7 +431,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -417,7 +441,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -429,8 +453,14 @@
                 "description": "Hambúrguer grelhado com bacon, queijo e molho barbecue artesanal.",
                 "price": 33.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
-                "status": 0,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "stock": 0,
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -466,7 +496,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -476,7 +506,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -486,7 +516,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -496,7 +526,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -508,9 +538,15 @@
                 "description": "Filé de frango à parmegiana no pão, com molho de tomate e queijo derretido.",
                 "price": 32.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -546,7 +582,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -556,7 +592,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -566,7 +602,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -576,7 +612,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -588,9 +624,15 @@
                 "description": "Hambúrguer artesanal com queijo brie derretido, rúcula e geleia de pimenta.",
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -626,7 +668,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -636,7 +678,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -646,7 +688,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -656,7 +698,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -668,9 +710,15 @@
                 "description": "Hambúrguer apimentado com queijo cheddar, bacon e jalapeños crocantes.",
                 "price": 33.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -706,7 +754,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -716,7 +764,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -726,7 +774,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -736,7 +784,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -748,9 +796,15 @@
                 "description": "Blend de carnes nobres com molho trufado e queijo suíço.",
                 "price": 39.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -786,7 +840,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -796,7 +850,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -806,7 +860,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -816,7 +870,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -828,9 +882,15 @@
                 "description": "Hambúrguer com pepperoni fatiado, queijo cheddar e maionese especial.",
                 "price": 30.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -866,7 +926,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -876,7 +936,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -886,7 +946,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -896,7 +956,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -908,9 +968,15 @@
                 "description": "Hambúrguer de carne de sol desfiada, queijo coalho e maionese de alho.",
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche4.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -946,7 +1012,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -956,7 +1022,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -966,7 +1032,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -976,7 +1042,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -988,9 +1054,15 @@
                 "description": "Hambúrguer suculento com molho blue cheese e cebola crispy.",
                 "price": 35.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1026,7 +1098,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1036,7 +1108,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1046,7 +1118,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1056,7 +1128,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1068,9 +1140,15 @@
                 "description": "Costelinha desfiada, queijo prato e molho especial no pão brioche.",
                 "price": 38.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1106,7 +1184,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1116,7 +1194,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1126,7 +1204,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1136,7 +1214,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1148,9 +1226,15 @@
                 "description": "Hambúrguer com cream cheese, bacon crocante e molho de alho poró.",
                 "price": 31.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1186,7 +1270,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1196,7 +1280,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1206,7 +1290,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1216,7 +1300,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1228,9 +1312,15 @@
                 "description": "Hambúrguer de frango caipira, queijo coalho e maionese de pequi.",
                 "price": 30.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1266,7 +1356,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1276,7 +1366,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1286,7 +1376,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1296,7 +1386,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1308,9 +1398,15 @@
                 "description": "Hambúrguer com cebolas crispy, queijo prato e molho barbecue.",
                 "price": 32.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1346,7 +1442,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1356,7 +1452,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1366,7 +1462,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1376,7 +1472,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1390,7 +1486,7 @@
         "description": "Refeições caseiras, completas e saborosas.",
         "image": "src/assets/img/Marmita.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -1400,9 +1496,15 @@
                 "description": "Frango grelhado suculento acompanhado de arroz soltinho, feijão temperado e uma porção de salada fresca.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 22.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1438,7 +1540,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1448,7 +1550,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1458,7 +1560,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1468,7 +1570,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1480,9 +1582,15 @@
                 "description": "Carne bovina macia e bem temperada servida com arroz branco, feijão cremoso e legumes cozidos no vapor.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 27.50,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1518,7 +1626,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1528,7 +1636,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1538,7 +1646,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1548,7 +1656,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1560,9 +1668,15 @@
                 "description": "Filé de peixe grelhado temperado com ervas finas, servido com arroz branco, feijão caseiro e purê de batata.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 30.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1598,7 +1712,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1608,7 +1722,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1618,7 +1732,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1628,7 +1742,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1640,9 +1754,15 @@
                 "description": "Arroz integral acompanhado de feijão temperado, legumes grelhados e uma porção de salada variada.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 24.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1678,7 +1798,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1688,7 +1808,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1698,7 +1818,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1708,7 +1828,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1720,9 +1840,15 @@
                 "description": "Frango grelhado suculento, arroz integral e batata-doce assada, uma refeição leve e nutritiva.",
                 "image": "src/assets/img/Marmita.webp",
                 "price": 26.50,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1758,7 +1884,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1768,7 +1894,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1778,7 +1904,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1788,7 +1914,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1802,7 +1928,7 @@
         "description": "Batata frita, onion rings, frango a passarinho e muito mais",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -1812,8 +1938,14 @@
                 "description": "Porção de batatas fritas crocantes.",
                 "image": "src/assets/img/porcoes/BatataFrita.webp",
                 "price": 15.00,
-                "status": 0,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "stock": 0,
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1849,7 +1981,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1859,7 +1991,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1869,7 +2001,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1879,7 +2011,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1891,9 +2023,15 @@
                 "description": "Anéis de cebola empanados e crocantes.",
                 "image": "src/assets/img/porcoes/OnionRings.webp",
                 "price": 18.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -1929,7 +2067,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1939,7 +2077,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1949,7 +2087,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -1959,7 +2097,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -1971,9 +2109,15 @@
                 "description": "Porção de pedaços de frango temperados e fritos.",
                 "image": "src/assets/img/porcoes/FrangoFrito.webp",
                 "price": 25.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2009,7 +2153,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2019,7 +2163,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2029,7 +2173,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2039,7 +2183,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2051,9 +2195,15 @@
                 "description": "Mariscos frito dourado e crocante.",
                 "image": "src/assets/img/porcoes/Mariscos.webp",
                 "price": 44.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2089,7 +2239,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2099,7 +2249,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2109,7 +2259,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2119,7 +2269,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2131,9 +2281,15 @@
                 "description": "Torresmo crocante com tempero especial.",
                 "image": "src/assets/img/porcoes/Torremos.webp",
                 "price": 20.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2169,7 +2325,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2179,7 +2335,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2189,7 +2345,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2199,7 +2355,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2213,7 +2369,7 @@
         "description": "Cremosos, refrescantes e irresistíveis.",
         "image": "src/assets/img/Sorvete.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -2223,9 +2379,15 @@
                 "description": "Uma explosão de sabor com morangos frescos batidos com sorvete cremoso e finalizado com chantilly.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 18.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2261,7 +2423,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2271,7 +2433,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2281,7 +2443,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2291,7 +2453,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2303,9 +2465,15 @@
                 "description": "Açaí batido na textura perfeita, coberto com leite ninho e um toque generoso de leite condensado.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 20.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2341,7 +2509,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2351,7 +2519,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2361,7 +2529,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2371,7 +2539,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2383,9 +2551,15 @@
                 "description": "Chocolate intenso e cremoso, com pedaços generosos de brownie para uma experiência única.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 12.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2421,7 +2595,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2431,7 +2605,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2441,7 +2615,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2451,7 +2625,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2463,9 +2637,15 @@
                 "description": "Sorvete de baunilha aveludado, coberto com calda quente de caramelo e crocante de amendoim.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 15.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2501,7 +2681,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2511,7 +2691,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2521,7 +2701,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2531,7 +2711,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2543,9 +2723,15 @@
                 "description": "Feito com frutas vermelhas naturais, refrescante e perfeito para qualquer momento do dia.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 10.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2581,7 +2767,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2591,7 +2777,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2601,7 +2787,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2611,7 +2797,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2623,9 +2809,15 @@
                 "description": "Cremosidade incomparável e o sabor sofisticado do pistache em cada colherada.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 14.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2661,7 +2853,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2671,7 +2863,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2681,7 +2873,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2691,7 +2883,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2703,9 +2895,15 @@
                 "description": "Uma combinação irresistível de sorvete cremoso com crocantes flocos de Ovomaltine e cobertura de chocolate.",
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 19.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2741,7 +2939,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2751,7 +2949,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2761,7 +2959,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2771,7 +2969,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2785,7 +2983,7 @@
         "description": "Sabor de brasa, feito no ponto certo.",
         "image": "src/assets/img/Churrasco.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -2795,9 +2993,15 @@
                 "description": "Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial. Corte nobre de picanha grelhado no ponto certo, suculento e macio, acompanhado de farofa especial.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 55.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2833,7 +3037,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2843,7 +3047,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2853,7 +3057,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2863,7 +3067,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2875,9 +3079,15 @@
                 "description": "Costela bovina assada lentamente por mais de 6 horas, garantindo um sabor defumado irresistível.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 59.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2913,7 +3123,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2923,7 +3133,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2933,7 +3143,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -2943,7 +3153,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -2955,9 +3165,15 @@
                 "description": "Maminha macia e saborosa, temperada na medida certa e assada na brasa.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 42.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -2993,7 +3209,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3003,7 +3219,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3013,7 +3229,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3023,7 +3239,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3035,9 +3251,15 @@
                 "description": "Espetinhos de coração de frango grelhados com tempero especial da casa.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 39.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3073,7 +3295,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3083,7 +3305,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3093,7 +3315,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3103,7 +3325,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3115,9 +3337,15 @@
                 "description": "Linguiça toscana artesanal assada na brasa, crocante por fora e suculenta por dentro.",
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 40.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3153,7 +3381,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3163,7 +3391,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3173,7 +3401,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3183,7 +3411,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3197,7 +3425,7 @@
         "description": "Assados na brasa, suculentos e bem temperados.",
         "image": "src/assets/img/Espetinhos.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -3207,9 +3435,15 @@
                 "description": "Carne bovina macia e temperada na brasa, garantindo um sabor irresistível e suculento.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 15.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3245,7 +3479,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3255,7 +3489,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3265,7 +3499,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3275,7 +3509,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3287,9 +3521,15 @@
                 "description": "Peito de frango marinado com especiarias e grelhado lentamente até ficar dourado.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 14.50,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3325,7 +3565,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3335,7 +3575,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3345,7 +3585,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3355,7 +3595,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3367,9 +3607,15 @@
                 "description": "Linguiça especial assada na brasa, crocante por fora e suculenta por dentro.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 13.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3405,7 +3651,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3415,7 +3661,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3425,7 +3671,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3435,7 +3681,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3447,9 +3693,15 @@
                 "description": "Corações de frango grelhados e temperados com ervas e alho, macios e saborosos.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 11.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3485,7 +3737,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3495,7 +3747,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3505,7 +3757,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3515,7 +3767,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3527,9 +3779,15 @@
                 "description": "Queijo coalho assado na brasa com uma generosa camada de mel, combinação perfeita entre doce e salgado.",
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 17.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3565,7 +3823,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3575,7 +3833,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3585,7 +3843,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3595,7 +3853,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3609,7 +3867,7 @@
         "description": "Doces perfeitos para fechar sua refeição.",
         "image": "src/assets/img/Sobremesa.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -3619,9 +3877,15 @@
                 "description": "Clássico pudim de leite condensado com calda caramelizada e textura irresistível.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 9.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3657,7 +3921,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3667,7 +3931,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3677,7 +3941,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3687,7 +3951,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3699,9 +3963,15 @@
                 "description": "Brigadeiro de chocolate belga, enrolado no granulado belga para um sabor mais intenso.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 4.50,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3737,7 +4007,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3747,7 +4017,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3757,7 +4027,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3767,7 +4037,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3779,9 +4049,15 @@
                 "description": "Massa crocante recheada com um creme azedinho de limão, finalizada com merengue gratinado.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 12.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3817,7 +4093,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3827,7 +4103,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3837,7 +4113,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3847,7 +4123,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3859,9 +4135,15 @@
                 "description": "Mousse leve e aerado de maracujá, com calda natural da fruta e crocante de chocolate branco.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 11.50,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3897,7 +4179,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3907,7 +4189,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3917,7 +4199,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3927,7 +4209,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -3939,9 +4221,15 @@
                 "description": "Bolo de chocolate úmido, recheado e coberto com ganache de chocolate meio amargo.",
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 13.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -3977,7 +4265,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3987,7 +4275,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -3997,7 +4285,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4007,7 +4295,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4021,7 +4309,7 @@
         "description": "Massa crocante, muito recheio e sabor incrível.",
         "image": "src/assets/img/Pizza.webp",
         "icon": "mdi-comida-fastFood",
-        "status": 1,
+        "stock": 1,
         "sale": 1,
         "items": [
             {
@@ -4031,9 +4319,15 @@
                 "description": "Massa leve e crocante, coberta com molho de tomate artesanal e queijo mussarela derretido.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 55.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4069,7 +4363,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4079,7 +4373,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4089,7 +4383,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4099,7 +4393,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4111,9 +4405,15 @@
                 "description": "Fatias generosas de calabresa defumada, cebolas caramelizadas e orégano sobre queijo derretido.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 58.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4149,7 +4449,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4159,7 +4459,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4169,7 +4469,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4179,7 +4479,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4191,9 +4491,15 @@
                 "description": "Presunto, ovos, cebola, ervilha, queijo e azeitonas sobre um molho de tomate caseiro.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 60.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4229,7 +4535,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4239,7 +4545,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4249,7 +4555,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4259,7 +4565,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4271,9 +4577,15 @@
                 "description": "Frango desfiado temperado e o legítimo Catupiry, sobre uma base de molho especial.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 62.50,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4309,7 +4621,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4319,7 +4631,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4329,7 +4641,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4339,7 +4651,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4351,9 +4663,15 @@
                 "description": "Mistura perfeita de mussarela, provolone, gorgonzola e parmesão derretidos.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 65.00,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4389,7 +4707,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4399,7 +4717,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4409,7 +4727,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4419,7 +4737,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4431,9 +4749,15 @@
                 "description": "Pepperoni picante sobre queijo derretido e molho de tomate caseiro.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 67.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4469,7 +4793,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4479,7 +4803,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4489,7 +4813,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4499,7 +4823,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4511,9 +4835,15 @@
                 "description": "Massa especial com cobertura de vegetais frescos e queijo vegano derretido.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 63.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4549,7 +4879,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4559,7 +4889,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4569,7 +4899,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4579,7 +4909,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]
@@ -4591,9 +4921,15 @@
                 "description": "Chocolate cremoso, morangos frescos e raspas de chocolate branco sobre massa crocante.",
                 "image": "src/assets/img/Pizza.webp",
                 "price": 59.90,
-                "status": 1,
+                "stock": 1,
                 "sale": 1,
-                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "ingredients": [
+                    1808893,
+                    1808894,
+                    1808891,
+                    1808892,
+                    180885
+                ],
                 "complementos": [
                     {
                         "880662": [
@@ -4629,7 +4965,7 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4639,7 +4975,7 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4649,7 +4985,7 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     },
                     {
@@ -4659,7 +4995,7 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1,
+                        "stock": 1,
                         "sale": 1
                     }
                 ]

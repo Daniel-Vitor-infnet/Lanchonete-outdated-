@@ -2,15 +2,15 @@ type Params = {
   image: string;
   altImg: string;
   stylesPerso: any;
-  status: boolean;
+  stock: boolean;
 };
 
 
-export function statusItensCardapio({ image, altImg, stylesPerso, status }: Params) {
+export function estoqueItemCardapio({ image, altImg, stylesPerso, stock }: Params) {
 
 
 
-  if (status) {
+  if (stock) {
     return < img className={stylesPerso} src={image} alt={altImg} />
 
   } else {

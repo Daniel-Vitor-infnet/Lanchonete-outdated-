@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
-import { obterTamanhoTela, statusItensCardapio } from "@/utils/function";
+import { obterTamanhoTela, estoqueItemCardapio } from "@/utils/function";
 
 interface CardsListProps {
   cardsCardapio: any;
@@ -23,7 +23,7 @@ const CardsList: React.FC<CardsListProps> = ({ cardsCardapio, stylesPerso, onCli
           <Grid2 key={item.id}>
             <Card className={stylesPerso['item']} key={item.id} onClick={() => onClick(item)}>
               <Grid2 className={stylesPerso['item-image-container']}>
-                {statusItensCardapio({ image: item.image, altImg: item.title, stylesPerso: stylesPerso['item-image'], status: item.status })}
+                {estoqueItemCardapio({ image: item.image, altImg: item.title, stylesPerso: stylesPerso['item-image'], stock: item.stock })}
               </Grid2>
               <CardContent sx={{ p: 0 }} className={stylesPerso['item-info']}>
                 <Typography className={stylesPerso[titleTamanho]}>

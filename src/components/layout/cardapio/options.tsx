@@ -1,6 +1,6 @@
 // ✅ Options.tsx atualizado para exibir todos os itens com ou sem versões corretamente
 import { Card, CardContent, Typography, Grid2, Radio } from "@/libs/mui";
-import { statusItensCardapio } from "@/utils/function";
+import { estoqueItemCardapio } from "@/utils/function";
 import stylesPerso from "@/styles/cardapio/options.module.scss";
 import { useEffect, useState } from "react";
 import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
@@ -102,11 +102,11 @@ const Options: React.FC<OptionsProps> = ({
           return (
             <Grid2 className={stylesPerso['main-container']} key={item.id}>
               <Grid2 className={stylesPerso['img-complemento-container']}>
-                {statusItensCardapio({
+                {estoqueItemCardapio({
                   image: item.image,
                   altImg: tituloCompleto,
                   stylesPerso: stylesPerso['menu-img'],
-                  status: item.status
+                  stock: item.stock
                 })}
               </Grid2>
               <Grid2 className={stylesPerso['item']}>

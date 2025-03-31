@@ -3,7 +3,7 @@ import { Typography, Grid2 } from "@/libs/mui";
 import { useEffect, useState } from "react";
 import stylesPerso from "@/styles/cardapio/QuantidadeContador.module.scss";
 import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
-import { statusItensCardapio } from "@/utils/function";
+import { estoqueItemCardapio } from "@/utils/function";
 
 interface QuantidadeContadorProps {
   ingredients: number[];
@@ -40,12 +40,12 @@ const QuantidadeContador: React.FC<QuantidadeContadorProps> = ({
         return (
           <Grid2 className={stylesPerso['main-container']} key={item.id}>
             <Grid2 className={stylesPerso['img-complemento-container']}>
-            {statusItensCardapio({
-                  image: item.image,
-                  altImg: item.title,
-                  stylesPerso: stylesPerso['menu-img'],
-                  status: item.status
-                })}
+              {estoqueItemCardapio({
+                image: item.image,
+                altImg: item.title,
+                stylesPerso: stylesPerso['menu-img'],
+                stock: item.stock
+              })}
             </Grid2>
             <Grid2 className={stylesPerso['item']}>
               <Typography className={stylesPerso['item-title']}>
