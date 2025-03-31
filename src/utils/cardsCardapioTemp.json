@@ -1,12 +1,13 @@
 [
     {
-        "title": "Teste2",
+        "title": "Teste",
         "id": 391962,
         "id2": "391tSVeT962",
         "description": "Lanches smash burgers, opções premium e os clássicos.",
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Picanha",
@@ -16,7 +17,35 @@
                 "price": 3.50,
                 "image": "src/assets/img/Logo.png",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -25,7 +54,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -34,7 +64,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 62.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -43,7 +74,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 92.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -52,9 +84,92 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 122.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "title": "Ingredientes",
+        "id": 391966,
+        "id2": "391tSVeT966",
+        "description": "Lanches smash burgers, opções premium e os clássicos.",
+        "image": "src/assets/img/Logo.png",
+        "icon": "mdi-comida-fastFood",
+        "status": 1,
+        "sale": 1,
+        "items": [
+            {
+                "title": "Picanha",
+                "id": 1808893,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
+            },
+            {
+                "title": "Picanha",
+                "id": 1808894,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
+            },
+            {
+                "title": "Picanha",
+                "id": 1808891,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
+            },
+            {
+                "title": "Picanha",
+                "id": 1808892,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
+            },
+            {
+                "title": "Picanha",
+                "id": 180885,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
+            },
+            {
+                "title": "Picanha",
+                "id": 180886,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
+            },
+            {
+                "title": "Picanha",
+                "id": 180888,
+                "id2": "180amqId889",
+                "description": "Suculenta picanha grelhada no ponto certo.",
+                "price": 3.50,
+                "image": "src/assets/img/Logo.png",
+                "status": 1,
+                "sale": 1
             }
         ]
     },
@@ -66,6 +181,7 @@
         "image": "src/assets/img/lanches/Lanche4.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "X-Picanha afafaa afafafaffafaafa fafafa afafaaf afafafaaf",
@@ -75,7 +191,35 @@
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -84,7 +228,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -93,7 +238,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -102,7 +248,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -111,7 +258,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -123,7 +271,34 @@
                 "price": 36.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
                 "status": 0,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -132,7 +307,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -141,7 +317,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -150,7 +327,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -159,7 +337,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -171,7 +350,35 @@
                 "price": 35.90,
                 "image": "src/assets/img/lanches/Lanche4.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -180,7 +387,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -189,7 +397,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -198,7 +407,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -207,7 +417,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -219,7 +430,34 @@
                 "price": 33.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
                 "status": 0,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -228,7 +466,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -237,7 +476,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -246,7 +486,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -255,7 +496,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -267,7 +509,35 @@
                 "price": 32.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -276,7 +546,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -285,7 +556,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -294,7 +566,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -303,7 +576,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -315,7 +589,35 @@
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -324,7 +626,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -333,7 +636,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -342,7 +646,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -351,7 +656,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -363,7 +669,35 @@
                 "price": 33.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -372,7 +706,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -381,7 +716,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -390,7 +726,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -399,7 +736,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -411,7 +749,35 @@
                 "price": 39.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -420,7 +786,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -429,7 +796,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -438,7 +806,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -447,7 +816,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -459,7 +829,35 @@
                 "price": 30.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -468,7 +866,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -477,7 +876,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -486,7 +886,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -495,7 +896,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -507,7 +909,35 @@
                 "price": 34.90,
                 "image": "src/assets/img/lanches/Lanche4.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -516,7 +946,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -525,7 +956,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -534,7 +966,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -543,7 +976,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -555,7 +989,35 @@
                 "price": 35.90,
                 "image": "src/assets/img/lanches/Lanche2.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -564,7 +1026,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -573,7 +1036,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -582,7 +1046,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -591,7 +1056,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -603,7 +1069,35 @@
                 "price": 38.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -612,7 +1106,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -621,7 +1116,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -630,7 +1126,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -639,7 +1136,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -651,7 +1149,35 @@
                 "price": 31.90,
                 "image": "src/assets/img/lanches/Lanche3.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -660,7 +1186,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -669,7 +1196,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -678,7 +1206,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -687,7 +1216,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -699,7 +1229,35 @@
                 "price": 30.90,
                 "image": "src/assets/img/lanches/Lanche1.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -708,7 +1266,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -717,7 +1276,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -726,7 +1286,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -735,7 +1296,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -747,7 +1309,35 @@
                 "price": 32.90,
                 "image": "src/assets/img/lanches/Lanche5.webp",
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -756,7 +1346,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -765,7 +1356,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -774,7 +1366,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -783,7 +1376,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -797,6 +1391,7 @@
         "image": "src/assets/img/Marmita.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Marmita de Frango Grelhado",
@@ -806,7 +1401,35 @@
                 "image": "src/assets/img/Marmita.webp",
                 "price": 22.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -815,7 +1438,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -824,7 +1448,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -833,7 +1458,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -842,7 +1468,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -854,7 +1481,35 @@
                 "image": "src/assets/img/Marmita.webp",
                 "price": 27.50,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -863,7 +1518,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -872,7 +1528,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -881,7 +1538,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -890,7 +1548,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -902,7 +1561,35 @@
                 "image": "src/assets/img/Marmita.webp",
                 "price": 30.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -911,7 +1598,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -920,7 +1608,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -929,7 +1618,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -938,7 +1628,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -950,7 +1641,35 @@
                 "image": "src/assets/img/Marmita.webp",
                 "price": 24.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -959,7 +1678,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -968,7 +1688,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -977,7 +1698,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -986,7 +1708,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -998,7 +1721,35 @@
                 "image": "src/assets/img/Marmita.webp",
                 "price": 26.50,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1007,7 +1758,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1016,7 +1768,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1025,7 +1778,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1034,7 +1788,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -1048,6 +1803,7 @@
         "image": "src/assets/img/Logo.png",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Batata Frita",
@@ -1057,7 +1813,34 @@
                 "image": "src/assets/img/porcoes/BatataFrita.webp",
                 "price": 15.00,
                 "status": 0,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1066,7 +1849,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1075,7 +1859,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1084,7 +1869,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1093,7 +1879,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1105,7 +1892,35 @@
                 "image": "src/assets/img/porcoes/OnionRings.webp",
                 "price": 18.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1114,7 +1929,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1123,7 +1939,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1132,7 +1949,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1141,7 +1959,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1153,7 +1972,35 @@
                 "image": "src/assets/img/porcoes/FrangoFrito.webp",
                 "price": 25.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1162,7 +2009,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1171,7 +2019,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1180,7 +2029,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1189,7 +2039,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1201,7 +2052,35 @@
                 "image": "src/assets/img/porcoes/Mariscos.webp",
                 "price": 44.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1210,7 +2089,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1219,7 +2099,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1228,7 +2109,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1237,7 +2119,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1249,7 +2132,35 @@
                 "image": "src/assets/img/porcoes/Torremos.webp",
                 "price": 20.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1258,7 +2169,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1267,7 +2179,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1276,7 +2189,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1285,7 +2199,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -1299,6 +2214,7 @@
         "image": "src/assets/img/Sorvete.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Milkshake de Morango",
@@ -1308,7 +2224,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 18.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1317,7 +2261,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1326,7 +2271,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1335,7 +2281,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1344,7 +2291,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1356,7 +2304,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 20.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1365,7 +2341,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1374,7 +2351,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1383,7 +2361,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1392,7 +2371,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1404,7 +2384,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 12.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1413,7 +2421,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1422,7 +2431,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1431,7 +2441,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1440,7 +2451,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1452,7 +2464,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 15.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1461,7 +2501,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1470,7 +2511,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1479,7 +2521,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1488,7 +2531,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1500,7 +2544,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 10.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1509,7 +2581,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1518,7 +2591,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1527,7 +2601,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1536,7 +2611,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1548,7 +2624,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 14.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1557,7 +2661,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1566,7 +2671,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1575,7 +2681,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1584,7 +2691,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1596,7 +2704,35 @@
                 "image": "src/assets/img/Sorvete.webp",
                 "price": 19.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1605,7 +2741,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1614,7 +2751,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1623,7 +2761,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1632,7 +2771,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -1646,6 +2786,7 @@
         "image": "src/assets/img/Churrasco.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Picanha na Brasa",
@@ -1655,7 +2796,35 @@
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 55.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1664,7 +2833,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1673,7 +2843,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1682,7 +2853,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1691,7 +2863,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1703,7 +2876,35 @@
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 59.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1712,7 +2913,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1721,7 +2923,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1730,7 +2933,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1739,7 +2943,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1751,7 +2956,35 @@
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 42.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1760,7 +2993,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1769,7 +3003,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1778,7 +3013,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1787,7 +3023,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1799,7 +3036,35 @@
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 39.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1808,7 +3073,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1817,7 +3083,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1826,7 +3093,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1835,7 +3103,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1847,7 +3116,35 @@
                 "image": "src/assets/img/Churrasco.webp",
                 "price": 40.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1856,7 +3153,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1865,7 +3163,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1874,7 +3173,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1883,7 +3183,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -1897,6 +3198,7 @@
         "image": "src/assets/img/Espetinhos.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Espetinho de Carne Bovina",
@@ -1906,7 +3208,35 @@
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 15.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1915,7 +3245,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1924,7 +3255,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1933,7 +3265,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1942,7 +3275,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -1954,7 +3288,35 @@
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 14.50,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -1963,7 +3325,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -1972,7 +3335,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -1981,7 +3345,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -1990,7 +3355,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2002,7 +3368,35 @@
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 13.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2011,7 +3405,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2020,7 +3415,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2029,7 +3425,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2038,7 +3435,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2050,7 +3448,35 @@
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 11.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2059,7 +3485,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2068,7 +3495,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2077,7 +3505,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2086,7 +3515,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2098,7 +3528,35 @@
                 "image": "src/assets/img/Espetinhos.webp",
                 "price": 17.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2107,7 +3565,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2116,7 +3575,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2125,7 +3585,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2134,7 +3595,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -2148,6 +3610,7 @@
         "image": "src/assets/img/Sobremesa.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Pudim de Leite Condensado",
@@ -2157,7 +3620,35 @@
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 9.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2166,7 +3657,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2175,7 +3667,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2184,7 +3677,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2193,7 +3687,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2205,7 +3700,35 @@
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 4.50,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2214,7 +3737,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2223,7 +3747,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2232,7 +3757,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2241,7 +3767,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2253,7 +3780,35 @@
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 12.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2262,7 +3817,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2271,7 +3827,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2280,7 +3837,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2289,7 +3847,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2301,7 +3860,35 @@
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 11.50,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2310,7 +3897,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2319,7 +3907,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2328,7 +3917,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2337,7 +3927,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2349,7 +3940,35 @@
                 "image": "src/assets/img/Sobremesa.webp",
                 "price": 13.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2358,7 +3977,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2367,7 +3987,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2376,7 +3997,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2385,7 +4007,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
@@ -2399,6 +4022,7 @@
         "image": "src/assets/img/Pizza.webp",
         "icon": "mdi-comida-fastFood",
         "status": 1,
+        "sale": 1,
         "items": [
             {
                 "title": "Pizza de Mussarela",
@@ -2408,7 +4032,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 55.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2417,7 +4069,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2426,7 +4079,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2435,7 +4089,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2444,7 +4099,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2456,7 +4112,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 58.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2465,7 +4149,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2474,7 +4159,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2483,7 +4169,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2492,7 +4179,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2504,7 +4192,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 60.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2513,7 +4229,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2522,7 +4239,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2531,7 +4249,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2540,7 +4259,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2552,7 +4272,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 62.50,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2561,7 +4309,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2570,7 +4319,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2579,7 +4329,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2588,7 +4339,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2600,7 +4352,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 65.00,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2609,7 +4389,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2618,7 +4399,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2627,7 +4409,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2636,7 +4419,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2648,7 +4432,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 67.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2657,7 +4469,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2666,7 +4479,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2675,7 +4489,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2684,7 +4499,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2696,7 +4512,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 63.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2705,7 +4549,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2714,7 +4559,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2723,7 +4569,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2732,7 +4579,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             },
@@ -2744,7 +4592,35 @@
                 "image": "src/assets/img/Pizza.webp",
                 "price": 59.90,
                 "status": 1,
-                "complementos":[{"880662":[{"866325":[678112,329782]},{"703873":[]}]},{"925293":[{"304160":[]},{"270228":[154607]}]}],
+                "sale": 1,
+                "ingredients": [1808893, 1808894, 1808891, 1808892, 180885],
+                "complementos": [
+                    {
+                        "880662": [
+                            {
+                                "866325": [
+                                    678112,
+                                    329782
+                                ]
+                            },
+                            {
+                                "703873": []
+                            }
+                        ]
+                    },
+                    {
+                        "925293": [
+                            {
+                                "304160": []
+                            },
+                            {
+                                "270228": [
+                                    154607
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 "version": [
                     {
                         "title": "Versão1",
@@ -2753,7 +4629,8 @@
                         "description": "Versão1",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão2",
@@ -2762,7 +4639,8 @@
                         "description": "Versão2",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão3",
@@ -2771,7 +4649,8 @@
                         "description": "Versão3",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     },
                     {
                         "title": "Versão4",
@@ -2780,7 +4659,8 @@
                         "description": "Versão4",
                         "image": "src/assets/img/Complementos.webp",
                         "price": 22.90,
-                        "status": 1
+                        "status": 1,
+                        "sale": 1
                     }
                 ]
             }
