@@ -1,0 +1,78 @@
+@use '@stylesFunction/mixins' as *;
+@use "@stylesFunction/index" as *;
+
+$testesAtivos: false;
+
+
+.main-container {
+  overflow: hidden;
+
+  .title {
+    width: 60%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .title2 {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+
+  }
+  .titulo-icon {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .icon {
+    margin-left: 20px;
+    color: orange;
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-weight: bold;
+
+  }
+
+  .description {
+    margin-top: 30px;
+  }
+
+  .image-container {
+    background-color: if($testesAtivos, #d35400, unset);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .button {
+    background: blue;
+    height: 35px;
+    width: 160px;
+    font-size: 16px;
+
+    &:hover {
+      background: linear-gradient(135deg, oklch(0.59 0.22 261.41), oklch(0.59 0.22 261.37));
+      box-shadow: unset;
+      transform: unset;
+    }
+
+
+    @include laptop {
+      font-size: 14px;
+      height: 43px;
+      width: 140px;
+    }
+  }
+}

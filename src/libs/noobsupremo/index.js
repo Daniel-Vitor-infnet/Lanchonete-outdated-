@@ -1,0 +1,1 @@
+export { default as logPerso } from '@noob-supremo43-libs/functions/site/logger'; //APenaws um log personalizado
