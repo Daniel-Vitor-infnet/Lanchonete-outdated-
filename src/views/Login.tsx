@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '@/styles/Login.module.scss';
-import { Grid2, Box, TextField, Button, Typography, Tabs, Tab, InputAdornment, IconButton, OutlinedInput, InputLabel, FormControl, MuiTelInput } from '@/libs/mui';
+import { Grid2, Box, TextField, Button, Typography, Tabs, Tab, InputAdornment, IconButton, OutlinedInput, InputLabel, FormControl } from '@/libs/mui';
 import { AlertDiagPers } from '@/components';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -35,7 +35,7 @@ const Login: React.FC = () => {
               <Tab label="Email" value="email" />
               <Tab label="Telefone" value="phone" />
             </Tabs>
-            {state.loginMethod === 'phone' ? (
+            {/* {state.loginMethod === 'phone' ? (
               <MuiTelInput
                 value={state.identifier}
                 onChange={(value: string) => handleChange('identifier', value)}
@@ -55,7 +55,7 @@ const Login: React.FC = () => {
                 value={state.identifier}
                 onChange={(e) => handleChange('identifier', e.target.value)}
               />
-            )}
+            )} */}
             <FormControl fullWidth variant="outlined" margin="normal">
               <InputLabel htmlFor="password">Senha</InputLabel>
               <OutlinedInput
@@ -93,7 +93,7 @@ const Login: React.FC = () => {
           <>
             <Typography variant="h5" gutterBottom align="center">Criar Conta</Typography>
             <TextField required label="Nome" variant="outlined" fullWidth margin="normal" />
-            <MuiTelInput value={state.identifier} onChange={(value: string) => handleChange('identifier', value)} defaultCountry="BR" label="Telefone" variant="outlined" fullWidth margin="normal" />
+            {/* <MuiTelInput value={state.identifier} onChange={(value: string) => handleChange('identifier', value)} defaultCountry="BR" label="Telefone" variant="outlined" fullWidth margin="normal" /> */}
             <TextField required label="Email" variant="outlined" fullWidth margin="normal" />
             <FormControl fullWidth variant="outlined" margin="normal">
               <InputLabel htmlFor="register-password">Senha</InputLabel>

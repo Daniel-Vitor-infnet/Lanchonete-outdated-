@@ -1,5 +1,5 @@
 export { default as Box } from '@mui/material/Box';
-export { default as Grid2 } from '@mui/material/Grid2';
+export { default as Grid2 } from '@mui/material/Grid';
 export { default as Button } from '@mui/material/Button';
 export { default as TextField } from '@mui/material/TextField';
 export { default as Typography } from '@mui/material/Typography';
@@ -35,12 +35,12 @@ export { default as FormControlLabel } from '@mui/material/FormControlLabel';
 // Exporta diversos componentes do Material-UI de uma só vez
 import { alpha as muiAlpha, styled as muiStyled } from '@mui/material/styles';
 import { pink as muiPink } from '@mui/material/colors';
-import { MuiTelInput as MuiTelInputPhone } from 'mui-tel-input';
+//import { MuiTelInput as MuiTelInputPhone } from 'mui-tel-input';
 
 export const alpha = muiAlpha;
 export const styled = muiStyled;
 export const pink = muiPink;
-export const MuiTelInput = MuiTelInputPhone;
+//export const MuiTelInput = MuiTelInputPhone;
 
 
 //     @/libs/mui 
