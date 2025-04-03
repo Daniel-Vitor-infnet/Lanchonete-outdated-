@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid2, Paper, Typography, Avatar } from '@/libs/mui';
 import stylesPerso from "@/styles/pageLayout/Header.module.scss";
-import { obterTamanhoTela, iconsSelect } from "@/utils/function";
+import { definirPorTamanhoTela, iconsSelect } from "@/utils/function";
 import { Button } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import MobileMenu from "@/components/elementos/button/MobileMenu";
@@ -20,7 +20,7 @@ const pages = [
 const HeaderPers: React.FC = () => {
 
   const logado = false;
-  const mobile = obterTamanhoTela(false, false, false, true, true);
+  const mobile = definirPorTamanhoTela({ desktop: false, laptop: false, mobile: true });
 
 
   return (
