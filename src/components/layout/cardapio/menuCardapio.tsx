@@ -1,43 +1,35 @@
 import { Button, Grid2, Typography } from "@/libs/mui";
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { estoqueItemCardapio, formatarValorR$ } from "@/utils/function";
+import { estoqueItemCardapio, formatarValorR$, handleStatusDataBase } from "@/utils/function";
 import stylesPerso from "@/styles/cardapio/menu.module.scss";
 import Options from "@/components/layout/cardapio/options";
 import QuantidadeContador from "@/components/layout/cardapio/QuantidadeContador";
 import { useEffect, useState } from "react";
-import cardapioDataJson from "@/utils/CardapioTemp.json";
 import { logPerso } from 'noob-supremo43-libs';
-
-export type ItemEscolhidoType = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  image: string;
-  stock: boolean;
-  sale: boolean;
-  ingredients: number[];
-  complementos: any[];
-  version: any[];
-};
+import { useComplementosPorComida, useIngredientesPorComida, useVersionPorComidas } from '@/hooks';
+import { Comida, Versao, Ingrediente, Complemento } from "@/types";
 
 interface MenuItensProps {
-  itemEscolhido: ItemEscolhidoType;
+  itemEscolhido: Comida;
   onClose: () => void;
 }
 
 const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
-  const temVersao = itemEscolhido.version.length > 0;
-  const temComplementos = itemEscolhido.complementos.length > 0;
-  const temIngredientes = itemEscolhido.ingredients.length > 0;
+  const { data: versionData = [], isLoading: isLoading1, error: error1 } = useVersionPorComidas(itemEscolhido.id);
+  const { data: ingredientesData = [], isLoading: isLoading2, error: error2 } = useIngredientesPorComida(itemEscolhido.id);
+  const { data: complementosData = [], isLoading: isLoading3, error: error3 } = useComplementosPorComida(itemEscolhido.id);
+
+  const temVersao = versionData.length > 0;
+  const temIngredientes = ingredientesData.length > 0;
+  const temComplementos = complementosData.length > 0;
 
   const [etapa, setEtapa] = useState<'version' | 'ingredientes' | 'complementos' | 'final'>('version');
   const [etapaComplementoAtual, setEtapaComplementoAtual] = useState(0);
   const [order, setOrder] = useState({
-    version: null as any,
+    version: {} as Versao,
     ingredientes: {} as { [id: string]: number },
-    complementos: [] as any[],
+    complementos: [] as (Complemento & { comida: Comida })[],
   });
 
   useEffect(() => {
@@ -46,7 +38,7 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
       else if (temComplementos) setEtapa('complementos');
       else setEtapa('final');
     }
-  }, []);
+  }, [temVersao, temIngredientes, temComplementos]);
 
   const proximaEtapa = () => {
     if (etapa === 'version') return temIngredientes ? 'ingredientes' : temComplementos ? 'complementos' : 'final';
@@ -66,7 +58,7 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     }
   };
 
-  const handleVersionSelect = (selectedVersion: any) => {
+  const handleVersionSelect = (selectedVersion: Versao) => {
     setOrder((prev) => ({ ...prev, version: selectedVersion }));
   };
 
@@ -74,18 +66,18 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     setOrder((prev) => ({ ...prev, ingredientes }));
   };
 
-  const handleComplementosUpdate = (respostas: any[]) => {
+  const handleComplementosUpdate = (respostas: (Complemento & { comida: Comida })[]) => {
     setOrder((prev) => ({ ...prev, complementos: respostas }));
   };
 
-  const handleComplementosFinish = (respostas: any[]) => {
+  const handleComplementosFinish = (respostas: (Complemento & { comida: Comida })[]) => {
     handleComplementosUpdate(respostas);
     setEtapa('final');
   };
 
   const handleNext = () => {
     if (etapa === 'complementos') {
-      const totalEtapas = itemEscolhido.complementos.length;
+      const totalEtapas = complementosData.length;
       if (etapaComplementoAtual < totalEtapas - 1) {
         setEtapaComplementoAtual(prev => prev + 1);
       } else {
@@ -100,16 +92,19 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     onClose();
   };
 
-  const basePrice = itemEscolhido.version.length === 0 ? itemEscolhido.price : order.version?.price;
+  const estado = handleStatusDataBase(isLoading1, error1, false)
+    || handleStatusDataBase(isLoading2, error2, false)
+    || handleStatusDataBase(isLoading3, error3, false);
+  if (estado) return estado;
 
-  const ingredientesPrice = Object.entries(order.ingredientes).reduce((acc, [id, quantidade]) => {
-    const ingrediente = cardapioDataJson
-      .find(cat => cat.id === 391966)
-      ?.items.find(item => item.id === Number(id));
-    return acc + (ingrediente?.price || 0) * quantidade;
+  const basePrice = temVersao ? order.version?.price : itemEscolhido.price;
+
+  const ingredientesPrice = ingredientesData.reduce((acc, item) => {
+    const quantidade = order.ingredientes[item.id] || 0;
+    return acc + (item.price || 0) * quantidade;
   }, 0);
 
-  const complementosPrice = order.complementos.reduce((acc: number, comp: any) => acc + (comp.price || 0), 0);
+  const complementosPrice = order.complementos.reduce((acc: number, comp) => acc + (comp.comida?.price || 0), 0);
   const totalPrice = basePrice + complementosPrice + ingredientesPrice;
 
   const isNextDisabled =
@@ -151,15 +146,14 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
             <Grid2 className={stylesPerso['menu-complementos-item']}>
               {etapa === 'version' && (
                 <Options
-                  tipo="version"
-                  versoes={itemEscolhido.version}
+                  versoes={versionData}
                   onSelect={handleVersionSelect}
                 />
               )}
 
               {etapa === 'ingredientes' && (
                 <QuantidadeContador
-                  ingredients={itemEscolhido.ingredients}
+                  ingredients={ingredientesData}
                   respostas={order.ingredientes}
                   setRespostas={handleIngredientesUpdate}
                 />
@@ -167,8 +161,7 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
 
               {etapa === 'complementos' && (
                 <Options
-                  tipo="grupo"
-                  grupos={itemEscolhido.complementos}
+                  grupos={complementosData as (Complemento & { comida: Comida })[]}
                   grupoAtual={etapaComplementoAtual}
                   respostas={order.complementos}
                   setRespostas={handleComplementosUpdate}
@@ -178,22 +171,23 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
 
               {etapa === 'final' && (
                 <>
-                  <Typography>
-                    Pedido Completo
-                  </Typography>
+                  <Typography>Pedido Completo</Typography>
                   <Typography>
                     {itemEscolhido.title} {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
                   </Typography>
-                  {Object.keys(order.version).length !== 0 && (
+
+                  {order.version?.title && (
                     <Typography>
                       Versão:  {`${order.version.title} + ${formatarValorR$(order.version.price)}`}
                     </Typography>
                   )}
+
                   {logPerso({ tipo: 'alerta', mensagem: 'Pedido2 🔥', variavel: order.complementos })}
+
                   <Typography>
                     Complementos: {order.complementos.length > 0
                       ? order.complementos.map((comp: any) => (
-                        `${comp.title} ${comp.price ? `+ ${formatarValorR$(comp.price)}` : ''}`
+                        `${comp.comida?.title} ${comp.comida?.price ? `+ ${formatarValorR$(comp.comida.price)}` : ''}`
                       )).join(", ")
                       : "Nenhum"}
                   </Typography>
@@ -231,11 +225,3 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
 };
 
 export default MenuItens;
-
-
-
-
-
-
-
-

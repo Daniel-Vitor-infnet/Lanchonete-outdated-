@@ -1,41 +1,31 @@
 import { useState } from "react";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
-import { definirPorTamanhoTela, estoqueItemCardapio, formatarValorR$ } from "@/utils/function";
+import { definirPorTamanhoTela, estoqueItemCardapio, formatarValorR$, handleStatusDataBase } from "@/utils/function";
 import AlertDiagPers from "@/components/layout/cardapio/alertDiagPers";
-import type { ItemEscolhidoType } from "@/components/layout/cardapio/menuCardapio";
+import stylesPerso from "@/styles/cardapio/Itens.module.scss";
+import { useComidasPorCategoria } from '@/hooks/useComidasPorCategoria'
 import { logPerso } from 'noob-supremo43-libs';
+import { Comida } from "@/types";
 
 
-interface StylesSCSS {
-  [className: string]: string;
-}
-
-type ItensCardapioType = {
-  title: string;
-  id: number;
-  id2: string;
-  description: string;
-  price: number;
-  image: string;
-  stock: boolean;
-  sale: boolean;
-  ingredients: any[];
-  complementos: any[];
-  version: any[];
-};
 
 interface CardsListProps {
-  itensCardapio: ItensCardapioType[];
-  stylesPerso: StylesSCSS;
-  onClick: (item: ItemEscolhidoType) => void;
+  itensCardapio: string;
+  onClick: (item: Comida) => void;
 }
 
-const CardsList: React.FC<CardsListProps> = ({ itensCardapio, stylesPerso, onClick }) => {
+const CardsList: React.FC<CardsListProps> = ({ itensCardapio, onClick }) => {
+
+
+  const { data: comidas = [], isLoading, error } = useComidasPorCategoria(itensCardapio)
+
+  const tamanhoTelaTitulo = definirPorTamanhoTela({ desktop: 18, mobile: 11 })
+
 
   const [alertOpen, setAlertOpen] = useState(false);
-  const [itemEsgotado, setItemEsgotado] = useState<ItensCardapioType | null>(null);
+  const [itemEsgotado, setItemEsgotado] = useState<any | null>(null);
 
-  const handleClick = (item: ItensCardapioType) => {
+  const handleClick = (item: any) => {
     if (!item.stock) {
       setItemEsgotado(item);
       setAlertOpen(true);
@@ -44,14 +34,17 @@ const CardsList: React.FC<CardsListProps> = ({ itensCardapio, stylesPerso, onCli
     }
   };
 
+  const estado = handleStatusDataBase(isLoading, error, comidas.length === 0);
+    if (estado) return estado;
+  
   return (
     <>
       <Grid2 className={stylesPerso['main-container']}>
-        {itensCardapio
+        {comidas
           .filter(item => item.sale !== false)
           .map(item => {
             const titleTamanho =
-              item.title.length > definirPorTamanhoTela({ desktop: 18, mobile: 11 })
+              item.title.length > tamanhoTelaTitulo
                 ? 'item-title-grande'
                 : 'item-title-pequeno';
 

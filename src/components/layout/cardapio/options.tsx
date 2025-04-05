@@ -2,80 +2,62 @@ import { Card, CardContent, Typography, Grid2, Radio } from "@/libs/mui";
 import { estoqueItemCardapio } from "@/utils/function";
 import stylesPerso from "@/styles/cardapio/options.module.scss";
 import { useEffect, useState } from "react";
-import cardapioDataJson from "@/utils/CardapioTemp.json";
 import CloseIcon from '@mui/icons-material/Close';
 
+import { Comida, Versao, Complemento } from '@/types';
+
 interface OptionsProps {
-  tipo: 'version' | 'grupo';
-  versoes?: any[];
-  grupos?: any[];
+  versoes?: Versao[];
+  grupos?: (Complemento & { comida?: Comida })[];
   onSelect: (item: any) => void;
   grupoAtual?: number;
   respostas?: any[];
   setRespostas?: (respostas: any[]) => void;
 }
 
-interface OpcaoMontada {
-  itemID: string;
-  itemPai?: any;
-  versoes: any[];
-}
-
-const montarOpcoesGrupo = (grupos: any[], grupoAtual: number): OpcaoMontada[] => {
-  const grupo = grupos?.[grupoAtual];
-  if (!grupo) return [];
-
-  const rootID = Object.keys(grupo)[0];
-  const itens = grupo[rootID];
-  const resultado: OpcaoMontada[] = [];
-
-  for (const item of itens) {
-    const itemID = Object.keys(item)[0];
-    const versoesIDs = item[itemID];
-
-    for (const categoria of cardapioDataJson) {
-      const encontrado = categoria.items.find((i: any) => String(i.id) === itemID);
-      if (encontrado) {
-        // Se for complemento, entrega o item sem versões
-        resultado.push({ itemID, itemPai: encontrado, versoes: [{ ...encontrado }] });
-        break;
-      }
-    }
-  }
-  return resultado;
-};
-
-const montarOpcoesVersoes = (versoes: any[]): OpcaoMontada[] => {
-  return [{ itemID: 'versao', versoes }];
-};
-
 const Options: React.FC<OptionsProps> = ({
-  tipo,
-  versoes,
-  grupos,
+  versoes = [],
+  grupos = [],
   onSelect,
   grupoAtual = 0,
   respostas,
   setRespostas,
 }) => {
-  const isModoGrupo = tipo === 'grupo';
+  const isModoGrupo = grupos.length > 1 || (grupos.length === 1 && !!grupos[0].categoria_id);
   const [selectedValue, setSelectedValue] = useState<any | null>(null);
 
-  const opcoes: OpcaoMontada[] = isModoGrupo
-    ? montarOpcoesGrupo(grupos || [], grupoAtual)
-    : montarOpcoesVersoes(versoes || []);
+  const opcoes = isModoGrupo
+    ? grupos
+        .filter((_, idx) => idx === grupoAtual)
+        .map((complemento) => {
+          const comida = complemento.comida;
+          return {
+            itemID: complemento.comida_id,
+            versoes: [
+              {
+                id: complemento.comida_id,
+                title: comida?.title || '',
+                price: comida?.price || 0,
+                image: comida?.image || '',
+                stock: comida?.stock ?? true,
+                sale: comida?.sale ?? true,
+              },
+            ],
+          };
+        })
+    : [{ itemID: 'versao', versoes }];
 
   useEffect(() => {
-    if (!isModoGrupo && opcoes[0]?.versoes?.length > 0 && !selectedValue) {
-      const defaultValue = opcoes[0].versoes[0];
+    if (!isModoGrupo && versoes.length > 0 && !selectedValue) {
+      const defaultValue = versoes[0];
       setSelectedValue(defaultValue);
       onSelect(defaultValue);
     }
-  }, [opcoes]);
+  }, [versoes]);
 
   useEffect(() => {
     if (isModoGrupo && opcoes.length > 0 && !respostas?.[grupoAtual]) {
-      const primeira = opcoes[0]?.versoes[0];
+      const primeira = opcoes[0].versoes[0];
       if (primeira) {
         const novasRespostas = [...(respostas || [])];
         novasRespostas[grupoAtual] = primeira;
@@ -87,7 +69,6 @@ const Options: React.FC<OptionsProps> = ({
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>, escolhido: any) => {
     setSelectedValue(escolhido);
-
     if (isModoGrupo && respostas && setRespostas) {
       const novasRespostas = [...respostas];
       novasRespostas[grupoAtual] = escolhido;
@@ -103,13 +84,11 @@ const Options: React.FC<OptionsProps> = ({
 
   return (
     <>
-      {opcoes.map(({ itemID, itemPai, versoes }) => (
+      {opcoes.map(({ itemID, versoes }) => (
         versoes
-          .filter((item: any) => item.sale !== 0)
+          .filter((item: any) => item.sale !== false)
           .map((item: any) => {
-            const tituloCompleto = itemPai
-              ? `${itemPai.title}${item.title !== itemPai.title ? ' ' + item.title : ''}`
-              : item.title;
+            const tituloCompleto = item.title;
 
             return (
               <Grid2 className={stylesPerso['main-container']} key={item.id}>
