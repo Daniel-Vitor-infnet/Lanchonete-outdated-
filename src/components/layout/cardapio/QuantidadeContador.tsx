@@ -2,7 +2,7 @@ import { Typography, Grid2 } from "@/libs/mui";
 import { useEffect, useState } from "react";
 import stylesPerso from "@/styles/cardapio/QuantidadeContador.module.scss";
 import cardapioDataJson from "@/utils/CardapioTemp.json";
-import { estoqueItemCardapio } from "@/utils/function";
+import { estoqueItemCardapio, formatarValorR$  } from "@/utils/function";
 import CloseIcon from '@mui/icons-material/Close';
 
 interface QuantidadeContadorProps {
@@ -58,7 +58,7 @@ const QuantidadeContador: React.FC<QuantidadeContadorProps> = ({
                   {item.title}
                 </Typography>
                 <Typography className={stylesPerso['item-title']}>
-                  R$ {String(item.price.toFixed(2)).replace('.', ',')}
+                  {formatarValorR$(item.price)}
                 </Typography>
                 {quantidade > 0 && (
                   <Typography className={stylesPerso['item-subtotal']}>

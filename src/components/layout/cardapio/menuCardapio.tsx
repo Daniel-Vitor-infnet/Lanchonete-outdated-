@@ -1,14 +1,13 @@
 import { Button, Grid2, Typography } from "@/libs/mui";
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { estoqueItemCardapio } from "@/utils/function";
+import { estoqueItemCardapio, formatarValorR$ } from "@/utils/function";
 import stylesPerso from "@/styles/cardapio/menu.module.scss";
 import Options from "@/components/layout/cardapio/options";
 import QuantidadeContador from "@/components/layout/cardapio/QuantidadeContador";
 import { useEffect, useState } from "react";
 import cardapioDataJson from "@/utils/CardapioTemp.json";
 import { logPerso } from 'noob-supremo43-libs';
-
 
 export type ItemEscolhidoType = {
   id: number;
@@ -184,15 +183,15 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
                       Pedido Completo
                     </Typography>
                     <Typography>
-                      Item: {itemEscolhido.title} {itemEscolhido.price && `+ R$ ${String(itemEscolhido.price.toFixed(2)).replace(".", ",")}`}
+                      Item: {itemEscolhido.title} {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
                     </Typography>
                     <Typography>
-                      Versão: {order.version?.title || 'N/A'} {order.version?.price && `+ R$ ${String(order.version.price.toFixed(2)).replace(".", ",")}`}
+                      Versão: {order.version?.title || 'N/A'} {order.version?.price && `+ ${formatarValorR$(order.version.price)}`}
                     </Typography>
                     <Typography>
                       Complementos: {order.complementos.length > 0
                         ? order.complementos.map((comp: any) => (
-                          `${comp.title} ${comp.price ? `+ R$ ${String(comp.price.toFixed(2)).replace(".", ",")}` : ''}`
+                          `${comp.title} ${comp.price ? `+ ${formatarValorR$(comp.price)}` : ''}`
                         )).join(", ")
                         : "Nenhum"}
                     </Typography>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, CardContent, Typography, Grid2 } from "@/libs/mui";
-import { definirPorTamanhoTela, estoqueItemCardapio } from "@/utils/function";
+import { definirPorTamanhoTela, estoqueItemCardapio, formatarValorR$ } from "@/utils/function";
 import AlertDiagPers from "@/components/layout/cardapio/alertDiagPers";
 import type { ItemEscolhidoType } from "@/components/layout/cardapio/menuCardapio";
 import { logPerso } from 'noob-supremo43-libs';
@@ -75,11 +75,9 @@ const CardsList: React.FC<CardsListProps> = ({ itensCardapio, stylesPerso, onCli
                     <Typography className={stylesPerso['item-description']}>
                       {item.description}
                     </Typography>
-                    {item.price !== undefined && (
-                      <Typography className={stylesPerso['item-price']}>
-                        R$ {item.price.toFixed(2).replace(".", ",")}
-                      </Typography>
-                    )}
+                    <Typography className={stylesPerso['item-price']}>
+                      {formatarValorR$(item.price)}
+                    </Typography>
                   </CardContent>
                 </Card>
               </Grid2>
