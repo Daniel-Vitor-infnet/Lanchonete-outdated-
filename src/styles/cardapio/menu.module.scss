@@ -1,20 +1,159 @@
 @use '@stylesFunction/mixins' as *;
 @use "@stylesFunction/index" as *;
 
-$testesAtivos: true;
+$testesAtivos: false;
 
+$background-geral: linen;
 
-.main-container {
-  background-color: if($testesAtivos, blue, unset);
-  position: 'absolute';
-  top: '50px';
-  left: '0';
-  min-width: '250px';
-  min-height: '150px';
-  background: '#fff';
-  border: '1px solid #ccc';
-  box-shadow: '0px 4px 10px rgba(0;0;0;0.2)';
-  padding: '10px';
-  z-index: 10;
+.overlay-container {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
 
+  .blur-background {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .main-container {
+    background-color: if($testesAtivos, lch(37.47 68.81 35.75), $background-geral);
+    position: relative;
+    z-index: 2;
+    width: 30vw;
+    height: alturaResponsivaViewport(89);
+    border-radius: px-para-rem(20px);
+    border: 1px solid if($testesAtivos, hsl(342.12 100% 50%), #ffa726);
+    display: grid;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr 1fr 0.2fr;
+    overflow-y: auto;
+    padding: px-para-rem(20px);
+    box-shadow: 0 0 12px rgba(255, 152, 0, 0.2);
+  }
+
+  .menu-header {
+    background-color: if($testesAtivos, purple, #ffe0b2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  .title {
+    background-color: if($testesAtivos, green, unset);
+    color: if($testesAtivos, hsl(342.12 100% 50%), #e65100);
+    font-size: px-para-rem(24px);
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .close-button-container {
+    background-color: if($testesAtivos, #0027D3, unset);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .close-button {
+    background-color: if($testesAtivos, #d35400, #ffcc80);
+    width: px-para-rem(30px);
+    height: px-para-rem(30px);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: px-para-rem(20px);
+    color: if($testesAtivos, hsl(342.12 100% 50%), #e65100);
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: if($testesAtivos, hsl(342.12 100% 70%), #ffb74d);
+    }
+  }
+
+  .menu-container-img {
+    background-color: if($testesAtivos, #d35400, unset);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .menu-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .menu-description {
+    background-color: if($testesAtivos, hsl(123.06 100% 50%), #fff8e1);
+    padding-top: px-para-rem(20px);
+    font-size: px-para-rem(17px);
+    white-space: unset;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    color: #4e342e;
+  }
+
+  .menu-description span {
+    background-color: if($testesAtivos, hsl(231.06 100% 50%), unset);
+    font-size: px-para-rem(19px);
+    font-weight: bold;
+    color: if($testesAtivos, hsl(342.12 100% 50%), #e65100);
+  }
+
+  .menu-complementos {
+    background-color: if($testesAtivos, hsl(201.88 100% 50%), unset);
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .price-container {
+    background-color: if($testesAtivos, hsl(32 100% 50%), #ffe0b2);
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: px-para-rem(19px);
+    font-weight: bold;
+    color: #e65100;
+    padding: px-para-rem(10px) px-para-rem(16px);
+    border-top: 1px solid #ffb74d;
+  }
+
+  .price {
+    background-color: if($testesAtivos, hsl(32 100% 50%), unset);
+    margin-left: 10px;
+    font-size: px-para-rem(19px);
+    font-weight: bold;
+    color: if($testesAtivos, hsl(342.12 100% 50%), #26BE21);
+  }
+
+  .menu-complementos-item {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
 }

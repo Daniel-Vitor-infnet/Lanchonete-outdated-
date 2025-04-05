@@ -1,22 +1,63 @@
-// ✅ Options.tsx atualizado para exibir todos os itens com ou sem versões corretamente
 import { Card, CardContent, Typography, Grid2, Radio } from "@/libs/mui";
 import { estoqueItemCardapio } from "@/utils/function";
 import stylesPerso from "@/styles/cardapio/options.module.scss";
 import { useEffect, useState } from "react";
-import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
+import cardapioDataJson from "@/utils/CardapioTemp.json";
+import CloseIcon from '@mui/icons-material/Close';
 
 interface OptionsProps {
   tipo: 'version' | 'grupo';
-  complementos: any;
+  versoes?: any[];
+  grupos?: any[];
   onSelect: (item: any) => void;
   grupoAtual?: number;
   respostas?: any[];
   setRespostas?: (respostas: any[]) => void;
 }
 
+interface OpcaoMontada {
+  itemID: string;
+  itemPai?: any;
+  versoes: any[];
+}
+
+const montarOpcoesGrupo = (grupos: any[], grupoAtual: number): OpcaoMontada[] => {
+  const grupo = grupos?.[grupoAtual];
+  if (!grupo) return [];
+
+  const rootID = Object.keys(grupo)[0];
+  const itens = grupo[rootID];
+  const resultado: OpcaoMontada[] = [];
+
+  for (const item of itens) {
+    const itemID = Object.keys(item)[0];
+    const versoesIDs = item[itemID];
+
+    for (const categoria of cardapioDataJson) {
+      const encontrado = categoria.items.find((i: any) => String(i.id) === itemID);
+      if (encontrado) {
+        const versoes = versoesIDs.length > 0
+          ? encontrado.version.filter((v: any) => versoesIDs.includes(v.id))
+          : [{ ...encontrado }];
+
+        if (versoes.length > 0) {
+          resultado.push({ itemID, itemPai: encontrado, versoes });
+        }
+        break;
+      }
+    }
+  }
+  return resultado;
+};
+
+const montarOpcoesVersoes = (versoes: any[]): OpcaoMontada[] => {
+  return [{ itemID: 'versao', versoes }];
+};
+
 const Options: React.FC<OptionsProps> = ({
   tipo,
-  complementos,
+  versoes,
+  grupos,
   onSelect,
   grupoAtual = 0,
   respostas,
@@ -25,37 +66,9 @@ const Options: React.FC<OptionsProps> = ({
   const isModoGrupo = tipo === 'grupo';
   const [selectedValue, setSelectedValue] = useState<any | null>(null);
 
-  let opcoes: { itemID: string, itemPai?: any, versoes: any[] }[] = [];
-
-  if (isModoGrupo) {
-    const grupo = complementos.complementos[grupoAtual];
-    if (grupo) {
-      const rootID = Object.keys(grupo)[0];
-      const itens = grupo[rootID];
-
-      for (const item of itens) {
-        const itemID = Object.keys(item)[0];
-        const versoesIDs = item[itemID];
-
-        for (const categoria of cardsCardapioDataJson) {
-          const encontrado = categoria.items.find((i: any) => String(i.id) === itemID);
-          if (encontrado) {
-            const versoes = versoesIDs.length > 0
-              ? encontrado.version.filter((v: any) => versoesIDs.includes(v.id))
-              : [{ ...encontrado }];
-
-            // Se o item tem versões, adiciona cada versão separada com referência ao pai
-            if (versoes.length > 0) {
-              opcoes.push({ itemID, itemPai: encontrado, versoes });
-            }
-            break;
-          }
-        }
-      }
-    }
-  } else {
-    opcoes = [{ itemID: 'versao', versoes: complementos.version }];
-  }
+  const opcoes: OpcaoMontada[] = isModoGrupo
+    ? montarOpcoesGrupo(grupos || [], grupoAtual)
+    : montarOpcoesVersoes(versoes || []);
 
   useEffect(() => {
     if (!isModoGrupo && opcoes[0]?.versoes?.length > 0 && !selectedValue) {
@@ -96,44 +109,52 @@ const Options: React.FC<OptionsProps> = ({
   return (
     <>
       {opcoes.map(({ itemID, itemPai, versoes }) => (
-        versoes.map((item: any) => {
-          const tituloCompleto = itemPai ? `${itemPai.title}${item.title !== itemPai.title ? ' ' + item.title : ''}` : item.title;
+        versoes
+          .filter((item: any) => item.sale !== 0)
+          .map((item: any) => {
+            const tituloCompleto = itemPai
+              ? `${itemPai.title}${item.title !== itemPai.title ? ' ' + item.title : ''}`
+              : item.title;
 
-          return (
-            <Grid2 className={stylesPerso['main-container']} key={item.id}>
-              <Grid2 className={stylesPerso['img-complemento-container']}>
-                {estoqueItemCardapio({
-                  image: item.image,
-                  altImg: tituloCompleto,
-                  stylesPerso: stylesPerso['menu-img'],
-                  stock: item.stock
-                })}
+            return (
+              <Grid2 className={stylesPerso['main-container']} key={item.id}>
+                <Grid2 className={stylesPerso['img-complemento-container']}>
+                  {estoqueItemCardapio({
+                    image: item.image,
+                    altImg: tituloCompleto,
+                    stylesPerso: stylesPerso['img-complemento'],
+                    stock: item.stock
+                  })}
+                </Grid2>
+                <Grid2 className={stylesPerso['item']}>
+                  <Typography className={stylesPerso['item-title']}>
+                    {tituloCompleto}
+                  </Typography>
+                  <Typography className={stylesPerso['item-title']}>
+                    R$ {String(item.price?.toFixed(2) || '0.00').replace(".", ",")}
+                  </Typography>
+                </Grid2>
+                <Grid2 className={stylesPerso['select-container']}>
+                  {item.stock ? (
+                    <Radio
+                      className={stylesPerso['select']}
+                      checked={selectedId === item.id}
+                      onChange={(e) => handleChange(e, item)}
+                      value={item.id}
+                      name="radio-buttons"
+                      slotProps={{
+                        input: {
+                          'aria-label': tituloCompleto,
+                        }
+                      }}
+                    />
+                  ) : (
+                    <CloseIcon className={stylesPerso['select']} />
+                  )}
+                </Grid2>
               </Grid2>
-              <Grid2 className={stylesPerso['item']}>
-                <Typography className={stylesPerso['item-title']}>
-                  {tituloCompleto}
-                </Typography>
-                <Typography className={stylesPerso['item-title']}>
-                  R$ {String(item.price?.toFixed(2) || '0.00').replace(".", ",")}
-                </Typography>
-              </Grid2>
-              <Grid2 className={stylesPerso['select-container']}>
-                <Radio
-                  className={stylesPerso['select']}
-                  checked={selectedId === item.id}
-                  onChange={(e) => handleChange(e, item)}
-                  value={item.id}
-                  name="radio-buttons"
-                  slotProps={{
-                    input: {
-                      'aria-label': tituloCompleto,
-                    }
-                  }}
-                />
-              </Grid2>
-            </Grid2>
-          );
-        })
+            );
+          })
       ))}
     </>
   );
