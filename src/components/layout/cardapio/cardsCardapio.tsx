@@ -31,7 +31,6 @@ interface CardsListProps {
 }
 
 const CardsList: React.FC<CardsListProps> = ({ itensCardapio, stylesPerso, onClick }) => {
-  logPerso({ tipo: 'teste', mensagem: 'Lib funcionando 🔥', variavel: itensCardapio });
 
   const [alertOpen, setAlertOpen] = useState(false);
   const [itemEsgotado, setItemEsgotado] = useState<ItensCardapioType | null>(null);
@@ -41,7 +40,6 @@ const CardsList: React.FC<CardsListProps> = ({ itensCardapio, stylesPerso, onCli
       setItemEsgotado(item);
       setAlertOpen(true);
     } else {
-      logPerso({ tipo: 'alerta', mensagem: 'Item clicado cardsCardapio 🔥', variavel: item });
       onClick(item);
     }
   };

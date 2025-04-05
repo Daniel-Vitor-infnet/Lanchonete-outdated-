@@ -36,13 +36,8 @@ const montarOpcoesGrupo = (grupos: any[], grupoAtual: number): OpcaoMontada[] =>
     for (const categoria of cardapioDataJson) {
       const encontrado = categoria.items.find((i: any) => String(i.id) === itemID);
       if (encontrado) {
-        const versoes = versoesIDs.length > 0
-          ? encontrado.version.filter((v: any) => versoesIDs.includes(v.id))
-          : [{ ...encontrado }];
-
-        if (versoes.length > 0) {
-          resultado.push({ itemID, itemPai: encontrado, versoes });
-        }
+        // Se for complemento, entrega o item sem versões
+        resultado.push({ itemID, itemPai: encontrado, versoes: [{ ...encontrado }] });
         break;
       }
     }

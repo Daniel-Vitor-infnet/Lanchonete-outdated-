@@ -97,7 +97,6 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
   };
 
   const finalizeOrder = () => {
-      logPerso({ tipo: 'alerta', mensagem: 'Pedido 🔥', variavel:order });
     onClose();
   };
 
@@ -123,105 +122,108 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
         <div className={stylesPerso['blur-background']} />
         <Grid2 className={stylesPerso['main-container']}>
 
-            <Grid2 className={stylesPerso['menu-header']}>
-              <Typography className={stylesPerso['title']} variant="h5">
-                {itemEscolhido.title}
-              </Typography>
-
-              <Grid2 className={stylesPerso['close-button-container']}>
-                <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso['close-button']}>
-                  <CloseIcon />
-                </IconButton>
-              </Grid2>
-            </Grid2>
-
-            <Grid2 className={stylesPerso['menu-container-img']}>
-              {estoqueItemCardapio({
-                image: itemEscolhido.image,
-                altImg: itemEscolhido.title,
-                stylesPerso: stylesPerso['menu-img'],
-                stock: itemEscolhido.stock,
-              })}
-            </Grid2>
-
-            <Typography className={stylesPerso['menu-description']}>
-              <span>Descrição:</span> {itemEscolhido.description}
+          <Grid2 className={stylesPerso['menu-header']}>
+            <Typography className={stylesPerso['title']} variant="h5">
+              {itemEscolhido.title}
             </Typography>
 
-            <Grid2 className={stylesPerso['menu-complementos']}>
-              <Grid2 className={stylesPerso['menu-complementos-item']}>
-                {etapa === 'version' && (
-                  <Options
-                    tipo="version"
-                    versoes={itemEscolhido.version}
-                    onSelect={handleVersionSelect}
-                  />
-                )}
-
-                {etapa === 'ingredientes' && (
-                  <QuantidadeContador
-                    ingredients={itemEscolhido.ingredients}
-                    respostas={order.ingredientes}
-                    setRespostas={handleIngredientesUpdate}
-                  />
-                )}
-
-                {etapa === 'complementos' && (
-                  <Options
-                    tipo="grupo"
-                    grupos={itemEscolhido.complementos}
-                    grupoAtual={etapaComplementoAtual}
-                    respostas={order.complementos}
-                    setRespostas={handleComplementosUpdate}
-                    onSelect={() => {}}
-                  />
-                )}
-
-                {etapa === 'final' && (
-                  <>
-                    <Typography>
-                      Pedido Completo
-                    </Typography>
-                    <Typography>
-                      Item: {itemEscolhido.title} {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
-                    </Typography>
-                    <Typography>
-                      Versão: {order.version?.title || 'N/A'} {order.version?.price && `+ ${formatarValorR$(order.version.price)}`}
-                    </Typography>
-                    <Typography>
-                      Complementos: {order.complementos.length > 0
-                        ? order.complementos.map((comp: any) => (
-                          `${comp.title} ${comp.price ? `+ ${formatarValorR$(comp.price)}` : ''}`
-                        )).join(", ")
-                        : "Nenhum"}
-                    </Typography>
-                  </>
-                )}
-              </Grid2>
+            <Grid2 className={stylesPerso['close-button-container']}>
+              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso['close-button']}>
+                <CloseIcon />
+              </IconButton>
             </Grid2>
+          </Grid2>
 
-            <Grid2 className={stylesPerso['price-container']}>
-              <Typography className={stylesPerso['price']}>
-                Total: R$ {totalPrice.toFixed(2).replace(".", ",")}
-              </Typography>
+          <Grid2 className={stylesPerso['menu-container-img']}>
+            {estoqueItemCardapio({
+              image: itemEscolhido.image,
+              altImg: itemEscolhido.title,
+              stylesPerso: stylesPerso['menu-img'],
+              stock: itemEscolhido.stock,
+            })}
+          </Grid2>
 
-              <Grid2>
-                {etapa !== 'version' && (
-                  <Button onClick={etapaAnterior} style={{ color: 'purple' }}>
-                    Voltar
-                  </Button>
-                )}
-                {etapa !== 'final' ? (
-                  <Button onClick={handleNext} style={{ color: 'purple' }} disabled={isNextDisabled}>
-                    Próximo
-                  </Button>
-                ) : (
-                  <Button onClick={finalizeOrder} style={{ color: 'purple' }}>
-                    Finalizar Pedido
-                  </Button>
-                )}
-              </Grid2>
+          <Typography className={stylesPerso['menu-description']}>
+            <span>Descrição:</span> {itemEscolhido.description}
+          </Typography>
+
+          <Grid2 className={stylesPerso['menu-complementos']}>
+            <Grid2 className={stylesPerso['menu-complementos-item']}>
+              {etapa === 'version' && (
+                <Options
+                  tipo="version"
+                  versoes={itemEscolhido.version}
+                  onSelect={handleVersionSelect}
+                />
+              )}
+
+              {etapa === 'ingredientes' && (
+                <QuantidadeContador
+                  ingredients={itemEscolhido.ingredients}
+                  respostas={order.ingredientes}
+                  setRespostas={handleIngredientesUpdate}
+                />
+              )}
+
+              {etapa === 'complementos' && (
+                <Options
+                  tipo="grupo"
+                  grupos={itemEscolhido.complementos}
+                  grupoAtual={etapaComplementoAtual}
+                  respostas={order.complementos}
+                  setRespostas={handleComplementosUpdate}
+                  onSelect={() => { }}
+                />
+              )}
+
+              {etapa === 'final' && (
+                <>
+                  <Typography>
+                    Pedido Completo
+                  </Typography>
+                  <Typography>
+                    {itemEscolhido.title} {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
+                  </Typography>
+                  {Object.keys(order.version).length !== 0 && (
+                    <Typography>
+                      Versão:  {`${order.version.title} + ${formatarValorR$(order.version.price)}`}
+                    </Typography>
+                  )}
+                  {logPerso({ tipo: 'alerta', mensagem: 'Pedido2 🔥', variavel: order.complementos })}
+                  <Typography>
+                    Complementos: {order.complementos.length > 0
+                      ? order.complementos.map((comp: any) => (
+                        `${comp.title} ${comp.price ? `+ ${formatarValorR$(comp.price)}` : ''}`
+                      )).join(", ")
+                      : "Nenhum"}
+                  </Typography>
+                </>
+              )}
             </Grid2>
+          </Grid2>
+
+          <Grid2 className={stylesPerso['price-container']}>
+            <Typography className={stylesPerso['price']}>
+              Total: R$ {totalPrice.toFixed(2).replace(".", ",")}
+            </Typography>
+
+            <Grid2>
+              {etapa !== 'version' && (
+                <Button onClick={etapaAnterior} style={{ color: 'purple' }}>
+                  Voltar
+                </Button>
+              )}
+              {etapa !== 'final' ? (
+                <Button onClick={handleNext} style={{ color: 'purple' }} disabled={isNextDisabled}>
+                  Próximo
+                </Button>
+              ) : (
+                <Button onClick={finalizeOrder} style={{ color: 'purple' }}>
+                  Finalizar Pedido
+                </Button>
+              )}
+            </Grid2>
+          </Grid2>
         </Grid2>
       </div>
     </Grid2>
@@ -229,3 +231,11 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
 };
 
 export default MenuItens;
+
+
+
+
+
+
+
+
