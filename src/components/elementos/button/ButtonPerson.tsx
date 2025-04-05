@@ -4,12 +4,13 @@ import Button, { ButtonProps } from "@mui/material/Button";
 interface StyledButtonProps extends ButtonProps {
   text: string;
   customStyles?: object;
+  className?: string; // 👈 importante
 }
 
 const defaultStyles = {
   width: "220px",
   height: "55px",
-  background: "linear-gradient(135deg, #4CAF50, #2E7D32)", // Gradiente sutil
+  background: "linear-gradient(135deg, #4CAF50, #2E7D32)",
   color: "white",
   fontSize: "18px",
   fontWeight: "bold",
@@ -50,9 +51,18 @@ const defaultStyles = {
   },
 };
 
-const ButtonPerson: React.FC<StyledButtonProps> = ({ text, customStyles = {}, ...props }) => {
+const ButtonPerson: React.FC<StyledButtonProps> = ({
+  text,
+  customStyles = {},
+  className,
+  ...props
+}) => {
   return (
-    <Button sx={{ ...defaultStyles, ...customStyles }} {...props}>
+    <Button
+      sx={{ ...defaultStyles, ...customStyles }}
+      className={className} 
+      {...props}
+    >
       {text}
     </Button>
   );

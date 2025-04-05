@@ -4,7 +4,7 @@ import { Grid2, Box, Avatar } from '@/libs/mui';
 import slide from '@/assets/img/logo.png';
 import logo from '@/assets/img/Logo.png';
 import slide2 from "@/assets/img/Sorvete.webp";
-import cardsCategoriaDataJson from "@/utils/cardsCardapioTemp.json";
+import cardsCategoriaDataJson from "@/utils/CardapioTemp.json";
 import stylesCardCategoria from "@/styles/cardapio/Categoria.module.scss";
 import { ImageCarousel, CardsCardapio, BoxLayout } from '@/components';
 
@@ -20,7 +20,9 @@ const Home: React.FC = () => {
           <Avatar className={styles.avatar} alt="Logo" src={logo} />
           <p className={styles.status}>FECHADO</p>
         </Grid2>
-        <CardsCardapio cardsCardapio={cardsCategoriaDataJson} stylesPerso={stylesCardCategoria} />
+        {/* <CardsCardapio itensCardapio={cardsCategoriaDataJson} stylesPerso={stylesCardCategoria} onClick={function (valor: string): void {
+          throw new Error('Function not implemented.');
+        }} /> */}
       </BoxLayout>
     </Grid2>
   );

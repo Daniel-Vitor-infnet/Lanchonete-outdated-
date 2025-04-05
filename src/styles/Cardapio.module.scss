@@ -102,11 +102,11 @@ $testesAtivos: false;
         background-color: $cor-base;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: px-para-rem(12.8px);
+        font-size: px-para-rem(15.8px);
         font-weight: bold;
 
         @include laptop {
-            font-size: px-para-rem(9.5px);
+            font-size: px-para-rem(11.5px);
         }
 
         @include mobile {

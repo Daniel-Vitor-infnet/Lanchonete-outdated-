@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Typography, IconButton, Grid2 } from '@/libs/mui';
 import styles from "@/styles/pageLayout/Footer.module.scss";
-import { obterTamanhoTela, iconsSelect } from "@/utils/function";
+import { definirPorTamanhoTela, iconsSelect } from "@/utils/function";
 
 
 const Footer: React.FC = () => {
-    const tamanhoIcon = obterTamanhoTela(1.7, 1.3);
+  const tamanhoIcon = definirPorTamanhoTela({ desktop: 1.7, mobile: 1.3 });
   return (
     <Box className={styles['footer-container']}>
       {/* Nome da empresa */}
@@ -17,17 +17,17 @@ const Footer: React.FC = () => {
       <Grid2 className={styles['grid-container']}>
         <Grid2 className={styles['contact-container']}>
           <Typography className={styles['icon-text']}>
-            {iconsSelect("mui-geral-Phone", tamanhoIcon, "#4caf50")} 
+            {iconsSelect("mui-geral-Phone", tamanhoIcon, "#4caf50")}
             +55 11 99999-9999
-            {iconsSelect("mui-geral-LocationOn", tamanhoIcon, "#ff5722")} 
+            {iconsSelect("mui-geral-LocationOn", tamanhoIcon, "#ff5722")}
             Rua Exemplo, 123 - Cidade
-            {iconsSelect("mui-geral-Email", tamanhoIcon, "#ffcc00")} 
+            {iconsSelect("mui-geral-Email", tamanhoIcon, "#ffcc00")}
             exemplo@gmail.com
           </Typography>
         </Grid2>
       </Grid2>
 
-      
+
 
       {/* Redes Sociais */}
       <Box className={styles['social-media-container']}>

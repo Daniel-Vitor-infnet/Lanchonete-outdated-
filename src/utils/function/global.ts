@@ -2,43 +2,47 @@ import { useEffect, useState } from "react";
 import { useAppContext } from "@/Context";
 import debounce from 'lodash.debounce';
 
+//#region fuction definirPorTamanhoTela
+type Dispositivo = {
+  desktop?: any;
+  laptop?: any;
+  tablet?: any;
+  mobileLarge?: any;
+  mobile?: any;
+  mobileSmall?: any;
+};
 
-export function obterTamanhoTela(valor1?: any, valor2?: any, valor3?: any, valor4?: any, valor5?: any): any {
-  // Converte parâmetros não passados (undefined) em null
-  let valores: any[] = [valor1, valor2, valor3, valor4, valor5].map(x => x === undefined ? null : x);
+export function definirPorTamanhoTela({ desktop, laptop, tablet, mobileLarge, mobile, mobileSmall }: Dispositivo): any {
+  const valores = [desktop, laptop, tablet, mobileLarge, mobile, mobileSmall];
 
-  // Se só passar um parâmetro, os outros assumem o mesmo valor
-  if (arguments.length === 1) {
-    valores = [valores[0], valores[0], valores[0], valores[0], valores[0]];
+  // = Preencher valores nulos ou undefined
+  const preenchidos: any[] = valores.map(x => x === undefined ? null : x);
+
+  // = Se só passou 1 valor, aplicar para todos
+  const definidos = preenchidos.filter(v => v !== null);
+  if (definidos.length === 1) {
+    preenchidos.fill(definidos[0]);
   }
 
-  // Se o primeiro for null, procura o primeiro valor não nulo nos próximos
-  if (valores[0] === null) {
-    for (let i = 1; i < valores.length; i++) {
-      if (valores[i] !== null) {
-        valores[0] = valores[i];
-        break;
-      }
+  // = Propagar valores para frente
+  for (let i = 0; i < preenchidos.length; i++) {
+    if (preenchidos[i] === null && i > 0) {
+      preenchidos[i] = preenchidos[i - 1];
     }
   }
 
-  // Para os demais, se for null, pega o valor do anterior
-  for (let i = 1; i < valores.length; i++) {
-    if (valores[i] === null) {
-      valores[i] = valores[i - 1];
-    }
-  }
+  const width = useWindowWidth(); // = hook customizado
 
-  // Exemplo fixo de resolução – substitua conforme sua lógica
-  const resuction = useWindowWidth();
-  if (resuction >= 1366) return valores[0];
-  if (resuction >= 1024) return valores[1];
-  if (resuction >= 768) return valores[2];
-  if (resuction >= 576) return valores[3];
-  if (resuction >= 400 || resuction < 400) return valores[4];
+  if (width >= 1366) return preenchidos[0]; // = desktop
+  if (width >= 1024) return preenchidos[1]; // = laptop
+  if (width >= 768) return preenchidos[2];  // = tablet
+  if (width >= 576) return preenchidos[3];  // = mobileLarge
+  if (width >= 400) return preenchidos[4];  // = mobile
+  return preenchidos[5];                    // = mobileSmall
 }
+//#endregion
 
-
+//#region fuction footerVisibility
 export const footerVisibility = (isVisible: boolean) => {
   const { setHideFooter } = useAppContext();
 
@@ -48,9 +52,9 @@ export const footerVisibility = (isVisible: boolean) => {
   }, [isVisible, setHideFooter]);
 };
 
+//#endregion
 
-
-
+//#region fuction para definir o tamanho da tela
 export function useWindowWidth(): number {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -68,4 +72,21 @@ export function useWindowWidth(): number {
 
   return width;
 }
+
+//#endregion
+
+//#region fuction para conver o number para string e formatar o valor (duas casas decimais)
+
+export function formatarValorR$(valor: number): string {
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(valor);
+}
+
+//#endregion
+
+
+
+
 

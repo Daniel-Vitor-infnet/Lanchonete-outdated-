@@ -1,76 +1,123 @@
-import * as React from 'react';
+import { useState, useEffect } from "react";
+import { useParams, useNavigate } from 'react-router-dom';
 import styles from '@/styles/Cardapio.module.scss';
 import stylesCardCardapio from "@/styles/cardapio/Itens.module.scss";
-import cardsCardapioDataJson from "@/utils/cardsCardapioTemp.json";
-import { Grid2, Tab, Box, Tabs, Typography } from "@/libs/mui";
+import cardapioDataJson from "@/utils/CardapioTemp.json";
+import { Grid2, Tab, Tabs, Typography } from "@/libs/mui";
 import { CardsCardapio } from '@/components';
-import { obterTamanhoTela, iconsSelect, footerVisibility } from "@/utils/function";
+import { definirPorTamanhoTela, iconsSelect } from "@/utils/function";
+import MenuCardapio from "@/components/layout/cardapio/menuCardapio";
+import type { ItemEscolhidoType } from "@/components/layout/cardapio/menuCardapio";
 
 
-const a11yProps = (cardID: number) => {
-  return {
-    id: `vertical-tab-${cardID}`,
-    'aria-controls': `vertical-tabpanel-${cardID}`,
-  };
+const a11yProps = (cardID: number) => ({
+  id: `vertical-tab-${cardID}`,
+  'aria-controls': `vertical-tabpanel-${cardID}`,
+});
+
+interface CategoriaType {
+  title: string;
+  id: number;
+  id2: string;
+  description: string;
+  image: string;
+  icon: string;
+  stock: boolean;
+  sale: boolean;
+  items: any[];
 };
 
+
+// Apenas para n deixar com o nome de exportação 
+const categoriasArray = cardapioDataJson;
+
 const VerticalTabs: React.FC = () => {
-  const [selectedId, setSelectedId] = React.useState<number>(cardsCardapioDataJson[0].id);
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+
+  // Filtra as categorias que estão à venda
+  const categoriasAtivas: CategoriaType[] = categoriasArray.filter((categoria) => categoria.sale !== false);
+
+  // Usa o id numérico da URL
+  const categoryId = id ? Number(id) : null;
+
+  // Se nenhum id for passado, redireciona para a primeira categoria
+  useEffect(() => {
+    if (!categoryId && categoriasAtivas.length > 0) {
+      navigate(`/cardapio/${categoriasAtivas[0].id}`);
+    }
+  }, [categoryId, categoriasAtivas, navigate]);
+
+  // Determina o índice da categoria selecionada com base no id
+  const currentIndex = categoriasAtivas.findIndex((categoria) => categoria.id === categoryId);
+
+  // Responsavel por definir o item escolhido para abrir o menu
+  const [itemEscolhido, setItemEscolhido] = useState<ItemEscolhidoType | null>(null);
 
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    const selectedCategory = cardsCardapioDataJson[newValue];
-    setSelectedId(selectedCategory.id);
+  // Caso abra o menu, o scroll do body é desativado
+  useEffect(() => {
+    document.body.style.overflow = itemEscolhido ? 'hidden' : '';
+  }, [itemEscolhido]);
+
+  // Ao trocar de aba, navega para a rota com o id da categoria
+  const handleChange = (event: React.SyntheticEvent, newIndex: number) => {
+    const selectedCategory = categoriasAtivas[newIndex];
+    if (selectedCategory) {
+      navigate(`/cardapio/${selectedCategory.id}`);
+    }
   };
 
-
-
-  const selectedCategory = cardsCardapioDataJson.find((card) => card.id === selectedId);
-
+  const selectedCategory = categoriasAtivas[currentIndex];
 
   return (
-    <Grid2 className={styles['main-container']} role="tabpanel">
+    <Grid2 className={styles['main-container']}>
       <Grid2 className={styles['box-principal']}>
         <Tabs
-          orientation={obterTamanhoTela("vertical", null, null, "horizontal")}
+          orientation={definirPorTamanhoTela({ desktop: "vertical", mobile: "horizontal" })}
           variant="scrollable"
-          value={cardsCardapioDataJson.findIndex((card) => card.id === selectedId)}
+          value={currentIndex}
           scrollButtons="auto"
           allowScrollButtonsMobile
           onChange={handleChange}
           className={styles['barra-lateral-container']}
           sx={{
-            ".MuiTabs-scrollButtons": {
-              width: "auto", // Ajusta o tamanho dos botões para evitar espaço extra
-            },
-            ".MuiTabs-scrollButtons.Mui-disabled": {
-              display: "none", // Esconde os botões quando não necessários
-            },
+            ".MuiTabs-scrollButtons": { width: "auto" },
+            ".MuiTabs-scrollButtons.Mui-disabled": { display: "none" },
           }}
         >
-          {cardsCardapioDataJson.map((categorias: any) => (
-            <Tab key={categorias.id} className={styles['barra-lateral-subcontainer']} label={
-              <Grid2 className={styles['barra-lateral-conteudo']}>
-                <Grid2>
-                  {iconsSelect(categorias.icon, obterTamanhoTela(0.8, 0.8, null, null, 1.3))}
+          {categoriasAtivas.map((categoria) => (
+            <Tab
+              key={categoria.id}
+              className={styles['barra-lateral-subcontainer']}
+              label={
+                <Grid2 className={styles['barra-lateral-conteudo']}>
+                  <Grid2>
+                    {iconsSelect(categoria.icon, definirPorTamanhoTela({ desktop: 0.9, laptop: 0.8, mobile: 1.3 }))}
+                  </Grid2>
+                  <Typography className={styles['barra-lateral-categoria']}>
+                    {categoria.title}
+                  </Typography>
                 </Grid2>
-                <Typography className={styles['barra-lateral-categoria']}>
-                  {categorias.title}
-                </Typography>
-              </Grid2>
-            } {...a11yProps(categorias.id)} />
+              }
+              {...a11yProps(categoria.id)}
+            />
           ))}
         </Tabs>
         <Grid2 className={styles['card-container']}>
           {selectedCategory && (
             <CardsCardapio
               key={selectedCategory.id}
-              cardsCardapio={selectedCategory.items}
+              itensCardapio={selectedCategory.items}
               stylesPerso={stylesCardCardapio}
+              onClick={setItemEscolhido}
             />
           )}
         </Grid2>
       </Grid2>
+      {itemEscolhido && (
+        <MenuCardapio itemEscolhido={itemEscolhido} onClose={() => setItemEscolhido(null)} />
+      )}
     </Grid2>
   );
 };
