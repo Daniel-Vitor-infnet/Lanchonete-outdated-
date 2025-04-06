@@ -128,7 +128,12 @@ const OptionsComplementosCategory: React.FC<OptionsComplementosCategoryProps> = 
     <div>
       <Typography variant="h6">{categoryName}</Typography>
       {options.map((option) => (
-        <Grid2 className={stylesPerso["main-container"]} key={option.id}>
+        <Grid2
+          className={stylesPerso["main-container"]}
+          key={option.id}
+          onClick={() => option.stock && handleChange(option.id)}
+          style={{ cursor: option.stock ? "pointer" : "default" }}
+        >
           <Grid2 className={stylesPerso["img-complemento-container"]}>
             {estoqueItemCardapio({
               image: option.image,
@@ -143,10 +148,9 @@ const OptionsComplementosCategory: React.FC<OptionsComplementosCategoryProps> = 
               <Typography className={stylesPerso["price"]}>
                 {formatarValorR$(option.price)}
               </Typography>
-            ) :
-              (<Typography className={stylesPerso["price-free"]}>
-                Grátis
-              </Typography>)}
+            ) : (
+              <Typography className={stylesPerso["price-free"]}>Grátis</Typography>
+            )}
           </Grid2>
           <Grid2 className={stylesPerso["select-container"]}>
             {option.stock ? (

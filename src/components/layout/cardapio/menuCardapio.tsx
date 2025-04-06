@@ -25,10 +25,6 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
   const { data: ingredientesData = [], isLoading: isLoading2 } = useIngredientesPorComida(itemEscolhido.id);
   const { data: complementosData = [], isLoading: isLoading3 } = useComplementosPorComida(itemEscolhido.id);
 
-  //logPerso({ tipo: "info", mensagem: "Dados de versões:", variavel: versionData });
-  //logPerso({ tipo: "info", mensagem: "Dados de ingredientes:", variavel: ingredientesData });
-  //logPerso({ tipo: "info", mensagem: "Dados de complementos:", variavel: complementosData });
-
   const temVersao = versionData.length > 0;
   const temIngredientes = ingredientesData.length > 0;
   const temComplementos = complementosData.length > 0;
@@ -42,8 +38,8 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
   const [order, setOrder] = useState<{
     version: Versao;
     ingredientes: { [id: string]: number };
-    complementos: ({ complemento: ComplementoComVersoes2; version: Versao2 } | null)[];
-  }>({
+    complementos: ({ complemento: ComplementoComVersoes2; version: Versao2 } | null)[]; 
+  }>( {
     version: {} as Versao,
     ingredientes: {},
     complementos: [],
@@ -165,7 +161,6 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     return total + valorVersoes;
   }, 0);
 
-
   const totalPrice = basePrice + ingredientesPrice + complementosPrice;
 
   const isNextDisabled =
@@ -175,46 +170,44 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
 
   const complementosEscolhidos = order.complementos.filter((comp) => comp?.complemento.id !== "no-option");
 
-
-
   return (
     <Grid2>
-      <div className={stylesPerso["overlay_Container"]}>
-        <div className={stylesPerso["blur_Background"]} />
-        <Grid2 className={stylesPerso["main_Container"]} >
+      <div className={stylesPerso["overlay_container"]}>
+        <div className={stylesPerso["blur_background"]} />
+        <Grid2 className={stylesPerso["main_container"]} >
           {/* Cabeçalho */}
-          <Grid2 className={stylesPerso["menu_Header"]}>
-            <Typography className={stylesPerso["menu_Title"]} variant="h5">
+          <Grid2 className={stylesPerso["menu_header"]}>
+            <Typography className={stylesPerso["title"]} variant="h5">
               {itemEscolhido.title}
             </Typography>
-            <Grid2 className={stylesPerso["close_ButtonWrapper"]}>
-              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso["close_Button"]}>
+            <Grid2 className={stylesPerso["close_button_wrapper"]}>
+              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso["close_button"]}>
                 <CloseIcon />
               </IconButton>
             </Grid2>
           </Grid2>
 
           {/* Imagem */}
-          <Grid2 className={stylesPerso["menu_ImageContainer"]}>
+          <Grid2 className={stylesPerso["menu_image_container"]}>
             {estoqueItemCardapio({
               image: itemEscolhido.image,
               altImg: itemEscolhido.title,
-              stylesPerso: stylesPerso["menu_Image"],
+              stylesPerso: stylesPerso["menu_image"],
               stock: itemEscolhido.stock,
             })}
           </Grid2>
 
           {/* Descrição */}
-          <Typography className={stylesPerso["menu_Description"]}>
+          <Typography className={stylesPerso["description"]}>
             <span style={{ color: tinycolor(settings?.cor_primaria || "#FF5100").darken(5).toHexString() }}>
               Descrição:
-              </span> 
-              {itemEscolhido.description}
+            </span>
+            {itemEscolhido.description}
           </Typography>
 
           {/* Conteúdo de cada etapa */}
-          <Grid2 className={stylesPerso["menu_StepsWrapper"]}>
-            <Grid2 className={stylesPerso["menu_StepContent"]}>
+          <Grid2 className={stylesPerso["menu_steps_wrapper"]}>
+            <Grid2 className={stylesPerso["menu_step_content"]}>
               {etapa === "version" && (
                 <OptionsVersion
                   versoes={versionData}
@@ -244,62 +237,90 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
                           selected={order.complementos[etapaComplementoAtual] || null}
                           autoSelectDefault={true}
                         />
-
                       );
                     })()}
                 </>
               )}
               {etapa === "final" && (
+                <Grid2 className={stylesPerso["order_summary"]}>
+                  <Typography className={stylesPerso["order_title"]}>Pedido Completo</Typography>
 
-                <Grid2 className={stylesPerso["order_Summary"]}>
-                  <Typography className={stylesPerso["order_Title"]}>Pedido Completo</Typography>
-
-                  <Typography className={stylesPerso["order_Item"]}>
+                  {/* Exibe o item principal e o preço */}
+                  <Typography className={stylesPerso["order_item"]}>
                     {itemEscolhido.title}{" "}
                     {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
                   </Typography>
 
+                  {/* Exibe a versão escolhida, se houver */}
                   {order.version.title && (
-                    <Typography className={stylesPerso["order_Version"]}>
+                    <Typography className={stylesPerso["order_version"]}>
                       Versão: {`${order.version.title} + ${formatarValorR$(order.version.price)}`}
                     </Typography>
                   )}
 
-                  {/* Complementos */}
-                  <Typography className={stylesPerso["order_AddonsTitle"]}>
-                    Complementos:
-                  </Typography>
-
-
+                  {/* Exibe os complementos */}
+                  <Typography className={stylesPerso["order_addons_title"]}>Complementos:</Typography>
                   {complementosEscolhidos.length > 0 ? (
                     complementosEscolhidos.map((comp) => {
                       if (comp!.complemento.version.length === 0) {
                         return (
-                          <Typography key={comp!.complemento.id} className={stylesPerso["order_Addon"]}>
+                          <Typography key={comp!.complemento.id} className={stylesPerso["order_addons"]}>
                             {`${comp!.complemento.title}  ${comp!.complemento.free || comp!.complemento.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(comp!.complemento.price)}`}`}
                           </Typography>
                         );
                       } else {
                         return comp!.complemento.version.map((versao) => (
-                          <Typography key={versao.id} className={stylesPerso["order_AddonVersion"]}>
+                          <Typography key={versao.id} className={stylesPerso["order_addons_version"]}>
                             {`${comp!.complemento.title} (${versao.title})  ${versao.free || versao.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(versao.price)}`}`}
                           </Typography>
                         ));
                       }
                     })
                   ) : (
-                    <Typography className={stylesPerso["order_Addon"]}>
+                    <Typography className={stylesPerso["order_addons"]}>
                       {order.complementos.length === 0 ? "Esse item não possui complementos" : "Nenhum complemento selecionado"}
                     </Typography>
                   )}
+
+                  {/* Exibe os ingredientes escolhidos */}
+                  <Typography className={stylesPerso["order_IngredientsTitle"]}>
+                    Ingredientes Selecionados:
+                  </Typography>
+                  {Object.keys(order.ingredientes).length > 0 ? (
+                    Object.entries(order.ingredientes).map(([id, quantidade]) => {
+                      const ingrediente = ingredientesData.find((item) => item.id === id);
+                      if (ingrediente) {
+                        const subtotalIngrediente = ingrediente.price * quantidade;
+                        return (
+                          <Typography key={id} className={stylesPerso["order_Ingredient"]}>
+                            {`${ingrediente.title} x ${quantidade} - ${formatarValorR$(ingrediente.price)} cada`}
+                            <br />
+                            <span>
+                              Subtotal: {formatarValorR$(subtotalIngrediente)}
+                            </span>
+                          </Typography>
+                        );
+                      }
+                      return null;
+                    })
+                  ) : (
+                    <Typography className={stylesPerso["order_Ingredient"]}>
+                      Nenhum ingrediente selecionado
+                    </Typography>
+                  )}
+
+                  {/* Exibe o total */}
+                  <Typography className={stylesPerso["order_total"]}>
+                    Total: {formatarValorR$(totalPrice)}
+                  </Typography>
                 </Grid2>
               )}
             </Grid2>
           </Grid2>
 
           {/* Rodapé com total e botões */}
-          <Grid2 className={stylesPerso["order_Footer"]}>
-            <Typography className={stylesPerso["order_Total"]}>
+          <Grid2 className={stylesPerso["order_footer"]}>
+            <Typography className={stylesPerso["order_total"]}>
               Total: {formatarValorR$(totalPrice)}
             </Typography>
             <Grid2>
@@ -314,7 +335,6 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
                 <ButtonPerson
                   text="Próximo"
                   className={stylesPerso['button_next']}
-                  // style={{ backgroundColor: tinycolor(settings?.cor_primaria || "#ff6600").toHexString(),}}
                   onClick={handleNext}
                 />
               ) : (
@@ -330,8 +350,6 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
       </div>
     </Grid2>
   );
-
-
 };
 
 export default MenuItens;

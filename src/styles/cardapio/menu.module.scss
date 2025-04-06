@@ -3,9 +3,7 @@
 
 $testesAtivos: false;
 
-
-
-.overlay_Container {
+.overlay_container {
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -14,7 +12,7 @@ $testesAtivos: false;
   justify-content: center;
   pointer-events: auto;
 
-  .blur_Background {
+  .blur_background {
     position: absolute;
     inset: 0;
     backdrop-filter: blur(8px);
@@ -22,7 +20,7 @@ $testesAtivos: false;
     z-index: 1;
   }
 
-  .main_Container {
+  .main_container {
     background-color: if($testesAtivos, lch(37.47 68.81 35.75), #FAF0E6);
     position: relative;
     z-index: 2;
@@ -37,7 +35,7 @@ $testesAtivos: false;
     box-shadow: 0 0 12px rgba(255, 152, 0, 0.2);
   }
 
-  .menu_Header {
+  .menu_header {
     background-color: if($testesAtivos, purple, #ffe0b2);
     display: flex;
     justify-content: flex-end;
@@ -45,7 +43,7 @@ $testesAtivos: false;
     position: relative;
   }
 
-  .menu_Title {
+  .title {
     background-color: if($testesAtivos, green, unset);
     color: if($testesAtivos, hsl(342.12 100% 50%), #e65100);
     font-size: px-para-rem(27px);
@@ -57,7 +55,7 @@ $testesAtivos: false;
     white-space: nowrap;
   }
 
-  .close_ButtonWrapper {
+  .close_button_wrapper {
     background-color: if($testesAtivos, #0027D3, unset);
     display: flex;
     justify-content: flex-end;
@@ -66,7 +64,7 @@ $testesAtivos: false;
     margin-right: px-para-rem(24px);
   }
 
-  .close_Button {
+  .close_button {
     background-color: if($testesAtivos, #d35400, #ffcc80);
     width: px-para-rem(30px);
     height: px-para-rem(30px);
@@ -85,20 +83,20 @@ $testesAtivos: false;
     }
   }
 
-  .menu_ImageContainer {
+  .menu_image_container {
     background-color: if($testesAtivos, #d35400, unset);
     position: relative;
     overflow: hidden;
   }
 
-  .menu_Image {
+  .menu_image {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-  .menu_Description {
+  .description {
     background-color: if($testesAtivos, lch(37.47 68.81 35.75), #FAF0E6);
 
     padding: px-para-rem(20px);
@@ -119,12 +117,9 @@ $testesAtivos: false;
       font-weight: bold;
       color: if($testesAtivos, hsl(342.12 100% 50%), #e65100);
     }
-    
   }
 
-  
-
-  .menu_StepsWrapper {
+  .menu_steps_wrapper {
     background-color: if($testesAtivos, hsl(201.88 100% 50%), unset);
     min-height: 100%;
     max-height: 100%;
@@ -133,7 +128,7 @@ $testesAtivos: false;
     padding: px-para-rem(20px);
   }
 
-  .order_Footer {
+  .order_footer {
     background-color: if($testesAtivos, hsl(32 100% 50%), #ffe0b2);
     width: 100%;
     max-height: 100%;
@@ -147,7 +142,7 @@ $testesAtivos: false;
     border-top: 1px solid #ffb74d;
   }
 
-  .order_Total {
+  .order_total {
     background-color: if($testesAtivos, hsl(32 100% 50%), unset);
     margin-left: px-para-rem(10px);
     font-size: px-para-rem(19px);
@@ -155,7 +150,7 @@ $testesAtivos: false;
     color: if($testesAtivos, hsl(342.12 100% 50%), #26BE21);
   }
 
-  .menu_StepContent {
+  .menu_step_content {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -163,7 +158,7 @@ $testesAtivos: false;
     flex-direction: column;
   }
 
-  .order_Summary {
+  .order_summary {
     padding: px-para-rem(24px);
     background-color: #fff8f0;
     border-radius: px-para-rem(12px);
@@ -171,28 +166,28 @@ $testesAtivos: false;
     border: 1px solid #ffe0b3;
   }
 
-  .order_Title {
+  .order_title {
     font-size: px-para-rem(21.8px); 
     font-weight: 800;
     margin-bottom: px-para-rem(19.2px); 
     color: #e65100;
   }
 
-  .order_Item {
+  .order_item {
     font-size: px-para-rem(19.8px);
     font-weight: bold;
     margin-bottom: px-para-rem(9.6px);
     color: #bf360c;
   }
 
-  .order_Version {
+  .order_version {
     font-size: px-para-rem(17.6px);
     font-weight: 500;
     margin-bottom: px-para-rem(16px);
     color: #6d4c41;
   }
 
-  .order_AddonsTitle {
+  .order_addons_title {
     font-size: px-para-rem(19.2px);
     font-weight: 700;
     margin-top: px-para-rem(28.8px);
@@ -202,14 +197,14 @@ $testesAtivos: false;
     padding-bottom: px-para-rem(6.4px);
   }
 
-  .order_Addon {
+  .order_addons {
     font-size: px-para-rem(16.8px);
     color: #5d4037;
     padding-left: px-para-rem(16px);
     margin-bottom: px-para-rem(4.8px);
   }
 
-  .order_AddonVersion {
+  .order_addons_version {
     font-size: px-para-rem(16.8px);
     color: #5d4037;
     padding-left: px-para-rem(16px);
@@ -229,6 +224,5 @@ $testesAtivos: false;
       transform: unset;
     }
   }
-
 
 }
