@@ -77,56 +77,36 @@ export const useComplementosPorComida = (comidaBaseId: string) => {
 
         const versao = item.versao_id;
 
-        // Verificar se já existe o item comida no agrupamento da categoria
-        const comidaFormatadaExistente = agrupado.get(categoriaTitle)?.find(comidaItem => comidaItem.id === comida.id);
+        const comidaFormatada: ComplementoComVersoes2 = {
+          id: comida.id,
+          title: comida.title,
+          description: comida.description,
+          image: comida.image,
+          price: comida.price,
+          stock: comida.stock,
+          sale: comida.sale,
+          free: !versao && complementoGratis  ? complementoGratis : null,
+          version: versao
+            ? [{
+                id: versao.id,
+                title: versao.title,
+                description: versao.description,
+                image: versao.image,
+                price: versao.price,
+                stock: versao.stock,
+                sale: versao.sale,
+                free: complementoGratis ? complementoGratis : null,
+              }]
+            : [], // se não tiver versão, array vazio
+        };
 
-        if (!comidaFormatadaExistente) {
-          // Se não existir, cria a comida sem versão
-          const comidaFormatada: ComplementoComVersoes2 = {
-            id: comida.id,
-            title: comida.title,
-            description: comida.description,
-            image: comida.image,
-            price: comida.price,
-            stock: comida.stock,
-            sale: comida.sale,
-            free: !versao && complementoGratis ? complementoGratis : null,
-            version: versao
-              ? [{
-                  id: versao.id,
-                  title: versao.title,
-                  description: versao.description,
-                  image: versao.image,
-                  price: versao.price,
-                  stock: versao.stock,
-                  sale: versao.sale,
-                  free: complementoGratis ? complementoGratis : null,
-                }]
-              : [], // se não tiver versão, array vazio
-          };
-
-          // Adiciona a comida sem versão
-          if (!agrupado.has(categoriaTitle)) {
-            agrupado.set(categoriaTitle, []);
-          }
-
-          agrupado.get(categoriaTitle)!.push(comidaFormatada);
-        } else if (versao) {
-          // Se já existir uma comida e houver versão, adicionar a versão à comida existente
-          comidaFormatadaExistente.version.push({
-            id: versao.id,
-            title: versao.title,
-            description: versao.description,
-            image: versao.image,
-            price: versao.price,
-            stock: versao.stock,
-            sale: versao.sale,
-            free: complementoGratis ? complementoGratis : null,
-          });
+        if (!agrupado.has(categoriaTitle)) {
+          agrupado.set(categoriaTitle, []);
         }
+
+        agrupado.get(categoriaTitle)!.push(comidaFormatada);
       });
 
-      // Converte o agrupamento para o formato final
       const resultadoFinal = Array.from(agrupado.entries()).map(([categoria, itens]) => ({
         [categoria]: itens,
       }));
@@ -136,5 +116,3 @@ export const useComplementosPorComida = (comidaBaseId: string) => {
     enabled: !!comidaBaseId,
   });
 };
-
-

@@ -1,14 +1,16 @@
 import { Button, Grid2, Typography } from "@/libs/mui";
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
-import { estoqueItemCardapio, formatarValorR$, handleStatusDataBase } from "@/utils/function";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
+import { estoqueItemCardapio, formatarValorR$ } from "@/utils/function";
 import stylesPerso from "@/styles/cardapio/menu.module.scss";
-import Options from "@/components/layout/cardapio/options";
+import OptionsVersion from "@/components/layout/cardapio/OptionsVersion";
+import OptionsComplementosCategory from "@/components/layout/cardapio/OptionsComplementosCategory";
 import QuantidadeContador from "@/components/layout/cardapio/QuantidadeContador";
 import { useEffect, useState } from "react";
+import { useComplementosPorComida, useIngredientesPorComida, useVersionPorComidas } from "@/hooks";
+import { Comida, Versao, Ingrediente, ComplementoComVersoes2, Versao2 } from "@/types";
 import { logPerso } from 'noob-supremo43-libs';
-import { useComplementosPorComida, useIngredientesPorComida, useVersionPorComidas } from '@/hooks';
-import { Comida, Versao, Ingrediente, Complemento } from "@/types";
+
 
 interface MenuItensProps {
   itemEscolhido: Comida;
@@ -16,72 +18,115 @@ interface MenuItensProps {
 }
 
 const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
-  const { data: versionData = [], isLoading: isLoading1, error: error1 } = useVersionPorComidas(itemEscolhido.id);
-  const { data: ingredientesData = [], isLoading: isLoading2, error: error2 } = useIngredientesPorComida(itemEscolhido.id);
-  const { data: complementosData = [], isLoading: isLoading3, error: error3 } = useComplementosPorComida(itemEscolhido.id);
+  const { data: versionData = [], isLoading: isLoading1 } = useVersionPorComidas(itemEscolhido.id);
+  const { data: ingredientesData = [], isLoading: isLoading2 } = useIngredientesPorComida(itemEscolhido.id);
+  const { data: complementosData = [], isLoading: isLoading3 } = useComplementosPorComida(itemEscolhido.id);
+
+  //logPerso({ tipo: "info", mensagem: "Dados de versões:", variavel: versionData });
+  //logPerso({ tipo: "info", mensagem: "Dados de ingredientes:", variavel: ingredientesData });
+  //logPerso({ tipo: "info", mensagem: "Dados de complementos:", variavel: complementosData });
 
   const temVersao = versionData.length > 0;
   const temIngredientes = ingredientesData.length > 0;
   const temComplementos = complementosData.length > 0;
 
-  const [etapa, setEtapa] = useState<'version' | 'ingredientes' | 'complementos' | 'final'>('version');
+  // Define as etapas do fluxo
+  type Etapa = "version" | "ingredientes" | "complementos" | "final";
+  const [etapa, setEtapa] = useState<Etapa>("version");
   const [etapaComplementoAtual, setEtapaComplementoAtual] = useState(0);
-  const [order, setOrder] = useState({
+
+  // Estado do pedido com seleção de versão, ingredientes e complementos
+  const [order, setOrder] = useState<{
+    version: Versao;
+    ingredientes: { [id: string]: number };
+    complementos: ({ complemento: ComplementoComVersoes2; version: Versao2 } | null)[];
+  }>({
     version: {} as Versao,
-    ingredientes: {} as { [id: string]: number },
-    complementos: [] as (Complemento & { comida: Comida })[],
+    ingredientes: {},
+    complementos: [],
   });
 
+  // Reseta o estado apenas quando o itemEscolhido mudar
   useEffect(() => {
-    if (!temVersao) {
-      if (temIngredientes) setEtapa('ingredientes');
-      else if (temComplementos) setEtapa('complementos');
-      else setEtapa('final');
+    setEtapa("version");
+    setEtapaComplementoAtual(0);
+    setOrder({
+      version: {} as Versao,
+      ingredientes: {},
+      complementos: temComplementos ? Array.from({ length: complementosData.length }, () => null) : [],
+    });
+  }, [itemEscolhido]);
+
+  // Define a etapa inicial após o carregamento completo dos dados
+  useEffect(() => {
+    if (!isLoading1 && !isLoading2 && !isLoading3) {
+      if (!temVersao) {
+        if (temIngredientes) {
+          setEtapa("ingredientes");
+        } else if (temComplementos) {
+          setEtapa("complementos");
+        } else {
+          setEtapa("final");
+        }
+      }
     }
-  }, [temVersao, temIngredientes, temComplementos]);
+  }, [temVersao, temIngredientes, temComplementos, isLoading1, isLoading2, isLoading3]);
 
   const proximaEtapa = () => {
-    if (etapa === 'version') return temIngredientes ? 'ingredientes' : temComplementos ? 'complementos' : 'final';
-    if (etapa === 'ingredientes') return temComplementos ? 'complementos' : 'final';
-    return 'final';
+    if (etapa === "version") return temIngredientes ? "ingredientes" : temComplementos ? "complementos" : "final";
+    if (etapa === "ingredientes") return temComplementos ? "complementos" : "final";
+    return "final";
   };
 
   const etapaAnterior = () => {
-    if (etapa === 'complementos' && etapaComplementoAtual > 0) {
-      setEtapaComplementoAtual(prev => prev - 1);
-    } else if (etapa === 'complementos') {
-      setEtapa(temIngredientes ? 'ingredientes' : temVersao ? 'version' : 'final');
-    } else if (etapa === 'ingredientes') {
-      setEtapa(temVersao ? 'version' : 'final');
-    } else if (etapa === 'final') {
-      setEtapa(temComplementos ? 'complementos' : temIngredientes ? 'ingredientes' : 'version');
+    if (etapa === "complementos" && etapaComplementoAtual > 0) {
+      setEtapaComplementoAtual((prev) => prev - 1);
+    } else if (etapa === "complementos") {
+      setEtapa(temIngredientes ? "ingredientes" : temVersao ? "version" : "final");
+    } else if (etapa === "ingredientes") {
+      setEtapa(temVersao ? "version" : "final");
+    } else if (etapa === "final") {
+      setEtapa(temComplementos ? "complementos" : temIngredientes ? "ingredientes" : "version");
     }
   };
 
+  // Versão original que você já usa
   const handleVersionSelect = (selectedVersion: Versao) => {
     setOrder((prev) => ({ ...prev, version: selectedVersion }));
   };
+
+  // Novo useEffect logo depois do estado ser definido e os dados carregados
+  useEffect(() => {
+    if (!order.version?.id && versionData.length > 0) {
+      handleVersionSelect(versionData[0]);
+    }
+  }, [order.version, versionData]);
 
   const handleIngredientesUpdate = (ingredientes: { [id: string]: number }) => {
     setOrder((prev) => ({ ...prev, ingredientes }));
   };
 
-  const handleComplementosUpdate = (respostas: (Complemento & { comida: Comida })[]) => {
-    setOrder((prev) => ({ ...prev, complementos: respostas }));
+  const handleComplementosUpdate = (
+    selection: { complemento: ComplementoComVersoes2; version: Versao2 },
+    categoryIndex: number
+  ) => {
+    setOrder((prev) => {
+      const newComplementos = [...prev.complementos];
+      newComplementos[categoryIndex] = selection;
+      return { ...prev, complementos: newComplementos };
+    });
   };
 
-  const handleComplementosFinish = (respostas: (Complemento & { comida: Comida })[]) => {
-    handleComplementosUpdate(respostas);
-    setEtapa('final');
+  const handleComplementosFinish = () => {
+    setEtapa("final");
   };
 
   const handleNext = () => {
-    if (etapa === 'complementos') {
-      const totalEtapas = complementosData.length;
-      if (etapaComplementoAtual < totalEtapas - 1) {
-        setEtapaComplementoAtual(prev => prev + 1);
+    if (etapa === "complementos") {
+      if (etapaComplementoAtual < complementosData.length - 1) {
+        setEtapaComplementoAtual((prev) => prev + 1);
       } else {
-        handleComplementosFinish(order.complementos);
+        handleComplementosFinish();
       }
     } else {
       setEtapa(proximaEtapa());
@@ -92,127 +137,157 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     onClose();
   };
 
-  const estado = handleStatusDataBase(isLoading1, error1, false)
-    || handleStatusDataBase(isLoading2, error2, false)
-    || handleStatusDataBase(isLoading3, error3, false);
-  if (estado) return estado;
-
-  const basePrice = temVersao ? order.version?.price : itemEscolhido.price;
-
-  const ingredientesPrice = ingredientesData.reduce((acc, item) => {
+  const basePrice = temVersao ? order.version.price : itemEscolhido.price;
+  const ingredientesPrice = ingredientesData.reduce((acc, item: Ingrediente) => {
     const quantidade = order.ingredientes[item.id] || 0;
-    return acc + (item.price || 0) * quantidade;
+    return acc + item.price * quantidade;
   }, 0);
 
-  const complementosPrice = order.complementos.reduce((acc: number, comp) => acc + (comp.comida?.price || 0), 0);
-  const totalPrice = basePrice + complementosPrice + ingredientesPrice;
+  const complementosPrice = order.complementos.reduce(
+    (acc, comp) => acc + (comp?.version?.free ? 0 : (comp?.version?.price || 0)),
+    0
+  );
+
+  const totalPrice = basePrice + ingredientesPrice + complementosPrice;
 
   const isNextDisabled =
-    (etapa === 'version' && !order.version) ||
-    (etapa === 'complementos' && order.complementos[etapaComplementoAtual] == null);
+    (etapa === "version" && !order.version.id) ||
+    (etapa === "complementos" &&
+      (!order.complementos[etapaComplementoAtual] || !order.complementos[etapaComplementoAtual]?.version));
+
+  logPerso({ tipo: "info", mensagem: "Dados do pedido:", variavel: order.complementos });
 
   return (
     <Grid2>
-      <div className={stylesPerso['overlay-container']}>
-        <div className={stylesPerso['blur-background']} />
-        <Grid2 className={stylesPerso['main-container']}>
-
-          <Grid2 className={stylesPerso['menu-header']}>
-            <Typography className={stylesPerso['title']} variant="h5">
+      <div className={stylesPerso["overlay-container"]}>
+        <div className={stylesPerso["blur-background"]} />
+        <Grid2 className={stylesPerso["main-container"]}>
+          {/* Cabeçalho */}
+          <Grid2 className={stylesPerso["menu-header"]}>
+            <Typography className={stylesPerso["title"]} variant="h5">
               {itemEscolhido.title}
             </Typography>
-
-            <Grid2 className={stylesPerso['close-button-container']}>
-              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso['close-button']}>
+            <Grid2 className={stylesPerso["close-button-container"]}>
+              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso["close-button"]}>
                 <CloseIcon />
               </IconButton>
             </Grid2>
           </Grid2>
 
-          <Grid2 className={stylesPerso['menu-container-img']}>
+          {/* Imagem */}
+          <Grid2 className={stylesPerso["menu-container-img"]}>
             {estoqueItemCardapio({
               image: itemEscolhido.image,
               altImg: itemEscolhido.title,
-              stylesPerso: stylesPerso['menu-img'],
+              stylesPerso: stylesPerso["menu-img"],
               stock: itemEscolhido.stock,
             })}
           </Grid2>
 
-          <Typography className={stylesPerso['menu-description']}>
+          {/* Descrição */}
+          <Typography className={stylesPerso["menu-description"]}>
             <span>Descrição:</span> {itemEscolhido.description}
           </Typography>
 
-          <Grid2 className={stylesPerso['menu-complementos']}>
-            <Grid2 className={stylesPerso['menu-complementos-item']}>
-              {etapa === 'version' && (
-                <Options
+          {/* Conteúdo de cada etapa */}
+          <Grid2 className={stylesPerso["menu-complementos"]}>
+            <Grid2 className={stylesPerso["menu-complementos-item"]}>
+              {etapa === "version" && (
+                <OptionsVersion
                   versoes={versionData}
+                  selected={order.version?.id ? order.version : null}
                   onSelect={handleVersionSelect}
                 />
               )}
-
-              {etapa === 'ingredientes' && (
+              {etapa === "ingredientes" && (
                 <QuantidadeContador
                   ingredients={ingredientesData}
                   respostas={order.ingredientes}
                   setRespostas={handleIngredientesUpdate}
                 />
               )}
+              {etapa === "complementos" && (
+                <>
+                  {complementosData.length > 0 &&
+                    (() => {
+                      const currentCategoryObj = complementosData[etapaComplementoAtual];
+                      const categoryName = Object.keys(currentCategoryObj)[0];
+                      const items = currentCategoryObj[categoryName];
+                      return (
+                        <OptionsComplementosCategory
+                          categoryName={categoryName}
+                          items={items}
+                          onSelect={(selection) => handleComplementosUpdate(selection, etapaComplementoAtual)}
+                          selected={order.complementos[etapaComplementoAtual] || null}
+                          autoSelectDefault={true}
+                        />
 
-              {etapa === 'complementos' && (
-                <Options
-                  grupos={complementosData as (Complemento & { comida: Comida })[]}
-                  grupoAtual={etapaComplementoAtual}
-                  respostas={order.complementos}
-                  setRespostas={handleComplementosUpdate}
-                  onSelect={() => { }}
-                />
+                      );
+                    })()}
+                </>
               )}
+              {etapa === "final" && (
 
-              {etapa === 'final' && (
                 <>
                   <Typography>Pedido Completo</Typography>
                   <Typography>
-                    {itemEscolhido.title} {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
+                    {itemEscolhido.title}{" "}
+                    {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
                   </Typography>
-
-                  {order.version?.title && (
+                  {order.version.title && (
                     <Typography>
-                      Versão:  {`${order.version.title} + ${formatarValorR$(order.version.price)}`}
+                      Versão: {`${order.version.title} + ${formatarValorR$(order.version.price)}`}
                     </Typography>
                   )}
-
-                  {logPerso({ tipo: 'alerta', mensagem: 'Pedido2 🔥', variavel: order.complementos })}
-
-                  <Typography>
-                    Complementos: {order.complementos.length > 0
-                      ? order.complementos.map((comp: any) => (
-                        `${comp.comida?.title} ${comp.comida?.price ? `+ ${formatarValorR$(comp.comida.price)}` : ''}`
-                      )).join(", ")
-                      : "Nenhum"}
+                  
+                   {/* Complementos */}
+                  <Typography className={stylesPerso["final_complementos_container"]}>
+                    Complementos:
+                    {/* Verifica se existe complementos */}
+                    {order.complementos.length > 0 ? (
+                      order.complementos
+                      .filter((comp) => comp!.complemento.id !== "no-option") 
+                      .map((comp) => {
+                        // Verifica se existe alguma versão do complemento
+                        if (comp!.complemento.version.length === 0) {
+                          return (
+                            <Typography key={comp!.complemento.id} className={stylesPerso["final_complementos"]}>
+                              {`${comp!.complemento.title}  ${comp!.complemento.free || comp!.complemento.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(comp!.complemento.price)}`}`}
+                            </Typography>
+                          )
+                        //Caso tenha versões entrega complemento com versões
+                        } else {
+                          return comp!.complemento.version.map((versao) => (
+                            <Typography key={versao.id} className={stylesPerso["final_complementos_versao"]}>
+                              {`${comp!.complemento.title} (${versao.title})  ${versao.free || versao.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(versao.price)}`}`}
+                            </Typography>
+                          ));
+                        }
+                      })
+                    ) : " Esse item não possui complementos."}
                   </Typography>
                 </>
               )}
             </Grid2>
           </Grid2>
 
-          <Grid2 className={stylesPerso['price-container']}>
-            <Typography className={stylesPerso['price']}>
-              Total: R$ {totalPrice.toFixed(2).replace(".", ",")}
+          {/* Rodapé com total e botões */}
+          <Grid2 className={stylesPerso["price-container"]}>
+            <Typography className={stylesPerso["price"]}>
+              Total: {formatarValorR$(totalPrice)}
             </Typography>
-
             <Grid2>
-              {etapa !== 'version' && (
-                <Button onClick={etapaAnterior} style={{ color: 'purple' }}>
+              {etapa !== "version" && (
+                <Button onClick={etapaAnterior} style={{ color: "purple" }}>
                   Voltar
                 </Button>
               )}
-              {etapa !== 'final' ? (
-                <Button onClick={handleNext} style={{ color: 'purple' }} disabled={isNextDisabled}>
+              {etapa !== "final" ? (
+                <Button onClick={handleNext} style={{ color: "purple" }} disabled={isNextDisabled}>
                   Próximo
                 </Button>
               ) : (
-                <Button onClick={finalizeOrder} style={{ color: 'purple' }}>
+                <Button onClick={finalizeOrder} style={{ color: "purple" }}>
                   Finalizar Pedido
                 </Button>
               )}
