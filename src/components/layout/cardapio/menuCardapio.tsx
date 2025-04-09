@@ -1,4 +1,4 @@
-import { Button, Grid2, Typography } from "@/libs/mui";
+import { Grid2, Typography } from "@/libs/mui";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { estoqueItemCardapio, formatarValorR$ } from "@/utils/function";
@@ -10,7 +10,9 @@ import { useEffect, useState } from "react";
 import { useComplementosPorComida, useIngredientesPorComida, useVersionPorComidas } from "@/hooks";
 import { Comida, Versao, Ingrediente, ComplementoComVersoes2, Versao2 } from "@/types";
 import { logPerso } from 'noob-supremo43-libs';
-
+import { ButtonPerson } from '@/components';
+import { useAppContext } from "@/Context";
+import tinycolor from "tinycolor2";
 
 interface MenuItensProps {
   itemEscolhido: Comida;
@@ -18,6 +20,7 @@ interface MenuItensProps {
 }
 
 const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
+  const { settings } = useAppContext();
   const { data: versionData = [], isLoading: isLoading1 } = useVersionPorComidas(itemEscolhido.id);
   const { data: ingredientesData = [], isLoading: isLoading2 } = useIngredientesPorComida(itemEscolhido.id);
   const { data: complementosData = [], isLoading: isLoading3 } = useComplementosPorComida(itemEscolhido.id);
@@ -143,10 +146,25 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     return acc + item.price * quantidade;
   }, 0);
 
-  const complementosPrice = order.complementos.reduce(
-    (acc, comp) => acc + (comp?.version?.free ? 0 : (comp?.version?.price || 0)),
-    0
-  );
+  //Calculo para complementos
+  const complementosPrice = order.complementos.reduce((total, item) => {
+    const comp = item?.complemento;
+
+    // Regra 1: version ausente, nulo ou vazio
+    if (!comp?.version || comp.version.length === 0) {
+      if (comp?.free === true) return total + 0;
+      return total + (comp?.price || 0);
+    }
+
+    // Regra 2: version com itens
+    const valorVersoes = comp.version.reduce((soma, versao) => {
+      if (versao.free === true) return soma + 0;
+      return soma + (versao.price || 0);
+    }, 0);
+
+    return total + valorVersoes;
+  }, 0);
+
 
   const totalPrice = basePrice + ingredientesPrice + complementosPrice;
 
@@ -155,43 +173,48 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
     (etapa === "complementos" &&
       (!order.complementos[etapaComplementoAtual] || !order.complementos[etapaComplementoAtual]?.version));
 
-  logPerso({ tipo: "info", mensagem: "Dados do pedido:", variavel: order.complementos });
+  const complementosEscolhidos = order.complementos.filter((comp) => comp?.complemento.id !== "no-option");
+
+
 
   return (
     <Grid2>
-      <div className={stylesPerso["overlay-container"]}>
-        <div className={stylesPerso["blur-background"]} />
-        <Grid2 className={stylesPerso["main-container"]}>
+      <div className={stylesPerso["overlay_Container"]}>
+        <div className={stylesPerso["blur_Background"]} />
+        <Grid2 className={stylesPerso["main_Container"]} >
           {/* Cabeçalho */}
-          <Grid2 className={stylesPerso["menu-header"]}>
-            <Typography className={stylesPerso["title"]} variant="h5">
+          <Grid2 className={stylesPerso["menu_Header"]}>
+            <Typography className={stylesPerso["menu_Title"]} variant="h5">
               {itemEscolhido.title}
             </Typography>
-            <Grid2 className={stylesPerso["close-button-container"]}>
-              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso["close-button"]}>
+            <Grid2 className={stylesPerso["close_ButtonWrapper"]}>
+              <IconButton aria-label="Fechar" onClick={onClose} className={stylesPerso["close_Button"]}>
                 <CloseIcon />
               </IconButton>
             </Grid2>
           </Grid2>
 
           {/* Imagem */}
-          <Grid2 className={stylesPerso["menu-container-img"]}>
+          <Grid2 className={stylesPerso["menu_ImageContainer"]}>
             {estoqueItemCardapio({
               image: itemEscolhido.image,
               altImg: itemEscolhido.title,
-              stylesPerso: stylesPerso["menu-img"],
+              stylesPerso: stylesPerso["menu_Image"],
               stock: itemEscolhido.stock,
             })}
           </Grid2>
 
           {/* Descrição */}
-          <Typography className={stylesPerso["menu-description"]}>
-            <span>Descrição:</span> {itemEscolhido.description}
+          <Typography className={stylesPerso["menu_Description"]}>
+            <span style={{ color: tinycolor(settings?.cor_primaria || "#FF5100").darken(5).toHexString() }}>
+              Descrição:
+              </span> 
+              {itemEscolhido.description}
           </Typography>
 
           {/* Conteúdo de cada etapa */}
-          <Grid2 className={stylesPerso["menu-complementos"]}>
-            <Grid2 className={stylesPerso["menu-complementos-item"]}>
+          <Grid2 className={stylesPerso["menu_StepsWrapper"]}>
+            <Grid2 className={stylesPerso["menu_StepContent"]}>
               {etapa === "version" && (
                 <OptionsVersion
                   versoes={versionData}
@@ -228,68 +251,78 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
               )}
               {etapa === "final" && (
 
-                <>
-                  <Typography>Pedido Completo</Typography>
-                  <Typography>
+                <Grid2 className={stylesPerso["order_Summary"]}>
+                  <Typography className={stylesPerso["order_Title"]}>Pedido Completo</Typography>
+
+                  <Typography className={stylesPerso["order_Item"]}>
                     {itemEscolhido.title}{" "}
                     {itemEscolhido.price && `+ ${formatarValorR$(itemEscolhido.price)}`}
                   </Typography>
+
                   {order.version.title && (
-                    <Typography>
+                    <Typography className={stylesPerso["order_Version"]}>
                       Versão: {`${order.version.title} + ${formatarValorR$(order.version.price)}`}
                     </Typography>
                   )}
-                  
-                   {/* Complementos */}
-                  <Typography className={stylesPerso["final_complementos_container"]}>
+
+                  {/* Complementos */}
+                  <Typography className={stylesPerso["order_AddonsTitle"]}>
                     Complementos:
-                    {/* Verifica se existe complementos */}
-                    {order.complementos.length > 0 ? (
-                      order.complementos
-                      .filter((comp) => comp!.complemento.id !== "no-option") 
-                      .map((comp) => {
-                        // Verifica se existe alguma versão do complemento
-                        if (comp!.complemento.version.length === 0) {
-                          return (
-                            <Typography key={comp!.complemento.id} className={stylesPerso["final_complementos"]}>
-                              {`${comp!.complemento.title}  ${comp!.complemento.free || comp!.complemento.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(comp!.complemento.price)}`}`}
-                            </Typography>
-                          )
-                        //Caso tenha versões entrega complemento com versões
-                        } else {
-                          return comp!.complemento.version.map((versao) => (
-                            <Typography key={versao.id} className={stylesPerso["final_complementos_versao"]}>
-                              {`${comp!.complemento.title} (${versao.title})  ${versao.free || versao.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(versao.price)}`}`}
-                            </Typography>
-                          ));
-                        }
-                      })
-                    ) : " Esse item não possui complementos."}
                   </Typography>
-                </>
+
+
+                  {complementosEscolhidos.length > 0 ? (
+                    complementosEscolhidos.map((comp) => {
+                      if (comp!.complemento.version.length === 0) {
+                        return (
+                          <Typography key={comp!.complemento.id} className={stylesPerso["order_Addon"]}>
+                            {`${comp!.complemento.title}  ${comp!.complemento.free || comp!.complemento.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(comp!.complemento.price)}`}`}
+                          </Typography>
+                        );
+                      } else {
+                        return comp!.complemento.version.map((versao) => (
+                          <Typography key={versao.id} className={stylesPerso["order_AddonVersion"]}>
+                            {`${comp!.complemento.title} (${versao.title})  ${versao.free || versao.price === 0 ? "(Grátis)" : `+ ${formatarValorR$(versao.price)}`}`}
+                          </Typography>
+                        ));
+                      }
+                    })
+                  ) : (
+                    <Typography className={stylesPerso["order_Addon"]}>
+                      {order.complementos.length === 0 ? "Esse item não possui complementos" : "Nenhum complemento selecionado"}
+                    </Typography>
+                  )}
+                </Grid2>
               )}
             </Grid2>
           </Grid2>
 
           {/* Rodapé com total e botões */}
-          <Grid2 className={stylesPerso["price-container"]}>
-            <Typography className={stylesPerso["price"]}>
+          <Grid2 className={stylesPerso["order_Footer"]}>
+            <Typography className={stylesPerso["order_Total"]}>
               Total: {formatarValorR$(totalPrice)}
             </Typography>
             <Grid2>
               {etapa !== "version" && (
-                <Button onClick={etapaAnterior} style={{ color: "purple" }}>
-                  Voltar
-                </Button>
+                <ButtonPerson
+                  text="Voltar"
+                  className={stylesPerso['button_next']}
+                  onClick={etapaAnterior}
+                />
               )}
               {etapa !== "final" ? (
-                <Button onClick={handleNext} style={{ color: "purple" }} disabled={isNextDisabled}>
-                  Próximo
-                </Button>
+                <ButtonPerson
+                  text="Próximo"
+                  className={stylesPerso['button_next']}
+                  // style={{ backgroundColor: tinycolor(settings?.cor_primaria || "#ff6600").toHexString(),}}
+                  onClick={handleNext}
+                />
               ) : (
-                <Button onClick={finalizeOrder} style={{ color: "purple" }}>
-                  Finalizar Pedido
-                </Button>
+                <ButtonPerson
+                  text="Finalizar Pedido !"
+                  className={stylesPerso['button_next']}
+                  onClick={finalizeOrder}
+                />
               )}
             </Grid2>
           </Grid2>
@@ -297,6 +330,8 @@ const MenuItens: React.FC<MenuItensProps> = ({ itemEscolhido, onClose }) => {
       </div>
     </Grid2>
   );
+
+
 };
 
 export default MenuItens;
