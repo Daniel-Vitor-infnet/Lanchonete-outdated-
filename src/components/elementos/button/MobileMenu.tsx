@@ -38,7 +38,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ pages, logado }) => {
             <Button
                 id="mobile-menu-button"
                 onClick={handleOpen}
-                startIcon={iconsSelect("mui-geral-Menu", 1.0, null)}
+                // startIcon={iconsSelect("mui-geral-Menu", 1.0, null)}
                 style={{ color: "#000000", fontWeight: "bold", margin: "0px 8px" }}
             >
                 Menu

@@ -2,7 +2,7 @@ import { Alert, Grid } from '@mui/material'
 import styles from '@/styles/database/EmptyMessage.module.scss'
 
 interface EmptyMessageProps {
-  message: string
+  message: string | null | undefined
 }
 
 const EmptyMessage = ({ message }: EmptyMessageProps) => {

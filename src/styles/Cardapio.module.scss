@@ -5,104 +5,53 @@
 $testesAtivos: false;
 
 .main-container {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 86%;
+    height: calc(100% - px-para-rem(70px));
+    display: grid;
+    grid-template-columns: 0.23fr 1fr;
 
-    .box-principal {
-        $cor-base: if($testesAtivos, aquamarine, white);
-        background-color: $cor-base;
-        width: 90%;
-        max-width: 90%;
-        height: calc(alturaResponsivaViewport(83) - px-para-rem(30px));
-        margin-top: px-para-rem(15px);
-        margin-bottom: px-para-rem(15px);
-        display: flex;
+    @include laptop {
+        height: 100%;
+        max-height: 100%;
+        width: 83%;
+        grid-template-columns: 0.27fr 1fr;
+    }
 
-
-        @include laptop {
-            width: 83%;
-            max-width: 83%;
-            height: calc(alturaResponsivaViewport(89));
-            margin-top: unset;
-            margin-bottom: unset;
-        }
-
-        @include mobile {
-            $cor-base: if($testesAtivos, white, unset);
-            background-color: $cor-base;
-            min-width: 100%;
-            width: 100%;
-            flex-direction: column;
-            height: auto;
-        }
+    @include mobile {
+        width: 100%;
+        grid-template-columns: unset;
+        grid-template-rows: alturaResponsivaViewport(13) auto;
     }
 
     .barra-lateral-container {
-        $cor-base: if($testesAtivos, orangered, orange);
-        background-color: $cor-base;
-        border-right: px-para-rem(8px) solid color.adjust($cor-base, $lightness: -10%);
-        width: 18%;
+        border-right: px-para-rem(8px) solid color.adjust(blue, $lightness: -10%);
 
-        @include laptop {
-            width: 21%;
-        }
-
-        @include mobile {
-            width: 100%;
-            border-right: unset;
-            border-bottom: px-para-rem(8px) solid color.adjust($cor-base, $lightness: -10%);
-        }
-    }
-
-    .barra-lateral-subcontainer {
-        $cor-base: if($testesAtivos, purple, unset);
-        background-color: $cor-base;
-        width: 100%;
-        display: grid;
-        justify-content: start;
-
-
-
-
-        @include mobile {
-            flex: 0 0 auto;
-            width: auto;
-            min-width: 70px;
-            max-width: 120px;
-            text-align: center;
-            padding: unset;
-            padding: 9px 17px;
-        }
-
-        @include mobile-small {
-            padding: unset;
-            padding-left: 14px;
-            padding-right: 14px;
-        }
-
+        // @include mobile {
+        //     width: 100%;
+        //     border-right: unset;
+        //     border-bottom: px-para-rem(8px) solid color.adjust(blue, $lightness: -10%);
+        // }
     }
 
     .barra-lateral-conteudo {
-        $cor-base: if($testesAtivos, greenyellow, unset);
-        background-color: $cor-base;
-        display: flex;
-        gap: px-para-rem(11.2px);
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        justify-items: center;
         align-items: center;
+        text-align: start;
+        gap: px-para-rem(10px);
 
         @include mobile {
-            display: grid;
+            grid-template-columns: unset;
         }
     }
 
-    .barra-lateral-categoria {
+    .barra-lateral-text {
+        min-width: 100%;
         white-space: nowrap;
-        $cor-base: if($testesAtivos, red, unset);
-        background-color: $cor-base;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: px-para-rem(15.8px);
+        font-size: px-para-rem(15px);
         font-weight: bold;
 
         @include laptop {
@@ -111,7 +60,7 @@ $testesAtivos: false;
 
         @include mobile {
             max-width: 100%;
-            font-size: px-para-rem(12.8px);
+            font-size: px-para-rem(13.8px);
         }
 
         @include mobile-small {
@@ -119,22 +68,17 @@ $testesAtivos: false;
         }
     }
 
-    .card-container {
-        $cor-base: if($testesAtivos, fuchsia, unset);
-        background-color: $cor-base;
-        max-width: calc(100% - 18%);
-        max-height: 99.9%;
-        padding: px-para-rem(16px);
-        overflow-x: hidden;
+    .cardapio-container {
+        scrollbar-gutter: stable;
+        overscroll-behavior: contain;
 
+        @include custom-scrollbar;
 
         @include mobile {
-            max-width: 100%;
-            overflow-x: unset;
-
+            @include custom-scrollbar(unset);
+            overflow: unset;
+            scrollbar-gutter: unset; //Considerar tamanho do scrollbar
+            overscroll-behavior: unset; //Dar foco no scroll do container
         }
-
     }
-
-
 }

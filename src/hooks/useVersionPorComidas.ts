@@ -1,22 +1,34 @@
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/libs/supabaseClient'
-import { Versao } from '@/types'
+import { InterfaceFoodPropVersion, InterfaceFoodVersion } from '@/types'
 
-export const useVersionPorComidas = (comidaId: string) => {
-  return useQuery<Versao[]>({
-    queryKey: ['versoes', comidaId],
+export function useVersionPorComidas(
+  comidaId: string,
+  isSale: boolean = true
+) {
+  return useQuery<InterfaceFoodVersion[]>({
+    queryKey: ['versoes-comida', comidaId, isSale],
     queryFn: async () => {
       const { data, error } = await supabase
         .from('versoes')
-        .select('*')
+        .select(`
+          id,
+          title,
+          description,
+          price,
+          image,
+          stock,
+          sale
+        `)
         .eq('comida_id', comidaId)
 
-      if (error) {
-        throw new Error(error.message)
-      }
+      if (error) throw error
 
-      return data || []
+      return (data || [])
+        .filter(v => !isSale || v.sale !== false)
+        .sort((a, b) => a.price - b.price)
     },
-    enabled: !!comidaId, // só executa se tiver o id
+    staleTime: Infinity,
+    refetchOnWindowFocus: false,
   })
 }
