@@ -19,13 +19,13 @@ $testesAtivos: false;
     background-color: #FFFFFF;
   }
 
-
   .img-complemento-container {
     background-color: if($testesAtivos, hsl(135.06 100% 50%), unset);
-    height: px-para-rem(74px);
-    width: px-para-rem(74px);
     position: relative;
+    height: px-para-rem(64px);
+    width: px-para-rem(64px);
     overflow: hidden;
+    flex-shrink: 0;
   }
 
   .img-complemento {
@@ -45,21 +45,32 @@ $testesAtivos: false;
     min-width: 0;
   }
 
-  .item-title {
+
+  .title {
     font-size: px-para-rem(16px);
     font-weight: 600;
     color: #222;
-    line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .item-subtotal {
-    font-size: px-para-rem(14px);
-    font-weight: 500;
-    color: #666;
-    margin-top: px-para-rem(2px);
+  .price {
+    font-size: px-para-rem(16px);
+    font-weight: 600;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .price-free {
+    font-size: px-para-rem(16px); // 1rem
+    font-weight: 600;
+    color: #0DD60D;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .select-container {
@@ -68,44 +79,6 @@ $testesAtivos: false;
     align-items: center;
     justify-content: center;
     padding-left: px-para-rem(8px);
-  }
-
-  .contador {
-    display: flex;
-    align-items: center;
-    gap: px-para-rem(6px);
-    background-color: #e9f4fd;
-    border: 2px solid #bbdefb;
-    border-radius: px-para-rem(6px);
-    padding: px-para-rem(4px) px-para-rem(8px);
-    box-shadow: 0 0 px-para-rem(3px) rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.2s ease;
-    transform: scale(0.85);
-
-    &:hover {
-      box-shadow: 0 0 px-para-rem(6px) rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  .btn {
-    background-color: transparent;
-    border: none;
-    font-size: px-para-rem(22.4px); // 1.4rem
-    cursor: pointer;
-    color: #4797d9;
-    padding: 0 px-para-rem(8px);
-    transition: color 0.2s;
-
-    &:hover {
-      color: #2f80c0;
-    }
-  }
-
-  .quantidade {
-    font-size: px-para-rem(16px); // 1rem
-    font-weight: bold;
-    min-width: px-para-rem(20px);
-    text-align: center;
   }
 
   .select {

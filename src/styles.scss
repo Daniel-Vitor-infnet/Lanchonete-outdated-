@@ -8,6 +8,11 @@
   font-display: swap;
 }
 
+:root {
+  --tema-cor-primaria: #FF6600; // Um fallback caso de problemas
+}
+
+
 *,
 *::before,
 *::after {

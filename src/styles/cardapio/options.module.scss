@@ -16,7 +16,7 @@ $testesAtivos: false;
   min-height: px-para-rem(64px);
 
   &:hover {
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
   }
 
   .img-complemento-container {
@@ -64,14 +64,15 @@ $testesAtivos: false;
   }
 
   .select {
-    color: if($testesAtivos, hsl(342.12 100% 50%), #1e88e5);
+    color: if($testesAtivos, hsl(342.12 100% 50%), #E57E1E) !important; 
 
     &:hover {
       background-color: rgba(30, 136, 229, 0.06);
     }
 
     &.Mui-checked {
-      color: if($testesAtivos, hsl(342.12 100% 50%), #1565c0);
+      color: if($testesAtivos, hsl(342.12 100% 50%), #C04B15);
     }
+
   }
 }
