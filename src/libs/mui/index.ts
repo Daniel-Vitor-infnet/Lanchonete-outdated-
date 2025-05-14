@@ -1,10 +1,13 @@
 export { default as Box } from '@mui/material/Box';
-export { default as Grid2 } from '@mui/material/Grid';
+export { default as Grid } from '@mui/material/Grid';
 export { default as Button } from '@mui/material/Button';
 export { default as TextField } from '@mui/material/TextField';
 export { default as Typography } from '@mui/material/Typography';
-export { default as Tabs } from '@mui/material/Tabs';
 export { default as Tab } from '@mui/material/Tab';
+export { default as Tabs } from '@mui/material/Tabs';
+export { default as TabContext } from '@mui/lab/TabContext';
+export { default as TabList } from '@mui/lab/TabList';
+export { default as TabPanel } from '@mui/lab/TabPanel';
 export { default as Avatar } from '@mui/material/Avatar';
 export { default as IconButton } from '@mui/material/IconButton';
 export { default as Card } from '@mui/material/Card';
@@ -17,6 +20,7 @@ export { default as DialogTitle } from '@mui/material/DialogTitle';
 export { default as DialogContent } from '@mui/material/DialogContent';
 export { default as DialogActions } from '@mui/material/DialogActions';
 export { default as Stack } from '@mui/material/Stack';
+export { default as Alert } from '@mui/material/Alert';
 export { default as Select } from '@mui/material/Select';
 export { default as MenuItem } from '@mui/material/MenuItem';
 export { default as Switch } from '@mui/material/Switch';
@@ -28,7 +32,7 @@ export { default as Menu } from '@mui/material/Menu';
 export { default as Radio } from '@mui/material/Radio';
 export { default as RadioGroup } from '@mui/material/RadioGroup';
 export { default as FormControlLabel } from '@mui/material/FormControlLabel';
-
+export { default as FormLabel } from '@mui/material/FormLabel';
 
 
 

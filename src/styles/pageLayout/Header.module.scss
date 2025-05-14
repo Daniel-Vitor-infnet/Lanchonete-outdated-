@@ -5,22 +5,15 @@ $testesAtivos: false;
 
 
 .main-container {
-  background-color: #D35400;
-  width: 100%;
-  max-width: 100%;
-  height: alturaResponsivaViewport(8);
-  max-height: alturaResponsivaViewport(8);
+  background-color: oklch(0.68 0.19 43.9);
   display: grid;
+  overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
 
-  @include laptop {
-    height: alturaResponsivaViewport(10);
-    max-height: alturaResponsivaViewport(10);
-  }
+
 
 
   .logo {
-    background-color: if($testesAtivos, blue, unset);
     max-height: alturaResponsivaViewport(8);
 
     @include laptop {
@@ -53,11 +46,25 @@ $testesAtivos: false;
   }
 
   @keyframes corStatus {
-    0% {color: lch(71.85 94.03 134.67);}
-    25% {color: lch(80 90 150); }
-    50% {color: lch(75 95 180);}
-    75% {color: lch(70 85 200);}
-    100% {color: lch(71.85 94.03 134.67);}
+    0% {
+      color: lch(71.85 94.03 134.67);
+    }
+
+    25% {
+      color: lch(80 90 150);
+    }
+
+    50% {
+      color: lch(75 95 180);
+    }
+
+    75% {
+      color: lch(70 85 200);
+    }
+
+    100% {
+      color: lch(71.85 94.03 134.67);
+    }
   }
 
   // Status Esrita
@@ -112,12 +119,15 @@ $testesAtivos: false;
     border-bottom: px-para-rem(5px) solid transparent;
     transition: all 0.3s ease;
 
+
     &.ativo {
       border-bottom: px-para-rem(5px) solid white;
     }
 
     @include laptop {
       font-size: px-para-rem(11px);
+      font-weight: 800;
+
     }
   }
 

@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Grid2 } from "@/libs/mui";
+import { Grid } from "@/libs/mui";
 
 // Importação correta do Swiper (sem lazy)
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +22,7 @@ interface ImageCarouselProps {
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
-    <Grid2 sx={{ width: "100%", height: "100%", display: "flex" }}>
+    <Grid sx={{ width: "100%", height: "100%", display: "flex" }}>
       <Suspense fallback={<div>Carregando carrossel...</div>}>
         <Swiper modules={[Navigation, Pagination]} navigation pagination={{ clickable: true }} loop style={swiperStyles}>
           {images.map((img, index) => (
@@ -32,7 +32,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
           ))}
         </Swiper>
       </Suspense>
-    </Grid2>
+    </Grid>
   );
 };
 

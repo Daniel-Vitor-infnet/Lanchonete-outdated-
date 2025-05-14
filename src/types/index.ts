@@ -1,85 +1,39 @@
-//#region types Cardapio 
+export type { InterfaceFoodCategory, InterfaceFoodDataBase, InterfaceFood, InterfaceIngredient, InterfaceIngredientMap, InterfaceFoodVersion, InterfaceFoodPropVersion, InterfaceFoodAddons } from '@/types/foodMenu';
 
-export interface Categoria {
-  id: string
-  title: string
-  description: string
-  image: string
-  icon: string
-  stock: boolean
-  sale: boolean
-}
 
-export interface Comida {
-  id: string
-  categoria_id: string
-  title: string
-  description: string
-  price: number
-  image: string
-  stock: boolean
-  sale: boolean
-}
 
-export interface Versao {
-  id: string
-  comida_id: string
-  title: string
-  description: string
-  price: number
-  image: string
-  stock: boolean
-  sale: boolean
-}
-
-export interface Ingrediente {
-  id: string
-  title: string
-  description: string
-  price: number
-  image: string
-  stock: boolean
-  sale: boolean
-}
-
-export interface IngredientePorComida {
-  comida_id: string
-  ingrediente_id: string
-}
-
-export interface Complemento {
-  id: string
-  comida_base_id: string
-  categoria_id: string
-  comida_id: string
-  versao_id: string | null
-}
-
-export interface Versao2 {
+export interface InterfaceSettingsColorsDataBase {
   id: string;
-  title: string;
+  name: string;
+  value: string;
+  value_default: string;
   description: string;
-  price: number;
-  image: string;
-  stock: boolean;
-  sale: boolean;
-  free?: boolean | null;
+  observation: string | null;
+  base_tema: boolean;
+  calc_tema: number[] | null;
+  infos: string;
+};
+
+export interface InterfaceSettingsColors {
+  [keyID: string]: InterfaceSettingsColorsDataBase;
+};
+
+export interface InterfaceStatusCheck {
+  isLoading: boolean;
+  error: Error | null;
+  isEmpty: boolean;
+  emptyMsg?: string;
+};
+
+
+export interface PageLayoutProps  {
+  children?: React.ReactNode;
+  hideFooter?: boolean;
+  viewportLimit?: string | null;
+  isCenterItemH?: boolean;
+  isCenterItemV?: boolean;
+  hideAlertColor?: boolean;
+  testeLayout?: boolean;
 }
 
-export interface ComplementoComVersoes2 {
-  id: string;
-  title: string;
-  description: string;
-  price: number;
-  image: string;
-  stock: boolean;
-  sale: boolean;
-  free?: boolean | null;
-  version: Versao2[];
-}
 
-
-
-
-
-//#endregion types Cardapio

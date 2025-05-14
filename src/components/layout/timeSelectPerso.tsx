@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grid2, Box, Select, MenuItem, Button, Typography } from '@/libs/mui';
+import { Grid, Box, Select, MenuItem, Button, Typography } from '@/libs/mui';
 import { mixins } from '@/components';
 
 const TimeSelectPerso: React.FC = () => {
@@ -27,7 +27,7 @@ const TimeSelectPerso: React.FC = () => {
   };
 
   return (
-    <Grid2 sx={gridStyles} >
+    <Grid sx={gridStyles} >
       <Select sx={selectStyles} value={hours} onChange={(e) => setHours(Number(e.target.value))} MenuProps={{ PaperProps: { style: { maxHeight: 224 } }, disableScrollLock: true }}>
         {[...Array(24).keys()].map((h) => (
           <MenuItem key={h} value={h}>{`${h}h`}</MenuItem>
@@ -43,7 +43,7 @@ const TimeSelectPerso: React.FC = () => {
           <MenuItem key={s} value={s}>{`${s}s`}</MenuItem>
         ))}
       </Select>
-    </Grid2 >
+    </Grid >
   );
 };
 

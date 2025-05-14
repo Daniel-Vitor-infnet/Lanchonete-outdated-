@@ -1,18 +1,25 @@
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/libs/supabaseClient'
-import { Categoria } from '@/types'
+import { InterfaceFoodCategory } from '@/types'
 
-export const useCategorias = () => {
-  return useQuery<Categoria[]>({
-    queryKey: ['categorias'],
+interface UseCategoriasProps {
+  isSale?: boolean;
+}
+
+export const useCategorias = ({ isSale = true }: UseCategoriasProps) => {
+  return useQuery<InterfaceFoodCategory[]>({
+    queryKey: ['categorias', isSale],
     queryFn: async () => {
       const { data, error } = await supabase
         .from('categorias')
-        .select('id, title, description, image, icon, stock, sale')
+        .select('id, title, description, image, icon, stock, sale, promotion')
 
-      if (error) throw new Error(error.message)
-      return data || []
-    },
-    staleTime: 1000 * 60 * 10 // cache de 10 minutos
-  })
-}
+      if (!data || error) throw error;
+
+
+      return isSale ? data.filter((item) => item.sale) : data;
+},
+  staleTime: Number.POSITIVE_INFINITY,
+  refetchOnWindowFocus: false,
+  });
+};

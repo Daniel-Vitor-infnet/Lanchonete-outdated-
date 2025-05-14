@@ -1,6 +1,5 @@
-export { default as gerarID } from '@/utils/function/gerarID.ts';
-export { definirPorTamanhoTela, useWindowWidth, footerVisibility, formatarValorR$ } from '@/utils/function/global.ts';
-export { handleStatusDataBase } from '@/utils/function/database.tsx';
-export { estoqueItemCardapio } from '@/utils/function/cardapio.tsx';
-export { default as iconsSelect } from '@/utils/function/iconsSelect.tsx';
+export { formatarValorR$, reorderArray, getBrowser, iconSelect, getByScreenSize } from '@/utils/function/global.tsx';
+export { hexToOklch, oklchToHex, culoriCalc, hasColorsLS } from '@/utils/function/colors.ts';
+export { handleMultipleStatusDataBase, getPublicImageURL, estoqueItemCardapio } from '@/utils/function/database.tsx';
+export { foodVersionCheck } from '@/utils/function/foodMenu.tsx';
 

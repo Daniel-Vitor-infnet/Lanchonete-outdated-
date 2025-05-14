@@ -1,11 +1,9 @@
 import React from "react";
 import Button, { ButtonProps } from "@mui/material/Button";
+import { culoriCalc } from "@/utils/function";
+import { InterfaceSettingsColors } from "@/types"
 
-interface StyledButtonProps extends ButtonProps {
-  text: string;
-  customStyles?: object;
-  className?: string; // 👈 importante
-}
+
 
 const defaultStyles = {
   width: "220px",
@@ -51,17 +49,43 @@ const defaultStyles = {
   },
 };
 
-const ButtonPerson: React.FC<StyledButtonProps> = ({
-  text,
-  customStyles = {},
-  className,
-  ...props
-}) => {
+
+
+
+type Props = {
+  text: string;
+  disablePerson?: boolean;
+  colorsData?: InterfaceSettingsColors | string;
+  admin?: boolean;
+} & ButtonProps;
+
+const ButtonPerson: React.FC<Props> = ({ text, disablePerson, colorsData, ...props }) => {
+
+  const corButtom = typeof colorsData === "string" ? colorsData : colorsData?.["button"]?.value || "";;
+  const buttonsDataBase = {
+    background: corButtom,
+    color: 'white',
+    '&:hover': {
+      background: `linear-gradient(135deg, ${culoriCalc({ keyColorData: corButtom!, calc: [-0.12, 0.02, -11.3] })}, ${culoriCalc({ keyColorData: corButtom!, calc: [0.13, -0.02, 59.34] })})`,
+    },
+  };
+
+
   return (
     <Button
-      sx={{ ...defaultStyles, ...customStyles }}
-      className={className} 
+      sx={{ ...defaultStyles, ...(!!colorsData ? buttonsDataBase : '') }}
+      //sx={{ ...defaultStyles,  }}
       {...props}
+      style={{
+        ...(disablePerson && {
+          opacity: 0.6,
+          pointerEvents: 'none',
+          cursor: 'not-allowed',
+          backgroundColor: '#A7A7A7',
+          color: '#292929',
+          borderColor: '#bbb',
+        }),
+      }}
     >
       {text}
     </Button>

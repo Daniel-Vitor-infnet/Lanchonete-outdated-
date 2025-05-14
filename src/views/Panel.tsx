@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from '@/styles/Panel.module.scss';
-import { Grid2, Box, Typography, Button, Switch, pink, alpha, styled } from '@/libs/mui';
+import { Grid, Box, Typography, Button, Switch, pink, alpha, styled } from '@/libs/mui';
 import { AlertDiagPers, ButtonOnOff, TimeSelectPerso, ButtonPerson, mixins } from '@/components';
 import { Status, StatusMobile } from '@/components/panel/status';
 
@@ -50,41 +50,41 @@ const buttonAplicarStyles = ({
 
 const Panel: React.FC = () => {
   return (
-    <Grid2 className={styles.mainContainer}>
+    <Grid className={styles.mainContainer}>
       <AlertDiagPers message="Apenas os botões de 'Ver Pediodos' e 'Editar Itens' estão funcionais" />
       <Box className={styles.box}>
         <Typography className={styles.title}>
           Painel de configurações
         </Typography>
-        <Grid2 className={styles.optionContainer}>
+        <Grid className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Status</Typography>
           {mediaQuery.matches ? <Status /> : <StatusMobile />}
-        </Grid2>
-        <Grid2 className={styles.optionContainer}>
+        </Grid>
+        <Grid className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Teste 1</Typography>
           <PinkSwitch {...label} defaultChecked />
-        </Grid2>
-        <Grid2 className={styles.optionContainer}>
+        </Grid>
+        <Grid className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Teste 2</Typography>
           <PinkSwitch {...label} defaultChecked />
-        </Grid2>
-        <Grid2 className={styles.optionContainer}>
+        </Grid>
+        <Grid className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Tempo De Espera</Typography>
           <TimeSelectPerso />
-        </Grid2>
-        <Grid2 className={styles.optionContainer}>
+        </Grid>
+        <Grid className={styles.optionContainer}>
           <Typography className={styles.subTitle}>Teste 4</Typography>
           <ButtonOnOff />
-        </Grid2>
-        <Grid2 className={styles.buttonAplicarContainer}>
+        </Grid>
+        <Grid className={styles.buttonAplicarContainer}>
           <ButtonPerson text='Aplicar' customStyles={buttonAplicarStyles} />
-        </Grid2>
+        </Grid>
       </Box>
-      <Grid2 className={styles.buttonPedidosCardsContainer}>
+      <Grid className={styles.buttonPedidosCardsContainer}>
         <ButtonPerson text='Ver Pediodos' customStyles={buttonPedidosCardsStyles} />
         <ButtonPerson text='Editar Itens' customStyles={buttonPedidosCardsStyles} />
-      </Grid2>
-    </Grid2>
+      </Grid>
+    </Grid>
   );
   3
 };

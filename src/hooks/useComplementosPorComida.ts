@@ -1,140 +1,159 @@
-import { useQuery } from '@tanstack/react-query';
-import { supabase } from '@/libs/supabaseClient';
-import { ComplementoComVersoes2, Versao2 } from '@/types';
+import { useQuery } from '@tanstack/react-query'
+import { supabase } from '@/libs/supabaseClient'
+import { InterfaceFoodPropVersion, InterfaceFoodAddons } from '@/types'
+import { getPublicImageURL } from '@/utils/function'
 
-interface ComplementoJoin {
-  id: string;
-  free: boolean;
-  categoria_id: {
-    id: string;
-    title: string;
-  } | null;
-  comida_id: {
-    id: string;
-    title: string;
-    description: string;
-    image: string;
-    price: number;
-    stock: boolean;
-    sale: boolean;
-  } | null;
-  versao_id: {
-    id: string;
-    title: string;
-    description: string;
-    image: string;
-    price: number;
-    stock: boolean;
-    sale: boolean;
-    free: boolean;
-  } | null;
+// Default Option fixo
+const defaultOption: InterfaceFoodPropVersion = {
+  id: "null",
+  categoria_id: "null",
+  free: true,
+  title: "Não quero complemento",
+  description: "null",
+  price: 0,
+  image: "extras/noOption.webp",
+  stock: true,
+  sale: true,
+  promotion: null,
+  amount_image: 1,
+  version: null,
 }
 
-export const useComplementosPorComida = (comidaBaseId: string) => {
-  return useQuery<Record<string, ComplementoComVersoes2[]>[]>({
-    queryKey: ['complementos_formatado_com_join', comidaBaseId],
+export const useComplementosPorComida = (
+  comidaId: string,
+  temDefaultOption: boolean = true,
+  isSale: boolean = true
+) =>
+  useQuery<InterfaceFoodAddons>({
+    queryKey: ['categorias-comidas', comidaId, temDefaultOption, isSale],
     queryFn: async () => {
       const { data, error } = await supabase
         .from('complementos')
         .select(`
-          id,
+          categoria_id,
           free,
-          categoria_id (
-            id,
-            title
-          ),
-          comida_id (
+          order,
+          categorias!complementos_categoria_id_fkey(
             id,
             title,
             description,
             image,
-            price,
+            icon,
             stock,
-            sale
+            sale,
+            promotion
           ),
-          versao_id (
+          comidas!complementos_comida_categoria_id_fkey(
             id,
             title,
             description,
-            image,
             price,
+            image,
+            stock,
+            sale,
+            promotion,
+            amount_image
+          ),
+          versoes!complementos_versao_id_fkey(
+            id,
+            title,
+            description,
+            price,
+            image,
             stock,
             sale
           )
         `)
-        .eq('comida_base_id', comidaBaseId) as { data: ComplementoJoin[] | null, error: any };
+        .eq('comida_id', comidaId)
 
-      if (error) throw new Error(error.message);
-      if (!data || data.length === 0) return [];
+      if (error) throw error
 
-      const agrupado = new Map<string, ComplementoComVersoes2[]>();
+      const agrupado = (data || []).reduce<InterfaceFoodAddons>((acc, row) => {
+        const cat = Array.isArray(row.categorias) ? row.categorias[0] : row.categorias
+        const comida = Array.isArray(row.comidas) ? row.comidas[0] : row.comidas
+        const versao = Array.isArray(row.versoes) ? row.versoes[0] : row.versoes
 
-      data.forEach(item => {
-        const categoriaTitle = item.categoria_id?.title || 'Sem Categoria';
-        const complementoGratis = item.free;
-        const comida = item.comida_id;
-        if (!comida) return;
+        if (!cat || !comida) return acc
 
-        const versao = item.versao_id;
-
-        // Verificar se já existe o item comida no agrupamento da categoria
-        const comidaFormatadaExistente = agrupado.get(categoriaTitle)?.find(comidaItem => comidaItem.id === comida.id);
-
-        if (!comidaFormatadaExistente) {
-          // Se não existir, cria a comida sem versão
-          const comidaFormatada: ComplementoComVersoes2 = {
-            id: comida.id,
-            title: comida.title,
-            description: comida.description,
-            image: comida.image,
-            price: comida.price,
-            stock: comida.stock,
-            sale: comida.sale,
-            free: !versao && complementoGratis ? complementoGratis : null,
-            version: versao
-              ? [{
-                  id: versao.id,
-                  title: versao.title,
-                  description: versao.description,
-                  image: versao.image,
-                  price: versao.price,
-                  stock: versao.stock,
-                  sale: versao.sale,
-                  free: complementoGratis ? complementoGratis : null,
-                }]
-              : [], // se não tiver versão, array vazio
-          };
-
-          // Adiciona a comida sem versão
-          if (!agrupado.has(categoriaTitle)) {
-            agrupado.set(categoriaTitle, []);
-          }
-
-          agrupado.get(categoriaTitle)!.push(comidaFormatada);
-        } else if (versao) {
-          // Se já existir uma comida e houver versão, adicionar a versão à comida existente
-          comidaFormatadaExistente.version.push({
-            id: versao.id,
-            title: versao.title,
-            description: versao.description,
-            image: versao.image,
-            price: versao.price,
-            stock: versao.stock,
-            sale: versao.sale,
-            free: complementoGratis ? complementoGratis : null,
-          });
+        // Filtra itens que não estão à venda se isSale for true
+        if (isSale) {
+          const versionSale = versao?.sale
+          const itemSale = comida.sale
+          if ((versao && versionSale === false) || (!versao && itemSale === false)) return acc
         }
-      });
 
-      // Converte o agrupamento para o formato final
-      const resultadoFinal = Array.from(agrupado.entries()).map(([categoria, itens]) => ({
-        [categoria]: itens,
-      }));
+        const key = cat.id
 
-      return resultadoFinal;
+        // Cria a categoria se ainda não existir
+        if (!acc[key]) {
+          acc[key] = {
+            category: { ...cat },     // sem ordem na categoria
+            order: row.order,         // ordem vinda de complementos
+            items: []
+          }
+          // Sempre adiciona o defaultOption no início se ativado
+          if (temDefaultOption) {
+            acc[key].items.push(defaultOption)
+          }
+        }
+
+        // Adiciona o item na categoria correspondente
+        acc[key].items.push({
+          id: comida.id,
+          categoria_id: row.categoria_id,
+          title: comida.title,
+          description: comida.description,
+          price: versao?.price ?? comida.price,
+          image: comida.image,
+          stock: comida.stock,
+          sale: comida.sale,
+          promotion: comida.promotion,
+          amount_image: comida.amount_image,
+          free: row.free,
+          version: versao
+            ? {
+              id: versao.id,
+              title: versao.title,
+              description: versao.description,
+              price: versao.price,
+              image: versao.image,
+              stock: versao.stock,
+              sale: versao.sale,
+            }
+            : null,
+        } as InterfaceFoodPropVersion)
+
+        return acc
+      }, {})
+
+      // Ordena os items de cada categoria do mais barato ao mais caro
+      for (const categoria of Object.values(agrupado)) {
+        // Separa o defaultOption do resto
+        const [defaultItem, outros] = categoria.items.reduce<[InterfaceFoodPropVersion | null, InterfaceFoodPropVersion[]]>(
+          (acc, item) => {
+            if (item.id === defaultOption.id) acc[0] = item
+            else acc[1].push(item)
+            return acc
+          },
+          [null, []]
+        )
+
+        // Ordena baseando-se no preço real, considerando regra do free
+        outros.sort((a, b) => {
+          const priceA = a.free ? 0 : a.version ? a.version.price : a.price
+          const priceB = b.free ? 0 : b.version ? b.version.price : b.price
+          return priceA - priceB
+        })
+
+        // Garante o defaultOption sempre no topo
+        categoria.items = defaultItem ? [defaultItem, ...outros] : outros
+      }
+
+      // Ordena as categorias pela coluna "order" da tabela complementos
+      return Object.fromEntries(
+        Object.entries(agrupado).sort(([, a], [, b]) => (a.order ?? 0) - (b.order ?? 0))
+      )
     },
-    enabled: !!comidaBaseId,
-  });
-};
-
-
+    staleTime: Infinity,
+    refetchOnWindowFocus: false,
+  })
